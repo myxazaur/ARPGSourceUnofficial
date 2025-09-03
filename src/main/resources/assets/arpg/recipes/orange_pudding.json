@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B ",
+        "LSM",
+        " H "],
+    "key": {"L": {
+            "item": "minecraft:sugar"
+        },"B": {
+            "item": "arpg:caramel"
+        },"S": {
+            "item": "minecraft:magma_cream"
+        },"M": {
+            "item": "arpg:fiery_oil"
+        },"H": {
+            "item": "minecraft:cookie"
+        }},
+    "result": {
+        "item": "arpg:orange_pudding",
+        "count": 1
+    }
+}

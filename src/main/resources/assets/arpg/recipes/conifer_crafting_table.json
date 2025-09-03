@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA",
+        "AA"
+],
+    "key": {"A": {
+            "item": "arpg:conifer_planks"
+        }},
+    "result": {
+        "item": "arpg:conifer_crafting_table",
+        "count": 1
+    }
+}

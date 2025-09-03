@@ -1,0 +1,22 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABC",
+        "BSC",
+        "CCC"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotLead"
+        },"C": {
+            "item": "arpg:copper_wire"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotIron"
+        }},
+    "result": {
+        "item": "arpg:linear_motor",
+        "count": 1
+    }
+}

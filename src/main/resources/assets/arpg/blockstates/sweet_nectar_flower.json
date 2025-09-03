@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:sweet_nectar_flower",
+    "textures": {
+	  "all": "arpg:sweet_nectar_flower"
+    }
+  },
+  "variants": {
+		"normal": [{}], 
+		"inventory": [{}]
+  }
+}

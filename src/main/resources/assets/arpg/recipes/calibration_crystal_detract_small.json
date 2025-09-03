@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:calibration_crystal_detract_medium"
+        }},
+    "result": {
+        "item": "arpg:calibration_crystal_detract_small",
+        "count": 2
+    }
+}

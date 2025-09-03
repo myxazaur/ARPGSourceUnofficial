@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:frozen_stone_bricks",
+	  "up": "arpg:frozen_stone_bricks",
+	  "north": "arpg:frozen_stone_bricks",
+	  "south": "arpg:frozen_stone_bricks",
+	  "west": "arpg:frozen_stone_bricks",
+	  "east": "arpg:frozen_stone_bricks"
+    }
+}

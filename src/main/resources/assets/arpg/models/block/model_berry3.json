@@ -1,0 +1,80 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "berry": "arpg:toxiberry",
+		"particle": "arpg:toxiberry"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 7, 0, 7 ], 
+            "to": [ 9, 16, 9 ], 
+            "faces": {
+                "north": { "texture": "#berry", "uv": [ 3, 0, 5, 16 ] },
+                "east": { "texture": "#berry", "uv": [ 3, 0, 5, 16 ] },
+                "south": { "texture": "#berry", "uv": [ 3, 0, 5, 16 ] },
+                "west": { "texture": "#berry", "uv": [ 3, 0, 5, 16 ] },
+                "up": { "texture": "#berry", "uv": [ 6, 0, 8, 2 ] },
+                "down": { "texture": "#berry", "uv": [ 6, 0, 8, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 4, 6 ], 
+            "to": [ 8, 5, 8 ], 
+            "faces": {
+                "north": { "texture": "#berry", "uv": [ 6, 0, 8, 1 ] },
+                "east": { "texture": "#berry", "uv": [ 6, 0, 8, 1 ] },
+                "south": { "texture": "#berry", "uv": [ 7, 1, 9, 2 ] },
+                "west": { "texture": "#berry", "uv": [ 6, 2, 8, 3 ] },
+                "up": { "texture": "#berry", "uv": [ 6, 0, 8, 2 ] },
+                "down": { "texture": "#berry", "uv": [ 7, 1, 9, 3 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 8, 12, 8 ], 
+            "to": [ 10, 13, 10 ], 
+            "faces": {
+                "north": { "texture": "#berry", "uv": [ 6, 0, 8, 1 ] },
+                "east": { "texture": "#berry", "uv": [ 6, 0, 8, 1 ] },
+                "south": { "texture": "#berry", "uv": [ 7, 1, 9, 2 ] },
+                "west": { "texture": "#berry", "uv": [ 6, 2, 8, 3 ] },
+                "up": { "texture": "#berry", "uv": [ 6, 0, 8, 2 ] },
+                "down": { "texture": "#berry", "uv": [ 7, 1, 9, 3 ] }
+            }
+        }
+    ]
+}

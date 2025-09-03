@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:fiery_bean_log"
+        }},
+    "result": {
+        "item": "arpg:fiery_bean_planks",
+        "count": 4
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["ABA",
+        "ASA",
+        "AHA"],
+    "key": {"H": {
+            "item": "minecraft:carpet",
+		     "data": 10
+        },"B": {
+            "item": "arpg:magic_powder"
+        },"S": {
+            "item": "minecraft:bowl"
+        },"A": {
+            "item": "arpg:magic_candle"
+        }},
+    "result": {
+        "item": "arpg:magic_exploring_kit",
+        "count": 1
+    }
+}

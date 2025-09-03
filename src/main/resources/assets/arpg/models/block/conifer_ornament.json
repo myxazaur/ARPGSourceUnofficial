@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:conifer_ornament_side",
+        "bottom": "arpg:conifer_ornament_top",
+        "top": "arpg:conifer_ornament_top",
+        "side": "arpg:conifer_ornament_side"
+    }
+}

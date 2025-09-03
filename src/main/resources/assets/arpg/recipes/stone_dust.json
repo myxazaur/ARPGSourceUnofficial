@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AB"
+],
+    "key": {"B": {
+            "item": "arpg:limestone_dust"
+        },"A": {
+            "item": "arpg:basalt_dust"
+        }},
+    "result": {
+        "item": "arpg:stone_dust",
+        "count": 2
+    }
+}

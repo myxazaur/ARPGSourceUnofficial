@@ -1,0 +1,4 @@
+minecraft:fish any 0.35 1 minecraft:water 0.1 1.5 100 0
+minecraft:fish any 0.25 2 minecraft:water 0.2 1.6 100 1
+minecraft:fish 24 0.15 5 minecraft:water 0.25 1.7 50 2
+minecraft:fish 24 0.1 6 minecraft:water 0.08 1.1 130 3

@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "lantern": "arpg:amethyst_lantern",
+	  "particle": "arpg:amethyst_lantern"
+    }
+  },
+  "variants": {
+    "normal": { "model": "arpg:lamp" },
+	"inventory": { "model": "arpg:lamp" }
+  }
+}

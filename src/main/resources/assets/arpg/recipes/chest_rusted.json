@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "ASA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:scrap_metal"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotIron"
+        }},
+    "result": {
+        "item": "arpg:chest_rusted",
+        "count": 1
+    }
+}

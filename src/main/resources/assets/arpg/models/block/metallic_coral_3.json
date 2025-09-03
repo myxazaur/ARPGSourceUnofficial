@@ -1,0 +1,50 @@
+{
+    "textures": {
+        "metallic_coral": "arpg:metallic_coral",
+		"particle": "arpg:metallic_coral"
+    },
+    "elements": [
+        {
+            "from": [ 0.8, 3.8, 3.8 ], 
+            "to": [ 15.2, 12.2, 3.8 ], 
+            "faces": {
+                "north": { "texture": "#metallic_coral", "uv": [ 1, 4, 15, 12 ] }
+            }
+        },
+        {
+            "from": [ 12.2, 3.8, 0.8 ], 
+            "to": [ 12.2, 12.2, 15.2 ], 
+            "faces": {
+                "east": { "texture": "#metallic_coral", "uv": [ 1, 4, 15, 12 ] }
+            }
+        },
+        {
+            "from": [ 3.8, 3.8, 3.8 ], 
+            "to": [ 12.2, 3.8, 12.2 ], 
+            "faces": {
+                "down": { "texture": "#metallic_coral", "uv": [ 4, 0, 12, 8 ] }
+            }
+        },
+        {
+            "from": [ 3.8, 12.2, 3.8 ], 
+            "to": [ 12.2, 12.2, 12.2 ], 
+            "faces": {
+                "up": { "texture": "#metallic_coral", "uv": [ 4, 8, 12, 16 ] }
+            }
+        },
+        {
+            "from": [ 0.8, 3.8, 12.2 ], 
+            "to": [ 15.2, 12.2, 12.2 ], 
+            "faces": {
+                "south": { "texture": "#metallic_coral", "uv": [ 1, 4, 15, 12 ] }
+            }
+        },
+        {
+            "from": [ 3.8, 3.8, 0.8 ], 
+            "to": [ 3.8, 12.2, 15.2 ], 
+            "faces": {
+                "west": { "texture": "#metallic_coral", "uv": [ 1, 4, 15, 12 ] }
+            }
+        }
+    ]
+}

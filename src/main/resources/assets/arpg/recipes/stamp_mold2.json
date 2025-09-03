@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "ABA",
+        "BBB"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "ingotTitanium"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "itemClay"
+        }},
+    "result": {
+        "item": "arpg:stamp_mold",
+        "count": 1
+    }
+}

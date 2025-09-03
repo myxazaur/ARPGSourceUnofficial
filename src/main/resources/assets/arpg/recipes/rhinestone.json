@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:rhinestone_block"
+        }},
+    "result": {
+        "item": "arpg:rhinestone",
+        "count": 9
+    }
+}

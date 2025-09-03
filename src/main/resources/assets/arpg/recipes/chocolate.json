@@ -1,0 +1,21 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:milk_bucket"
+        },
+		{
+            "item": "arpg:cocoa_butter"
+        },
+		{
+            "item": "arpg:cocoa_powder"
+        },
+		{
+            "item": "minecraft:sugar"
+        }
+    ],
+    "result": {
+        "item": "arpg:chocolate",
+        "count": 1
+    }
+}

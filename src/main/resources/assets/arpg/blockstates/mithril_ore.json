@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:mithril_ore" }
+    }
+}

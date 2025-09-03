@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S",
+        "S"
+    ],
+    "key": {
+        "S": {
+            "item": "arpg:conifer_planks"
+        }
+    },
+    "result": {
+        "item": "arpg:conifer_stick",
+        "count": 4
+    }
+}

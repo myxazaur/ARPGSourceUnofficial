@@ -1,0 +1,13 @@
+{
+  "parent": "item/generated",
+  "display": {
+        "head": {
+            "rotation": [ 0, 90, 0 ],
+            "translation": [ 4.8, -10, 1.0 ],
+            "scale": [ -0.6, 0.6, 0.6 ]
+        }
+    },
+  "textures": {
+    "layer0": "arpg:holy_extinguisher"
+  }
+}

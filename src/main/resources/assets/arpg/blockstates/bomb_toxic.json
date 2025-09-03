@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "particle": "arpg:bomb1"
+    }
+  },
+  "variants": {
+    "facing=east": { "model": "arpg:bomb_toxic" },
+    "facing=south": { "model": "arpg:bomb_toxic", "y": 90 },
+    "facing=west": { "model": "arpg:bomb_toxic", "y": 180 },
+    "facing=north": { "model": "arpg:bomb_toxic", "y": 270 }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "lantern": "arpg:topaz_lantern",
+	  "particle": "arpg:topaz_lantern"
+    }
+  },
+  "variants": {
+    "normal": { "model": "arpg:lamp" },
+	"inventory": { "model": "arpg:lamp" }
+  }
+}

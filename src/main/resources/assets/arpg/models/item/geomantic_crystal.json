@@ -1,0 +1,45 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:geo_crystal_1"
+  },
+  
+  "overrides": [
+		{
+            "predicate": {
+                "type": -2
+            },
+            "model": "arpg:item/geocrystals/geo_crystal_a"
+        },
+		{
+            "predicate": {
+                "type": -1
+            },
+            "model": "arpg:item/geocrystals/geo_crystal_b"
+        },
+        {
+            "predicate": {
+                "type": 0
+            },
+            "model": "arpg:item/geocrystals/geo_crystal_1"
+        },
+		{
+            "predicate": {
+                "type": 1
+            },
+            "model": "arpg:item/geocrystals/geo_crystal_2"
+        },
+		{
+            "predicate": {
+                "type": 2
+            },
+            "model": "arpg:item/geocrystals/geo_crystal_3"
+        },
+		{
+            "predicate": {
+                "type": 3
+            },
+            "model": "arpg:item/geocrystals/geo_crystal_4"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+	  "particle": "arpg:palm_chair"
+    }
+  },
+  "variants": {
+    "normal": [{"model": "arpg:palm_chair"}], 
+	"inventory": [{"model": "arpg:palm_chair"}],
+    "facing=east": { "model": "arpg:palm_chair" },
+    "facing=south": { "model": "arpg:palm_chair", "y": 90 },
+    "facing=west": { "model": "arpg:palm_chair", "y": 180 },
+    "facing=north": { "model": "arpg:palm_chair", "y": 270 }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:soul_stone_empty"
+  },
+  
+  "overrides": [
+        {
+            "predicate": {
+                "soul": 0
+            },
+            "model": "arpg:item/soulstones/0"
+        },
+		{
+            "predicate": {
+                "soul": 1
+            },
+            "model": "arpg:item/soulstones/1"
+        },
+		{
+            "predicate": {
+                "soul": 2
+            },
+            "model": "arpg:item/soulstones/2"
+        },
+		{
+            "predicate": {
+                "soul": 3
+            },
+            "model": "arpg:item/soulstones/3"
+        },
+		{
+            "predicate": {
+                "soul": 4
+            },
+            "model": "arpg:item/soulstones/4"
+        },
+		{
+            "predicate": {
+                "soul": 5
+            },
+            "model": "arpg:item/soulstones/5"
+        },
+		{
+            "predicate": {
+                "soul": 6
+            },
+            "model": "arpg:item/soulstones/6"
+        },
+		{
+            "predicate": {
+                "soul": 7
+            },
+            "model": "arpg:item/soulstones/7"
+        },
+		{
+            "predicate": {
+                "soul": 8
+            },
+            "model": "arpg:item/soulstones/8"
+        },
+		{
+            "predicate": {
+                "soul": 9
+            },
+            "model": "arpg:item/soulstones/9"
+        },
+		{
+            "predicate": {
+                "soul": 10
+            },
+            "model": "arpg:item/soulstones/10"
+        },
+		{
+            "predicate": {
+                "soul": 11
+            },
+            "model": "arpg:item/soulstones/11"
+        },
+		{
+            "predicate": {
+                "soul": 12
+            },
+            "model": "arpg:item/soulstones/12"
+        },
+		{
+            "predicate": {
+                "soul": 13
+            },
+            "model": "arpg:item/soulstones/13"
+        },
+		{
+            "predicate": {
+                "soul": 14
+            },
+            "model": "arpg:item/soulstones/14"
+        },
+		{
+            "predicate": {
+                "soul": 15
+            },
+            "model": "arpg:item/soulstones/15"
+        },
+		{
+            "predicate": {
+                "soul": 16
+            },
+            "model": "arpg:item/soulstones/16"
+        },
+		{
+            "predicate": {
+                "soul": 17
+            },
+            "model": "arpg:item/soulstones/17"
+        },
+		{
+            "predicate": {
+                "soul": 18
+            },
+            "model": "arpg:item/soulstones/18"
+        }
+    ]
+}

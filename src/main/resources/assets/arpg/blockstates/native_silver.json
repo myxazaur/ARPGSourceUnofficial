@@ -1,0 +1,39 @@
+{
+    "multipart": [
+        {   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "down": false},
+            "apply": [
+                { "model": "arpg:native_silver" }
+            ]
+        },
+        {   "when": {"north": true},
+            "apply": [
+                { "model": "arpg:native_silver", "x": 90, "y": 180 }
+            ]
+        },
+        {   "when": {"east": true},
+            "apply": [
+                { "model": "arpg:native_silver", "x": 90, "y": 270 }
+            ]
+        },
+        {   "when": {"south": true},
+            "apply": [
+                { "model": "arpg:native_silver", "x": 90 }
+            ]
+        },
+        {   "when": {"west": true},
+            "apply": [
+                { "model": "arpg:native_silver", "x": 90, "y": 90 }
+            ]
+        },
+        {   "when": {"up": true},
+            "apply": [
+                { "model": "arpg:native_silver", "x": 180 }
+            ]
+        },
+        {   "when": {"down": true},
+            "apply": [
+                { "model": "arpg:native_silver" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "multipart": [
+        {   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "colortype": 0},
+            "apply": [
+                { "model": "arpg:christmas_balls_upper" }
+            ]
+        },
+        {   "when": {"north": true, "colortype": 0},
+            "apply": [
+                { "model": "arpg:christmas_balls" }
+            ]
+        },
+        {   "when": {"east": true, "colortype": 0},
+            "apply": [
+                { "model": "arpg:christmas_balls", "y": 90 }
+            ]
+        },
+        {   "when": {"south": true, "colortype": 0},
+            "apply": [
+                { "model": "arpg:christmas_balls", "y": 180 }
+            ]
+        },
+        {   "when": {"west": true, "colortype": 0},
+            "apply": [
+                { "model": "arpg:christmas_balls", "y": 270 }
+            ]
+        },
+        {   "when": {"up": true, "colortype": 0},
+            "apply": [
+                { "model": "arpg:christmas_balls_upper" }
+            ]
+        },
+		{   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "colortype": 1},
+            "apply": [
+                { "model": "arpg:christmas_balls_upper1" }
+            ]
+        },
+        {   "when": {"north": true, "colortype": 1},
+            "apply": [
+                { "model": "arpg:christmas_balls1" }
+            ]
+        },
+        {   "when": {"east": true, "colortype": 1},
+            "apply": [
+                { "model": "arpg:christmas_balls1", "y": 90 }
+            ]
+        },
+        {   "when": {"south": true, "colortype": 1},
+            "apply": [
+                { "model": "arpg:christmas_balls1", "y": 180 }
+            ]
+        },
+        {   "when": {"west": true, "colortype": 1},
+            "apply": [
+                { "model": "arpg:christmas_balls1", "y": 270 }
+            ]
+        },
+        {   "when": {"up": true, "colortype": 1},
+            "apply": [
+                { "model": "arpg:christmas_balls_upper1" }
+            ]
+        },
+		{   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "colortype": 2},
+            "apply": [
+                { "model": "arpg:christmas_balls_upper2" }
+            ]
+        },
+        {   "when": {"north": true, "colortype": 2},
+            "apply": [
+                { "model": "arpg:christmas_balls2" }
+            ]
+        },
+        {   "when": {"east": true, "colortype": 2},
+            "apply": [
+                { "model": "arpg:christmas_balls2", "y": 90 }
+            ]
+        },
+        {   "when": {"south": true, "colortype": 2},
+            "apply": [
+                { "model": "arpg:christmas_balls2", "y": 180 }
+            ]
+        },
+        {   "when": {"west": true, "colortype": 2},
+            "apply": [
+                { "model": "arpg:christmas_balls2", "y": 270 }
+            ]
+        },
+        {   "when": {"up": true, "colortype": 2},
+            "apply": [
+                { "model": "arpg:christmas_balls_upper2" }
+            ]
+        }
+    ]
+}

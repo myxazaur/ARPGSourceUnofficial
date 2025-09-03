@@ -1,0 +1,2740 @@
+{
+    "apple": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:apple"}]
+    },
+	
+	"applecannon": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:applecannon"}]
+    },
+	
+		"ichorsteam": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ichorsteam"}]
+    },
+	
+	"ichorhit": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ichorhit"}]
+    },
+	"boom_a": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:boom_a"}]
+    },
+	"sharkfire": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:sharkfire"}]
+    },
+	"sharkreload": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:sharkreload"}]
+    },
+	"sharkrocket": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:sharkrocket"}]
+    },
+	"drrdrr": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:drrdrr"}]
+    },
+	"swosh": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:swosh"}]
+    },
+	"swosh_a": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:swosh_a"}]
+    },
+	"hitmagic": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:hitmagic"}]
+    },
+	"magic_a": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:magic_a"}]
+    },
+	"fire": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fire"}]
+    },
+	"fire_a": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fire_a"}]
+    },
+	"lasergun": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:lasergun"}]
+    },
+	"lasergun_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:lasergun_rel"}]
+    },
+	"laserpistol_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:laserpistol_rel"}]
+    },
+	"laserpistol": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:laserpistol"}]
+    },
+	"laserstart": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:laserstart"}]
+    },
+	"laser_rifle": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:laser_rifle"}]
+    },
+	"knife": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:knife"}]
+    },
+	"knife_a": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:knife_a"}]
+    },
+	"vampireknifes": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:vampireknifes"}]
+    },
+	"magic_b": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:magic_b"}]
+    },
+	"magic_c": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:magic_c"}]
+    },
+	"biglazer1": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:biglazer1"}]
+    },
+	"biglazer_a": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:biglazer_a"}]
+    },
+	"biglazer2": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:biglazer2"}]
+    },
+	"biglazer3": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:biglazer3"}]
+    },
+	"el_air": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:el_air"}]
+    },
+	"el_fire": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:el_fire"}]
+    },
+	"el_earth": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:el_earth"}]
+    },
+	"el_water": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:el_water"}]
+    },
+	"stinger": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:stinger"}]
+    },
+	"stinger_reload": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:stinger_reload"}]
+    },
+	"explode_stinger": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:explode_stinger"}]
+    },
+	"firework": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:firework1",
+		"arpg:firework2",
+		"arpg:firework3"
+		]
+    },
+	"firework_explode": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:firework_explode1",
+		"arpg:firework_explode2",
+		"arpg:firework_explode3"
+		]
+    },
+	"firework_dragon": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:firework_dragon"}]
+    },
+	"firework_dragon_explode": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:firework_dragon_explode"}]
+    },
+	"firework_reload": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:firework_reload"}]
+    },
+	"quadromotor": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:quadromotor"}]
+    },
+	"phoenix_ghost": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:phoenix_ghost"}]
+    },
+	"de_icing": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:de_icing1",
+		"arpg:de_icing2",
+		"arpg:de_icing3",
+		"arpg:de_icing4"
+		]
+    },
+	"de_sand": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:sand_impact_1",
+		"arpg:sand_impact_2",
+		"arpg:sand_impact_3",
+		"arpg:sand_impact_4",
+		"arpg:sand_impact_5"
+		]
+    },
+	"sand_scepter": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:sand_scepter"}]
+    },
+	"rrrrar": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:rra"}]
+    },
+	"bb_impact": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:bb_impact"}]
+    },
+	"bb_shoot": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:bb_shoot"}]
+    },
+	"bb_homing": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:bb_homing"}]
+    },
+	"bb_reloading": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:bb_reloading"}]
+    },
+	"de_acid": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:de_acid1",
+		"arpg:de_acid2",
+		"arpg:de_acid3",
+		"arpg:de_acid4"
+		]
+    },
+	"snowstorm": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:snowstorm"}]
+    },
+	"shock": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:shock1",
+		"arpg:shock2",
+		"arpg:shock3",
+		"arpg:shock4",
+		"arpg:shock5"
+		]
+    },
+	"electricstaffimpact": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:electricstaffimpact"}]
+    },
+	"electricstaff": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:electricstaff"}]
+    },
+	"de_electric": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:de_electric1",
+		"arpg:de_electric2",
+		"arpg:de_electric3",
+		"arpg:de_electric4"
+		]
+    },
+	"slimeshotgun": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:slimeshotgun"}]
+    },
+	"slimeshotgunreload": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:slimeshotgunreload"}]
+    },
+	"summoned_blaze_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:summoned_blaze_hurt"}]
+    },
+	"gnater_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:gnater_hurt"}]
+    },
+	"gnater_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:gnater_dead"}]
+    },
+	"slime_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:slime_dead"}]
+    },
+	"troglodyte_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:troglodyte_dead"}]
+    },
+	"troglodyte_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:troglodyte_hurt"}]
+    },
+	"troglodyte_living": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:troglodyte_living"}]
+    },
+	"moonshroom_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:moonshroom_hurt"}]
+    },
+	"moonshroom_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:moonshroom_dead"}]
+    },
+	"grapling_hook": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:grapling_hook"}]
+    },
+	"ender_seer_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ender_seer_hurt"}]
+    },
+	"ender_seer_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ender_seer_dead"}]
+    },
+	"ender_seer_living": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ender_seer_living"}]
+    },
+	"ender_seer_shoot": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ender_seer_shoot"}]
+    },
+	"ender_seer_projectile": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ender_seer_projectile"}]
+    },
+	"blubber_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:blubber_hurt"}]
+    },
+	"blubber_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:blubber_dead"}]
+    },
+	"blubber_living": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:blubber_living"}]
+    },
+	"frost_shoot": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:frost_shoot"}]
+    },
+	"frost_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:frost_hurt"}]
+    },
+	"frost_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:frost_dead"}]
+    },
+	"frost_living": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:frost_living"}]
+    },
+	"smoke_demon_hurt": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:smoke_demon_hurt"}]
+    },
+	"smoke_demon_dead": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:smoke_demon_dead"}]
+    },
+	"fishing_capture": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_capture"}]
+    },
+	"fishing_drop": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_drop"}]
+    },
+	"fishing_reel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_reel"}]
+    },
+	"fishing_reset": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_reset"}]
+    },
+	"fishing_splash": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_splash"}]
+    },
+	"fishing_success": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_success"}]
+    },
+	"fishing_throw": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_throw"}]
+    },
+	"fishing_break": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:fishing_break"}]
+    },
+	"nether_grinder": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:nether_grinder"}]
+    },
+	"nether_grinder_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:nether_grinder_rel"}]
+    },
+	"bullet": {
+        "category": "ambient",
+        "sounds": [
+		"arpg:bullet1",
+		"arpg:bullet2",
+		"arpg:bullet3",
+		"arpg:bullet4"
+		]
+    },
+	"snowball_cannon": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:snowball_cannon"}]
+    },
+	"snowball_cannon_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:snowball_cannon_rel"}]
+    },
+	"snowflake_impact": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:snowflake_impact"}]
+    },
+	"cursed_blade_crit": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:cursed_blade_crit"}]
+    },
+	"gravelurker": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:gravelurker"}]
+    },
+	"magic_d": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:magic_d"}]
+    },
+	"gravelurker_crit": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:gravelurker_crit"}]
+    },
+	"reaper_throw": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:reaper_throw"}]
+    },
+	"reaper_impact": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:reaper_impact"}]
+    },
+	"magic_e": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:magic_e"}]
+    },
+	"ghost_sword": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:ghost_sword"}]
+    },
+	"staff_of_corpse": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:staff_of_corpse"}]
+    },
+	"sword_hit": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:sword_hit"}]
+    },
+	"chain_dagger": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:chain_dagger"}]
+    },
+	"explode2": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:explode2"}]
+    },
+	"toxic_nuke": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:toxic_nuke"}]
+    },
+	"cannon": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:cannon"}]
+    },
+	"toxic_nuke_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:toxic_nuke_rel"}]
+    },
+	"cryo_gun_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:cryo_gun_rel"}]
+    },
+	"cryo_gun": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:cryo_gun"}]
+    },
+	"cryo_gun_impact": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:cryo_gun_impact"}]
+    },
+	"charger": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:charger"}]
+    },
+	"lightning_gh_grap": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:lightning_gh_grap"}]
+    },
+	"lightning_gh_throw": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:lightning_gh_throw"}]
+    },
+	"icicle_minigun": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:icicle_minigun"}]
+    },
+	"icicle_minigun_rel": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:icicle_minigun_rel"}]
+    },
+	"static_lance": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:static_lance"}]
+    },
+	"st_shards_step": {
+        "sounds": [
+		"arpg:st_shards_step_1",
+		"arpg:st_shards_step_2",
+		"arpg:st_shards_step_3",
+		"arpg:st_shards_step_4"
+		]
+    },
+	"st_shards_break": {
+        "sounds": [
+		"arpg:st_shards_break_1",
+		"arpg:st_shards_break_2",
+		"arpg:st_shards_break_3",
+		"arpg:st_shards_break_4"
+		]
+    },
+	"st_shards_hit": {
+        "sounds": [
+		"arpg:st_shards_hit_1",
+		"arpg:st_shards_hit_2",
+		"arpg:st_shards_hit_3",
+		"arpg:st_shards_hit_4"
+		]
+    },
+	"st_shards_place": {
+        "sounds": [
+		"arpg:st_shards_place_1",
+		"arpg:st_shards_place_2",
+		"arpg:st_shards_place_3",
+		"arpg:st_shards_place_4"
+		]
+    },
+	"st_shards_fall": {
+        "sounds": [
+		"arpg:st_shards_fall_1",
+		"arpg:st_shards_fall_2",
+		"arpg:st_shards_fall_3",
+		"arpg:st_shards_fall_4"
+		]
+    },
+	"portal_frost": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:portal_frost"}]
+    },
+	"summon": {
+        "sounds": [{ "name": "arpg:summon"}]
+    },
+	"unsummon": {
+        "sounds": [{ "name": "arpg:unsummon"}]
+    },
+	"magic_k": {
+        "sounds": [{ "name": "arpg:magic_k"}]
+    },
+	"grapling_hook_soft": {
+        "sounds": [{ "name": "arpg:grapling_hook_soft"}]
+    },
+	"plasma_railgun": {
+        "sounds": [{ "name": "arpg:plasma_railgun"}]
+    },
+	"plasma_railgun_rel": {
+        "sounds": [{ "name": "arpg:plasma_railgun_rel"}]
+    },
+	"plasma_railgun_impact": {
+        "sounds": [{ "name": "arpg:plasma_railgun_impact"}]
+    },
+	"plasma_rifle_impact": {
+        "sounds": [{ "name": "arpg:plasma_rifle_impact"}]
+    },
+	"plasma_rifle": {
+        "sounds": [{ "name": "arpg:plasma_rifle"}]
+    },
+	"head_shooter": {
+        "sounds": [{ "name": "arpg:head_shooter"}]
+    },
+	"head_shooter_rel": {
+        "sounds": [{ "name": "arpg:head_shooter_rel"}]
+    },
+	"plasma_pistol": {
+        "sounds": [{ "name": "arpg:plasma_pistol"}]
+    },
+	"plasma_pistol_impact": {
+        "sounds": [{ "name": "arpg:plasma_pistol_impact"}]
+    },
+	"walking_bomb_explode": {
+        "sounds": [{ "name": "arpg:walking_bomb_explode"}]
+    },
+	"bog_flower_impact": {
+        "sounds": [{ "name": "arpg:bog_flower_impact"}]
+    },
+	"bog_flower": {
+        "sounds": [{ "name": "arpg:bog_flower"}]
+    },
+	"spine_hurt": {
+        "sounds": [{ "name": "arpg:spine_hurt"}]
+    },
+	"spine_dead": {
+        "sounds": [{ "name": "arpg:spine_dead"}]
+    },
+	"spine_summon": {
+        "sounds": [{ "name": "arpg:spine_summon"}]
+    },
+	"spine_minion_dead": {
+        "sounds": [{ "name": "arpg:spine_minion_dead"}]
+    },
+	"spine_minion_hurt": {
+        "sounds": [{ "name": "arpg:spine_minion_hurt"}]
+    },
+	"spine_segment_dead": {
+        "sounds": [{ "name": "arpg:spine_segment_dead"}]
+    },
+	"pistol_fish": {
+        "sounds": [{ "name": "arpg:pistol_fish"}]
+    },
+	"pistol_fish_rel": {
+        "sounds": [{ "name": "arpg:pistol_fish_rel"}]
+    },
+	"normal_projectile": {
+        "sounds": [
+		"arpg:proj1",
+		"arpg:proj2",
+		"arpg:proj3",
+		"arpg:proj4"
+		]
+    },
+	"bubble_fish": {
+        "sounds": [{ "name": "arpg:bubble_fish"}]
+    },
+	"bubble_fish_rel": {
+        "sounds": [{ "name": "arpg:bubble_fish_rel"}]
+    },
+	"pop": {
+        "sounds": [{ "name": "arpg:pop"}]
+    },
+	"magic_l": {
+        "sounds": [{ "name": "arpg:magic_l"}]
+    },
+	"lava_dropper": {
+        "sounds": [{ "name": "arpg:lava_dropper"}]
+    },
+	"lava_dropper_impact": {
+        "sounds": [{ "name": "arpg:lava_dropper_impact"}]
+    },
+	"plasma_accelerator_impact": {
+        "sounds": [{ "name": "arpg:plasma_accelerator_impact"}]
+    },
+	"plasma_accelerator": {
+        "sounds": [{ "name": "arpg:plasma_accelerator"}]
+    },
+	"plasma_accelerator_loop": {
+        "sounds": [{ "name": "arpg:plasma_accelerator_loop"}]
+    },
+	"plasma_accelerator_start": {
+        "sounds": [{ "name": "arpg:plasma_accelerator_start"}]
+    },
+	"plasma_accelerator_charge": {
+        "sounds": [{ "name": "arpg:plasma_accelerator_charge"}]
+    },
+	"plasma_accelerator_loopfirst": {
+        "sounds": [{ "name": "arpg:plasma_accelerator_loopfirst"}]
+    },
+	"vacuum_gun": {
+        "sounds": [{ "name": "arpg:vacuum_gun"}]
+    },
+	"vacuum_gun_impact": {
+        "sounds": [{ "name": "arpg:vacuum_gun_impact"}]
+    },
+	"magic_m": {
+        "sounds": [{ "name": "arpg:magic_m"}]
+    },
+	"hitmagic_a": {
+        "sounds": [{ "name": "arpg:hitmagic_a"}]
+    },
+	"wand_of_cold": {
+        "sounds": [{ "name": "arpg:wand_of_cold"}]
+    },
+	"ice_spikes": {
+        "sounds": [{ "name": "arpg:ice_spikes"}]
+    },
+	"frozen_wings_flying": {
+        "sounds": [{ "name": "arpg:frozen_wings_flying"}]
+    },
+	"toxic_wings_flying": {
+        "sounds": [{ "name": "arpg:toxic_wings_flying"}]
+    },
+	"fluid_freezing": {
+        "sounds": [{ "name": "arpg:fluid_freezing"}]
+    },
+	"slime_fluid": {
+        "sounds": [{ "name": "arpg:slime_fluid"}]
+    },
+	"liquid_darkness": {
+        "sounds": [{ "name": "arpg:liquid_darkness"}]
+    },
+	"larva_water_attack": {
+        "sounds": [{ "name": "arpg:larva_water_attack"}]
+    },
+	"melee_axe": {
+        "sounds": [
+		"arpg:melee_axe1",
+		"arpg:melee_axe2",
+		"arpg:melee_axe3",
+		"arpg:melee_axe4"
+		]
+    },
+	"melee_miss_axe": {
+        "sounds": [
+		"arpg:melee_miss_axe1",
+		"arpg:melee_miss_axe2",
+		"arpg:melee_miss_axe3",
+		"arpg:melee_miss_axe4"
+		]
+    },
+	"melee_sword": {
+        "sounds": [
+		"arpg:melee_sword1",
+		"arpg:melee_sword2",
+		"arpg:melee_sword3",
+		"arpg:melee_sword4"
+		]
+    },
+	"melee_miss_sword": {
+        "sounds": [
+		"arpg:melee_miss_sword1",
+		"arpg:melee_miss_sword2",
+		"arpg:melee_miss_sword3",
+		"arpg:melee_miss_sword4"
+		]
+    },
+	"glacide_blade": {
+        "sounds": [{ "name": "arpg:glacide_blade"}]
+    },
+	"fire_b": {
+        "sounds": [{ "name": "arpg:fire_b"}]
+    },
+	"fire_c": {
+        "sounds": [{ "name": "arpg:fire_c"}]
+    },
+	"spell_forge": {
+        "sounds": [
+		"arpg:spell_forge1",
+		"arpg:spell_forge2",
+		"arpg:spell_forge3"
+		]
+    },
+	"soul_steal": {
+        "sounds": [{ "name": "arpg:soul_steal"}]
+    },
+	"shard_pickup": {
+        "sounds": [{ "name": "arpg:shard_pickup"}]
+    },
+	"vessel_hit": {
+        "sounds": [{ "name": "arpg:vessel_hit"}]
+    },
+	"shard_drop": {
+        "sounds": [
+		"arpg:shard_drop1",
+		"arpg:shard_drop2",
+		"arpg:shard_drop3"
+		]
+    },
+	"item_misc_a": {
+        "sounds": [{ "name": "arpg:item_misc_a"}]
+    },
+	"item_misc_b": {
+        "sounds": [{ "name": "arpg:item_misc_b"}]
+    },
+	"item_misc_c": {
+        "sounds": [{ "name": "arpg:item_misc_c"}]
+    },
+	"item_misc_d": {
+        "sounds": [{ "name": "arpg:item_misc_d"}]
+    },
+	"nether_melter": {
+        "sounds": [{ "name": "arpg:nether_melter"}]
+    },
+	"sacrificial_altar": {
+        "sounds": [{ "name": "arpg:sacrificial_altar"}]
+    },
+	"st_crunchy_step": {
+        "sounds": [
+		"arpg:st_crunchy_step_1",
+		"arpg:st_crunchy_step_2",
+		"arpg:st_crunchy_step_3",
+		"arpg:st_crunchy_step_4"
+		]
+    },
+	"st_crunchy_break": {
+        "sounds": [
+		"arpg:st_crunchy_break_1",
+		"arpg:st_crunchy_break_2",
+		"arpg:st_crunchy_break_3",
+		"arpg:st_crunchy_break_4"
+		]
+    },
+	"st_crunchy_hit": {
+        "sounds": [
+		"arpg:st_crunchy_hit_1",
+		"arpg:st_crunchy_hit_2",
+		"arpg:st_crunchy_hit_3",
+		"arpg:st_crunchy_hit_4"
+		]
+    },
+	"st_crunchy_place": {
+        "sounds": [
+		"arpg:st_crunchy_place_1",
+		"arpg:st_crunchy_place_2",
+		"arpg:st_crunchy_place_3",
+		"arpg:st_crunchy_place_4"
+		]
+    },
+	"st_crunchy_fall": {
+        "sounds": [
+		"arpg:st_crunchy_fall_1",
+		"arpg:st_crunchy_fall_2",
+		"arpg:st_crunchy_fall_3",
+		"arpg:st_crunchy_fall_4"
+		]
+    },
+	"alchemic_craft": {
+        "sounds": [{ "name": "arpg:alchemic_craft"}]
+    },
+	"alchemic_brewing": {
+        "sounds": [{ "name": "arpg:alchemic_brewing"}]
+    },
+	"vaporizer": {
+        "sounds": [{ "name": "arpg:vaporizer"}]
+    },
+	"acid_fire": {
+        "sounds": [{ "name": "arpg:acid_fire"}]
+    },
+	"glow_blade": {
+        "sounds": [{ "name": "arpg:glow_blade"}]
+    },
+	"de_dismemberment": {
+        "sounds": [
+		"arpg:de_dismemberment_1",
+		"arpg:de_dismemberment_2",
+		"arpg:de_dismemberment_3",
+		"arpg:de_dismemberment_4"
+		]
+    },
+	"crystal_star": {
+        "sounds": [
+		"arpg:crystal_star1",
+		"arpg:crystal_star2"
+		]
+    },
+	"melee_mob_attack": {
+        "sounds": [
+		"arpg:melee_mob_attack1",
+		"arpg:melee_mob_attack2"
+		]
+    },
+	"melee_block": {
+        "sounds": [
+		"arpg:melee_block1",
+		"arpg:melee_block2"
+		]
+    },
+	"swosh_b": {
+        "sounds": [
+		"arpg:swosh_b"
+		]
+    },
+	"spike_a": {
+        "sounds": [
+		"arpg:spike_a"
+		]
+    },
+	"de_fire": {
+        "sounds": [
+		"arpg:de_fire1",
+		"arpg:de_fire2",
+		"arpg:de_fire3",
+		"arpg:de_fire4"
+		]
+    },
+	"voltrident": {
+        "sounds": [
+		"arpg:voltrident1",
+		"arpg:voltrident2",
+		"arpg:voltrident3"
+		]
+    },
+	"lightning_strike_a": {
+        "sounds": [
+		"arpg:lightning_strike_a"
+		]
+    },
+	"voltrident_boost": {
+        "sounds": [
+		"arpg:voltrident_boost"
+		]
+    },
+	"crystal_fan": {
+        "sounds": [
+		"arpg:crystal_fan"
+		]
+    },
+	"de_cut": {
+        "sounds": [
+		"arpg:de_cut1",
+		"arpg:de_cut2",
+		"arpg:de_cut3",
+		"arpg:de_cut4"
+		]
+    },
+	"puzzle_place": {
+        "sounds": [
+		"arpg:puzzle_place"
+		]
+    },
+	"puzzle_remove": {
+        "sounds": [
+		"arpg:puzzle_remove"
+		]
+    },
+	"puzzle_unlock": {
+        "sounds": [
+		"arpg:puzzle_unlock"
+		]
+    },
+	"sealock_win": {
+        "sounds": [
+		"arpg:sealock_win"
+		]
+    },
+	"item_misc_e": {
+        "sounds": [
+		"arpg:item_misc_e"
+		]
+    },
+	"injector": {
+        "sounds": [
+		"arpg:injector"
+		]
+    },
+	"explode": {
+        "sounds": [
+		"arpg:explode"
+		]
+    },
+	"mob_zombie_hurt": {
+        "sounds": [
+		"arpg:mob_zombie_hurt_1",
+		"arpg:mob_zombie_hurt_2",
+		"arpg:mob_zombie_hurt_3"
+		]
+    },
+	"mob_zombie_death": {
+        "sounds": [
+		"arpg:mob_zombie_death_1",
+		"arpg:mob_zombie_death_2"
+		]
+    },
+	"mob_zombie_living": {
+        "sounds": [
+		"arpg:mob_zombie_living_1",
+		"arpg:mob_zombie_living_2",
+		"arpg:mob_zombie_living_3",
+		"arpg:mob_zombie_living_4"
+		]
+    },
+	"mob_mutant_hurt": {
+        "sounds": [
+		"arpg:mob_mutant_hurt_1",
+		"arpg:mob_mutant_hurt_2"
+		]
+    },
+	"mob_mutant_death": {
+        "sounds": [
+		"arpg:mob_mutant_death"
+		]
+    },
+	"mob_mutant_attack": {
+        "sounds": [
+		"arpg:mob_mutant_attack"
+		]
+    },
+	"mob_mutant_living": {
+        "sounds": [
+		"arpg:mob_mutant_living_1",
+		"arpg:mob_mutant_living_2"
+		]
+    },
+	"mob_robot_living": {
+        "sounds": [
+		"arpg:mob_robot_living_1",
+		"arpg:mob_robot_living_2",
+		"arpg:mob_robot_living_3"
+		]
+    },
+	"mob_robot_hurt": {
+        "sounds": [
+		"arpg:mob_robot_hurt_1",
+		"arpg:mob_robot_hurt_2",
+		"arpg:mob_robot_hurt_3",
+		"arpg:mob_robot_hurt_4"
+		]
+    },
+	"mob_robot_death": {
+        "sounds": [
+		"arpg:mob_robot_death_1",
+		"arpg:mob_robot_death_2"
+		]
+    },
+	"mob_robot_attack": {
+        "sounds": [
+		"arpg:mob_robot_attack"
+		]
+    },
+	"shoot": {
+        "sounds": [
+		"arpg:shoot"
+		]
+    },
+	"laser": {
+        "sounds": [
+		"arpg:laser"
+		]
+    },
+	"mob_wild_living": {
+        "sounds": [
+		"arpg:mob_wild_living_1",
+		"arpg:mob_wild_living_2",
+		"arpg:mob_wild_living_3",
+		"arpg:mob_wild_living_4"
+		]
+    },
+	"mob_wild_hurt": {
+        "sounds": [
+		"arpg:mob_wild_hurt_1",
+		"arpg:mob_wild_hurt_2",
+		"arpg:mob_wild_hurt_3",
+		"arpg:mob_wild_hurt_4"
+		]
+    },
+	"mob_wild_death": {
+        "sounds": [
+		"arpg:mob_wild_death_1",
+		"arpg:mob_wild_death_2"
+		]
+    },
+	"mob_slime_living": {
+        "sounds": [
+		"arpg:mob_slime_living_1",
+		"arpg:mob_slime_living_2"
+		]
+    },
+	"mob_slime_hurt": {
+        "sounds": [
+		"arpg:mob_slime_hurt_1",
+		"arpg:mob_slime_hurt_2",
+		"arpg:mob_slime_hurt_3",
+		"arpg:mob_slime_hurt_4"
+		]
+    },
+	"mob_slime_death": {
+        "sounds": [
+		"arpg:mob_slime_death_1",
+		"arpg:mob_slime_death_2"
+		]
+    },
+	"mob_plant_living": {
+        "sounds": [
+		"arpg:mob_plant_living_1",
+		"arpg:mob_plant_living_2",
+		"arpg:mob_plant_living_3"
+		]
+    },
+	"mob_plant_hurt": {
+        "sounds": [
+		"arpg:mob_plant_hurt_1",
+		"arpg:mob_plant_hurt_2",
+		"arpg:mob_plant_hurt_3",
+		"arpg:mob_plant_hurt_4"
+		]
+    },
+	"mob_plant_death": {
+        "sounds": [
+		"arpg:mob_plant_death_1",
+		"arpg:mob_plant_death_2"
+		]
+    },
+	"buy": {
+        "sounds": [
+		"arpg:buy_money"
+		]
+    },
+	"grap_money": {
+        "sounds": [
+		"arpg:grap_money"
+		]
+    },
+	"shotgun_rel": {
+        "sounds": [
+		"arpg:shotgun_rel"
+		]
+    },
+	"pistol_rel": {
+        "sounds": [
+		"arpg:pistol_rel"
+		]
+    },
+	"submachine_shoot": {
+        "sounds": [
+		"arpg:submachine_shoot"
+		]
+    },
+	"lightning_strike_b": {
+        "sounds": [
+		"arpg:lightning_strike_b"
+		]
+    },
+	"electric_impact": {
+        "sounds": [
+		"arpg:electric_impact"
+		]
+    },
+	"item_misc_k": {
+        "sounds": [
+		"arpg:item_misc_k"
+		]
+    },
+	"lootbox_unlock": {
+        "sounds": [
+		"arpg:lootbox_unlock"
+		]
+    },
+	"burn": {
+        "sounds": [
+		"arpg:burn"
+		]
+    },
+	"impetus_1": {
+        "sounds": [
+		"arpg:impetus_1"
+		]
+    },
+	"impetus_2": {
+        "sounds": [
+		"arpg:impetus_2"
+		]
+    },
+	"impetus_3": {
+        "sounds": [
+		"arpg:impetus_3"
+		]
+    },
+	"impetus_wind": {
+        "sounds": [
+		"arpg:impetus_wind"
+		]
+    },
+	"box_open": {
+        "sounds": [
+		"arpg:box_open"
+		]
+    },
+	"box_close": {
+        "sounds": [
+		"arpg:box_close"
+		]
+    },
+	"mob_ice_living": {
+        "sounds": [
+		"arpg:mob_ice_living_1",
+		"arpg:mob_ice_living_2",
+		"arpg:mob_ice_living_3"
+		]
+    },
+	"mob_ice_hurt": {
+        "sounds": [
+		"arpg:mob_ice_hurt_1",
+		"arpg:mob_ice_hurt_2",
+		"arpg:mob_ice_hurt_3",
+		"arpg:mob_ice_hurt_4"
+		]
+    },
+	"mob_ice_death": {
+        "sounds": [
+		"arpg:mob_ice_death_1",
+		"arpg:mob_ice_death_2",
+		"arpg:mob_ice_death_3"
+		]
+    },
+	"mob_ghost_living": {
+        "sounds": [
+		"arpg:mob_ghost_living_1",
+		"arpg:mob_ghost_living_2",
+		"arpg:mob_ghost_living_3"
+		]
+    },
+	"mob_ghost_hurt": {
+        "sounds": [
+		"arpg:mob_ghost_hurt_1",
+		"arpg:mob_ghost_hurt_2",
+		"arpg:mob_ghost_hurt_3",
+		"arpg:mob_ghost_hurt_4"
+		]
+    },
+	"mob_ghost_death": {
+        "sounds": [
+		"arpg:mob_ghost_death_1",
+		"arpg:mob_ghost_death_2"
+		]
+    },
+	"mob_darkmage_attack": {
+        "sounds": [
+		"arpg:mob_darkmage_attack_1",
+		"arpg:mob_darkmage_attack_2",
+		"arpg:mob_darkmage_attack_3"
+		]
+    },
+	"mob_mummy_living": {
+        "sounds": [
+		"arpg:mob_mummy_living_1",
+		"arpg:mob_mummy_living_2",
+		"arpg:mob_mummy_living_3"
+		]
+    },
+	"mob_mummy_attack": {
+        "sounds": [
+		"arpg:mob_mummy_attack_1",
+		"arpg:mob_mummy_attack_2"
+		]
+    },
+	"cyber_jump": {
+        "sounds": [
+		"arpg:cyber_jump"
+		]
+    },
+	"thistle_impact": {
+        "sounds": [
+		"arpg:thistle_impact"
+		]
+    },
+	"thistle": {
+        "sounds": [
+		"arpg:thistle"
+		]
+    },
+	"glass_break": {
+        "sounds": [
+		"arpg:glass_break"
+		]
+    },
+	"restless_skull_boost": {
+        "sounds": [
+		"arpg:restless_skull_boost"
+		]
+    },
+	"restless_skull": {
+        "sounds": [
+		"arpg:restless_skull"
+		]
+    },
+	"magic_n": {
+        "sounds": [
+		"arpg:magic_n"
+		]
+    },
+	"stinging_cell_impact": {
+        "sounds": [
+		"arpg:stinging_cell_impact"
+		]
+    },
+	"stinging_cell": {
+        "sounds": [
+		"arpg:stinging_cell"
+		]
+    },
+	"sea_effloresce_impact": {
+        "sounds": [
+		"arpg:sea_effloresce_impact"
+		]
+    },
+	"sea_effloresce": {
+        "sounds": [
+		"arpg:sea_effloresce"
+		]
+    },
+	"coral_rifle_rel": {
+        "sounds": [
+		"arpg:coral_rifle_rel"
+		]
+    },
+	"coral_rifle": {
+        "sounds": [
+		"arpg:coral_rifle"
+		]
+    },
+	"melee_magic": {
+        "sounds": [
+		"arpg:melee_magic1",
+		"arpg:melee_magic2",
+		"arpg:melee_magic3",
+		"arpg:melee_magic4"
+		]
+    },
+	"melee_miss_magic": {
+        "sounds": [
+		"arpg:melee_miss_magic1",
+		"arpg:melee_miss_magic2",
+		"arpg:melee_miss_magic3"
+		]
+    },
+	"time_sword": {
+        "sounds": [
+		"arpg:time_sword"
+		]
+    },
+	"stormledge_shoot_a": {
+        "sounds": [
+		"arpg:stormledge_shoot_a"
+		]
+    },
+	"stormledge_explode_a": {
+        "sounds": [
+		"arpg:stormledge_explode_a"
+		]
+    },
+	"lightning": {
+        "sounds": [
+		"arpg:lightning1",
+		"arpg:lightning2",
+		"arpg:lightning3",
+		"arpg:lightning4"
+		]
+    },
+	"thunderbird_charge": {
+        "sounds": [
+		"arpg:thunderbird_charge"
+		]
+    },
+	"thunderbird_roar": {
+        "sounds": [
+		"arpg:thunderbird_roar1",
+		"arpg:thunderbird_roar2"
+		]
+    },
+	"forcefield_trigger": {
+        "sounds": [
+		"arpg:forcefield_trigger"
+		]
+    },
+	"forcefield_impact": {
+        "sounds": [
+		"arpg:forcefield_impact"
+		]
+    },
+	"forcefield": {
+        "sounds": [
+		"arpg:forcefield"
+		]
+    },
+	"electric_arc": {
+        "sounds": [
+		"arpg:electric_arc"
+		]
+    },
+	"stormledge_shoot_b": {
+        "sounds": [
+		"arpg:stormledge_shoot_b"
+		]
+    },
+	"frozen_explode": {
+        "sounds": [
+		"arpg:frozen_explode1",
+		"arpg:frozen_explode2",
+		"arpg:frozen_explode3"
+		]
+    },
+	"hadron_blaster": {
+        "sounds": [
+		"arpg:hadron_blaster"
+		]
+    },
+	"hadron_blaster_charge": {
+        "sounds": [
+		"arpg:hadron_blaster_charge"
+		]
+    },
+	"hadron_blaster_end": {
+        "sounds": [
+		"arpg:hadron_blaster_end"
+		]
+    },
+	"hadron_blaster_beam": {
+        "sounds": [
+		"arpg:hadron_blaster_beam"
+		]
+    },
+	"hadron_blaster_impact": {
+        "sounds": [
+		"arpg:hadron_blaster_impact"
+		]
+    },
+	"snapball": {
+        "sounds": [
+		"arpg:snapball"
+		]
+    },
+	"snapball_impact": {
+        "sounds": [
+		"arpg:snapball_impact"
+		]
+    },
+	"snapball_rel": {
+        "sounds": [
+		"arpg:snapball_rel"
+		]
+    },
+	"snapball_pick": {
+        "sounds": [
+		"arpg:snapball_pick"
+		]
+    },
+	"snapball_explode": {
+        "sounds": [
+		"arpg:snapball_explode"
+		]
+    },
+	"alert": {
+        "sounds": [
+		"arpg:alert"
+		]
+    },
+	"rocket_launcher": {
+        "sounds": [
+		"arpg:rocket_launcher"
+		]
+    },
+	"rocket_launcher_rel": {
+        "sounds": [
+		"arpg:rocket_launcher_rel"
+		]
+    },
+	"rocket_launcher_mode": {
+        "sounds": [
+		"arpg:rocket_launcher_mode"
+		]
+    },
+	"explode3": {
+        "sounds": [
+		"arpg:explode3"
+		]
+    },
+	"explode4": {
+        "sounds": [
+		"arpg:explode4"
+		]
+    },
+	"explode5": {
+        "sounds": [
+		"arpg:explode5"
+		]
+    },
+	"explode_water_a": {
+        "sounds": [
+		"arpg:explode_water_a"
+		]
+    },
+	"explode_water_b": {
+        "sounds": [
+		"arpg:explode_water_b"
+		]
+    },
+	"rad_small": {
+        "sounds": [
+		"arpg:rad_small1",
+		"arpg:rad_small2",
+		"arpg:rad_small3"
+		]
+    },
+	"rad": {
+        "sounds": [
+		"arpg:rad1",
+		"arpg:rad2",
+		"arpg:rad3"
+		]
+    },
+	"keycard_open": {
+        "sounds": [
+		"arpg:keycard_open"
+		]
+    },
+	"chlorine_belcher": {
+        "sounds": [
+		"arpg:chlorine_belcher"
+		]
+    },
+	"explode_rad": {
+        "sounds": [
+		"arpg:explode_rad"
+		]
+    },
+	"mui_hit": {
+        "sounds": [
+		"arpg:mui_hit1",
+		"arpg:mui_hit2",
+		"arpg:mui_hit3",
+		"arpg:mui_hit4"
+		]
+    },
+	"mui_open": {
+        "sounds": [
+		"arpg:mui_open"
+		]
+    },
+	"mui_close": {
+        "sounds": [
+		"arpg:mui_close"
+		]
+    },
+	"mui_link": {
+        "sounds": [
+		"arpg:mui_link1",
+		"arpg:mui_link2"
+		]
+    },
+	"mui_link_start": {
+        "sounds": [
+		"arpg:mui_link_start"
+		]
+    },
+	"mui_link_end": {
+        "sounds": [
+		"arpg:mui_link_end"
+		]
+    },
+	"winter_fury_dead": {
+        "sounds": [
+		"arpg:winter_fury_dead"
+		]
+    },
+	"winter_fury_roar": {
+        "sounds": [
+		"arpg:winter_fury_roar1",
+		"arpg:winter_fury_roar2",
+		"arpg:winter_fury_roar3"
+		]
+    },
+	"winter_beam": {
+        "sounds": [
+		"arpg:winter_beam"
+		]
+    },
+	"winter_curse_a": {
+        "sounds": [
+		"arpg:winter_curse_a"
+		]
+    },
+	"winter_curse_b": {
+        "sounds": [
+		"arpg:winter_curse_b"
+		]
+    },
+	"winter_fury_cast": {
+        "sounds": [
+		"arpg:winter_fury_cast"
+		]
+    },
+	"wrench": {
+        "sounds": [
+		"arpg:wrench1",
+		"arpg:wrench2",
+		"arpg:wrench3",
+		"arpg:wrench4",
+		"arpg:wrench5",
+		"arpg:wrench6"
+		]
+    },
+	"turret_set": {
+        "sounds": [
+		"arpg:turret_set"
+		]
+    },
+	"turret_deploy": {
+        "sounds": [
+		"arpg:turret_deploy"
+		]
+    },
+	"final_wave": {
+        "sounds": [
+		"arpg:final_wave"
+		]
+    },
+	"next_wave": {
+        "sounds": [
+		"arpg:next_wave"
+		]
+    },
+	"invasion_lose": {
+        "sounds": [
+		"arpg:invasion_lose"
+		]
+    },
+	"chain_mace_pick": {
+        "sounds": [
+		"arpg:chain_mace_pick1",
+		"arpg:chain_mace_pick2",
+		"arpg:chain_mace_pick3"
+		]
+    },
+	"chain_mace_throw": {
+        "sounds": [
+		"arpg:chain_mace_throw1",
+		"arpg:chain_mace_throw2",
+		"arpg:chain_mace_throw3"
+		]
+    },
+	"chain_mace_spin": {
+        "sounds": [
+		"arpg:chain_mace_spin1",
+		"arpg:chain_mace_spin2",
+		"arpg:chain_mace_spin3"
+		]
+    },
+	"chain_mace_impact": {
+        "sounds": [
+		"arpg:chain_mace_impact1",
+		"arpg:chain_mace_impact2",
+		"arpg:chain_mace_impact3",
+		"arpg:chain_mace_impact4"
+		]
+    },
+	"slimeshoot": {
+        "sounds": [
+		"arpg:slimeshoot"
+		]
+    },
+	"magic_o": {
+        "category": "ambient",
+        "sounds": [{ "name": "arpg:magic_o"}]
+    },
+	"grenade_throw": {
+        "sounds": [
+		"arpg:grenade_throw1",
+		"arpg:grenade_throw2",
+		"arpg:grenade_throw3"
+		]
+    },
+	"cryogrenade": {
+        "sounds": [{ "name": "arpg:cryogrenade"}]
+    },
+	"explode6": {
+        "sounds": [{ "name": "arpg:explode6"}]
+    },
+	"explode_slime": {
+        "sounds": [{ "name": "arpg:explode_slime"}]
+    },
+	"live_heart": {
+        "sounds": [{ "name": "arpg:live_heart"}]
+    },
+	"fast_teleport": {
+        "sounds": [{ "name": "arpg:fast_teleport"}]
+    },
+	"freezing": {
+        "sounds": [
+		"arpg:freezing1",
+		"arpg:freezing2",
+		"arpg:freezing3",
+		"arpg:freezing4",
+		"arpg:freezing5"
+		]
+    },
+	"explode7": {
+        "sounds": [{ "name": "arpg:explode7"}]
+    },
+	"sewing": {
+        "sounds": [{ "name": "arpg:sewing"}]
+    },
+	"sewing_activate": {
+        "sounds": [{ "name": "arpg:sewing_activate"}]
+    },
+	"pistol_rel2": {
+        "sounds": [{ "name": "arpg:pistol_rel2"}]
+    },
+	"adamantium_revolver": {
+        "sounds": [{ "name": "arpg:adamantium_revolver"}]
+    },
+	"melee_dagger": {
+        "sounds": [
+		"arpg:melee_dagger1",
+		"arpg:melee_dagger2",
+		"arpg:melee_dagger3",
+		"arpg:melee_dagger4"
+		]
+    },
+	"melee_miss_dagger": {
+        "sounds": [
+		"arpg:melee_miss_dagger1",
+		"arpg:melee_miss_dagger2",
+		"arpg:melee_miss_dagger3",
+		"arpg:melee_miss_dagger4"
+		]
+    },
+	"dungeon_ladder": {
+        "sounds": [{ "name": "arpg:dungeon_ladder"}]
+    },
+	"ender_protector": {
+        "sounds": [{ "name": "arpg:ender_protector"}]
+    },
+	"ender_protector_rel": {
+        "sounds": [{ "name": "arpg:ender_protector_rel"}]
+    },
+	"ender_protector_portal": {
+        "sounds": [{ "name": "arpg:ender_protector_portal"}]
+    },
+	"winter_break": {
+        "sounds": [{ "name": "arpg:winter_break"}]
+    },
+	"shield_block": {
+        "sounds": [{ "name": "arpg:shield_block"}]
+    },
+	"shield_break": {
+        "sounds": [
+		"arpg:shield_break1",
+		"arpg:shield_break2",
+		"arpg:shield_break3"
+		]
+    },
+	"shield_hit_metall": {
+        "sounds": [
+		"arpg:shield_hit_metall1",
+		"arpg:shield_hit_metall2"
+		]
+    },
+	"shield_hit_soft": {
+        "sounds": [
+		"arpg:shield_hit_soft1",
+		"arpg:shield_hit_soft2"
+		]
+    },
+	"hellmark": {
+        "sounds": [{ "name": "arpg:hellmark"}]
+    },
+	"lava_shoot": {
+        "sounds": [{ "name": "arpg:lava_shoot"}]
+    },
+	"blowhole": {
+        "sounds": [{ "name": "arpg:blowhole"}]
+    },
+	"blowhole_rel": {
+        "sounds": [{ "name": "arpg:blowhole_rel"}]
+    },
+	"blowhole_charge": {
+        "sounds": [{ "name": "arpg:blowhole_charge"}]
+    },
+	"blowhole_loop": {
+        "sounds": [{ "name": "arpg:blowhole_loop"}]
+    },
+	"blowhole_impact": {
+        "sounds": [{ "name": "arpg:blowhole_impact"}]
+    },
+	"blowhole_fly": {
+        "sounds": [{ "name": "arpg:blowhole_fly"}]
+    },
+	"crystal_cutter": {
+        "sounds": [{ "name": "arpg:crystal_cutter"}]
+    },
+	"crystal_cutter_impact": {
+        "sounds": [{ "name": "arpg:crystal_cutter_impact"}]
+    },
+	"crystal_cutter_rel": {
+        "sounds": [{ "name": "arpg:crystal_cutter_rel"}]
+    },
+	"plasma_minigun": {
+        "sounds": [{ "name": "arpg:plasma_minigun"}]
+    },
+	"plasma_minigun_start": {
+        "sounds": [{ "name": "arpg:plasma_minigun_start"}]
+    },
+	"plasma_minigun_stop": {
+        "sounds": [{ "name": "arpg:plasma_minigun_stop"}]
+    },
+	"plasma_minigun_loop": {
+        "sounds": [{ "name": "arpg:plasma_minigun_loop"}]
+    },
+	"plasma_minigun_deploy": {
+        "sounds": [{ "name": "arpg:plasma_minigun_deploy"}]
+    },
+	"plasma_minigun_undeploy": {
+        "sounds": [{ "name": "arpg:plasma_minigun_undeploy"}]
+    },
+	"plasma_minigun_turret": {
+        "sounds": [{ "name": "arpg:plasma_minigun_turret"}]
+    },
+	"ceratarget": {
+        "sounds": [{ "name": "arpg:ceratarget"}]
+    },
+	"ceratarget_rel": {
+        "sounds": [{ "name": "arpg:ceratarget_rel"}]
+    },
+	"ceratarget_impact": {
+        "sounds": [
+		"arpg:ceratarget_impact1",
+		"arpg:ceratarget_impact2"
+		]
+    },
+	"ceratarget_fly": {
+        "sounds": [{ "name": "arpg:ceratarget_fly"}]
+    },
+	"portal_dungeon": {
+        "sounds": [
+		"arpg:portal_dungeon1",
+		"arpg:portal_dungeon2"
+		]
+    },
+	"portal_toxic": {
+        "sounds": [{ "name": "arpg:portal_toxic"}]
+    },
+	"speleothem_crack": {
+        "sounds": [
+		"arpg:speleothem_crack1",
+		"arpg:speleothem_crack2",
+		"arpg:speleothem_crack3"
+		]
+    },
+	"magic_water": {
+        "sounds": [
+		"arpg:magic_water1",
+		"arpg:magic_water2"
+		]
+    },
+	"landmine_trigger": {
+        "sounds": [{ "name": "arpg:landmine_trigger"}]
+    },
+	"sea_bomb": {
+        "sounds": [{ "name": "arpg:sea_bomb"}]
+    },
+	"ocean_shoot": {
+        "sounds": [{ "name": "arpg:ocean_shoot"}]
+    },
+	"beholder_attack": {
+        "sounds": [{ "name": "arpg:beholder_attack"}]
+    },
+	"beholder_shoot": {
+        "sounds": [{ "name": "arpg:beholder_shoot"}]
+    },
+	"beholder_hurt": {
+        "sounds": [
+		"arpg:beholder_hurt1",
+		"arpg:beholder_hurt2"
+		]
+    },
+	"melee_mob_attack_a": {
+        "sounds": [
+		"arpg:melee_mob_attack_a1",
+		"arpg:melee_mob_attack_a2",
+		"arpg:melee_mob_attack_a3"
+		]
+    },
+	"melee_mob_attack_b": {
+        "sounds": [
+		"arpg:melee_mob_attack_b1",
+		"arpg:melee_mob_attack_b2",
+		"arpg:melee_mob_attack_b3"
+		]
+    },
+	"slimeshoot_a": {
+        "sounds": [{ "name": "arpg:slimeshoot_a"}]
+    },
+	"mob_squish_death": {
+        "sounds": [
+		"arpg:mob_squish_death1",
+		"arpg:mob_squish_death2",
+		"arpg:mob_squish_death3"
+		]
+    },
+	"mob_squish_hurt": {
+        "sounds": [
+		"arpg:mob_squish_hurt1",
+		"arpg:mob_squish_hurt2",
+		"arpg:mob_squish_hurt3"
+		]
+    },
+	"mob_squish_living": {
+        "sounds": [
+		"arpg:mob_squish_living1",
+		"arpg:mob_squish_living2",
+		"arpg:mob_squish_living3"
+		]
+    },
+	"underworld_digger_death": {
+        "sounds": [{ "name": "arpg:underworld_digger_death"}]
+    },
+	"mob_monster_living": {
+        "sounds": [
+		"arpg:mob_monster_living1",
+		"arpg:mob_monster_living2",
+		"arpg:mob_monster_living3"
+		]
+    },
+	"mob_monster_hurt": {
+        "sounds": [
+		"arpg:mob_monster_hurt1",
+		"arpg:mob_monster_hurt2",
+		"arpg:mob_monster_hurt3"
+		]
+    },
+	"cloud_eater_attack": {
+        "sounds": [{ "name": "arpg:cloud_eater_attack"}]
+    },
+	"supersonic_clap": {
+        "sounds": [{ "name": "arpg:supersonic_clap"}]
+    },
+	"grenade_launcher_rel": {
+        "sounds": [{ "name": "arpg:grenade_launcher_rel"}]
+    },
+	"holy_shotgun_rel": {
+        "sounds": [{ "name": "arpg:holy_shotgun_rel"}]
+    },
+	"holy_shotgun": {
+        "sounds": [
+		"arpg:holy_shotgun1",
+		"arpg:holy_shotgun2"
+		]
+    },
+	"arcane_explode": {
+        "sounds": [{ "name": "arpg:arcane_explode"}]
+    },
+	"ophanim_dash": {
+        "sounds": [{ "name": "arpg:ophanim_dash"}]
+    },
+	"ophanim_circle": {
+        "sounds": [
+		"arpg:ophanim_circle_1",
+		"arpg:ophanim_circle_2",
+		"arpg:ophanim_circle_3"
+		]
+    },
+	"ophanim_beam_start": {
+        "sounds": [{ "name": "arpg:ophanim_beam_start"}]
+    },
+	"ophanim_beam": {
+        "sounds": [{ "name": "arpg:ophanim_beam"}]
+    },
+	"plasma_ring": {
+        "sounds": [{ "name": "arpg:plasma_ring"}]
+    },
+	"ophanim_guard_attack": {
+        "sounds": [
+		"arpg:ophanim_guard_attack_1",
+		"arpg:ophanim_guard_attack_2"
+		]
+    },
+	"mob_alienfly_living": {
+        "sounds": [
+		"arpg:mob_alienfly_living_1",
+		"arpg:mob_alienfly_living_2",
+		"arpg:mob_alienfly_living_3"
+		]
+    },
+	"mob_alienfly_hurt": {
+        "sounds": [
+		"arpg:mob_alienfly_hurt_1",
+		"arpg:mob_alienfly_hurt_2"
+		]
+    },
+	"mob_alienfly_death": {
+        "sounds": [{ "name": "arpg:mob_alienfly_death"}]
+    },
+	"ophanim": {
+        "sounds": [{ "name": "arpg:ophanim"}]
+    },
+	"mob_storm_living": {
+        "sounds": [
+		"arpg:mob_storm_living_1",
+		"arpg:mob_storm_living_2",
+		"arpg:mob_storm_living_3"
+		]
+    },
+	"mob_storm_hurt": {
+        "sounds": [
+		"arpg:mob_storm_hurt_1",
+		"arpg:mob_storm_hurt_2",
+		"arpg:mob_storm_hurt_3"
+		]
+    },
+	"mob_storm_death": {
+        "sounds": [
+		"arpg:mob_storm_death_1",
+		"arpg:mob_storm_death_2"
+		]
+    },
+	"mob_fish_living": {
+        "sounds": [
+		"arpg:mob_fish_living_1",
+		"arpg:mob_fish_living_2",
+		"arpg:mob_fish_living_3",
+		"arpg:mob_fish_living_4"
+		]
+    },
+	"mob_fish_hurt": {
+        "sounds": [
+		"arpg:mob_fish_hurt_1",
+		"arpg:mob_fish_hurt_2",
+		"arpg:mob_fish_hurt_3"
+		]
+    },
+	"mob_fish_death": {
+        "sounds": [
+		"arpg:mob_fish_death_1",
+		"arpg:mob_fish_death_2",
+		"arpg:mob_fish_death_3"
+		]
+    },
+	"arrow_frozen": {
+        "sounds": [{ "name": "arpg:arrow_frozen"}]
+    },
+	"arrow_vicious_multiple": {
+        "sounds": [{ "name": "arpg:arrow_vicious_multiple"}]
+    },
+	"arrow_vicious": {
+        "sounds": [{ "name": "arpg:arrow_vicious"}]
+    },
+	"arrow_modern": {
+        "sounds": [{ "name": "arpg:arrow_modern"}]
+    },
+	"arrow_bengal": {
+        "sounds": [{ "name": "arpg:arrow_bengal"}]
+    },
+	"sparkler": {
+        "sounds": [{ "name": "arpg:sparkler"}]
+    },
+	"arrow_shell": {
+        "sounds": [{ "name": "arpg:arrow_shell"}]
+    },
+	"seashell": {
+        "sounds": [
+		"arpg:seashell_1",
+		"arpg:seashell_2",
+		"arpg:seashell_3"
+		]
+    },
+	"arrow_bouncing": {
+        "sounds": [{ "name": "arpg:arrow_bouncing"}]
+    },
+	"arrow_mithril": {
+        "sounds": [{ "name": "arpg:arrow_mithril"}]
+    },
+	"arrow_fish": {
+        "sounds": [{ "name": "arpg:arrow_fish"}]
+    },
+	"arrow_twin_arc": {
+        "sounds": [{ "name": "arpg:arrow_twin_arc"}]
+    },
+	"arrow_wind_fly": {
+        "sounds": [{ "name": "arpg:arrow_wind_fly"}]
+    },
+	"arrow_wind": {
+        "sounds": [{ "name": "arpg:arrow_wind"}]
+    },
+	"bow_aim": {
+        "sounds": [
+		"arpg:bow_aim_1",
+		"arpg:bow_aim_2",
+		"arpg:bow_aim_3"
+		]
+    },
+	"compound_bow": {
+        "sounds": [{ "name": "arpg:compound_bow"}]
+    },
+	"mithril_bow": {
+        "sounds": [{ "name": "arpg:mithril_bow"}]
+    },
+	"azure_ore_staff": {
+        "sounds": [{ "name": "arpg:azure_ore_staff"}]
+    },
+	"azure_ore_staff_impact": {
+        "sounds": [{ "name": "arpg:azure_ore_staff_impact"}]
+    },
+	"industrial_mixer": {
+        "sounds": [{ "name": "arpg:industrial_mixer"}]
+    },
+	"industrial_mixer_start": {
+        "sounds": [{ "name": "arpg:industrial_mixer_start"}]
+    },
+	"fire_d": {
+        "sounds": [{ "name": "arpg:fire_d"}]
+    },
+	"instancer_summon": {
+        "sounds": [{ "name": "arpg:instancer_summon"}]
+    },
+	"instancer_carry": {
+        "sounds": [
+		"arpg:instancer_carry1",
+		"arpg:instancer_carry2"
+		]
+    },
+	"instancer_deploy": {
+        "sounds": [
+		"arpg:instancer_deploy1",
+		"arpg:instancer_deploy2"
+		]
+    },
+	"instancer_capture": {
+        "sounds": [{ "name": "arpg:instancer_capture"}]
+    },
+	"instancer_deploy_loop": {
+        "sounds": [{ "name": "arpg:instancer_deploy_loop"}]
+    },
+	"instancer_carry_loop": {
+        "sounds": [{ "name": "arpg:instancer_carry_loop"}]
+    },
+	"instancer_ready": {
+        "sounds": [{ "name": "arpg:instancer_ready"}]
+    },
+	"instancer_unready": {
+        "sounds": [{ "name": "arpg:instancer_unready"}]
+    },
+	"snowball_cannon_wooden": {
+        "sounds": [{ "name": "arpg:snowball_cannon_wooden"}]
+    },
+	"violence_impact": {
+        "sounds": [{ "name": "arpg:violence_impact"}]
+    },
+	"violence": {
+        "sounds": [{ "name": "arpg:violence"}]
+    },
+	"violence_special": {
+        "sounds": [{ "name": "arpg:violence_special"}]
+    },
+	"swosh_c": {
+        "sounds": [{ "name": "arpg:swosh_c"}]
+    },
+	"staff_of_witherdry_high": {
+        "sounds": [{ "name": "arpg:staff_of_witherdry_high"}]
+    },
+	"staff_of_witherdry_low": {
+        "sounds": [{ "name": "arpg:staff_of_witherdry_low"}]
+    },
+	"staff_of_witherdry_start": {
+        "sounds": [{ "name": "arpg:staff_of_witherdry_start"}]
+    },
+	"staff_of_witherdry_flare": {
+        "sounds": [{ "name": "arpg:staff_of_witherdry_flare"}]
+    },
+	"staff_of_witherdry_skull": {
+        "sounds": [{ "name": "arpg:staff_of_witherdry_skull"}]
+    },
+	"whispers_blade_bighit": {
+        "sounds": [{ "name": "arpg:whispers_blade_bighit"}]
+    },
+	"whispers_blade_hit": {
+        "sounds": [{ "name": "arpg:whispers_blade_hit"}]
+    },
+	"whispers_blade_impact": {
+        "sounds": [{ "name": "arpg:whispers_blade_impact"}]
+    },
+	"whispers_blade_powered": {
+        "sounds": [{ "name": "arpg:whispers_blade_powered"}]
+    },
+	"whispers_blade_ricochet": {
+        "sounds": [{ "name": "arpg:whispers_blade_ricochet"}]
+    },
+	"whispers_blade": {
+        "sounds": [
+		"arpg:whispers_blade1",
+		"arpg:whispers_blade2",
+		"arpg:whispers_blade3"
+		]
+    },
+	"ae_power": {
+        "sounds": [{ "name": "arpg:ae_power"}]
+    },
+	"kraken_crash": {
+        "sounds": [{ "name": "arpg:kraken_crash"}]
+    },
+	"kraken_grab": {
+        "sounds": [{ "name": "arpg:kraken_grab"}]
+    },
+	"kraken_main_shoot": {
+        "sounds": [{ "name": "arpg:kraken_main_shoot"}]
+    },
+	"kraken_roar": {
+        "sounds": [{ "name": "arpg:kraken_roar"}]
+    },
+	"kraken_shock_attack": {
+        "sounds": [{ "name": "arpg:kraken_shock_attack"}]
+    },
+	"kraken_shock_explode": {
+        "sounds": [{ "name": "arpg:kraken_shock_explode"}]
+    },
+	"kraken_shock_loop": {
+        "sounds": [{ "name": "arpg:kraken_shock_loop"}]
+    },
+	"kraken_shock_shoot": {
+        "sounds": [{ "name": "arpg:kraken_shock_shoot"}]
+    },
+	"pump_shotgun": {
+        "sounds": [{ "name": "arpg:pump_shotgun"}]
+    },
+	"shotgun_rel_a": {
+        "sounds": [{ "name": "arpg:shotgun_rel_a"}]
+    },
+	"gothic_bow": {
+        "sounds": [{ "name": "arpg:gothic_bow"}]
+    },
+	"cooled_rifle": {
+        "sounds": [{ "name": "arpg:cooled_rifle"}]
+    },
+	"cooled_rifle_rel": {
+        "sounds": [{ "name": "arpg:cooled_rifle_rel"}]
+    },
+	"aquatic_bow": {
+        "sounds": [{ "name": "arpg:aquatic_bow"}]
+    },
+	"aquatic_bow_charge": {
+        "sounds": [{ "name": "arpg:aquatic_bow_charge"}]
+    },
+	"swosh_d": {
+        "sounds": [
+		"arpg:swosh_d_1",
+		"arpg:swosh_d_2"
+		]
+    },
+	"wings": {
+        "sounds": [
+		"arpg:wings_1",
+		"arpg:wings_2",
+		"arpg:wings_3",
+		"arpg:wings_4"
+		]
+    },
+	"dash_a": {
+        "sounds": [{ "name": "arpg:dash_a"}]
+    },
+	"dash_b": {
+        "sounds": [{ "name": "arpg:dash_b"}]
+    },
+	"dash_ready": {
+        "sounds": [{ "name": "arpg:dash_ready"}]
+    },
+	"spell_hammer": {
+        "sounds": [
+		"arpg:spell_hammer1",
+		"arpg:spell_hammer2"
+		]
+    },
+	"retort": {
+        "sounds": [
+		"arpg:retort_1",
+		"arpg:retort_2",
+		"arpg:retort_3"
+		]
+    },
+	"vial_use": {
+        "sounds": [{ "name": "arpg:vial_use"}]
+    },
+	"rollcast_short": {
+        "sounds": [
+		"arpg:rollcast_short_1",
+		"arpg:rollcast_short_2",
+		"arpg:rollcast_short_3"
+		]
+    },
+	"rollcast_normal": {
+        "sounds": [
+		"arpg:rollcast_normal_1",
+		"arpg:rollcast_normal_2",
+		"arpg:rollcast_normal_3"
+		]
+    },
+	"rollcast_long": {
+        "sounds": [
+		"arpg:rollcast_long_1",
+		"arpg:rollcast_long_2",
+		"arpg:rollcast_long_3"
+		]
+    },
+	"paper": {
+        "sounds": [
+		"arpg:paper_1",
+		"arpg:paper_2",
+		"arpg:paper_3"
+		]
+    },
+	"roll_open": {
+        "sounds": [{ "name": "arpg:roll_open"}]
+    },
+	"book_close": {
+        "sounds": [{ "name": "arpg:book_close"}]
+    },
+	"xmass_launcher_impact": {
+        "sounds": [{ "name": "arpg:xmass_launcher_impact"}]
+    },
+	"xmass_launcher": {
+        "sounds": [{ "name": "arpg:xmass_launcher"}]
+    },
+	"xmass_launcher_rel": {
+        "sounds": [{ "name": "arpg:xmass_launcher_rel"}]
+    },
+	"adamantium_minigun": {
+        "sounds": [{ "name": "arpg:adamantium_minigun"}]
+    },
+	"bullet_a": {
+        "sounds": [
+		"arpg:bullet_a_1",
+		"arpg:bullet_a_2",
+		"arpg:bullet_a_3",
+		"arpg:bullet_a_4"
+		]
+    },
+	"adamantium_minigun_rel": {
+        "sounds": [{ "name": "arpg:adamantium_minigun_rel"}]
+    },
+	"surprise_rocket": {
+        "sounds": [{ "name": "arpg:surprise_rocket"}]
+    },
+	"buzdygan_rotate": {
+        "sounds": [{ "name": "arpg:buzdygan_rotate"}]
+    },
+	"whip_clap": {
+        "sounds": [
+		"arpg:whip_clap_1",
+		"arpg:whip_clap_2",
+		"arpg:whip_clap_3"
+		]
+    },
+	"swosh_e": {
+        "sounds": [{ "name": "arpg:swosh_e"}]
+    },
+	"whip_specattack": {
+        "sounds": [{ "name": "arpg:whip_specattack"}]
+    },
+	"mauler_swosh": {
+        "sounds": [{ "name": "arpg:mauler_swosh"}]
+    },
+	"snakewhip_swosh": {
+        "sounds": [{ "name": "arpg:snakewhip_swosh"}]
+    },
+	"enigmate_twins": {
+        "sounds": [{ "name": "arpg:enigmate_twins"}]
+    },
+	"enigmate_twins_impact": {
+        "sounds": [{ "name": "arpg:enigmate_twins_impact"}]
+    },
+	"fruit_pickup": {
+        "sounds": [{ "name": "arpg:fruit_pickup"}]
+    },
+	"watching_grenade": {
+        "sounds": [{ "name": "arpg:watching_grenade"}]
+    },
+	"watcher_shoot": {
+        "sounds": [{ "name": "arpg:watcher_shoot"}]
+    },
+	"gravity_grenade": {
+        "sounds": [{ "name": "arpg:gravity_grenade"}]
+    },
+	"spell_forge_complete": {
+        "sounds": [
+		"arpg:spell_forge_complete_1",
+		"arpg:spell_forge_complete_2"
+		]
+    },
+	"spell_forge_loop": {
+        "sounds": [{ "name": "arpg:spell_forge_loop"}]
+    },
+	"spell_forge_fail": {
+        "sounds": [
+		"arpg:spell_forge_fail_1",
+		"arpg:spell_forge_fail_2"
+		]
+    },
+	"triton_hearth_start": {
+        "sounds": [{ "name": "arpg:triton_hearth_start"}]
+    },
+	"triton_hearth_end": {
+        "sounds": [{ "name": "arpg:triton_hearth_end"}]
+    },
+	"item_misc_l": {
+        "sounds": [{ "name": "arpg:item_misc_l"}]
+    },
+	"horrible_vindicator_invisible": {
+        "sounds": [{ "name": "arpg:horrible_vindicator_invisible"}]
+    },
+	"horrible_vindicator_attack": {
+        "sounds": [{ "name": "arpg:horrible_vindicator_attack"}]
+    },
+	"crossbow_load": {
+        "sounds": [{ "name": "arpg:crossbow_load"}]
+    },
+	"spell_forge_smallcomplete": {
+        "sounds": [
+		"arpg:spell_forge_smallcomplete_1",
+		"arpg:spell_forge_smallcomplete_2",
+		"arpg:spell_forge_smallcomplete_3"
+		]
+    },
+	"augment_press": {
+        "sounds": [{ "name": "arpg:augment_press"}]
+    },
+	"augment_turning": {
+        "sounds": [
+		"arpg:augment_turning_1",
+		"arpg:augment_turning_2"
+		]
+    },
+	"augment_weld": {
+        "sounds": [
+		"arpg:augment_weld_1",
+		"arpg:augment_weld_2"
+		]
+    },
+	"augment_plasma": {
+        "sounds": [
+		"arpg:augment_plasma_1",
+		"arpg:augment_plasma_2"
+		]
+    },
+	"assembly_table_sd": {
+        "sounds": [
+		"arpg:assembly_table_sd_1",
+		"arpg:assembly_table_sd_2"
+		]
+    },
+	"assembly_table_sa": {
+        "sounds": [
+		"arpg:assembly_table_sa_1",
+		"arpg:assembly_table_sa_2"
+		]
+    },
+	"assembly_table_cl": {
+        "sounds": [
+		"arpg:assembly_table_cl_1",
+		"arpg:assembly_table_cl_2"
+		]
+    },
+	"mob_bigcat_death": {
+        "sounds": [{ "name": "arpg:mob_bigcat_death"}]
+    },
+	"mob_bigcat_hurt": {
+        "sounds": [{ "name": "arpg:mob_bigcat_hurt"}]
+    },
+	"mob_bigcat_living": {
+        "sounds": [{ "name": "arpg:mob_bigcat_living"}]
+    },
+	"slider_summon": {
+        "sounds": [{ "name": "arpg:slider_summon"}]
+    },
+	"slider_hit": {
+        "sounds": [{ "name": "arpg:slider_hit"}]
+    },
+	"goal": {
+        "sounds": [{ "name": "arpg:goal"}]
+    },
+	"phantasm_living": {
+        "sounds": [
+		"arpg:phantasm_living_1",
+		"arpg:phantasm_living_2"
+		]
+    },
+	"phantasm_shoot": {
+        "sounds": [{ "name": "arpg:phantasm_shoot"}]
+    },
+	"winter_altar_craft": {
+        "sounds": [{ "name": "arpg:winter_altar_craft"}]
+    },
+	"cryo_destroyer": {
+        "sounds": [{ "name": "arpg:cryo_destroyer"}]
+    },
+	"cryo_destroyer_rel": {
+        "sounds": [{ "name": "arpg:cryo_destroyer_rel"}]
+    },
+	"cryo_destroyer_spray": {
+        "sounds": [{ "name": "arpg:cryo_destroyer_spray"}]
+    },
+	"hydraulic_shotgun": {
+        "sounds": [{ "name": "arpg:hydraulic_shotgun"}]
+    },
+	"hydraulic_shotgun_cool": {
+        "sounds": [{ "name": "arpg:hydraulic_shotgun_cool"}]
+    },
+	"hydraulic_shotgun_rel": {
+        "sounds": [{ "name": "arpg:hydraulic_shotgun_rel"}]
+    },
+	"ice_compass_unlock": {
+        "sounds": [{ "name": "arpg:ice_compass_unlock"}]
+    },
+	"wand_of_cold_wave": {
+        "sounds": [{ "name": "arpg:wand_of_cold_wave"}]
+    },
+	"mirror_beam_air": {
+        "sounds": [{ "name": "arpg:mirror_beam_air"}]
+    },
+	"mirror_beam_cold": {
+        "sounds": [{ "name": "arpg:mirror_beam_cold"}]
+    },
+	"mirror_beam_void": {
+        "sounds": [{ "name": "arpg:mirror_beam_void"}]
+    },
+	"mirror_beam_earth": {
+        "sounds": [{ "name": "arpg:mirror_beam_earth"}]
+    },
+	"mirror_beam_pain": {
+        "sounds": [{ "name": "arpg:mirror_beam_pain"}]
+    },
+	"mirror_beam_water": {
+        "sounds": [{ "name": "arpg:mirror_beam_water"}]
+    },
+	"mirror_beam_fire": {
+        "sounds": [{ "name": "arpg:mirror_beam_fire"}]
+    },
+	"mirror_beam_death": {
+        "sounds": [{ "name": "arpg:mirror_beam_death"}]
+    },
+	"mirror_beam_electric": {
+        "sounds": [{ "name": "arpg:mirror_beam_electric"}]
+    },
+	"mirror_beam_poison": {
+        "sounds": [{ "name": "arpg:mirror_beam_poison"}]
+    },
+	"mirror_beam_live": {
+        "sounds": [{ "name": "arpg:mirror_beam_live"}]
+    },
+	"mirror_beam_pleasure": {
+        "sounds": [{ "name": "arpg:mirror_beam_pleasure"}]
+    },
+	"acid_fire_mode": {
+        "sounds": [{ "name": "arpg:acid_fire_mode"}]
+    },
+	"hadron_blaster_sensor": {
+        "sounds": [{ "name": "arpg:hadron_blaster_sensor"}]
+    },
+	"ae_unpower": {
+        "sounds": [{ "name": "arpg:ae_unpower"}]
+    },
+	"crystal_star_powered": {
+        "sounds": [{ "name": "arpg:crystal_star_powered"}]
+    },
+	"crystal_star_impact": {
+        "sounds": [
+		"arpg:crystal_star_impact_1",
+		"arpg:crystal_star_impact_2",
+		"arpg:crystal_star_impact_3"
+		]
+    },
+	"azure_ore_staff_powered": {
+        "sounds": [{ "name": "arpg:azure_ore_staff_powered"}]
+    },
+	"blowhole_special": {
+        "sounds": [{ "name": "arpg:blowhole_special"}]
+    },
+	"plasma_rifle_powered": {
+        "sounds": [{ "name": "arpg:plasma_rifle_powered"}]
+    },
+	"plasma_rifle_wave": {
+        "sounds": [
+		"arpg:plasma_rifle_wave1",
+		"arpg:plasma_rifle_wave2"
+		]
+    },
+	"chest_close_stone": {
+        "sounds": [{ "name": "arpg:chest_close_stone"}]
+    },
+	"chest_open_stone": {
+        "sounds": [{ "name": "arpg:chest_open_stone"}]
+    },
+	"chest_close_metal": {
+        "sounds": [{ "name": "arpg:chest_close_metal"}]
+    },
+	"chest_open_metal": {
+        "sounds": [{ "name": "arpg:chest_open_metal"}]
+    },
+	"chest_close_bones": {
+        "sounds": [{ "name": "arpg:chest_close_bones"}]
+    },
+	"chest_open_bones": {
+        "sounds": [{ "name": "arpg:chest_open_bones"}]
+    },
+	"chest_close_plasma": {
+        "sounds": [{ "name": "arpg:chest_close_plasma"}]
+    },
+	"chest_open_plasma": {
+        "sounds": [{ "name": "arpg:chest_open_plasma"}]
+    },
+	"chest_close_organic": {
+        "sounds": [{ "name": "arpg:chest_close_organic"}]
+    },
+	"chest_open_organic": {
+        "sounds": [{ "name": "arpg:chest_open_organic"}]
+    },
+	"bow_aim_hostile": {
+        "sounds": [{ "name": "arpg:bow_aim_hostile"}]
+    },
+	"mutant_beast_jump": {
+        "sounds": [{ "name": "arpg:mutant_beast_jump"}]
+    },
+	"larva_flyer_fly": {
+        "sounds": [{ "name": "arpg:larva_flyer_fly"}]
+    },
+	"larva_flyer_attack": {
+        "sounds": [{ "name": "arpg:larva_flyer_attack"}]
+    },
+	"larva_flyer_breed": {
+        "sounds": [{ "name": "arpg:larva_flyer_breed"}]
+    },
+	"shadow_mage_prepare": {
+        "sounds": [{ "name": "arpg:shadow_mage_prepare"}]
+    },
+	"shadow_mage_cast": {
+        "sounds": [{ "name": "arpg:shadow_mage_cast"}]
+    },
+	"portal_aquatica": {
+        "sounds": [{ "name": "arpg:portal_aquatica"}]
+    },
+	"dartfish_shoot": {
+        "sounds": [{ "name": "arpg:dartfish_shoot"}]
+    },
+	"dartfish_prepare": {
+        "sounds": [{ "name": "arpg:dartfish_prepare"}]
+    },
+	"blisterfish_prepare": {
+        "sounds": [{ "name": "arpg:blisterfish_prepare"}]
+    },
+	"dash_ready_shadow": {
+        "sounds": [{ "name": "arpg:dash_ready_shadow"}]
+    },
+	"dash_ready_cold": {
+        "sounds": [{ "name": "arpg:dash_ready_cold"}]
+    },
+	"dash_c": {
+        "sounds": [{ "name": "arpg:dash_c"}]
+    },
+	"tools_electric_chainsaw": {
+        "sounds": [{ "name": "arpg:tools_electric_chainsaw"}]
+    },
+	"tools_electric_drill": {
+        "sounds": [{ "name": "arpg:tools_electric_drill"}]
+    },
+	"tools_engine_chainsaw": {
+        "sounds": [{ "name": "arpg:tools_engine_chainsaw"}]
+    },
+	"tools_engine_drill": {
+        "sounds": [{ "name": "arpg:tools_engine_drill"}]
+    },
+	"tools_engine_idle": {
+        "sounds": [{ "name": "arpg:tools_engine_idle"}]
+    },
+	"tools_digging": {
+        "sounds": [{ "name": "arpg:tools_digging"}]
+    },
+	"tools_laser_beam_a": {
+        "sounds": [{ "name": "arpg:tools_laser_beam_a"}]
+    },
+	"tools_laser_digging": {
+        "sounds": [{ "name": "arpg:tools_laser_digging"}]
+    },
+	"tools_laser_start": {
+        "sounds": [{ "name": "arpg:tools_laser_start"}]
+    },
+	"tools_laser_beam_b": {
+        "sounds": [{ "name": "arpg:tools_laser_beam_b"}]
+    },
+	"tools_laser_oneshot": {
+        "sounds": [{ "name": "arpg:tools_laser_oneshot"}]
+    },
+	"grab_bite": {
+        "sounds": [
+		"arpg:grab_bite1",
+		"arpg:grab_bite2"
+		]
+    },
+	"weather_firework_launch": {
+        "sounds": [{ "name": "arpg:weather_firework_launch"}]
+    },
+	"weather_firework_explode": {
+        "sounds": [{ "name": "arpg:weather_firework_explode"}]
+    },
+	"portal_stormledge": {
+        "sounds": [{ "name": "arpg:portal_stormledge"}]
+    },
+	"ophanim_summon": {
+        "sounds": [{ "name": "arpg:ophanim_summon"}]
+    },
+	"seashell_pickup": {
+        "sounds": [
+		"arpg:seashell_pickup_1",
+		"arpg:seashell_pickup_2",
+		"arpg:seashell_pickup_3",
+		"arpg:seashell_pickup_4"
+		]
+    },
+	"weather_poison_rain": {
+        "sounds": [{ "name": "arpg:weather_poison_rain"}]
+    },
+	"weather_rainfall": {
+        "sounds": [{ "name": "arpg:weather_rainfall"}]
+    },
+	"thunder": {
+        "sounds": [
+		"arpg:thunder_1",
+		"arpg:thunder_2",
+		"arpg:thunder_3"
+		]
+    },
+	"weather_rainstorm": {
+        "sounds": [{ "name": "arpg:weather_rainstorm"}]
+    }
+	
+	
+	
+    
+
+}

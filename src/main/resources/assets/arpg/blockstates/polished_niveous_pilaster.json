@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "down": "arpg:niveous_side",
+	  "up": "arpg:niveous_side",
+	  "north": "arpg:polished_niveous_block",
+	  "south": "arpg:polished_niveous_block",
+	  "west": "arpg:polished_niveous_block",
+	  "east": "arpg:polished_niveous_block",
+	  "particle": "arpg:polished_niveous_block"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:pilaster" },
+	"facing=down": { "model": "arpg:pilaster_up" },
+    "facing=east": { "model": "arpg:pilaster_east" },
+    "facing=south": { "model": "arpg:pilaster_south" },
+    "facing=west": { "model": "arpg:pilaster_west" },
+    "facing=north": { "model": "arpg:pilaster_north" }
+  }
+}

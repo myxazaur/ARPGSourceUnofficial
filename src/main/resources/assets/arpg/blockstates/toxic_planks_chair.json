@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:toxic_chair",
+	  "particle": "arpg:toxic_chair"
+    }
+  },
+  "variants": {
+    "facing=east": { "model": "arpg:toxic_chair" },
+    "facing=south": { "model": "arpg:toxic_chair", "y": 90 },
+    "facing=west": { "model": "arpg:toxic_chair", "y": 180 },
+    "facing=north": { "model": "arpg:toxic_chair", "y": 270 }
+  }
+}

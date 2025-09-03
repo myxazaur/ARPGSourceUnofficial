@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "ASA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:conifer_log"
+        },"S": {
+            "item": "arpg:ice_gem"
+        }},
+    "result": {
+        "item": "arpg:chest_frozen",
+        "count": 1
+    }
+}

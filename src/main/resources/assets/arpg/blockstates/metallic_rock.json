@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:metallic_rock1" },
+            { "model": "arpg:metallic_rock1", "y": 90 },
+            { "model": "arpg:metallic_rock1", "y": 180 },
+            { "model": "arpg:metallic_rock1", "y": 270 },
+			{ "model": "arpg:metallic_rock1", "x": 90 },
+            { "model": "arpg:metallic_rock1", "x": 90, "y": 90 },
+            { "model": "arpg:metallic_rock1", "x": 90, "y": 180 },
+            { "model": "arpg:metallic_rock1", "x": 90, "y": 270 },
+			{ "model": "arpg:metallic_rock2" },
+            { "model": "arpg:metallic_rock2", "y": 90 },
+            { "model": "arpg:metallic_rock2", "y": 180 },
+            { "model": "arpg:metallic_rock2", "y": 270 },
+			{ "model": "arpg:metallic_rock2", "x": 90 },
+            { "model": "arpg:metallic_rock2", "x": 90, "y": 90 },
+            { "model": "arpg:metallic_rock2", "x": 90, "y": 180 },
+            { "model": "arpg:metallic_rock2", "x": 90, "y": 270 }
+        ],
+		"inventory": { "model": "arpg:metallic_rock1" }
+        
+    }
+}

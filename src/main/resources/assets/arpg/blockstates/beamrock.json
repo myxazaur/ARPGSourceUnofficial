@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "cube_column",
+        "textures": {"end": "arpg:beamrock_top","side": "arpg:beamrock_side"}
+    },
+    "variants": {    
+        "normal": [{}], "inventory": [{}],
+        "axis": { "x":{"x": 90, "y": 90}, "y":{}, "z":{"x": 90} , "none":{"model": "arpg:beamrock_full"}}
+    }
+}

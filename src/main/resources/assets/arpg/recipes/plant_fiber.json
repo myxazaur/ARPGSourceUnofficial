@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:loppy_toxistem"
+        }},
+    "result": {
+        "item": "arpg:plant_fiber",
+        "count": 1
+    }
+}

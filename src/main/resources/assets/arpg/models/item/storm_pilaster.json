@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:storm_masonry",
+	  "up": "arpg:storm_masonry",
+	  "north": "arpg:storm_masonry",
+	  "south": "arpg:storm_masonry",
+	  "west": "arpg:storm_masonry",
+	  "east": "arpg:storm_masonry"
+    }
+}

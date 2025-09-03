@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:dungeon_portal_frame" }
+    }
+}

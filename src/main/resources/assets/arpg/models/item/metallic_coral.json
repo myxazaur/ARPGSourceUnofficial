@@ -1,0 +1,81 @@
+{
+    "textures": {
+        "metallic_coral": "arpg:metallic_coral"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 1, 0, 4 ], 
+            "to": [ 15, 16, 4 ], 
+            "faces": {
+                "north": { "texture": "#metallic_coral", "uv": [ 1, 0, 15, 16 ] }
+            }
+        },
+        {
+            "from": [ 1, 0, 12 ], 
+            "to": [ 15, 16, 12 ], 
+            "faces": {
+                "south": { "texture": "#metallic_coral", "uv": [ 1, 0, 15, 16 ] }
+            }
+        },
+        {
+            "from": [ 4, 0, 1 ], 
+            "to": [ 4, 16, 15 ], 
+            "faces": {
+                "west": { "texture": "#metallic_coral", "uv": [ 1, 0, 15, 16 ] }
+            }
+        },
+        {
+            "from": [ 12, 0, 1 ], 
+            "to": [ 12, 16, 15 ], 
+            "faces": {
+                "east": { "texture": "#metallic_coral", "uv": [ 1, 0, 15, 16 ] }
+            }
+        },
+        {
+            "from": [ 4, 16, 4 ], 
+            "to": [ 12, 16, 12 ], 
+            "faces": {
+                "up": { "texture": "#metallic_coral", "uv": [ 4, 8, 12, 16 ] }
+            }
+        },
+        {
+            "from": [ 4, 0, 4 ], 
+            "to": [ 12, 0, 12 ], 
+            "faces": {
+                "down": { "texture": "#metallic_coral", "uv": [ 4, 0, 12, 8 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "arpg:block/orientable",
+	  "textures": {
+		  "face": "arpg:block_placer",
+		  "top": "blocks/furnace_top",
+		  "side": "blocks/furnace_side",
+		  "back": "blocks/furnace_side"
+	  }
+}

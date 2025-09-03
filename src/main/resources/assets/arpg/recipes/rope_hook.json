@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAC",
+        "A  ",
+        "AAA"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "string"
+        },"C": {
+            "item": "minecraft:iron_pickaxe"
+        }},
+    "result": {
+        "item": "arpg:rope_hook",
+        "count": 1
+    }
+}

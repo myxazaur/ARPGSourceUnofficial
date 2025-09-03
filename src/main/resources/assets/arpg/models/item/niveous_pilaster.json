@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:niveous_bricks",
+	  "up": "arpg:niveous_bricks",
+	  "north": "arpg:niveous_bricks",
+	  "south": "arpg:niveous_bricks",
+	  "west": "arpg:niveous_bricks",
+	  "east": "arpg:niveous_bricks"
+    }
+}

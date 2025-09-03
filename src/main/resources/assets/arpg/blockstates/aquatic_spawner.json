@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:aquatic_spawner" },
+            { "model": "arpg:aquatic_spawner", "y": 90 },
+            { "model": "arpg:aquatic_spawner", "y": 180 },
+            { "model": "arpg:aquatic_spawner", "y": 270 }
+        ]
+    }
+}

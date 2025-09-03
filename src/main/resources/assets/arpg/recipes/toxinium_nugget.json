@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:toxinium_ingot"
+        }},
+    "result": {
+        "item": "arpg:toxinium_nugget",
+        "count": 9
+    }
+}

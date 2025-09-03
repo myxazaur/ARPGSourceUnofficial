@@ -1,0 +1,29 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:corals/coral_bricks_1_0" },
+			{ "model": "arpg:corals/coral_bricks_1_90" },
+			{ "model": "arpg:corals/coral_bricks_1_180" },
+			{ "model": "arpg:corals/coral_bricks_1_270" },
+			{ "model": "arpg:corals/coral_bricks_2_0" },
+			{ "model": "arpg:corals/coral_bricks_2_90" },
+			{ "model": "arpg:corals/coral_bricks_2_180" },
+			{ "model": "arpg:corals/coral_bricks_3_0" },
+			{ "model": "arpg:corals/coral_bricks_3_90" },
+			{ "model": "arpg:corals/coral_bricks_3_180" },
+			{ "model": "arpg:corals/coral_bricks_3_270" },
+			{ "model": "arpg:corals/coral_bricks_4_0" },
+			{ "model": "arpg:corals/coral_bricks_4_90" },
+			{ "model": "arpg:corals/coral_bricks_4_180" },
+			{ "model": "arpg:corals/coral_bricks_4_270" },
+			{ "model": "arpg:corals/coral_bricks_5_0" },
+			{ "model": "arpg:corals/coral_bricks_5_90" },
+			{ "model": "arpg:corals/coral_bricks_5_180" },
+			{ "model": "arpg:corals/coral_bricks_5_270" },
+			{ "model": "arpg:corals/coral_bricks_6_0" },
+			{ "model": "arpg:corals/coral_bricks_6_180" },
+			{ "model": "arpg:corals/coral_bricks_6_270" }
+        ]
+    }
+}
+

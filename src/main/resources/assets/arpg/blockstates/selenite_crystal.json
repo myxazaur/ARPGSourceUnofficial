@@ -1,0 +1,124 @@
+{
+    "multipart": [
+        {   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "crtype": 0},
+            "apply": [
+                { "model": "arpg:crystals/crystals3a" }
+            ]
+        },
+        {   "when": {"north": true, "crtype": 0},
+            "apply": [
+                { "model": "arpg:crystals/crystals3a", "x": 90, "y": 180 }
+            ]
+        },
+        {   "when": {"east": true, "crtype": 0},
+            "apply": [
+                { "model": "arpg:crystals/crystals3a", "x": 90, "y": 270 }
+            ]
+        },
+        {   "when": {"south": true, "crtype": 0},
+            "apply": [
+                { "model": "arpg:crystals/crystals3a", "x": 90 }
+            ]
+        },
+        {   "when": {"west": true, "crtype": 0},
+            "apply": [
+                { "model": "arpg:crystals/crystals3a", "x": 90, "y": 90 }
+            ]
+        },
+        {   "when": {"up": true, "crtype": 0},
+            "apply": [
+                { "model": "arpg:crystals/crystals3a", "x": 180 }
+            ]
+        },
+		{   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "crtype": 1},
+            "apply": [
+                { "model": "arpg:crystals/crystals3b" }
+            ]
+        },
+        {   "when": {"north": true, "crtype": 1},
+            "apply": [
+                { "model": "arpg:crystals/crystals3b", "x": 90, "y": 180 }
+            ]
+        },
+        {   "when": {"east": true, "crtype": 1},
+            "apply": [
+                { "model": "arpg:crystals/crystals3b", "x": 90, "y": 270 }
+            ]
+        },
+        {   "when": {"south": true, "crtype": 1},
+            "apply": [
+                { "model": "arpg:crystals/crystals3b", "x": 90 }
+            ]
+        },
+        {   "when": {"west": true, "crtype": 1},
+            "apply": [
+                { "model": "arpg:crystals/crystals3b", "x": 90, "y": 90 }
+            ]
+        },
+        {   "when": {"up": true, "crtype": 1},
+            "apply": [
+                { "model": "arpg:crystals/crystals3b", "x": 180 }
+            ]
+        },
+		{   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "crtype": 2},
+            "apply": [
+                { "model": "arpg:crystals/crystals3c" }
+            ]
+        },
+        {   "when": {"north": true, "crtype": 2},
+            "apply": [
+                { "model": "arpg:crystals/crystals3c", "x": 90, "y": 180 }
+            ]
+        },
+        {   "when": {"east": true, "crtype": 2},
+            "apply": [
+                { "model": "arpg:crystals/crystals3c", "x": 90, "y": 270 }
+            ]
+        },
+        {   "when": {"south": true, "crtype": 2},
+            "apply": [
+                { "model": "arpg:crystals/crystals3c", "x": 90 }
+            ]
+        },
+        {   "when": {"west": true, "crtype": 2},
+            "apply": [
+                { "model": "arpg:crystals/crystals3c", "x": 90, "y": 90 }
+            ]
+        },
+        {   "when": {"up": true, "crtype": 2},
+            "apply": [
+                { "model": "arpg:crystals/crystals3c", "x": 180 }
+            ]
+        },
+		{   "when": {"north": false, "east": false, "south": false, "west": false, "up": false, "crtype": 3},
+            "apply": [
+                { "model": "arpg:crystals/crystals3d" }
+            ]
+        },
+        {   "when": {"north": true, "crtype": 3},
+            "apply": [
+                { "model": "arpg:crystals/crystals3d", "x": 90, "y": 180 }
+            ]
+        },
+        {   "when": {"east": true, "crtype": 3},
+            "apply": [
+                { "model": "arpg:crystals/crystals3d", "x": 90, "y": 270 }
+            ]
+        },
+        {   "when": {"south": true, "crtype": 3},
+            "apply": [
+                { "model": "arpg:crystals/crystals3d", "x": 90 }
+            ]
+        },
+        {   "when": {"west": true, "crtype": 3},
+            "apply": [
+                { "model": "arpg:crystals/crystals3d", "x": 90, "y": 90 }
+            ]
+        },
+        {   "when": {"up": true, "crtype": 3},
+            "apply": [
+                { "model": "arpg:crystals/crystals3d", "x": 180 }
+            ]
+        }
+    ]
+}

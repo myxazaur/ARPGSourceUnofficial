@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+    "textures": {
+	  "all": "arpg:tomato_stem"
+    }
+  },
+  "variants": {
+        "age=0": { "model": "arpg:tomato_stem_0" },
+        "age=1": { "model": "arpg:tomato_stem_1" },
+        "age=2": { "model": "arpg:tomato_stem_2" },
+        "age=3": { "model": "arpg:tomato_stem_3" },
+        "age=4": { "model": "arpg:tomato_stem_4" }
+    }
+}
+

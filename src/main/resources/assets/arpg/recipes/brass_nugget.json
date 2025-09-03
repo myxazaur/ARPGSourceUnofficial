@@ -1,0 +1,13 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotBrass"
+        }},
+    "result": {
+        "item": "arpg:brass_nugget",
+        "count": 9
+    }
+}

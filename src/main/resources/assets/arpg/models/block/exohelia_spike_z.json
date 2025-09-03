@@ -1,0 +1,52 @@
+{
+    "textures": {
+        "exohelia_spike": "arpg:exohelia_spike",
+        "particle": "arpg:exohelia_spike"
+    },
+    "elements": [
+        {
+            "from": [ -8, -2.9, 8.2 ], 
+            "to": [ 24, 4.1, 8.2 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#exohelia_spike", "uv": [ 0, 10.5, 16, 14 ] },
+                "south": { "texture": "#exohelia_spike", "uv": [ 0, 10.5, 16, 14 ] }
+            }
+        },
+        {
+            "from": [ -2, 4.3, 6.65 ], 
+            "to": [ 18, 11.3, 6.65 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#exohelia_spike", "uv": [ 3, 7, 13, 10.5 ] },
+                "south": { "texture": "#exohelia_spike", "uv": [ 3, 7, 13, 10.5 ] }
+            }
+        },
+        {
+            "from": [ -8, -2.5, 8 ], 
+            "to": [ 24, 25.5, 8 ], 
+            "faces": {
+                "north": { "texture": "#exohelia_spike", "uv": [ 0, 0, 16, 14 ] },
+                "south": { "texture": "#exohelia_spike", "uv": [ 0, 0, 16, 14 ] }
+            }
+        },
+        {
+            "from": [ -8, -2.9, 7.8 ], 
+            "to": [ 24, 4.1, 7.8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#exohelia_spike", "uv": [ 0, 10.5, 16, 14 ] },
+                "south": { "texture": "#exohelia_spike", "uv": [ 0, 10.5, 16, 14 ] }
+            }
+        },
+        {
+            "from": [ -2, 4.3, 9.35 ], 
+            "to": [ 18, 11.3, 9.35 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#exohelia_spike", "uv": [ 3, 7, 13, 10.5 ] },
+                "south": { "texture": "#exohelia_spike", "uv": [ 3, 7, 13, 10.5 ] }
+            }
+        }
+    ]
+}

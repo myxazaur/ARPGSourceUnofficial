@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "particle": "arpg:palm_torch"
+    }
+  },
+  "variants": {
+	"normal": [{"model": "arpg:palm_torch"}], 
+	"inventory": [{"model": "arpg:palm_torch"}],
+    "facing=up": { "model": "arpg:palm_torch" },
+    "facing=east": { "model": "arpg:palm_torch_wall" },
+    "facing=south": { "model": "arpg:palm_torch_wall", "y": 90 },
+    "facing=west": { "model": "arpg:palm_torch_wall", "y": 180 },
+    "facing=north": { "model": "arpg:palm_torch_wall", "y": 270 }
+  }
+}

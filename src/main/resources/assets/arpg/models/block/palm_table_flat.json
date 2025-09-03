@@ -1,0 +1,27 @@
+{
+    "textures": {
+        "map2": "arpg:palm_table"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 8, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#map2", "uv": [ 8, 12, 16, 16 ] },
+                "east": { "texture": "#map2", "uv": [ 8, 8, 16, 12 ] },
+                "south": { "texture": "#map2", "uv": [ 8, 12, 16, 16 ] },
+                "west": { "texture": "#map2", "uv": [ 0, 12, 8, 16 ] },
+                "up": { "texture": "#map2", "uv": [ 8, 0, 16, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 15, 0 ], 
+            "to": [ 16, 23, 16 ], 
+            "faces": {
+                "down": { "texture": "#map2", "uv": [ 8, 0, 16, 8 ] }
+            }
+        }
+    ]
+}

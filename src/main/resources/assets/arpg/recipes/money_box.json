@@ -1,0 +1,23 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "BSB",
+        "AHA"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "plankWood"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotGold"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "gemTopaz"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "logWood"
+        }},
+    "result": {
+        "item": "arpg:money_box",
+        "count": 1
+    }
+}

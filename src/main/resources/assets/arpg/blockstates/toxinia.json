@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "growed=false": { "model": "arpg:toxinia0"},
+	"growed=true": { "model": "arpg:toxinia1"}
+	
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "MLM",
+        "MLM"
+    ],
+    "key": {
+        "L": {
+            "item": "arpg:conifer_ornament"
+        },
+        "S": {
+            "item": "arpg:conifer_planks"
+        },
+        "M": {
+            "item": "arpg:conifer_pilaster"
+        }
+    },
+    "result": {
+        "item": "arpg:conifer_table",
+        "count": 1
+    }
+}

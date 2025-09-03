@@ -1,0 +1,54 @@
+{
+    "parent": "arpg:block/giant_shell_a",
+  
+	"overrides": [
+        {
+            "predicate": {
+                "rtype": 0
+            },
+            "model": "arpg:item/giant_shell0"
+        },
+		{
+            "predicate": {
+                "rtype": 1
+            },
+            "model": "arpg:item/giant_shell1"
+        },
+		{
+            "predicate": {
+                "rtype": 2
+            },
+            "model": "arpg:item/giant_shell2"
+        },
+		{
+            "predicate": {
+                "rtype": 3
+            },
+            "model": "arpg:item/giant_shell3"
+        },
+		{
+            "predicate": {
+                "rtype": 4
+            },
+            "model": "arpg:item/giant_shell4"
+        },
+		{
+            "predicate": {
+                "rtype": 5
+            },
+            "model": "arpg:item/giant_shell5"
+        },
+		{
+            "predicate": {
+                "rtype": 6
+            },
+            "model": "arpg:item/giant_shell6"
+        },
+		{
+            "predicate": {
+                "rtype": 7
+            },
+            "model": "arpg:item/giant_shell7"
+        }
+    ]
+}

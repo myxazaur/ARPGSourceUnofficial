@@ -1,0 +1,110 @@
+{
+    "textures": {
+        "rust_lamp": "arpg:rust_lamp",
+		"particle": "arpg:rust_lamp"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 0, 4 ], 
+            "to": [ 12, 6, 12 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#rust_lamp", "uv": [ 0, 8, 4, 11 ] },
+                "east": { "texture": "#rust_lamp", "uv": [ 0, 8, 4, 11 ] },
+                "south": { "texture": "#rust_lamp", "uv": [ 0, 8, 4, 11 ] },
+                "west": { "texture": "#rust_lamp", "uv": [ 0, 8, 4, 11 ] },
+                "up": { "texture": "#rust_lamp", "uv": [ 0, 12, 4, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 0, 2 ], 
+            "to": [ 14, 8, 14 ], 
+            "faces": {
+                "north": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ] },
+                "east": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ] },
+                "south": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ] },
+                "west": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ] },
+                "up": { "texture": "#rust_lamp", "uv": [ 10, 0, 16, 6 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 0, 1 ], 
+            "to": [ 15, 1, 15 ], 
+            "faces": {
+                "north": { "texture": "#rust_lamp", "uv": [ 0, 0, 7, 0.5 ] },
+                "east": { "texture": "#rust_lamp", "uv": [ 0, 1, 7, 1.5 ] },
+                "south": { "texture": "#rust_lamp", "uv": [ 0, 2, 7, 2.5 ] },
+                "west": { "texture": "#rust_lamp", "uv": [ 0, 3, 7, 3.5 ] },
+                "up": { "texture": "#rust_lamp", "uv": [ 0, 0, 7, 7 ] },
+                "down": { "texture": "#rust_lamp", "uv": [ 0, 0, 7, 7 ] }
+            }
+        },
+        {
+            "name": "cfwest",
+            "from": [ 14, 0, 2 ], 
+            "to": [ 14, 8, 14 ], 
+            "faces": {
+                "west": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "cfsouth",
+            "from": [ 2, 0, 2 ], 
+            "to": [ 14, 8, 2 ], 
+            "faces": {
+                "south": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ], "cullface": "south" }
+            }
+        },
+        {
+            "name": "cfnorth",
+            "from": [ 2, 0, 14 ], 
+            "to": [ 14, 8, 14 ], 
+            "faces": {
+                "north": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ], "cullface": "north" }
+            }
+        },
+        {
+            "name": "cfeast",
+            "from": [ 2, 0, 2 ], 
+            "to": [ 2, 8, 14 ], 
+            "faces": {
+                "east": { "texture": "#rust_lamp", "uv": [ 10, 8, 16, 12 ], "cullface": "east" }
+            }
+        }
+    ]
+}

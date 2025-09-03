@@ -1,0 +1,6 @@
+{
+    "parent": "arpg:block/giant_shell_d",
+    "textures": {
+      "all": "arpg:giant_shell_green"
+    }
+}

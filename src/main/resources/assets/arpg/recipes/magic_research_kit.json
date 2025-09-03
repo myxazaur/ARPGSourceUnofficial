@@ -1,0 +1,32 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LSM",
+        "GHJ"],
+    "key": {"L": {
+            "type": "forge:ore_dict",
+			"ore": "feather"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "paper"
+        },"M": {
+            "type": "forge:ore_dict",
+			"ore": "ingotGold"
+        },"J": {
+            "type": "forge:ore_dict",
+			"ore": "gemSapphire"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "itemFlint"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "gemTopaz"
+        }},
+    "result": {
+        "item": "arpg:magic_research_kit",
+        "count": 1
+    }
+}

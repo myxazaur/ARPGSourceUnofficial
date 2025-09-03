@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "ASA",
+        "AAA"],
+    "key": {"S": {
+            "item": "minecraft:golden_apple",
+		     "data": 0
+        },"A": {
+            "item": "arpg:health_berry"
+        }},
+    "result": {
+        "item": "arpg:health_fruit",
+        "count": 1
+    }
+}

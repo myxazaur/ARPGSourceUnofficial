@@ -1,0 +1,19 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "BSB",
+        "ABA"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "glowstone"
+        },"B": {
+            "item": "arpg:rhinestone"
+        }},
+    "result": {
+        "item": "arpg:rhinestone_lantern",
+        "count": 4
+    }
+}

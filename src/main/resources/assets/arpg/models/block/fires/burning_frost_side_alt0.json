@@ -1,0 +1,7 @@
+{
+    "parent": "arpg:block/fires/fire_side_alt",
+    "textures": {
+        "particle": "arpg:fires/burning_frost_layer_0",
+        "fire": "arpg:fires/burning_frost_layer_0"
+    }
+}

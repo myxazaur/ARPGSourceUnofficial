@@ -1,0 +1,39 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:seashells/0"
+  },
+  
+  "overrides": [
+        {
+            "predicate": {
+                "rtype": 0
+            },
+            "model": "arpg:item/seashells/0"
+        },
+		{
+            "predicate": {
+                "rtype": 1
+            },
+            "model": "arpg:item/seashells/1"
+        },
+		{
+            "predicate": {
+                "rtype": 2
+            },
+            "model": "arpg:item/seashells/2"
+        },
+		{
+            "predicate": {
+                "rtype": 3
+            },
+            "model": "arpg:item/seashells/3"
+        },
+		{
+            "predicate": {
+                "rtype": 4
+            },
+            "model": "arpg:item/seashells/4"
+        }
+    ]
+}

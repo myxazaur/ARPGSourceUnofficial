@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["ABA",
+        "LLL",
+        "ALA"],
+    "key": {"L": {
+            "item": "arpg:coral"
+        },"A": {
+            "item": "arpg:aquatic_nugget"
+        },"B": {
+            "item": "arpg:seagrass"
+        }},
+    "result": {
+        "item": "arpg:coral_vase",
+        "count": 1
+    }
+}

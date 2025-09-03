@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["ABA",
+        " S "
+],
+    "key": {"B": {
+            "item": "arpg:sieve"
+        },"A": {
+            "item": "arpg:linear_motor"
+        },"S": {
+            "item": "arpg:machinery_casing"
+        }},
+    "result": {
+        "item": "arpg:electric_sieve",
+        "count": 1
+    }
+}

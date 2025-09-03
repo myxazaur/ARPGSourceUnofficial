@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:bones_pile1" },
+            { "model": "arpg:bones_pile1", "y": 90 },
+			{ "model": "arpg:bones_pile2" },
+            { "model": "arpg:bones_pile2", "y": 90 },
+            { "model": "arpg:bones_pile2", "y": 180 },
+            { "model": "arpg:bones_pile2", "y": 270 },
+			{ "model": "arpg:bones_pile3" },
+            { "model": "arpg:bones_pile3", "y": 90 },
+            { "model": "arpg:bones_pile3", "y": 180 },
+            { "model": "arpg:bones_pile3", "y": 270 },
+			{ "model": "arpg:bones_pile4" },
+            { "model": "arpg:bones_pile4", "y": 90 },
+            { "model": "arpg:bones_pile4", "y": 180 },
+            { "model": "arpg:bones_pile4", "y": 270 },
+			{ "model": "arpg:bones_pile5" },
+            { "model": "arpg:bones_pile5", "y": 90 },
+            { "model": "arpg:bones_pile5", "y": 180 },
+            { "model": "arpg:bones_pile5", "y": 270 },
+			{ "model": "arpg:bones_pile6" },
+            { "model": "arpg:bones_pile6", "y": 90 },
+            { "model": "arpg:bones_pile6", "y": 180 },
+            { "model": "arpg:bones_pile6", "y": 270 }
+        ]
+    }
+}

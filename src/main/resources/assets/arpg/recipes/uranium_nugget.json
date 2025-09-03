@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:uranium_ingot"
+        }},
+    "result": {
+        "item": "arpg:uranium_nugget",
+        "count": 9
+    }
+}

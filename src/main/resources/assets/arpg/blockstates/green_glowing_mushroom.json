@@ -1,0 +1,26 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:green_glowing_mushroom",
+	  "particle": "arpg:green_glowing_mushroom"
+    }
+  },
+  "variants": {
+    "facing=up,mtype=0": { "model": "arpg:blue_mushroomst_a" },
+    "facing=east,mtype=0": { "model": "arpg:blue_mushroom_a", "y": 270 },
+    "facing=south,mtype=0": { "model": "arpg:blue_mushroom_a" },
+    "facing=west,mtype=0": { "model": "arpg:blue_mushroom_a", "y": 90 },
+    "facing=north,mtype=0": { "model": "arpg:blue_mushroom_a", "y": 180 },
+    "facing=up,mtype=1": { "model": "arpg:blue_mushroomst_b" },
+    "facing=east,mtype=1": { "model": "arpg:blue_mushroom_b", "y": 270 },
+    "facing=south,mtype=1": { "model": "arpg:blue_mushroom_b" },
+    "facing=west,mtype=1": { "model": "arpg:blue_mushroom_b", "y": 90 },
+    "facing=north,mtype=1": { "model": "arpg:blue_mushroom_b", "y": 180 },
+	"facing=up,mtype=2": { "model": "arpg:blue_mushroomst_c" },
+    "facing=east,mtype=2": { "model": "arpg:blue_mushroom_c", "y": 270 },
+    "facing=south,mtype=2": { "model": "arpg:blue_mushroom_c" },
+    "facing=west,mtype=2": { "model": "arpg:blue_mushroom_c", "y": 90 },
+    "facing=north,mtype=2": { "model": "arpg:blue_mushroom_c", "y": 180 }
+  }
+}

@@ -1,0 +1,324 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+			"name": "sunken1",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "minecraft:gold_ingot",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:amethyst",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:citrine",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:sapphire",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ruby",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:rhinestone",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:topaz",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:emerald",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:pearl",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seaweed_block",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seagrass",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+			"name": "sunken2",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "arpg:pistol_fish",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:bubble_fish",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:arrowfish",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 16,
+                                "max": 32
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:fish_feed",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seaweed_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:thornkeeper",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+			"name": "sunken3",
+            "entries": [
+                
+                
+				{
+                    "type": "item",
+                    "name": "arpg:seashell",
+                    "weight": 7,
+					"entryName": "shell_1",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{type:1}"
+						}
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seashell",
+                    "weight": 7,
+					"entryName": "shell_2",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{type:2}"
+						}
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seashell",
+                    "weight": 7,
+					"entryName": "shell_3",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{type:3}"
+						}
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seashell",
+                    "weight": 7,
+					"entryName": "shell_4",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{type:4}"
+						}
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:seashell",
+                    "weight": 7,
+					"entryName": "shell_0",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{type:0}"
+						}
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:coin",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 30,
+                                "max": 50
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

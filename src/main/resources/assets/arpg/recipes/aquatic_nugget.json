@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:aquatic_ingot"
+        }},
+    "result": {
+        "item": "arpg:aquatic_nugget",
+        "count": 9
+    }
+}

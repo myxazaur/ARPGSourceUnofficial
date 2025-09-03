@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["  C",
+        " S ",
+        "G  "],
+    "key": {"S": {
+            "item": "arpg:tide_activator_5"
+        },"G": {
+            "item": "arpg:aquatic_ingot"
+        },"C": {
+            "item": "arpg:pirate_sextant"
+        }},
+    "result": {
+        "item": "arpg:siren_key",
+        "count": 1
+    }
+}

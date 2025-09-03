@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        " S",
+        " B"],
+    "key": {"S": {
+            "item": "arpg:shellrock_speleothem"
+        },"B": {
+            "item": "arpg:seashell"
+        }},
+    "result": {
+        "item": "arpg:shell_arrow",
+        "count": 16
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        "GHG"],
+    "key": {"G": {
+            "type": "forge:ore_dict",
+			"ore": "plankWood"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "string"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "fenceWood"
+        }},
+    "result": {
+        "item": "arpg:sieve",
+        "count": 1
+    }
+}

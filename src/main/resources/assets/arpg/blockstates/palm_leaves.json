@@ -1,0 +1,17 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "arpg:palm_leaves",
+        "textures": {
+        "particle": "arpg:palm_leaves_side"
+        }
+    },
+    "variants": {        
+        "normal": [{}], 
+		"inventory": [{}],
+        "check_decay": { "true": {}, "false": {} },
+        "decayable": { "true": {}, "false": {} }
+    }        
+}

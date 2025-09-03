@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        "BB",
+        "GG"],
+    "key": {"B": {
+            "item": "arpg:toxic_planks"
+        },"G": {
+            "item": "arpg:plant_fiber"
+        }},
+    "result": {
+        "item": "arpg:toxic_planks_chair",
+        "count": 1
+    }
+}

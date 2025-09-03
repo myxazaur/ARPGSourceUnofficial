@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "growed=false": { "model": "arpg:brown_mucophillus0"},
+	"growed=true": { "model": "arpg:brown_mucophillus1"}
+	
+  }
+}

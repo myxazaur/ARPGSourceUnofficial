@@ -1,0 +1,16 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+		"textures": {
+		  "bookcase": "arpg:wooden_bookcase",
+		  "particle": "arpg:wooden_bookcase"
+		}
+	  },
+    "variants": {
+        "inventory": { "model": "arpg:bookcase" },
+        "facing=north": { "model": "arpg:bookcase" },
+        "facing=south": { "model": "arpg:bookcase", "y": 180 },
+        "facing=west":  { "model": "arpg:bookcase", "y": 270 },
+        "facing=east":  { "model": "arpg:bookcase", "y": 90 }
+    }
+}

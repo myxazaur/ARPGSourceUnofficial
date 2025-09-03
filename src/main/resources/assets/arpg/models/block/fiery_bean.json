@@ -1,0 +1,7 @@
+{
+    "parent": "block/tinted_cross",
+    "textures": {
+        "cross": "arpg:fiery_bean_sapling",
+		"particle": "arpg:fiery_bean_sapling"
+    }
+}

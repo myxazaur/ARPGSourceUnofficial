@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "arpg:melanza_stem"
+    },
+    "variants": {    
+        "normal": [{}], 
+        "inventory": [{}],
+        "axis": { "x":{ "x": 90, "y": 90}, "y":{}, "z":{ "x": 90} , "none":{"model": "arpg:melanza_stem"}}
+    }
+}

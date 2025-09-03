@@ -1,0 +1,50 @@
+{
+    "parent": "arpg:item/vial_display",
+    "elements": [
+        {
+            "from": [ 5, 0, 6 ], 
+            "to": [ 11, 4, 10 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 7, 5 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 9, 5 ] },
+                "south": { "texture": "#vial", "uv": [ 1, 1, 7, 5 ] },
+                "west": { "texture": "#vial", "uv": [ 5, 1, 9, 5 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 3, 9, 7 ] },
+                "down": { "texture": "#vial", "uv": [ 3, 3, 9, 7 ] }
+            }
+        },
+        {
+            "from": [ 7, 5.8, 7 ], 
+            "to": [ 9, 8.8, 9 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 3, 4 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 7, 4 ] },
+                "south": { "texture": "#vial", "uv": [ 1, 1, 3, 4 ] },
+                "west": { "texture": "#vial", "uv": [ 5, 1, 7, 4 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 3, 5, 5 ] }
+            }
+        },
+        {
+            "from": [ 7.1, 8.8, 7.1 ], 
+            "to": [ 8.9, 9.8, 8.9 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 13, 1, 15, 2 ] },
+                "east": { "texture": "#vial", "uv": [ 14, 1, 16, 2 ] },
+                "south": { "texture": "#vial", "uv": [ 14, 3, 16, 4 ] },
+                "west": { "texture": "#vial", "uv": [ 12, 2, 14, 3 ] },
+                "up": { "texture": "#vial", "uv": [ 13, 2, 15, 4 ] }
+            }
+        },
+        {
+            "from": [ 3.15, 3.15, 6.5 ], 
+            "to": [ 7.15, 7.15, 9.5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 6, 11, 10, 15 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 8, 5 ] },
+                "south": { "texture": "#vial", "uv": [ 6, 11, 10, 15 ], "rotation": 90 },
+                "up": { "texture": "#vial", "uv": [ 3, 3, 7, 6 ] }
+            }
+        }
+    ]
+}

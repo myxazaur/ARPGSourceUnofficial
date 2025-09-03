@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:mini_nuke_side",
+        "bottom": "arpg:mini_nuke_top",
+        "top": "arpg:mini_nuke_top",
+        "side": "arpg:mini_nuke_side"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+	  "particle": "arpg:ice_spikes"
+    }
+  },
+  "variants": {
+    "inventory": { "model": "arpg:ice_spikes" },
+    "facing=up,notpermanent=false": { "model": "arpg:ice_spikes" },
+    "facing=east,notpermanent=false": { "model": "arpg:ice_spikes", "x": -90, "y": 270 },
+    "facing=south,notpermanent=false": { "model": "arpg:ice_spikes", "x": -90 },
+    "facing=west,notpermanent=false": { "model": "arpg:ice_spikes", "x": -90, "y": 90 },
+    "facing=north,notpermanent=false": { "model": "arpg:ice_spikes", "x": -90, "y": 180 },
+	"facing=down,notpermanent=false": { "model": "arpg:ice_spikes", "x": 180 },
+    "facing=up,notpermanent=true": { "model": "arpg:ice_spikes" },
+    "facing=east,notpermanent=true": { "model": "arpg:ice_spikes", "x": -90, "y": 270 },
+    "facing=south,notpermanent=true": { "model": "arpg:ice_spikes", "x": -90 },
+    "facing=west,notpermanent=true": { "model": "arpg:ice_spikes", "x": -90, "y": 90 },
+    "facing=north,notpermanent=true": { "model": "arpg:ice_spikes", "x": -90, "y": 180 },
+	"facing=down,notpermanent=true": { "model": "arpg:ice_spikes", "x": 180 }
+  }
+}

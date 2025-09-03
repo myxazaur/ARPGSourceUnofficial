@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA",
+        "AA"
+],
+    "key": {"A": {
+            "item": "arpg:coral_bricks"
+        }},
+    "result": {
+        "item": "arpg:pearlescent_bricks",
+        "count": 4
+    }
+}

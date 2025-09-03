@@ -1,0 +1,30 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LSM",
+        "GHG"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotGold"
+        },"G": {
+            "item": "arpg:magic_powder"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "blockSilver"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "gemAmethyst"
+        },"M": {
+            "type": "forge:ore_dict",
+			"ore": "gemTopaz"
+        },"H": {
+            "item": "arpg:magic_wood"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "leather"
+        }},
+    "result": {
+        "item": "arpg:spell_hammer",
+        "count": 1
+    }
+}

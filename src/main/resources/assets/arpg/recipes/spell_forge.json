@@ -1,0 +1,22 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LSM",
+        "GSG"],
+    "key": {"M": {
+            "item": "arpg:stained_glass_aurora"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"L": {
+            "item": "arpg:stained_glass_sunset"
+        },"S": {
+            "item": "arpg:rhinestone_block"
+        },"G": {
+            "item": "arpg:magic_wood"
+        }},
+    "result": {
+        "item": "arpg:spell_forge",
+        "count": 1
+    }
+}

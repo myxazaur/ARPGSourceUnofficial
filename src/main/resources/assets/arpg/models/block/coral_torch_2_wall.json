@@ -1,0 +1,90 @@
+{
+	"ambientocclusion": false,
+    "textures": {
+        "coral_torch": "arpg:coral_torch"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Element",
+            "from": [ 1, 0, 7 ], 
+            "to": [ 3, 8, 9 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 8 ] },
+                "east": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 8 ] },
+                "south": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 8 ] },
+                "west": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 8 ] },
+                "up": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 2 ] },
+                "down": { "texture": "#coral_torch", "uv": [ 0, 6, 2, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4.5, 13, 7.5 ], 
+            "to": [ 5.5, 14, 8.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 15, 0, 16, 1 ] },
+                "east": { "texture": "#coral_torch", "uv": [ 14, 1, 15, 2 ] },
+                "south": { "texture": "#coral_torch", "uv": [ 14, 1, 15, 2 ] },
+                "west": { "texture": "#coral_torch", "uv": [ 15, 1, 16, 2 ] },
+                "up": { "texture": "#coral_torch", "uv": [ 14, 0, 15, 1 ] },
+                "down": { "texture": "#coral_torch", "uv": [ 15, 1, 16, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ -1, 8, 7 ], 
+            "to": [ 5, 13, 9 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 0, 11, 6, 16 ], "cullface": "north" },
+                "south": { "texture": "#coral_torch", "uv": [ 6, 11, 12, 16 ], "cullface": "south" }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 8, 5 ], 
+            "to": [ 3, 13, 11 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "east": { "texture": "#coral_torch", "uv": [ 0, 11, 6, 16 ], "cullface": "east" },
+                "west": { "texture": "#coral_torch", "uv": [ 6, 11, 12, 16 ], "cullface": "west" }
+            }
+        }
+    ]
+}

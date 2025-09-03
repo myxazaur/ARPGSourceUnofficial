@@ -1,0 +1,102 @@
+{
+    "textures": {
+        "chlorine_belcher": "arpg:chlorine_belcher"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 2, 0, 2 ], 
+            "to": [ 14, 8, 14 ], 
+            "faces": {
+                "north": { "texture": "#chlorine_belcher", "uv": [ 0, 12, 6, 16 ] },
+                "east": { "texture": "#chlorine_belcher", "uv": [ 0, 12, 6, 16 ] },
+                "south": { "texture": "#chlorine_belcher", "uv": [ 0, 12, 6, 16 ] },
+                "west": { "texture": "#chlorine_belcher", "uv": [ 0, 12, 6, 16 ] },
+                "up": { "texture": "#chlorine_belcher", "uv": [ 0, 6, 6, 12 ] },
+                "down": { "texture": "#chlorine_belcher", "uv": [ 0, 6, 6, 12 ] }
+            }
+        },
+        {
+            "from": [ 3, 8, 3 ], 
+            "to": [ 13, 12, 13 ], 
+            "faces": {
+                "north": { "texture": "#chlorine_belcher", "uv": [ 11, 9, 16, 11 ] },
+                "east": { "texture": "#chlorine_belcher", "uv": [ 11, 9, 16, 11 ] },
+                "south": { "texture": "#chlorine_belcher", "uv": [ 11, 9, 16, 11 ] },
+                "west": { "texture": "#chlorine_belcher", "uv": [ 11, 9, 16, 11 ] },
+                "up": { "texture": "#chlorine_belcher", "uv": [ 11, 11, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 4, 12, 4 ], 
+            "to": [ 12, 14, 5 ], 
+            "faces": {
+                "north": { "texture": "#chlorine_belcher", "uv": [ 0, 1, 4, 2 ] },
+                "east": { "texture": "#chlorine_belcher", "uv": [ 0, 1, 0.5, 2 ] },
+                "south": { "texture": "#chlorine_belcher", "uv": [ 0, 0, 4, 1 ] },
+                "west": { "texture": "#chlorine_belcher", "uv": [ 0, 1, 0.5, 2 ] },
+                "up": { "texture": "#chlorine_belcher", "uv": [ 0, 0, 4, 0.5 ] }
+            }
+        },
+        {
+            "from": [ 11, 12, 5 ], 
+            "to": [ 12, 14, 11 ], 
+            "faces": {
+                "east": { "texture": "#chlorine_belcher", "uv": [ 1, 1, 4, 2 ] },
+                "west": { "texture": "#chlorine_belcher", "uv": [ 1, 0, 4, 1 ] },
+                "up": { "texture": "#chlorine_belcher", "uv": [ 5, 0, 5.5, 3 ] }
+            }
+        },
+        {
+            "from": [ 4, 12, 11 ], 
+            "to": [ 12, 14, 12 ], 
+            "faces": {
+                "north": { "texture": "#chlorine_belcher", "uv": [ 1, 0, 5, 1 ] },
+                "east": { "texture": "#chlorine_belcher", "uv": [ 0, 1, 0.5, 2 ] },
+                "south": { "texture": "#chlorine_belcher", "uv": [ 1, 1, 5, 2 ] },
+                "west": { "texture": "#chlorine_belcher", "uv": [ 0, 1, 0.5, 2 ] },
+                "up": { "texture": "#chlorine_belcher", "uv": [ 0, 0, 4, 0.5 ] }
+            }
+        },
+        {
+            "from": [ 4, 12, 5 ], 
+            "to": [ 5, 14, 11 ], 
+            "faces": {
+                "east": { "texture": "#chlorine_belcher", "uv": [ 1, 0, 4, 1 ] },
+                "west": { "texture": "#chlorine_belcher", "uv": [ 1, 1, 4, 2 ] },
+                "up": { "texture": "#chlorine_belcher", "uv": [ 5, 0, 5.5, 3 ] }
+            }
+        }
+    ]
+}

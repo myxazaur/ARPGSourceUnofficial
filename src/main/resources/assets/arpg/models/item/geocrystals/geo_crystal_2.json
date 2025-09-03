@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:geo_crystal_2",
+	"layer1": "arpg:geo_crystal_2_over"
+  }
+}

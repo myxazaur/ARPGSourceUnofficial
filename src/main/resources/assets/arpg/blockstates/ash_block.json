@@ -1,0 +1,31 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+		"textures": {
+		  "texture": "arpg:ash_block",
+		  "particle": "arpg:ash_block",
+		  "all": "arpg:ash_block"
+		}
+	  },
+    "variants": {
+		"falling=false,layers=0":  { "model": "snow_height2" },
+        "falling=false,layers=1":  { "model": "snow_height2" },
+        "falling=false,layers=2":  { "model": "snow_height4" },
+        "falling=false,layers=3":  { "model": "snow_height6" },
+        "falling=false,layers=4":  { "model": "snow_height8" },
+        "falling=false,layers=5":  { "model": "snow_height10" },
+        "falling=false,layers=6":  { "model": "snow_height12" },
+        "falling=false,layers=7":  { "model": "snow_height14" },
+        "falling=false,layers=8":  { "model": "snow" },
+		"falling=true,layers=0":  { "model": "snow_height2" },
+        "falling=true,layers=1":  { "model": "snow_height2" },
+        "falling=true,layers=2":  { "model": "snow_height4" },
+        "falling=true,layers=3":  { "model": "snow_height6" },
+        "falling=true,layers=4":  { "model": "snow_height8" },
+        "falling=true,layers=5":  { "model": "snow_height10" },
+        "falling=true,layers=6":  { "model": "snow_height12" },
+        "falling=true,layers=7":  { "model": "snow_height14" },
+        "falling=true,layers=8":  { "model": "snow" }
+		
+    }
+}

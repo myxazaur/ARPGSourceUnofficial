@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "growed=false": { "model": "arpg:ice_flower0"},
+	"growed=true": { "model": "arpg:ice_flower1"}
+	
+  }
+}

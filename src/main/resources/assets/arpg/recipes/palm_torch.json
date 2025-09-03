@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L"
+],
+    "key": {"A": {
+            "item": "arpg:palm_fruit"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:palm_torch",
+        "count": 4
+    }
+}

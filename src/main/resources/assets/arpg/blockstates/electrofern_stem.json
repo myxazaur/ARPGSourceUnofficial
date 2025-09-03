@@ -1,0 +1,40 @@
+{    
+    "multipart": [
+        {   "when": { "north": true },
+            "apply": { "model": "arpg:electrofern4", "y": 180 }
+        },        
+        {   "when": { "south": true },
+            "apply": { "model": "arpg:electrofern4" }
+        },
+        {   "when": { "east": true },
+            "apply": { "model": "arpg:electrofern4", "y": 270 }
+        },
+        {   "when": { "west": true },
+            "apply": { "model": "arpg:electrofern4", "y": 90 }
+        },
+        {   "when": { "up": true },
+            "apply": { "model": "arpg:electrofern2" }
+        },
+        {   "when": { "down": true },
+            "apply": { "model": "arpg:electrofern1" }
+        },
+        {
+            "when": { "OR": [
+				{"down": false, "up": false, "north": false, "south": false, "west": false, "east": false},
+                {"south": true, "west": true}, 
+                {"west": true, "north": true}, 
+                {"north": true, "east": true}, 
+                {"east": true, "south": true},
+                {"up": true, "west": true}, 
+                {"up": true, "north": true}, 
+                {"up": true, "east": true}, 
+                {"up": true, "south": true},
+				{"down": true, "west": true}, 
+                {"down": true, "north": true}, 
+                {"down": true, "east": true}, 
+                {"down": true, "south": true}
+            ]},
+            "apply": { "model": "arpg:electrofern3"}
+        }
+    ]
+}

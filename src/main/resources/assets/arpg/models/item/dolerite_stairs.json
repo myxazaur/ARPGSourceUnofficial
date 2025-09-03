@@ -1,0 +1,8 @@
+{
+    "parent": "block/stone_brick_stairs",
+	"textures": {
+    "bottom": "arpg:dolerite_bricks",
+    "top": "arpg:dolerite_bricks",
+    "side": "arpg:dolerite_bricks"
+  }
+}

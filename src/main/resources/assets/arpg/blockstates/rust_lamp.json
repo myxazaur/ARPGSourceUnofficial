@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:rust_lamp",
+    "textures": {
+	  "all": "arpg:rust_lamp"
+    }
+  },
+  "variants": {
+		"normal": [{}], 
+		"inventory": [{}],
+		"facing=up,on=false": { "model": "arpg:rust_lamp" },
+		"facing=east,on=false": { "model": "arpg:rust_lamp", "x": 90, "y": 90 },
+		"facing=south,on=false": { "model": "arpg:rust_lamp", "x": 90, "y": 180 },
+		"facing=west,on=false": { "model": "arpg:rust_lamp", "x": 90, "y": 270 },
+		"facing=north,on=false": { "model": "arpg:rust_lamp", "x": 90 },
+		"facing=down,on=false": { "model": "arpg:rust_lamp", "x": 180 },
+		"facing=up,on=true": { "model": "arpg:rust_lamp" },
+		"facing=east,on=true": { "model": "arpg:rust_lamp", "x": 90, "y": 90 },
+		"facing=south,on=true": { "model": "arpg:rust_lamp", "x": 90, "y": 180 },
+		"facing=west,on=true": { "model": "arpg:rust_lamp", "x": 90, "y": 270 },
+		"facing=north,on=true": { "model": "arpg:rust_lamp", "x": 90 },
+		"facing=down,on=true": { "model": "arpg:rust_lamp", "x": 180 }
+  }
+}

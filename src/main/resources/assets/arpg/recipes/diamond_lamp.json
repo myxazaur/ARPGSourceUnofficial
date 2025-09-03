@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L"
+],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetSilver"
+        },"L": {
+            "item": "arpg:diamond_lantern"
+        }},
+    "result": {
+        "item": "arpg:diamond_lamp",
+        "count": 2
+    }
+}

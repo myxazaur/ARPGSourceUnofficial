@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:bomb_toxic"
+        }},
+    "result": {
+        "item": "arpg:scrap_bomb",
+        "count": 1
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "multipart": [
+        {   "when": {"vertical": false, "north": false, "east": false, "south": false, "west": false},
+            "apply": [
+                { "model": "arpg:garland_side" }
+            ]
+        },
+        {   "when": {"vertical": false, "north": true},
+            "apply": [
+                { "model": "arpg:garland_side", "y": 90 }
+            ]
+        },
+        {   "when": {"vertical": false, "east": true},
+            "apply": [
+                { "model": "arpg:garland_side", "y": 180 }
+            ]
+        },
+        {   "when": {"vertical": false, "south": true},
+            "apply": [
+                { "model": "arpg:garland_side", "y": 270 }
+            ]
+        },
+        {   "when": {"vertical": false, "west": true},
+            "apply": [
+                { "model": "arpg:garland_side" }
+            ]
+        },
+        {   "when": {"vertical": true, "west": true},
+            "apply": [
+                { "model": "arpg:garland", "y": 90 }
+            ]
+        },
+        {   "when": {"vertical": true, "south": true},
+            "apply": [
+                { "model": "arpg:garland" }
+            ]
+        },
+        {   "when": {"vertical": true, "south": false, "west": false},
+            "apply": [
+                { "model": "arpg:garland" }
+            ]
+        },
+        {   "when": {"vertical": true, "east": false, "north": false},
+            "apply": [
+                { "model": "arpg:garland", "y": 90 }
+            ]
+        }
+    ]
+}

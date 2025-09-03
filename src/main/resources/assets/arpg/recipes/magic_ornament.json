@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B ",
+        "LSL",
+        " B "],
+    "key": {"L": {
+            "item": "arpg:magic_bricks"
+        },"B": {
+            "item": "arpg:magic_wood"
+        },"S": {
+            "item": "arpg:rhinestone"
+        }},
+    "result": {
+        "item": "arpg:magic_ornament",
+        "count": 4
+    }
+}

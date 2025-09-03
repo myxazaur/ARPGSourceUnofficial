@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:poisonlily" },
+            { "model": "arpg:poisonlily", "y": 90 },
+            { "model": "arpg:poisonlily", "y": 180 },
+            { "model": "arpg:poisonlily", "y": 270 },
+			{ "model": "arpg:poisonlily_orange" },
+            { "model": "arpg:poisonlily_orange", "y": 90 },
+            { "model": "arpg:poisonlily_orange", "y": 180 },
+            { "model": "arpg:poisonlily_orange", "y": 270 },
+			{ "model": "arpg:poisonlily_pink" },
+            { "model": "arpg:poisonlily_pink", "y": 90 },
+            { "model": "arpg:poisonlily_pink", "y": 180 },
+            { "model": "arpg:poisonlily_pink", "y": 270 }
+        ]
+    }
+}

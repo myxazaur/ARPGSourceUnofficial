@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "variant=s1": { "model": "arpg:stalacts/frozen_add1" },
+		"variant=s2": { "model": "arpg:stalacts/frozen_add2" },
+		"variant=s3": { "model": "arpg:stalacts/frozen_add3" },
+		"variant=s4": { "model": "arpg:stalacts/frozen_add4" },
+		"variant=s5": { "model": "arpg:stalacts/frozen_add5" }
+    }
+}

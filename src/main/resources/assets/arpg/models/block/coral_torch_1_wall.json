@@ -1,0 +1,156 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "coral_torch": "arpg:coral_torch"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Element",
+            "from": [ 1, 0, 7 ], 
+            "to": [ 3, 8, 9 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 2, 0, 4, 8 ] },
+                "east": { "texture": "#coral_torch", "uv": [ 1, 0, 3, 8 ] },
+                "south": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 8 ] },
+                "west": { "texture": "#coral_torch", "uv": [ 0, 0, 2, 8 ] },
+                "up": { "texture": "#coral_torch", "uv": [ 11, 0, 13, 2 ] },
+                "down": { "texture": "#coral_torch", "uv": [ 0, 6, 2, 8 ] }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 3, 11, 6 ], 
+            "to": [ 7, 15, 10 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 8, 8, 4, 12 ], "cullface": "north" },
+                "east": { "texture": "#coral_torch", "uv": [ 10, 4, 6, 8 ], "cullface": "east" },
+                "south": { "texture": "#coral_torch", "uv": [ 4, 8, 8, 12 ], "cullface": "south" },
+                "west": { "texture": "#coral_torch", "uv": [ 10, 0, 6, 4 ], "rotation": 180, "cullface": "west" },
+                "up": { "texture": "#coral_torch", "uv": [ 10, 0, 14, 4 ], "rotation": 90, "cullface": "up" },
+                "down": { "texture": "#coral_torch", "uv": [ 6, 0, 10, 4 ], "rotation": 270, "cullface": "down" }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3.4, 9.7, 7.5 ], 
+            "to": [ 4.4, 10.7, 8.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 15, 0, 16, 1 ] },
+                "east": { "texture": "#coral_torch", "uv": [ 14, 1, 15, 2 ] },
+                "south": { "texture": "#coral_torch", "uv": [ 14, 1, 15, 2 ] },
+                "west": { "texture": "#coral_torch", "uv": [ 15, 1, 16, 2 ] },
+                "up": { "texture": "#coral_torch", "uv": [ 14, 0, 15, 1 ] },
+                "down": { "texture": "#coral_torch", "uv": [ 15, 1, 16, 2 ] }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 3, 11, 6 ], 
+            "to": [ 7, 11, 10 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "up": { "texture": "#coral_torch", "uv": [ 6, 0, 10, 4 ], "rotation": 270, "cullface": "up" }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 3, 11, 6 ], 
+            "to": [ 7, 15, 6 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "south": { "texture": "#coral_torch", "uv": [ 4, 8, 8, 12 ], "cullface": "south" }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 3, 11, 10 ], 
+            "to": [ 7, 15, 10 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 8, 8, 4, 12 ], "cullface": "north" }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 3, 15, 6 ], 
+            "to": [ 7, 15, 10 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "down": { "texture": "#coral_torch", "uv": [ 10, 0, 14, 4 ], "rotation": 270, "cullface": "down" }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 3, 11, 6 ], 
+            "to": [ 3, 15, 10 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#coral_torch", "uv": [ 10, 2, 6, 6 ], "cullface": "east" }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 7, 11, 6 ], 
+            "to": [ 7, 15, 10 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "west": { "texture": "#coral_torch", "uv": [ 10, 4, 6, 8 ] }
+            }
+        },
+        {
+            "name": "Element",
+            "from": [ 2, 6, 6.5 ], 
+            "to": [ 5, 10, 9.5 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#coral_torch", "uv": [ 10, 7, 13, 11 ] },
+                "east": { "texture": "#coral_torch", "uv": [ 12, 8, 15, 12 ] },
+                "south": { "texture": "#coral_torch", "uv": [ 13, 6, 16, 10 ] }
+            }
+        }
+    ]
+}

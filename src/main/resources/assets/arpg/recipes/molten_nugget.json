@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:molten_ingot"
+        }},
+    "result": {
+        "item": "arpg:molten_nugget",
+        "count": 9
+    }
+}

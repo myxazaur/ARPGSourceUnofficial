@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:dried_plant_fiber"
+        }},
+    "result": {
+        "item": "arpg:fiber_cloth",
+        "count": 1
+    }
+}

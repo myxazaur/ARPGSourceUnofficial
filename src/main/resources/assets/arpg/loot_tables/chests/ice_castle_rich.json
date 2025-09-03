@@ -1,0 +1,208 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+			"name": "ice_castle_chest1",
+            "entries": [
+			
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:silver_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:northern_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ice_gem",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:coin",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 20
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:snowflake_shuriken",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:frozen_arrow",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 20
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+			"name": "ice_castle_chest2",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "arpg:weapon_enchantments_box",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:simple_enchantments_box",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:all_enchantments_box",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:cryogen_cell",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:gothic_sword",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:gothic_pickaxe",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:gothic_axe",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:gothic_shovel",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:icebreaker",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:burning_frost_igniter",
+                    "weight": 4
+                }
+            ]
+        }
+    ]
+}

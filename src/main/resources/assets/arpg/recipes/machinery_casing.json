@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "BSB",
+        "ABA"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "ingotZinc"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "circuitBasic"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotIron"
+        }},
+    "result": {
+        "item": "arpg:machinery_casing",
+        "count": 1
+    }
+}

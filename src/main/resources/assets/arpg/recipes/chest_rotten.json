@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "ASA",
+        "AAA"],
+    "key": {"S": {
+            "item": "arpg:wooden_shaft"
+        },"A": {
+            "item": "arpg:rotten_planks"
+        }},
+    "result": {
+        "item": "arpg:chest_rotten",
+        "count": 1
+    }
+}

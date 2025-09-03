@@ -1,0 +1,8 @@
+{
+    "parent": "block/stone_brick_stairs",
+	"textures": {
+    "bottom": "arpg:toxic_planks",
+    "top": "arpg:toxic_planks",
+    "side": "arpg:toxic_planks"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "normal": { "model": "arpg:mana_flower_3" },
+    "inventory": { "model": "arpg:mana_flower_3" },
+    "age=0": { "model": "arpg:mana_flower_1"},
+	"age=1": { "model": "arpg:mana_flower_2"},
+	"age=2": { "model": "arpg:mana_flower_3"}
+	
+  }
+}

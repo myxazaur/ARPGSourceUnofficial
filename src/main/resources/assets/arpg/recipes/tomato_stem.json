@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:cherry_tomato"
+        }},
+    "result": {
+        "item": "arpg:tomato_stem",
+        "count": 1
+    }
+}

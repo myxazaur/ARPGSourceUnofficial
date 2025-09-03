@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:calibration_crystal_attract_big"
+        }},
+    "result": {
+        "item": "arpg:calibration_crystal_attract_medium",
+        "count": 2
+    }
+}

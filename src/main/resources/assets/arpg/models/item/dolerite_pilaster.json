@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:dolerite_bricks",
+	  "up": "arpg:dolerite_bricks",
+	  "north": "arpg:dolerite_bricks",
+	  "south": "arpg:dolerite_bricks",
+	  "west": "arpg:dolerite_bricks",
+	  "east": "arpg:dolerite_bricks"
+    }
+}

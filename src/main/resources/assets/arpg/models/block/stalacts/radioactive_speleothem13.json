@@ -1,0 +1,26 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "0": "arpg:stalacts/radioactive_speleothem"
+    },
+    "elements": [
+        {
+            "from": [ -2, 0, 8 ], 
+            "to": [ 18, 16, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 3.2, 9.600000000000001, 6.4, 12.8 ] },
+                "south": { "texture": "#0", "uv": [ 3.2, 9.600000000000001, 6.4, 12.8 ] }
+            }
+        },
+        {
+            "from": [ -2, 0, 8 ], 
+            "to": [ 18, 16, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 3.2, 9.600000000000001, 6.4, 12.8 ] },
+                "south": { "texture": "#0", "uv": [ 3.2, 9.600000000000001, 6.4, 12.8 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B ",
+        "BSS",
+        " SS"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotIron"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:chain_mace",
+        "count": 1
+    }
+}

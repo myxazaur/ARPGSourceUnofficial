@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "growed=false": { "model": "arpg:toxiberry_vibrant0"},
+	"growed=true": { "model": "arpg:toxiberry_vibrant1"}
+	
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "arpg:storm_rack" },
+        "facing=east":  { "model": "arpg:storm_rack", "y": 90 },
+        "facing=south": { "model": "arpg:storm_rack", "y": 180 },
+        "facing=west":  { "model": "arpg:storm_rack", "y": 270 }
+    }
+}

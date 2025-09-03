@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SLS",
+        "LML",
+        "SLS"
+    ],
+    "key": {
+        "L": {
+            "item": "arpg:snow_cloth"
+        },
+        "S": {
+            "item": "arpg:conifer_planks"
+        },
+        "M": {
+            "item": "arpg:northern_sphere"
+        }
+    },
+    "result": {
+        "item": "arpg:star_lantern",
+        "count": 1
+    }
+}

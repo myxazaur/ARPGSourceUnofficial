@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        "BB"
+],
+    "key": {"B": {
+            "item": "arpg:niveous_bricks"
+        }},
+    "result": {
+        "item": "arpg:niveous_stairs",
+        "count": 4
+    }
+}

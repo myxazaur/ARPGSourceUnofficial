@@ -1,0 +1,13 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:tide_activator_5"
+  },
+  "display": {
+		"ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1.0, 1.0, 1.0 ]
+        }
+    }
+}

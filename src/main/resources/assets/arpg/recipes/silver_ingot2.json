@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:silver_block"
+        }},
+    "result": {
+        "item": "arpg:silver_ingot",
+        "count": 9
+    }
+}

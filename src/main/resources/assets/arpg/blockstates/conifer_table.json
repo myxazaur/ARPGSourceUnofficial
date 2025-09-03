@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:conifer_table",
+	  "particle": "arpg:conifer_table"
+    }
+  },
+  "variants": {
+    "flat=false": { "model": "arpg:conifer_table" },
+    "flat=true": { "model": "arpg:conifer_table_flat" }
+  }
+}

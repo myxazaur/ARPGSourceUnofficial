@@ -1,0 +1,47 @@
+{
+    "textures": {
+        "coral_pink": "arpg:coral_pink",
+		"particle": "arpg:coral_pink"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#coral_pink", "uv": [ 0, 0, 16, 16 ], "cullface": "north" },
+                "east": { "texture": "#coral_pink", "uv": [ 0, 0, 16, 16 ], "cullface": "east" },
+                "south": { "texture": "#coral_pink", "uv": [ 0, 0, 16, 16 ], "cullface": "south" },
+                "west": { "texture": "#coral_pink", "uv": [ 0, 0, 16, 16 ], "cullface": "west" },
+                "up": { "texture": "#coral_pink", "uv": [ 0, 0, 16, 16 ], "cullface": "up" },
+                "down": { "texture": "#coral_pink", "uv": [ 0, 0, 16, 16 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "CubE",
+            "from": [ 15, 7, 1 ], 
+            "to": [ 17, 15, 13 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#coral_pink", "uv": [ 0, 1, 2, 9 ], "cullface": "east" },
+                "east": { "texture": "#coral_pink", "uv": [ 0, 1, 12, 9 ], "cullface": "east" },
+                "south": { "texture": "#coral_pink", "uv": [ 0, 1, 2, 9 ], "cullface": "east" },
+                "west": { "texture": "#coral_pink", "uv": [ 0, 0, 12, 8 ], "cullface": "east" },
+                "up": { "texture": "#coral_pink", "uv": [ 0, 3, 12, 5 ], "rotation": 90, "cullface": "east" }
+            }
+        },
+        {
+            "name": "CubW",
+            "from": [ -2, 5, 7 ], 
+            "to": [ 0, 14, 15 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#coral_pink", "uv": [ 5, 5, 7, 14 ], "cullface": "west" },
+                "east": { "texture": "#coral_pink", "uv": [ 8, 7, 16, 16 ], "cullface": "west" },
+                "south": { "texture": "#coral_pink", "uv": [ 12, 5, 14, 14 ], "cullface": "west" },
+                "west": { "texture": "#coral_pink", "uv": [ 6, 1, 14, 10 ], "cullface": "west" },
+                "up": { "texture": "#coral_pink", "uv": [ 4, 9, 16, 11 ], "rotation": 90, "cullface": "west" }
+            }
+        }
+    ]
+}

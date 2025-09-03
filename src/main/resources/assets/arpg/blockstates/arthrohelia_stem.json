@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    
+  },
+  "variants": {
+    "inventory": { "model": "arpg:arthrohelia_stem" },
+    "facing=up": { "model": "arpg:arthrohelia_stem" },
+    "facing=east": { "model": "arpg:arthrohelia_stem", "x": -90, "y": 270 },
+    "facing=south": { "model": "arpg:arthrohelia_stem", "x": -90 },
+    "facing=west": { "model": "arpg:arthrohelia_stem", "x": -90, "y": 90 },
+    "facing=north": { "model": "arpg:arthrohelia_stem", "x": -90, "y": 180 },
+	"facing=down": { "model": "arpg:arthrohelia_stem", "x": 180 }
+  }
+}

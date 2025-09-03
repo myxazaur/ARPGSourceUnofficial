@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:junk_pile1" },
+            { "model": "arpg:junk_pile1", "y": 90 },
+            { "model": "arpg:junk_pile1", "y": 180 },
+            { "model": "arpg:junk_pile1", "y": 270 },
+			{ "model": "arpg:junk_pile2" },
+            { "model": "arpg:junk_pile2", "y": 90 },
+            { "model": "arpg:junk_pile2", "y": 180 },
+            { "model": "arpg:junk_pile2", "y": 270 },
+			{ "model": "arpg:junk_pile3" },
+            { "model": "arpg:junk_pile3", "y": 90 },
+            { "model": "arpg:junk_pile3", "y": 180 },
+            { "model": "arpg:junk_pile3", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:living_sponge",
+        "bottom": "arpg:living_sponge",
+        "top": "arpg:living_sponge_top",
+        "side": "arpg:living_sponge"
+    }
+}
+

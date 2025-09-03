@@ -1,0 +1,69 @@
+{
+    "parent": "arpg:item/vial_display",
+    "elements": [
+        {
+            "from": [ 2, 2, 6 ], 
+            "to": [ 6, 9, 10 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 5, 8 ] },
+                "east": { "texture": "#vial", "uv": [ 9, 9, 10, 16 ] },
+                "south": { "texture": "#vial", "uv": [ 5, 2, 9, 9 ] },
+                "west": { "texture": "#vial", "uv": [ 5, 1, 9, 8 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 2, 7, 6 ] },
+                "down": { "texture": "#vial", "uv": [ 3, 3, 7, 7 ] }
+            }
+        },
+        {
+            "from": [ 7.2, 11.99, 7.2 ], 
+            "to": [ 8.8, 12.99, 8.8 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 12, 1, 14, 2 ] },
+                "east": { "texture": "#vial", "uv": [ 13, 1, 15, 2 ] },
+                "south": { "texture": "#vial", "uv": [ 12, 11, 14, 12 ] },
+                "west": { "texture": "#vial", "uv": [ 13, 12, 15, 13 ] },
+                "up": { "texture": "#vial", "uv": [ 12, 1, 14, 3 ] },
+                "down": { "texture": "#vial", "uv": [ 13, 11, 15, 13 ] }
+            }
+        },
+        {
+            "from": [ 7, 5, 7 ], 
+            "to": [ 9, 12, 9 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 3, 8 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 7, 8 ] },
+                "south": { "texture": "#vial", "uv": [ 1, 1, 3, 8 ] },
+                "west": { "texture": "#vial", "uv": [ 5, 1, 7, 8 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 3, 5, 5 ] }
+            }
+        },
+        {
+            "from": [ 6, 2, 6 ], 
+            "to": [ 9, 6, 10 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 4, 5 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 9, 5 ] },
+                "south": { "texture": "#vial", "uv": [ 5, 2, 8, 6 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 2, 6, 6 ] },
+                "down": { "texture": "#vial", "uv": [ 3, 3, 6, 7 ] }
+            }
+        },
+        {
+            "from": [ 9, 10, 8 ], 
+            "to": [ 11, 11, 8.01 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 0, 3, 1 ] },
+                "south": { "texture": "#vial", "uv": [ 1, 0, 3, 1 ] }
+            }
+        },
+        {
+            "from": [ 11, 5.5, 8 ], 
+            "to": [ 12, 10.5, 8.01 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 0, 4, 1, 9 ] },
+                "south": { "texture": "#vial", "uv": [ 0, 6, 1, 11 ] }
+            }
+        }
+    ]
+}

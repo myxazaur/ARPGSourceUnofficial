@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:bauxite_block" },
+            { "model": "arpg:bauxite_block", "y": 90 },
+            { "model": "arpg:bauxite_block", "y": 180 },
+            { "model": "arpg:bauxite_block", "y": 270 },
+			{ "model": "arpg:bauxite_block", "x": 90 },
+            { "model": "arpg:bauxite_block", "x": 90, "y": 90 },
+            { "model": "arpg:bauxite_block", "x": 90, "y": 180 },
+            { "model": "arpg:bauxite_block", "x": 90, "y": 270 }
+        ]
+        
+    }
+}

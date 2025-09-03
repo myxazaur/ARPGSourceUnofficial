@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "ASM",
+        "AAA"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "cobblestone"
+        },"M": {
+            "type": "forge:ore_dict",
+			"ore": "gemRhinestone"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        }},
+    "result": {
+        "item": "arpg:block_detector",
+        "count": 1
+    }
+}

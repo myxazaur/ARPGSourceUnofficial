@@ -1,0 +1,60 @@
+{
+    "textures": {
+        "coral_bricks": "arpg:coral_bricks"
+    },
+    "elements": [
+        {
+            "name": "Cube2",
+            "from": [ -3, 2, 4 ], 
+            "to": [ -3, 10, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 4, 12, 8, 16 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 4, 12, 8, 16 ] }
+            }
+        },
+        {
+            "name": "Cube1",
+            "from": [ 8, 5, 16 ], 
+            "to": [ 8, 13, 24 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 4, 12, 8, 16 ], "cullface": "east" },
+                "west": { "texture": "#coral_bricks", "uv": [ 4, 12, 8, 16 ] }
+            }
+        },
+        {
+            "name": "Cube3",
+            "from": [ 19.4, 3, 3 ], 
+            "to": [ 19.4, 11, 11 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 12, 8, 16, 12 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 12, 8, 16, 12 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 8, 0, 16, 8 ], "cullface": "north" },
+                "east": { "texture": "#coral_bricks", "uv": [ 8, 0, 16, 8 ], "cullface": "east" },
+                "south": { "texture": "#coral_bricks", "uv": [ 8, 0, 16, 8 ], "cullface": "south" },
+                "west": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "west" },
+                "up": { "texture": "#coral_bricks", "uv": [ 8, 0, 16, 8 ], "cullface": "up" },
+                "down": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "Cube3",
+            "from": [ 7.4, -6, 3 ], 
+            "to": [ 7.4, 2, 11 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 12, 12, 16, 8 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 12, 12, 16, 8 ] }
+            }
+        }
+    ]
+}

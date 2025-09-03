@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "normal": { "model": "arpg:magma_bloom_3" },
+    "inventory": { "model": "arpg:magma_bloom_3" },
+    "age=0": { "model": "arpg:magma_bloom_1"},
+	"age=1": { "model": "arpg:magma_bloom_2"},
+	"age=2": { "model": "arpg:magma_bloom_3"}
+	
+  }
+}

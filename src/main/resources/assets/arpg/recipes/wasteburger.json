@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B ",
+        "LSM",
+        " B "],
+    "key": {"M": {
+            "item": "arpg:mozzarella"
+        },"L": {
+            "item": "arpg:glowing_toxiberry"
+        },"B": {
+            "item": "arpg:toxedge_bread"
+        },"S": {
+            "item": "minecraft:cooked_beef"
+        }},
+    "result": {
+        "item": "arpg:wasteburger",
+        "count": 2
+    }
+}

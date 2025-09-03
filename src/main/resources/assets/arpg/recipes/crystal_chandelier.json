@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LLL",
+        " H "],
+    "key": {"L": {
+            "item": "arpg:magic_cave_crystal"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "obsidian"
+        },"A": {
+            "item": "arpg:dolerite_pilaster"
+        }},
+    "result": {
+        "item": "arpg:crystal_chandelier",
+        "count": 1
+    }
+}

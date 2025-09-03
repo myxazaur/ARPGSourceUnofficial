@@ -1,0 +1,22 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LAL",
+        "AHA"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetSilver"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "gemSapphire"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "gemDiamond"
+        },"B": {
+            "item": "arpg:rhinestone"
+        }},
+    "result": {
+        "item": "arpg:stained_glass_sky",
+        "count": 4
+    }
+}

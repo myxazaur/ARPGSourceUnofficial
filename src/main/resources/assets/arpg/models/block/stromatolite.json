@@ -1,0 +1,10 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:stromatolite",
+        "bottom": "arpg:stromatolite",
+        "top": "arpg:stromatolite_top",
+        "side": "arpg:stromatolite"
+    }
+}
+

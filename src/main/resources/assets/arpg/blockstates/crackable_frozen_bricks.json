@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:crackable_frozen_bricks" }
+    }
+}

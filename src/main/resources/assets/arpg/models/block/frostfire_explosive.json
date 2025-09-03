@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:frostfire_explosive_side",
+        "bottom": "arpg:frostfire_explosive_top",
+        "top": "arpg:frostfire_explosive_top",
+        "side": "arpg:frostfire_explosive_side"
+    }
+}

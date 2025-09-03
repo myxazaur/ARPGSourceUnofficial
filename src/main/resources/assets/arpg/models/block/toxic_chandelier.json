@@ -1,0 +1,177 @@
+{
+    "textures": {
+        "toxic_chandelier": "arpg:toxic_chandelier"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 7, 0, 7 ], 
+            "to": [ 9, 8, 9 ], 
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 14, 8, 16, 16 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 13, 8, 15, 16 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 12, 8, 14, 16 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 13, 8, 15, 16 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 8, 7 ], 
+            "to": [ 14, 10, 9 ], 
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 12, 2 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 12, 2 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 2 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 12, 2 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 12, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12, 10, 7 ], 
+            "to": [ 14, 14, 9 ], 
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 11, 14, 6 ], 
+            "to": [ 15, 18, 10 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 2, 2, 6, 6 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 10, 7 ], 
+            "to": [ 4, 15, 9 ], 
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 15, 6 ], 
+            "to": [ 5, 19, 10 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 2, 2, 6, 6 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 8, 2 ], 
+            "to": [ 9, 12, 4 ], 
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 6, 2 ], 
+            "to": [ 9, 8, 7 ], 
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 5, 2 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 5, 2 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 12, 1 ], 
+            "to": [ 10, 16, 5 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 2, 2, 6, 6 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 5, 8, 9 ], 
+            "to": [ 7, 10, 14 ], 
+            "faces": {
+                "east": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 5, 2 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 5, 2 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 0, 0, 2, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 10, 11 ], 
+            "to": [ 8, 14, 15 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "east": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "south": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "west": { "texture": "#toxic_chandelier", "uv": [ 6, 2, 10, 6 ] },
+                "up": { "texture": "#toxic_chandelier", "uv": [ 2, 2, 6, 6 ] },
+                "down": { "texture": "#toxic_chandelier", "uv": [ 12, 12, 16, 16 ] }
+            }
+        }
+    ]
+}

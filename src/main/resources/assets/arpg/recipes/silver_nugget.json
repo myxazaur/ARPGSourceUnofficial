@@ -1,0 +1,13 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        }},
+    "result": {
+        "item": "arpg:silver_nugget",
+        "count": 9
+    }
+}

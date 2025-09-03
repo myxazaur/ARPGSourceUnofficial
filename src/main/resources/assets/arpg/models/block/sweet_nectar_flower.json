@@ -1,0 +1,131 @@
+{
+    "textures": {
+        "sweet_nectar_flower": "arpg:sweet_nectar_flower",
+		"particle": "arpg:sweet_nectar_flower"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 4, 11 ], 
+            "faces": {
+                "north": { "texture": "#sweet_nectar_flower", "uv": [ 0, 0, 6, 4 ] },
+                "east": { "texture": "#sweet_nectar_flower", "uv": [ 0, 0, 6, 4 ] },
+                "south": { "texture": "#sweet_nectar_flower", "uv": [ 0, 0, 6, 4 ] },
+                "west": { "texture": "#sweet_nectar_flower", "uv": [ 0, 0, 6, 4 ] },
+                "down": { "texture": "#sweet_nectar_flower", "uv": [ 0, 0, 6, 6 ] }
+            }
+        },
+        {
+            "from": [ 4, 4, 4 ], 
+            "to": [ 12, 8, 12 ], 
+            "faces": {
+                "north": { "texture": "#sweet_nectar_flower", "uv": [ 8, 12, 16, 16 ] },
+                "east": { "texture": "#sweet_nectar_flower", "uv": [ 8, 12, 16, 16 ] },
+                "south": { "texture": "#sweet_nectar_flower", "uv": [ 8, 12, 16, 16 ] },
+                "west": { "texture": "#sweet_nectar_flower", "uv": [ 8, 12, 16, 16 ] },
+                "up": { "texture": "#sweet_nectar_flower", "uv": [ 0, 8, 8, 16 ] },
+                "down": { "texture": "#sweet_nectar_flower", "uv": [ 0, 8, 8, 16 ] }
+            }
+        },
+        {
+            "from": [ 11, 5, 8 ], 
+            "to": [ 21, 19, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] },
+                "south": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] }
+            }
+        },
+        {
+            "from": [ 11, 5, 8 ], 
+            "to": [ 21, 19, 8 ], 
+            "faces": {
+                "north": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] },
+                "south": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] }
+            }
+        },
+        {
+            "from": [ -5, 5, 8 ], 
+            "to": [ 5, 19, 8 ], 
+            "faces": {
+                "north": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] },
+                "south": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] }
+            }
+        },
+        {
+            "from": [ -5, 5, 8 ], 
+            "to": [ 5, 19, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] },
+                "south": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] }
+            }
+        },
+        {
+            "from": [ 8, 5, -5 ], 
+            "to": [ 8, 19, 5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] },
+                "west": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] }
+            }
+        },
+        {
+            "from": [ 8, 5, -5 ], 
+            "to": [ 8, 19, 5 ], 
+            "faces": {
+                "east": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] },
+                "west": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] }
+            }
+        },
+        {
+            "from": [ 8, 5, 11 ], 
+            "to": [ 8, 19, 21 ], 
+            "faces": {
+                "east": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] },
+                "west": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] }
+            }
+        },
+        {
+            "from": [ 8, 5, 11 ], 
+            "to": [ 8, 19, 21 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#sweet_nectar_flower", "uv": [ 16, 0, 8, 12 ] },
+                "west": { "texture": "#sweet_nectar_flower", "uv": [ 8, 0, 16, 12 ] }
+            }
+        }
+    ]
+}

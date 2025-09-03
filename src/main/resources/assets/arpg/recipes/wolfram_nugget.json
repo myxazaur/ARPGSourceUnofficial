@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:wolfram_ingot"
+        }},
+    "result": {
+        "item": "arpg:wolfram_nugget",
+        "count": 9
+    }
+}

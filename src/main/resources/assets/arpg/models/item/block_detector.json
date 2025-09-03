@@ -1,0 +1,9 @@
+{
+    "parent": "arpg:block/orientable",
+	  "textures": {
+		  "face": "arpg:block_detector_face",
+		  "top": "blocks/furnace_top",
+		  "side": "arpg:block_detector_side",
+		  "back": "arpg:block_detector_exit"
+	  }
+}

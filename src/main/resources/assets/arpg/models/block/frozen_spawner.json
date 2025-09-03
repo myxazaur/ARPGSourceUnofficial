@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:frozen_spawner_side",
+        "bottom": "arpg:frozen_spawner_top",
+        "top": "arpg:frozen_spawner_top",
+        "side": "arpg:frozen_spawner_side"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "parent": "arpg:block/model_bar1",
+  
+  "overrides": [
+        {
+            "predicate": {
+                "rtype": 0
+            },
+            "model": "arpg:item/toxic_barrel0"
+        },
+		{
+            "predicate": {
+                "rtype": 1
+            },
+            "model": "arpg:item/toxic_barrel1"
+        },
+		{
+            "predicate": {
+                "rtype": 2
+            },
+            "model": "arpg:item/toxic_barrel2"
+        },
+		{
+            "predicate": {
+                "rtype": 3
+            },
+            "model": "arpg:item/toxic_barrel3"
+        },
+		{
+            "predicate": {
+                "rtype": 4
+            },
+            "model": "arpg:item/toxic_barrel4"
+        },
+		{
+            "predicate": {
+                "rtype": 5
+            },
+            "model": "arpg:item/toxic_barrel5"
+        },
+		{
+            "predicate": {
+                "rtype": 6
+            },
+            "model": "arpg:item/toxic_barrel6"
+        },
+		{
+            "predicate": {
+                "rtype": 7
+            },
+            "model": "arpg:item/toxic_barrel7"
+        },
+		{
+            "predicate": {
+                "rtype": 8
+            },
+            "model": "arpg:item/toxic_barrel8"
+        },
+		{
+            "predicate": {
+                "rtype": 9
+            },
+            "model": "arpg:item/toxic_barrel9"
+        },
+		{
+            "predicate": {
+                "rtype": 10
+            },
+            "model": "arpg:item/toxic_barrel10"
+        },
+		{
+            "predicate": {
+                "rtype": 11
+            },
+            "model": "arpg:item/toxic_barrel11"
+        },
+		{
+            "predicate": {
+                "rtype": 12
+            },
+            "model": "arpg:item/toxic_barrel12"
+        }
+    ]
+}

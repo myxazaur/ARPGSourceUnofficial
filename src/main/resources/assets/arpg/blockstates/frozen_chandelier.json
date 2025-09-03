@@ -1,0 +1,16 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "arpg:frozen_chandelier",
+        "textures": {
+        "frozen_chandelier": "arpg:frozen_chandelier",
+		"particle": "arpg:frozen_chandelier"
+        }
+    },
+    "variants": {    
+        "normal": [{}], "inventory": [{}],
+        "rotate": { "x":{}, "z":{"y": 90} }
+    }
+}

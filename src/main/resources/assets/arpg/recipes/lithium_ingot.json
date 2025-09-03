@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:lithium_nugget"
+        }},
+    "result": {
+        "item": "arpg:lithium_ingot",
+        "count": 1
+    }
+}

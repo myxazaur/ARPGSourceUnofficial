@@ -1,0 +1,26 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+	" H ",
+    "SBS",
+    " S "],
+    "key": 
+	{
+		"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },
+		"B": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        },
+		"H": {
+            "item": "arpg:white_slimeball"
+        }
+		
+	},
+    "result": {
+        "item": "arpg:slime_locator",
+        "count": 1
+    }
+}

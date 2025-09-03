@@ -1,0 +1,77 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "arpg:acropora_purple",
+        "acropora_purple": "arpg:acropora_purple"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 8, 0, 2 ], 
+            "to": [ 8, 18, 14 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#acropora_purple", "uv": [ 3, 0, 13, 16 ] },
+                "west": { "texture": "#acropora_purple", "uv": [ 0, 0, 12, 16 ] }
+            }
+        },
+        {
+            "from": [ 8, 5, -1 ], 
+            "to": [ 8, 23, 17 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#acropora_purple", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#acropora_purple", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 8, 8, -2 ], 
+            "to": [ 8, 26, 16 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#acropora_purple", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#acropora_purple", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 10, 11, 2 ], 
+            "to": [ 10, 29, 20 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#acropora_purple", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#acropora_purple", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+    ]
+}

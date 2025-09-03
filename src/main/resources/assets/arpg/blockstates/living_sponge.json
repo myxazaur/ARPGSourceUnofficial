@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:living_sponge" },
+		"hole=false": { "model": "arpg:living_sponge" },
+		"hole=true": { "model": "arpg:living_sponge_top" }
+		
+    }
+}

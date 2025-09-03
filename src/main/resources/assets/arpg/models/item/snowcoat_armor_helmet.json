@@ -1,0 +1,27 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:snowcoat_helmet_0"
+  },
+  
+  "overrides": [
+        {
+            "predicate": {
+                "type": 0
+            },
+            "model": "arpg:item/snowcoat_helmet_0"
+        },
+		{
+            "predicate": {
+                "type": 1
+            },
+            "model": "arpg:item/snowcoat_helmet_1"
+        },
+		{
+            "predicate": {
+                "type": 2
+            },
+            "model": "arpg:item/snowcoat_helmet_2"
+        }
+    ]
+}

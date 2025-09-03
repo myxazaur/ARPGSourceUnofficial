@@ -1,0 +1,48 @@
+{
+    "parent": "builtin/entity",
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 45, 90, 180 ],
+            "translation": [ 4.5, -2.5, 0.5 ],
+            "scale": [ 0.57, 0.57, 0.57 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, 270, 180 ],
+            "translation": [ -4.5, -2.5, 0.5 ],
+            "scale": [ 0.57, 0.57, 0.57 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ -4, 99, 180 ],
+            "translation": [ 26.0, 6.5, -10.5 ],
+            "scale": [ 0.855, 0.855, 0.855 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -4, -81, 180 ],
+            "translation": [ 12.0, 6.2, -7.5 ],
+            "scale": [ 0.855, 0.855, 0.855 ]
+        },
+        "gui": {
+            "rotation": [ 40, 195, 145 ],
+            "translation": [ 1.25, 6.5, 0 ],
+            "scale": [ 0.565, 0.565, 0.565 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 180 ],
+            "translation": [ 6, 0, -11],
+            "scale":[ 1.0, 1.0, 1.0]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 180 ],
+            "translation": [ -3, 4, 5.2 ],
+            "scale": [ 0.45, 0.45, 0.45 ]
+        }
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "item/shield_blocking"
+        }
+    ]
+}

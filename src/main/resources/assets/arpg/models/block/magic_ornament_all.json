@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:magic_ornament_all",
+        "bottom": "arpg:magic_ornament_top",
+        "top": "arpg:magic_ornament_top",
+        "side": "arpg:magic_ornament_all"
+    }
+}

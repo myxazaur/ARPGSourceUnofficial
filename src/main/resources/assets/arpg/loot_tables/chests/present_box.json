@@ -1,0 +1,373 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+			"name": "present_box1",
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "arpg:rhinestone",
+                    "weight": 6
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:topaz",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:sapling",
+                    "weight": 11,
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 1
+                        },
+						{
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:amethyst",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:citrine",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:sapphire",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ruby",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:emerald",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:book",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:candy_apple",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:candy_cane",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:crimberry_wine",
+                    "weight": 7
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:chocolate",
+                    "weight": 8,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:caramel",
+                    "weight": 8,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:biscuit",
+                    "weight": 8,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+			"name": "present_box2",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "minecraft:gold_nugget",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 13
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:star_lantern",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ice_gem",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:crimberry_seed",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:weapon_enchantments_box",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:simple_enchantments_box",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:all_enchantments_box",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:coin",
+                    "weight": 14,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 20
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:snow_cloth",
+                    "weight": 8,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:magic_powder",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:cookie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 14
+                            }
+                        }
+                    ],
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:apple",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 8
+                            }
+                        }
+                    ],
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:bread",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:pumpkin_pie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 6
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+			"name": "present_box3",
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "arpg:gift",
+                    "weight": 30
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:candy_apple",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:garland",
+                    "weight": 14,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:christmas_balls",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "weight": 14
+                }
+            ]
+        }
+    ]
+}

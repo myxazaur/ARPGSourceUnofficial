@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:slime_blob1" },
+			{ "model": "arpg:slime_blob2" },
+			{ "model": "arpg:slime_blob3" }
+        ]
+    }
+}

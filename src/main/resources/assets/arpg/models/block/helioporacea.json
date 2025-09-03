@@ -1,0 +1,67 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "helioporacea": "#all",
+		"particle": "#all"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 0, 0, 9 ], 
+            "to": [ 16, 16, 9 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#helioporacea", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#helioporacea", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 0, 0, 13 ], 
+            "to": [ 16, 11, 13 ], 
+            "faces": {
+                "north": { "texture": "#helioporacea", "uv": [ 16, 0, 0, 11 ] },
+                "south": { "texture": "#helioporacea", "uv": [ 16, 0, 0, 11 ] }
+            }
+        },
+        {
+            "from": [ 2, 0, 3 ], 
+            "to": [ 18, 12, 3 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#helioporacea", "uv": [ 16, 0, 0, 12 ] },
+                "south": { "texture": "#helioporacea", "uv": [ 16, 0, 0, 12 ] }
+            }
+        }
+    ]
+}

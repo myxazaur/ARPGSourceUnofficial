@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_post",
+    "textures": {
+        "edge": "arpg:ice_pane_top",
+        "pane": "arpg:ice_pane"
+    }
+}

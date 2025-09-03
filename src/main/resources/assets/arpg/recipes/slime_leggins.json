@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "A A",
+        "A A"],
+    "key": {"A": {
+            "item": "arpg:slime_plastic"
+        }},
+    "result": {
+        "item": "arpg:slime_leggins",
+        "count": 1
+    }
+}

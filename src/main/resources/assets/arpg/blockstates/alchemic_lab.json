@@ -1,0 +1,29 @@
+{
+    "multipart": [
+        {  
+            "apply": [
+                { "model": "arpg:alchemic_lab" }
+            ]
+        },
+        {   "when": {"north": true},
+            "apply": [
+                { "model": "arpg:alchemic_lab_pipe", "y": 270 }
+            ]
+        },
+        {   "when": {"east": true},
+            "apply": [
+                { "model": "arpg:alchemic_lab_pipe"}
+            ]
+        },
+        {   "when": {"south": true},
+            "apply": [
+                { "model": "arpg:alchemic_lab_pipe", "y": 90 }
+            ]
+        },
+        {   "when": {"west": true},
+            "apply": [
+                { "model": "arpg:alchemic_lab_pipe", "y": 180 }
+            ]
+        }
+    ]
+}

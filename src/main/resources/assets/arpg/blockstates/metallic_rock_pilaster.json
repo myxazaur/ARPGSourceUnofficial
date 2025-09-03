@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "down": "arpg:metallic_rock1",
+	  "up": "arpg:metallic_rock1",
+	  "north": "arpg:metallic_rock2",
+	  "south": "arpg:metallic_rock2",
+	  "west": "arpg:metallic_rock1",
+	  "east": "arpg:metallic_rock1",
+	  "particle": "arpg:metallic_rock1"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:pilaster" },
+	"facing=down": { "model": "arpg:pilaster_up" },
+    "facing=east": { "model": "arpg:pilaster_east" },
+    "facing=south": { "model": "arpg:pilaster_south" },
+    "facing=west": { "model": "arpg:pilaster_west" },
+    "facing=north": { "model": "arpg:pilaster_north" }
+  }
+}

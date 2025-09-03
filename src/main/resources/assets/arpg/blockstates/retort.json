@@ -1,0 +1,31 @@
+{
+	"forge_marker": 1,
+	  
+    "variants": {
+		"inventory": { "model": "arpg:retort1" },
+        "facing=north": [
+            { "model": "arpg:retort1" },
+            { "model": "arpg:retort2" },
+            { "model": "arpg:retort3" },
+            { "model": "arpg:retort4" }
+        ],
+        "facing=south": [
+            { "model": "arpg:retort1", "y": 180 },
+            { "model": "arpg:retort2", "y": 180 },
+            { "model": "arpg:retort3", "y": 180 },
+            { "model": "arpg:retort4", "y": 180 }
+        ],
+        "facing=west":  [
+            { "model": "arpg:retort1", "y": 270 },
+            { "model": "arpg:retort2", "y": 270 },
+            { "model": "arpg:retort3", "y": 270 },
+            { "model": "arpg:retort4", "y": 270 }
+        ],
+        "facing=east":  [
+            { "model": "arpg:retort1", "y": 90 },
+            { "model": "arpg:retort2", "y": 90 },
+            { "model": "arpg:retort3", "y": 90 },
+            { "model": "arpg:retort4", "y": 90 }
+        ]
+    }
+}

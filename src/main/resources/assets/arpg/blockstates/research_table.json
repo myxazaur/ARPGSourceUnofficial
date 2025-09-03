@@ -1,0 +1,20 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+	  "particle": "arpg:research_table"
+    }
+  },
+  "variants": {
+	"normal": { "model": "arpg:research_table" }, 
+	"inventory": { "model": "arpg:research_table" },
+	"flat=false": [
+            { "model": "arpg:research_table" },
+            { "model": "arpg:research_table", "y": 90 }
+        ],
+	"flat=true": [
+            { "model": "arpg:research_table_flat" },
+            { "model": "arpg:research_table_flat", "y": 90 }
+        ]
+  }
+}

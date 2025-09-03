@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:book_of_elements_0",
+	"layer1": "arpg:book_of_elements_1"
+  }
+}

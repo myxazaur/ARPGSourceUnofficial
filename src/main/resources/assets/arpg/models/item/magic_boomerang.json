@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:mgboom"
+  },
+  
+  "overrides": [
+        {
+            "predicate": {
+                "throw": 1
+            },
+            "model": "arpg:item/magic_boomerangnull"
+        }
+    ]
+}

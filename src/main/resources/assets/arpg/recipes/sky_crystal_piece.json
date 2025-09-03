@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:sky_crystal"
+        }},
+    "result": {
+        "item": "arpg:sky_crystal_piece",
+        "count": 9
+    }
+}

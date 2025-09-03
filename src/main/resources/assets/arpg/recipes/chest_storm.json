@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["ABA",
+        "BSB",
+        "ABA"],
+    "key": {"S": {
+            "item": "arpg:blue_arthrostelecha_rod"
+        },"B": {
+            "item": "arpg:stormsteel_ingot"
+        },"A": {
+            "item": "arpg:stormbrass_nugget"
+        }},
+    "result": {
+        "item": "arpg:chest_storm",
+        "count": 1
+    }
+}

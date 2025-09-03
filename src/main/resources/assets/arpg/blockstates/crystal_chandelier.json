@@ -1,0 +1,15 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "arpg:crystal_chandelier",
+        "textures": {
+		"particle": "arpg:crystal_chandelier"
+        }
+    },
+    "variants": {    
+        "normal": [{}], "inventory": [{}],
+        "rotate": { "x":{}, "z":{"y": 90} }
+    }
+}

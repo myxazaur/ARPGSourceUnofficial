@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:melanza_bulb_1" },
+            { "model": "arpg:melanza_bulb_2" },
+            { "model": "arpg:melanza_bulb_3" },
+            { "model": "arpg:melanza_bulb_4" },
+            { "model": "arpg:melanza_bulb_1", "y": 90 },
+            { "model": "arpg:melanza_bulb_2", "y": 90 },
+            { "model": "arpg:melanza_bulb_3", "y": 90 },
+            { "model": "arpg:melanza_bulb_4", "y": 90 }
+        ]
+    }
+}

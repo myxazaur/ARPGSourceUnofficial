@@ -1,0 +1,388 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+			"name": "toxic_common1",
+            "entries": [
+			
+                {
+                    "type": "item",
+                    "name": "arpg:plant_fiber",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:vicious_arrow",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 16
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:mining_rocket",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:junk_pile",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:bullet_poisonous",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:bullet_lead",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:uranium_nugget",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ],
+                    "weight": 4
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:gaseous_energy_drink",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:vial_of_poison",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:geiger_counter",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 4
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:body_warmer",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:brown_slime_wand",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:slime_blob_wand",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:bones_wand",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:toxic_torch",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 12
+                            }
+                        }
+                    ],
+                    "weight": 5
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+			"name": "toxic_common2",
+            "entries": [
+			
+				{
+                    "type": "item",
+                    "name": "arpg:toxicola",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 4
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:toxiberry_mojito",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:deceidus_juice",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:glowing_toxiberry",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:small_toxiberry",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 8
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:wasteburger",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:antidote",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:anti_rad_injector",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "weight": 2
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:toxibulb_seed",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "weight": 3
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:toxedge_bread",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "weight": 5
+                },
+				{
+                    "type": "item",
+                    "name": "arpg:fiber_bandage",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "weight": 3
+                }
+            ]
+        }
+    ]
+}

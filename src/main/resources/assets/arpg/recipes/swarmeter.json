@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B ",
+        "BSB",
+        " B "],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        },"B": {
+            "item": "arpg:infernum_ingot"
+        }},
+    "result": {
+        "item": "arpg:swarmeter",
+        "count": 1
+    }
+}

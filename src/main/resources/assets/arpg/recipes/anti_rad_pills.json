@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:sugar"
+        },
+		{
+            "item": "arpg:white_slimeball"
+        },
+		{
+            "item": "arpg:toxiberry_vibrant_seed"
+        }
+    ],
+    "result": {
+        "item": "arpg:anti_rad_pills",
+        "count": 1
+    }
+}

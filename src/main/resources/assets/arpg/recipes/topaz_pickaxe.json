@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        " S ",
+        " S "],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "gemTopaz"
+        }},
+    "result": {
+        "item": "arpg:topaz_pickaxe",
+        "count": 1
+    }
+}

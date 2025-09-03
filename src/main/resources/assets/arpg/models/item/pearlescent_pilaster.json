@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:pearlescent_bricks",
+	  "up": "arpg:pearlescent_bricks",
+	  "north": "arpg:pearlescent_bricks",
+	  "south": "arpg:pearlescent_bricks",
+	  "west": "arpg:pearlescent_bricks",
+	  "east": "arpg:pearlescent_bricks"
+    }
+}

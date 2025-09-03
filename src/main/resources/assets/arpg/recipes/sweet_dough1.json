@@ -1,0 +1,31 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "forge:ore_dict",
+            "ore": "egg"
+        },
+		{
+            "item": "arpg:butter"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "dustFlour"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "dustFlour"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "dustFlour"
+        },
+		{
+            "item": "minecraft:sugar"
+        }
+    ],
+    "result": {
+        "item": "arpg:sweet_dough",
+        "count": 6
+    }
+}

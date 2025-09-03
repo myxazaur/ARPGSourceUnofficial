@@ -1,0 +1,22 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LSL",
+        "LLL"],
+    "key": {"L": {
+            "item": "arpg:copper_wire"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "ingotIron"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotTin"
+        }},
+    "result": {
+        "item": "arpg:electric_motor",
+        "count": 1
+    }
+}

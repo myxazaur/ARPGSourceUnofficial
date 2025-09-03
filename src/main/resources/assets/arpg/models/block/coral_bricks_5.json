@@ -1,0 +1,79 @@
+{
+    "textures": {
+        "coral_bricks": "arpg:coral_bricks",
+        "particle": "arpg:coral_bricks"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        
+        {
+            "name": "Cube3",
+            "from": [ 18.5, 10, 4 ], 
+            "to": [ 18.5, 14, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 0, 12, 2, 14 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 2, 12, 4, 14 ] }
+            }
+        },
+        {
+            "name": "Cube4",
+            "from": [ -0.2, 9, 9 ], 
+            "to": [ -0.2, 17, 17 ], 
+            "faces": {
+                "west": { "texture": "#coral_bricks", "uv": [ 4, 8, 8, 12 ] }
+            }
+        },
+        {
+            "name": "Cube2",
+            "from": [ 15, 11, 7 ], 
+            "to": [ 15, 15, 11 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 0, 14, 2, 16 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 2, 14, 4, 16 ] }
+            }
+        },
+        {
+            "name": "Cube1",
+            "from": [ 18, 10, 4.5 ], 
+            "to": [ 18, 14, 8.5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 2, 12, 4, 14 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 2, 14, 4, 16 ] }
+            }
+        }
+    ]
+}

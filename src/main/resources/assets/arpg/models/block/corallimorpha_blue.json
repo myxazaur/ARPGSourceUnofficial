@@ -1,0 +1,6 @@
+{
+    "parent": "arpg:block/corallimorpha",
+    "textures": {
+        "all": "arpg:corallimorpha_blue"
+    }
+}

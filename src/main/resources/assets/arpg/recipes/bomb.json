@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " S ",
+        "MLM",
+        " M "
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:tnt"
+        },
+        "M": {
+            "item": "minecraft:iron_nugget"
+        },
+        "S": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "arpg:bomb",
+        "count": 1
+    }
+}

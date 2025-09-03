@@ -1,0 +1,13 @@
+{
+  "parent": "item/generated",
+  "display": {
+        "head": {
+            "rotation": [ 0, 90, 0 ],
+            "translation": [ 4.7, -12, 1.8 ],
+            "scale": [ -0.6, 0.6, 0.6 ]
+        }
+    },
+  "textures": {
+    "layer0": "arpg:personal_frostinguisher"
+  }
+}

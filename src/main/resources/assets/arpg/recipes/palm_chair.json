@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B",
+        "BS",
+        "GG"],
+    "key": {"B": {
+            "item": "arpg:palm_dry_leaves"
+        },"S": {
+            "item": "arpg:palm_planks"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:palm_chair",
+        "count": 1
+    }
+}

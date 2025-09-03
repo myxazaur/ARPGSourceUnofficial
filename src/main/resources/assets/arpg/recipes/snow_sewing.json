@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SLS",
+        "SMS",
+        "SLS"
+    ],
+    "key": {
+        "L": {
+            "item": "arpg:conifer_ornament"
+        },
+        "S": {
+            "item": "arpg:winter_willow_seed"
+        },
+        "M": {
+            "item": "arpg:ice_gem"
+        }
+    },
+    "result": {
+        "item": "arpg:snow_sewing_table",
+        "count": 1
+    }
+}

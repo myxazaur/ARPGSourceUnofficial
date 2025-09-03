@@ -1,0 +1,40 @@
+{
+    "parent": "arpg:item/vial_display",
+    "elements": [
+        {
+            "from": [ 5.5, 0, 5.5 ], 
+            "to": [ 10.5, 5, 10.5 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 6, 6 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 10, 6 ] },
+                "south": { "texture": "#vial", "uv": [ 1, 1, 6, 6 ] },
+                "west": { "texture": "#vial", "uv": [ 5, 1, 10, 6 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 3, 8, 8 ] },
+                "down": { "texture": "#vial", "uv": [ 3, 3, 8, 8 ] }
+            }
+        },
+        {
+            "from": [ 7, 5, 7 ], 
+            "to": [ 9, 10, 9 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 1, 1, 3, 6 ] },
+                "east": { "texture": "#vial", "uv": [ 5, 1, 7, 6 ] },
+                "south": { "texture": "#vial", "uv": [ 3, 1, 5, 6 ] },
+                "west": { "texture": "#vial", "uv": [ 5, 1, 7, 6 ] },
+                "up": { "texture": "#vial", "uv": [ 3, 3, 5, 5 ] }
+            }
+        },
+        {
+            "from": [ 7.1, 10, 7.1 ], 
+            "to": [ 8.9, 10.75, 8.9 ], 
+            "faces": {
+                "north": { "texture": "#vial", "uv": [ 13, 1, 15, 2 ] },
+                "east": { "texture": "#vial", "uv": [ 14, 1, 16, 2 ] },
+                "south": { "texture": "#vial", "uv": [ 14, 3, 16, 4 ] },
+                "west": { "texture": "#vial", "uv": [ 12, 2, 14, 3 ] },
+                "up": { "texture": "#vial", "uv": [ 13, 2, 15, 4 ] },
+                "down": { "texture": "#vial", "uv": [ 12, 5, 14, 7 ] }
+            }
+        }
+    ]
+}

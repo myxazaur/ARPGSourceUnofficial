@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "down": "arpg:dolerite_bricks",
+	  "up": "arpg:dolerite_bricks",
+	  "north": "arpg:dolerite_bricks",
+	  "south": "arpg:dolerite_bricks",
+	  "west": "arpg:dolerite_bricks",
+	  "east": "arpg:dolerite_bricks",
+	  "particle": "arpg:dolerite_bricks"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:pilaster" },
+	"facing=down": { "model": "arpg:pilaster_up" },
+    "facing=east": { "model": "arpg:pilaster_east" },
+    "facing=south": { "model": "arpg:pilaster_south" },
+    "facing=west": { "model": "arpg:pilaster_west" },
+    "facing=north": { "model": "arpg:pilaster_north" }
+  }
+}

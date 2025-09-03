@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A",
+        "L",
+        "A"],
+    "key": {"A": {
+            "item": "arpg:dolerite_pilaster"
+        },"L": {
+            "item": "arpg:glowing_vein"
+        }},
+    "result": {
+        "item": "arpg:dolerite_column",
+        "count": 2
+    }
+}

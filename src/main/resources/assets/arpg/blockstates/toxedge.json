@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "growed=false": { "model": "arpg:toxedge0"},
+	"growed=true": { "model": "arpg:toxedge1"}
+	
+  }
+}

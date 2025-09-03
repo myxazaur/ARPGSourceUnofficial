@@ -1,0 +1,83 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "bones": "arpg:bones_pile",
+		"particle": "arpg:bones_pile"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 8, -1, 6 ], 
+            "to": [ 10, 9, 8 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bones", "uv": [ 15, 13, 5, 15 ], "rotation": 270 },
+                "east": { "texture": "#bones", "uv": [ 14, 4, 16, 14 ] },
+                "south": { "texture": "#bones", "uv": [ 16, 13, 6, 15 ], "rotation": 270 },
+                "west": { "texture": "#bones", "uv": [ 14, 4, 16, 14 ] },
+                "up": { "texture": "#bones", "uv": [ 14, 0, 16, 2 ] },
+                "down": { "texture": "#bones", "uv": [ 14, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 9, 6 ], 
+            "to": [ 8, 11, 8 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bones", "uv": [ 16, 5, 14, 7 ], "rotation": 270 },
+                "east": { "texture": "#bones", "uv": [ 14, 4, 16, 6 ] },
+                "south": { "texture": "#bones", "uv": [ 16, 6, 14, 8 ], "rotation": 270 },
+                "west": { "texture": "#bones", "uv": [ 14, 4, 16, 6 ] },
+                "up": { "texture": "#bones", "uv": [ 14, 0, 16, 2 ] },
+                "down": { "texture": "#bones", "uv": [ 14, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 10, 9, 6 ], 
+            "to": [ 12, 11, 8 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bones", "uv": [ 16, 5, 14, 7 ], "rotation": 270 },
+                "east": { "texture": "#bones", "uv": [ 14, 4, 16, 6 ] },
+                "south": { "texture": "#bones", "uv": [ 16, 6, 14, 8 ], "rotation": 270 },
+                "west": { "texture": "#bones", "uv": [ 14, 4, 16, 6 ] },
+                "up": { "texture": "#bones", "uv": [ 14, 0, 16, 2 ] },
+                "down": { "texture": "#bones", "uv": [ 14, 0, 16, 2 ] }
+            }
+        }
+    ]
+}

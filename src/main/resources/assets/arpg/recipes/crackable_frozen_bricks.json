@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L",
+        "G"],
+    "key": {"L": {
+            "item": "arpg:frozen_cobblestone"
+        },"A": {
+            "item": "arpg:frozen_brick_pilaster"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        }},
+    "result": {
+        "item": "arpg:crackable_frozen_bricks",
+        "count": 2
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "arpg:item/enchantments_box",
+  "textures": {
+    "all": "arpg:simple_enchantments_box"
+  }
+}

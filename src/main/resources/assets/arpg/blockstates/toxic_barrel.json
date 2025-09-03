@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "type=0": { "model": "arpg:model_bar1" },
+		"type=1": { "model": "arpg:model_bar2" },
+		"type=2": { "model": "arpg:model_bar3" },
+		"type=3": { "model": "arpg:model_bar4" },
+		"type=4": { "model": "arpg:model_bar5" },
+		"type=5": { "model": "arpg:model_bar6" },
+		"type=6": { "model": "arpg:model_bar7" },
+		"type=7": { "model": "arpg:model_bar8" },
+		"type=8": { "model": "arpg:model_bar9" },
+		"type=9": { "model": "arpg:model_bar10" },
+		"type=10": { "model": "arpg:model_bar11" },
+		"type=11": { "model": "arpg:model_bar12" },
+		"type=12": { "model": "arpg:model_bar13" }
+		
+    }
+}

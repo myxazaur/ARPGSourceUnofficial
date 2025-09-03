@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:crystal_chair",
+	  "particle": "arpg:crystal_chair"
+    }
+  },
+  "variants": {
+    "facing=east": { "model": "arpg:crystal_chair" },
+    "facing=south": { "model": "arpg:crystal_chair", "y": 90 },
+    "facing=west": { "model": "arpg:crystal_chair", "y": 180 },
+    "facing=north": { "model": "arpg:crystal_chair", "y": 270 }
+  }
+}

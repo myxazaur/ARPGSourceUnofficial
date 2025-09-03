@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:toxic_table",
+	  "particle": "arpg:toxic_table"
+    }
+  },
+  "variants": {
+    "flat=false": { "model": "arpg:toxic_table" },
+    "flat=true": { "model": "arpg:toxic_table_flat" }
+  }
+}

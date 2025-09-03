@@ -1,0 +1,78 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "ichorshower": "arpg:ichorshower"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 75, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.725, 0.725, 0.725 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 30, -90, -50 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, -90, 0 ],
+            "translation": [ 0, -0.5, -5.0 ],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 14, 0, 2 ], 
+            "to": [ 15, 13, 11 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#ichorshower", "uv": [ 9, 7, 9.5, 13.5 ] },
+                "east": { "texture": "#ichorshower", "uv": [ 0, 0, 4.5, 6.5 ] },
+                "south": { "texture": "#ichorshower", "uv": [ 0, 8, 0.5, 14.5 ] },
+                "west": { "texture": "#ichorshower", "uv": [ 10, 0, 14.5, 6.5 ] },
+                "up": { "texture": "#ichorshower", "uv": [ 0, 7, 4.5, 7.5 ], "rotation": 270 },
+                "down": { "texture": "#ichorshower", "uv": [ 0, 7, 4.5, 7.5 ], "rotation": 270 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 14, 0, 5 ], 
+            "to": [ 15, 13, 14 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#ichorshower", "uv": [ 0, 8, 0.5, 14.5 ] },
+                "east": { "texture": "#ichorshower", "uv": [ 10, 7, 14.5, 13.5 ] },
+                "south": { "texture": "#ichorshower", "uv": [ 9, 7, 9.5, 13.5 ] },
+                "west": { "texture": "#ichorshower", "uv": [ 5, 0, 9.5, 6.5 ] },
+                "up": { "texture": "#ichorshower", "uv": [ 0, 7, 4.5, 7.5 ], "rotation": 270 },
+                "down": { "texture": "#ichorshower", "uv": [ 0, 7, 4.5, 7.5 ], "rotation": 270 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 8, 0, 11 ], 
+            "to": [ 16, 13, 11.01 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#ichorshower", "uv": [ 10, 0, 14.5, 6.5 ] },
+                "south": { "texture": "#ichorshower", "uv": [ 5, 0, 9.5, 6.5 ] }
+            }
+        }
+    ]
+}

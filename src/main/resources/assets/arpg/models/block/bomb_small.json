@@ -1,0 +1,124 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "bomb1": "arpg:bomb1"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 6, -2, 4 ], 
+            "to": [ 14, 6, 12 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bomb1", "uv": [ 8, 8, 16, 16 ] },
+                "east": { "texture": "#bomb1", "uv": [ 8, 8, 16, 16 ] },
+                "south": { "texture": "#bomb1", "uv": [ 8, 8, 16, 16 ] },
+                "west": { "texture": "#bomb1", "uv": [ 8, 8, 16, 16 ] },
+                "up": { "texture": "#bomb1", "uv": [ 8, 8, 16, 16 ] },
+                "down": { "texture": "#bomb1", "uv": [ 8, 8, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 6, 5 ], 
+            "to": [ 13, 11, 11 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bomb1", "uv": [ 9, 8, 15, 13 ] },
+                "east": { "texture": "#bomb1", "uv": [ 9, 8, 15, 13 ] },
+                "south": { "texture": "#bomb1", "uv": [ 9, 8, 15, 13 ] },
+                "west": { "texture": "#bomb1", "uv": [ 9, 8, 15, 13 ] },
+                "up": { "texture": "#bomb1", "uv": [ 9, 9, 15, 15 ] },
+                "down": { "texture": "#bomb1", "uv": [ 9, 9, 15, 15 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 8, 11, 6 ], 
+            "to": [ 12, 14, 10 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bomb1", "uv": [ 10, 0, 14, 3 ] },
+                "east": { "texture": "#bomb1", "uv": [ 10, 0, 14, 3 ] },
+                "south": { "texture": "#bomb1", "uv": [ 10, 0, 14, 3 ] },
+                "west": { "texture": "#bomb1", "uv": [ 10, 0, 14, 3 ] },
+                "up": { "texture": "#bomb1", "uv": [ 10, 10, 14, 14 ] },
+                "down": { "texture": "#bomb1", "uv": [ 10, 10, 14, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 9, 14, 4 ], 
+            "to": [ 11, 18, 12 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bomb1", "uv": [ 10, 0, 12, 4 ] },
+                "east": { "texture": "#bomb1", "uv": [ 8, 12, 16, 16 ] },
+                "south": { "texture": "#bomb1", "uv": [ 10, 0, 12, 4 ] },
+                "west": { "texture": "#bomb1", "uv": [ 8, 12, 16, 16 ] },
+                "up": { "texture": "#bomb1", "uv": [ 9, 8, 11, 16 ] },
+                "down": { "texture": "#bomb1", "uv": [ 9, 8, 11, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 14, 7 ], 
+            "to": [ 9, 18, 9 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bomb1", "uv": [ 13, 12, 16, 16 ] },
+                "east": { "texture": "#bomb1", "uv": [ 10, 0, 12, 4 ] },
+                "south": { "texture": "#bomb1", "uv": [ 8, 12, 11, 16 ] },
+                "west": { "texture": "#bomb1", "uv": [ 10, 0, 12, 4 ] },
+                "up": { "texture": "#bomb1", "uv": [ 8, 10, 11, 12 ] },
+                "down": { "texture": "#bomb1", "uv": [ 8, 10, 11, 12 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 11, 14, 7 ], 
+            "to": [ 14, 18, 9 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#bomb1", "uv": [ 8, 12, 11, 16 ] },
+                "east": { "texture": "#bomb1", "uv": [ 10, 0, 12, 4 ] },
+                "south": { "texture": "#bomb1", "uv": [ 13, 12, 16, 16 ] },
+                "west": { "texture": "#bomb1", "uv": [ 10, 0, 12, 4 ] },
+                "up": { "texture": "#bomb1", "uv": [ 13, 10, 16, 12 ] },
+                "down": { "texture": "#bomb1", "uv": [ 13, 10, 16, 12 ] }
+            }
+        }
+    ]
+}

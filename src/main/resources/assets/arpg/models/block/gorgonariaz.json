@@ -1,0 +1,27 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "gorgonaria_brown": "#all",
+		"particle": "#all"
+    },
+    "elements": [
+        {
+            "from": [ -3, 0, 8 ], 
+            "to": [ 19, 20, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#gorgonaria_brown", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#gorgonaria_brown", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ -3, 4, 8 ], 
+            "to": [ 19, 24, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#gorgonaria_brown", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#gorgonaria_brown", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+    ]
+}

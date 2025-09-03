@@ -1,0 +1,21 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+		"textures": {
+		  "texture": "arpg:larva_block",
+		  "particle": "arpg:larva_block",
+		  "all": "arpg:larva_block"
+		}
+	  },
+    "variants": {
+		"layers=0":  { "model": "snow_height2" },
+        "layers=1":  { "model": "snow_height6" },
+        "layers=2":  { "model": "snow_height10" },
+        "layers=3":  { "model": "snow" },
+		"layers=0":  { "model": "snow_height2" },
+        "layers=1":  { "model": "snow_height6" },
+        "layers=2":  { "model": "snow_height10" },
+        "layers=3":  { "model": "snow" }
+		
+    }
+}

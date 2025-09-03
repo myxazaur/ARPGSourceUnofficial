@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        "L "
+],
+    "key": {"L": {
+            "item": "arpg:conifer_rosin"
+        },"B": {
+            "item": "arpg:northern_ingot"
+        }},
+    "result": {
+        "item": "arpg:burning_frost_igniter",
+        "count": 1
+    }
+}

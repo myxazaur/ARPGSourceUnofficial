@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+	  "particle": "arpg:crystal_torch"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:crystal_torch" },
+    "facing=east": { "model": "arpg:crystal_torch_wall" },
+    "facing=south": { "model": "arpg:crystal_torch_wall", "y": 90 },
+    "facing=west": { "model": "arpg:crystal_torch_wall", "y": 180 },
+    "facing=north": { "model": "arpg:crystal_torch_wall", "y": 270 }
+  }
+}

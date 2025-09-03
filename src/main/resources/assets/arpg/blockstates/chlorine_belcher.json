@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:chlorine_belcher"
+  },
+  "variants": {
+		"normal": [{}], 
+		"inventory": [{}],
+		"facing=up": { "model": "arpg:chlorine_belcher" },
+		"facing=east": { "model": "arpg:chlorine_belcher", "x": 90, "y": 90 },
+		"facing=south": { "model": "arpg:chlorine_belcher", "x": 90, "y": 180 },
+		"facing=west": { "model": "arpg:chlorine_belcher", "x": 90, "y": 270 },
+		"facing=north": { "model": "arpg:chlorine_belcher", "x": 90 },
+		"facing=down": { "model": "arpg:chlorine_belcher", "x": 180 }
+  }
+}

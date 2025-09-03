@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["  C",
+        " S ",
+        "G  "],
+    "key": {"C": {
+            "type": "forge:ore_dict",
+			"ore": "materialAdvancedPlastic"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "blockGlassColorless"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetZinc"
+        }},
+    "result": {
+        "item": "arpg:empty_syringe",
+        "count": 16
+    }
+}

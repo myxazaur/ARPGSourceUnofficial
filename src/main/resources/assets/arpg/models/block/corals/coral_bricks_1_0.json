@@ -1,0 +1,51 @@
+{
+    "textures": {
+        "coral_bricks": "arpg:coral_bricks",
+		"particle": "arpg:coral_bricks"
+    },
+    "elements": [
+        {
+            "name": "Cube2",
+            "from": [ 4, 3, 19 ], 
+            "to": [ 12, 11, 19 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 0, 8, 4, 12 ] },
+                "south": { "texture": "#coral_bricks", "uv": [ 0, 8, 4, 12 ] }
+            }
+        },
+        {
+            "name": "Cube1",
+            "from": [ -7, 3, 8 ], 
+            "to": [ 1, 11, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 0, 8, 4, 12 ], "cullface": "north" },
+                "south": { "texture": "#coral_bricks", "uv": [ 0, 8, 4, 12 ] }
+            }
+        },
+        {
+            "name": "Cube3",
+            "from": [ 3, 10, -3 ], 
+            "to": [ 11, 18, -3 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 4, 12, 8, 16 ] },
+                "south": { "texture": "#coral_bricks", "uv": [ 4, 12, 8, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "north" },
+                "east": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "east" },
+                "south": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "south" },
+                "west": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "west" },
+                "up": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "up" },
+                "down": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "down" }
+            }
+        }
+    ]
+}

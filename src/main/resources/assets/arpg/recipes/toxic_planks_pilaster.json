@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA"
+],
+    "key": {"A": {
+            "item": "arpg:toxic_planks"
+        }},
+    "result": {
+        "item": "arpg:toxic_planks_pilaster",
+        "count": 4
+    }
+}

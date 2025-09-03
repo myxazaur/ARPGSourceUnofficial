@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B ",
+        "BSB",
+        " H "],
+    "key": {"B": {
+            "item": "arpg:snow_cloth"
+        },"S": {
+            "item": "arpg:northern_sphere"
+        },"H": {
+            "item": "arpg:gift"
+        }},
+    "result": {
+        "item": "arpg:winter_sacrifice",
+        "count": 1
+    }
+}

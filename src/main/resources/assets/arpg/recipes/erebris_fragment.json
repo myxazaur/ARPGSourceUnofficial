@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:erebris_shard"
+        }},
+    "result": {
+        "item": "arpg:erebris_fragment",
+        "count": 1
+    }
+}

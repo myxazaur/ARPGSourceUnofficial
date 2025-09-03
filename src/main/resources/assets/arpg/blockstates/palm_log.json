@@ -1,0 +1,14 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "cube_column",
+        "textures": {"end": "arpg:palm_log_top","side": "arpg:palm_log_side"}
+    },
+    "variants": {    
+        "normal": [{}], 
+        "inventory": [{}],
+        "axis": { "x":{ "x": 90, "y": 90}, "y":{}, "z":{ "x": 90} , "none":{"model": "arpg:log_full_side"}}
+    }
+}

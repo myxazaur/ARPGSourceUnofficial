@@ -1,0 +1,6 @@
+{
+    "parent": "arpg:block/snow_sewing_table",
+    "textures": {
+        "snow_sewing_table": "arpg:snow_sewing_table_1"
+    }
+}

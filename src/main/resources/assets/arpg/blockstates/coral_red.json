@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "normal": [
+			{ "model": "arpg:coral_red" },
+            { "model": "arpg:coral_red_a" },
+            { "model": "arpg:coral_red_a" , "y": 90 },
+            { "model": "arpg:coral_red_a" , "y": 180 },
+            { "model": "arpg:coral_red_a" , "y": 270 },
+            { "model": "arpg:coral_red_b" },
+            { "model": "arpg:coral_red_b" , "y": 90 },
+            { "model": "arpg:coral_red_b" , "y": 180 },
+            { "model": "arpg:coral_red_b" , "y": 270 }
+        ]
+    }
+}

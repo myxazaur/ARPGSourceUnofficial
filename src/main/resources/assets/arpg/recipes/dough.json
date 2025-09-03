@@ -1,0 +1,32 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "forge:ore_dict",
+            "ore": "egg"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "yeast"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "dustFlour"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "dustFlour"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "dustFlour"
+        },
+		{
+            "item": "arpg:salt_grains"
+        }
+    ],
+    "result": {
+        "item": "arpg:dough",
+        "count": 3
+    }
+}

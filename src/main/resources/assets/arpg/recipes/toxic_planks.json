@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:toxiberry_tree_log"
+        }},
+    "result": {
+        "item": "arpg:toxic_planks",
+        "count": 4
+    }
+}

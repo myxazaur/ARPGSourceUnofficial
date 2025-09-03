@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L",
+        "L"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "gemRuby"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:ruby_shovel",
+        "count": 1
+    }
+}

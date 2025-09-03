@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:stormsteel_nugget"
+        }},
+    "result": {
+        "item": "arpg:stormsteel_ingot",
+        "count": 1
+    }
+}

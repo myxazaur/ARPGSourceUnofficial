@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:acropora_white_big",
+    "textures": {
+	  "all": "arpg:acropora_white"
+    }
+  },
+  "variants": {
+		"normal": [{}], 
+		"inventory": [{}],
+		"facing=up,level=0,wet=true": [{ "model": "arpg:acropora_white_big" }, { "model": "arpg:acropora_white_bigz" }],
+		"facing=east,level=0,wet=true": [{ "model": "arpg:acropora_white_big", "x": 90, "y": 90 }, { "model": "arpg:acropora_white_bigz", "x": 90, "y": 90 }],
+		"facing=south,level=0,wet=true": [{ "model": "arpg:acropora_white_big", "x": 90, "y": 180 }, { "model": "arpg:acropora_white_bigz", "x": 90, "y": 180 }],
+		"facing=west,level=0,wet=true": [{ "model": "arpg:acropora_white_big", "x": 90, "y": 270 }, { "model": "arpg:acropora_white_bigz", "x": 90, "y": 270 }],
+		"facing=north,level=0,wet=true": [{ "model": "arpg:acropora_white_big", "x": 90 }, { "model": "arpg:acropora_white_bigz", "x": 90 }],
+		"facing=down,level=0,wet=true": [{ "model": "arpg:acropora_white_big", "x": 180 }, { "model": "arpg:acropora_white_bigz", "x": 180 }],
+		"facing=up,level=0,wet=false": [{ "model": "arpg:acropora_white_big" }, { "model": "arpg:acropora_white_bigz" }],
+		"facing=east,level=0,wet=false": [{ "model": "arpg:acropora_white_big", "x": 90, "y": 90 }, { "model": "arpg:acropora_white_bigz", "x": 90, "y": 90 }],
+		"facing=south,level=0,wet=false": [{ "model": "arpg:acropora_white_big", "x": 90, "y": 180 }, { "model": "arpg:acropora_white_bigz", "x": 90, "y": 180 }],
+		"facing=west,level=0,wet=false": [{ "model": "arpg:acropora_white_big", "x": 90, "y": 270 }, { "model": "arpg:acropora_white_bigz", "x": 90, "y": 270 }],
+		"facing=north,level=0,wet=false": [{ "model": "arpg:acropora_white_big", "x": 90 }, { "model": "arpg:acropora_white_bigz", "x": 90 }],
+		"facing=down,level=0,wet=false": [{ "model": "arpg:acropora_white_big", "x": 180 }, { "model": "arpg:acropora_white_bigz", "x": 180 }]
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LL",
+        "SS"
+    ],
+    "key": {
+        "L": {
+            "item": "arpg:conifer_log"
+        },
+        "S": {
+            "item": "arpg:conifer_planks"
+        }
+    },
+    "result": {
+        "item": "arpg:conifer_ornament",
+        "count": 8
+    }
+}

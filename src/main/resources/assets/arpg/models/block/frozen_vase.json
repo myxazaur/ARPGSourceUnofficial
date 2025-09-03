@@ -1,0 +1,102 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "frozen_vase": "arpg:frozen_vase",
+		"particle": "arpg:frozen_vase"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, -3, 0 ],
+            "scale": [ 0.425, 0.425, 0.425 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 0, 4 ], 
+            "to": [ 12, 6, 12 ], 
+            "faces": {
+                "north": { "texture": "#frozen_vase", "uv": [ 7, 13, 11, 16 ] },
+                "east": { "texture": "#frozen_vase", "uv": [ 7, 13, 11, 16 ] },
+                "south": { "texture": "#frozen_vase", "uv": [ 7, 13, 11, 16 ] },
+                "west": { "texture": "#frozen_vase", "uv": [ 7, 13, 11, 16 ] },
+                "down": { "texture": "#frozen_vase", "uv": [ 7, 7, 11, 11 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 6, 2 ], 
+            "to": [ 14, 20, 14 ], 
+            "faces": {
+                "north": { "texture": "#frozen_vase", "uv": [ 0, 9, 6, 16 ] },
+                "east": { "texture": "#frozen_vase", "uv": [ 0, 9, 6, 16 ] },
+                "south": { "texture": "#frozen_vase", "uv": [ 0, 9, 6, 16 ] },
+                "west": { "texture": "#frozen_vase", "uv": [ 0, 9, 6, 16 ] },
+                "up": { "texture": "#frozen_vase", "uv": [ 10, 0, 16, 6 ] },
+                "down": { "texture": "#frozen_vase", "uv": [ 10, 0, 16, 6 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 20, 3 ], 
+            "to": [ 13, 22, 13 ], 
+            "faces": {
+                "north": { "texture": "#frozen_vase", "uv": [ 0, 7, 5, 8 ] },
+                "east": { "texture": "#frozen_vase", "uv": [ 0, 7, 5, 8 ] },
+                "south": { "texture": "#frozen_vase", "uv": [ 0, 7, 5, 8 ] },
+                "west": { "texture": "#frozen_vase", "uv": [ 0, 7, 5, 8 ] },
+                "up": { "texture": "#frozen_vase", "uv": [ 11, 6, 16, 11 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 5, 22, 5 ], 
+            "to": [ 11, 28, 11 ], 
+            "faces": {
+                "north": { "texture": "#frozen_vase", "uv": [ 0, 3, 3, 6 ] },
+                "east": { "texture": "#frozen_vase", "uv": [ 0, 3, 3, 6 ] },
+                "south": { "texture": "#frozen_vase", "uv": [ 0, 3, 3, 6 ] },
+                "west": { "texture": "#frozen_vase", "uv": [ 0, 3, 3, 6 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 28, 4 ], 
+            "to": [ 12, 31, 12 ], 
+            "faces": {
+                "north": { "texture": "#frozen_vase", "uv": [ 0, 0, 4, 1.5 ] },
+                "east": { "texture": "#frozen_vase", "uv": [ 0, 0, 4, 1.5 ] },
+                "south": { "texture": "#frozen_vase", "uv": [ 0, 0, 4, 1.5 ] },
+                "west": { "texture": "#frozen_vase", "uv": [ 0, 0, 4, 1.5 ] },
+                "up": { "texture": "#frozen_vase", "uv": [ 12, 12, 16, 16 ] },
+                "down": { "texture": "#frozen_vase", "uv": [ 12, 12, 16, 16 ] }
+            }
+        }
+    ]
+}

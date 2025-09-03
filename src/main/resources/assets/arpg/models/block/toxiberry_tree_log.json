@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_directional",
+    "textures": {
+        "end": "arpg:toxiberry_tree_top",
+        "side": "arpg:toxiberry_tree_log"
+    }
+}

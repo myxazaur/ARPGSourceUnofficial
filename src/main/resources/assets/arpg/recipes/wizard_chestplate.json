@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A A",
+        "ASA",
+        "AAA"],
+    "key": {"S": {
+            "item": "arpg:magic_powder"
+        },"A": {
+            "item": "arpg:wizard_cloth"
+        }},
+    "result": {
+        "item": "arpg:wizard_chestplate",
+        "count": 1
+    }
+}

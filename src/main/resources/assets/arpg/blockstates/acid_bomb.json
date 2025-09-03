@@ -1,0 +1,8 @@
+{
+    "variants": {
+    
+    "explode=false": { "model": "arpg:acid_bomb"},
+	"explode=true": { "model": "arpg:acid_bomb"}
+	
+  }
+}

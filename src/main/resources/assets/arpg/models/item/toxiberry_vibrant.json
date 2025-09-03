@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:customplants/toxiberry_vibrant1"
+  }
+}

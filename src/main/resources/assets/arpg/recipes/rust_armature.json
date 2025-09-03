@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A A",
+        " S ",
+        "A A"],
+    "key": {"A": {
+            "item": "arpg:scrap_metal"
+        },"S": {
+            "item": "arpg:rust_metal"
+        }},
+    "result": {
+        "item": "arpg:rust_armature",
+        "count": 4
+    }
+}

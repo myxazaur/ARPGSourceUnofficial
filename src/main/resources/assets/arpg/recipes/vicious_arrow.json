@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A",
+        "L",
+        "G"],
+    "key": {"G": {
+            "item": "arpg:dried_plant_fiber"
+        },"L": {
+            "item": "arpg:toxiberry_stick"
+        },"A": {
+            "item": "arpg:deceidus_seed"
+        }},
+    "result": {
+        "item": "arpg:vicious_arrow",
+        "count": 10
+    }
+}

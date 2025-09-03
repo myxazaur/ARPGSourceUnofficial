@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LLL",
+        "GHG"],
+    "key": {"G": {
+            "type": "forge:ore_dict",
+			"ore": "ingotChromium"
+        },"L": {
+            "item": "arpg:electric_motor"
+        },"A": {
+            "item": "arpg:linear_motor"
+        },"H": {
+            "item": "arpg:machinery_casing"
+        }},
+    "result": {
+        "item": "arpg:assembly_table",
+        "count": 1
+    }
+}

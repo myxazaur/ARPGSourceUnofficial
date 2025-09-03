@@ -1,0 +1,152 @@
+{
+    "textures": {
+        "crystal_chandelier": "arpg:crystal_chandelier"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 7, 4, 7 ], 
+            "to": [ 9, 20, 9 ], 
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 16 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 16 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 16 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 20, 6 ], 
+            "to": [ 10, 24, 10 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "up": { "texture": "#crystal_chandelier", "uv": [ 2, 4, 6, 8 ] },
+                "down": { "texture": "#crystal_chandelier", "uv": [ 6, 0, 10, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 2, 11 ], 
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 2, 10, 8, 12 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 2, 10, 8, 11 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 2, 10, 8, 12 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 2, 10, 8, 12 ] },
+                "up": { "texture": "#crystal_chandelier", "uv": [ 10, 0, 16, 6 ] },
+                "down": { "texture": "#crystal_chandelier", "uv": [ 10, 6, 16, 12 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 2, 6 ], 
+            "to": [ 10, 4, 10 ], 
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 2, 8, 6, 10 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 2, 8, 6, 10 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 2, 8, 6, 10 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 2, 8, 6, 10 ] },
+                "up": { "texture": "#crystal_chandelier", "uv": [ 6, 4, 10, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 11, 7 ], 
+            "to": [ 14, 13, 9 ], 
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 4, 14, 16, 16 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 14, 14, 16, 16 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 4, 14, 16, 16 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 4, 14, 6, 16 ] },
+                "up": { "texture": "#crystal_chandelier", "uv": [ 0, 2, 2, 14 ], "rotation": 90 },
+                "down": { "texture": "#crystal_chandelier", "uv": [ 0, 2, 2, 14 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 13, 7 ], 
+            "to": [ 4, 17, 9 ], 
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12, 13, 7 ], 
+            "to": [ 14, 17, 9 ], 
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 0, 0, 2, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 17, 6 ], 
+            "to": [ 5, 21, 10 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "up": { "texture": "#crystal_chandelier", "uv": [ 2, 4, 6, 8 ] },
+                "down": { "texture": "#crystal_chandelier", "uv": [ 6, 0, 10, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 11, 17, 6 ], 
+            "to": [ 15, 21, 10 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "east": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "south": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "west": { "texture": "#crystal_chandelier", "uv": [ 2, 0, 6, 4 ] },
+                "up": { "texture": "#crystal_chandelier", "uv": [ 2, 4, 6, 8 ] },
+                "down": { "texture": "#crystal_chandelier", "uv": [ 6, 0, 10, 4 ] }
+            }
+        }
+    ]
+}

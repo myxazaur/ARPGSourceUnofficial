@@ -1,0 +1,29 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "forge:ore_dict",
+            "ore": "egg"
+        },
+		{
+            "type": "forge:ore_dict",
+            "ore": "yeast"
+        },
+		{
+            "item": "arpg:toxedge_seed"
+        },
+		{
+            "item": "arpg:toxedge_seed"
+        },
+		{
+            "item": "arpg:toxedge_seed"
+        },
+		{
+            "item": "arpg:salt_grains"
+        }
+    ],
+    "result": {
+        "item": "arpg:toxedge_dough",
+        "count": 3
+    }
+}

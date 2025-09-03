@@ -1,0 +1,24 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "particle": "arpg:fiery_bean_block"
+    }
+  },
+  "variants": {
+    "normal": [{ "model": "arpg:fiery_bean_3" }],
+    "inventory": [{ "model": "arpg:fiery_bean_3" }],
+    "age=0,facing=east": { "model": "arpg:fiery_bean_1" },
+    "age=0,facing=south": { "model": "arpg:fiery_bean_1", "y": 90 },
+    "age=0,facing=west": { "model": "arpg:fiery_bean_1", "y": 180 },
+    "age=0,facing=north": { "model": "arpg:fiery_bean_1", "y": 270 },
+    "age=1,facing=east": { "model": "arpg:fiery_bean_2" },
+    "age=1,facing=south": { "model": "arpg:fiery_bean_2", "y": 90 },
+    "age=1,facing=west": { "model": "arpg:fiery_bean_2", "y": 180 },
+    "age=1,facing=north": { "model": "arpg:fiery_bean_2", "y": 270 },
+    "age=2,facing=east": { "model": "arpg:fiery_bean_3" },
+    "age=2,facing=south": { "model": "arpg:fiery_bean_3", "y": 90 },
+    "age=2,facing=west": { "model": "arpg:fiery_bean_3", "y": 180 },
+    "age=2,facing=north": { "model": "arpg:fiery_bean_3", "y": 270 }
+  }
+}

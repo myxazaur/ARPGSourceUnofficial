@@ -1,0 +1,88 @@
+{
+    "textures": {
+        "crystal_vase": "arpg:crystal_vase"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 0, 4 ], 
+            "to": [ 12, 3, 12 ], 
+            "faces": {
+                "north": { "texture": "#crystal_vase", "uv": [ 0, 14, 4, 15.5 ] },
+                "east": { "texture": "#crystal_vase", "uv": [ 0, 14, 4, 15.5 ] },
+                "south": { "texture": "#crystal_vase", "uv": [ 0, 14, 4, 15.5 ] },
+                "west": { "texture": "#crystal_vase", "uv": [ 0, 14, 4, 15.5 ] },
+                "down": { "texture": "#crystal_vase", "uv": [ 4, 12, 8, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 3, 3 ], 
+            "to": [ 13, 13, 13 ], 
+            "faces": {
+                "north": { "texture": "#crystal_vase", "uv": [ 0, 0, 5, 5 ] },
+                "east": { "texture": "#crystal_vase", "uv": [ 0, 0, 5, 5 ] },
+                "south": { "texture": "#crystal_vase", "uv": [ 0, 0, 5, 5 ] },
+                "west": { "texture": "#crystal_vase", "uv": [ 0, 0, 5, 5 ] },
+                "up": { "texture": "#crystal_vase", "uv": [ 11, 0, 16, 5 ] },
+                "down": { "texture": "#crystal_vase", "uv": [ 11, 0, 16, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 5, 13, 5 ], 
+            "to": [ 11, 16, 11 ], 
+            "faces": {
+                "north": { "texture": "#crystal_vase", "uv": [ 13, 8, 16, 9.5 ] },
+                "east": { "texture": "#crystal_vase", "uv": [ 13, 8, 16, 9.5 ] },
+                "south": { "texture": "#crystal_vase", "uv": [ 13, 8, 16, 9.5 ] },
+                "west": { "texture": "#crystal_vase", "uv": [ 13, 8, 16, 9.5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 16, 4 ], 
+            "to": [ 12, 18, 12 ], 
+            "faces": {
+                "north": { "texture": "#crystal_vase", "uv": [ 12, 12, 16, 13 ] },
+                "east": { "texture": "#crystal_vase", "uv": [ 12, 12, 16, 13 ] },
+                "south": { "texture": "#crystal_vase", "uv": [ 12, 12, 16, 13 ] },
+                "west": { "texture": "#crystal_vase", "uv": [ 12, 12, 16, 13 ] },
+                "up": { "texture": "#crystal_vase", "uv": [ 12, 12, 16, 16 ] },
+                "down": { "texture": "#crystal_vase", "uv": [ 12, 12, 16, 16 ] }
+            }
+        }
+    ]
+}

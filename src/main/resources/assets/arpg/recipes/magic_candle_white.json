@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B ",
+        "BSB",
+        " B "],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "dyeWhite"
+        },"B": {
+            "item": "arpg:magic_candle"
+        }},
+    "result": {
+        "item": "arpg:magic_candle_white",
+        "count": 4
+    }
+}

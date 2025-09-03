@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "istop=false,level=0": { "model": "arpg:seaweed_block" },
+		"istop=true,level=0": { "model": "arpg:seaweed_block_top" }
+    }
+}

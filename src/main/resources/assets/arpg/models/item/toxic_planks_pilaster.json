@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:toxic_planks",
+	  "up": "arpg:toxic_planks",
+	  "north": "arpg:toxic_planks",
+	  "south": "arpg:toxic_planks",
+	  "west": "arpg:toxic_planks",
+	  "east": "arpg:toxic_planks"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AA",
+        "AS",
+        " S"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "gemSapphire"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:sapphire_axe",
+        "count": 1
+    }
+}

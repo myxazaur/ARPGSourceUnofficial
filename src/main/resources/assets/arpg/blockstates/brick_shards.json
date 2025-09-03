@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:brick_shards" }
+    }
+}

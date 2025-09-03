@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AA",
+        "AS",
+        " S"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "gemRuby"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:ruby_axe",
+        "count": 1
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "L"
+    ],
+    "key": {
+        "L": {
+            "item": "arpg:conifer_sapling"
+        }
+    },
+    "result": {
+        "item": "arpg:conifer_rosin",
+        "count": 2
+    }
+}

@@ -1,0 +1,2 @@
+//mod:item_name item_metadata item_purity_value should_use_metadata fire earth water air poison cold electric void pleasure pain death live
+minecraft:stick 0 0.0 false 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.5

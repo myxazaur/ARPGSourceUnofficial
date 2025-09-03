@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "BSB",
+        "ABA"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "obsidian"
+        },"S": {
+            "item": "arpg:magic_cave_crystal"
+        },"A": {
+            "item": "arpg:dolerite_bricks"
+        }},
+    "result": {
+        "item": "arpg:chest_crystal",
+        "count": 1
+    }
+}

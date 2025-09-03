@@ -1,0 +1,8 @@
+{
+    "parent": "block/stone_brick_stairs",
+	"textures": {
+    "bottom": "arpg:pearlescent_bricks",
+    "top": "arpg:pearlescent_bricks",
+    "side": "arpg:pearlescent_bricks"
+  }
+}

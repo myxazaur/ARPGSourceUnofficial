@@ -1,0 +1,63 @@
+{
+   "forge_marker": 1,
+   "defaults": {
+       "model": "forge:fluid",
+       "transform": "forge:default-item"
+   },
+   "variants": {
+       "cryon": [{
+           "custom": { "fluid": "cryon" }
+       }],
+       "poison": [{
+           "custom": { "fluid": "poison" }
+       }],
+       "slime": [{
+           "custom": { "fluid": "slime" }
+       }],
+       "darkness": [{
+           "custom": { "fluid": "darkness" }
+       }],
+       "larva_water": [{
+           "custom": { "fluid": "larva_water" }
+       }],
+       "hydrothermal_solution": [{
+           "custom": { "fluid": "hydrothermal_solution" }
+       }],
+       "biogenic_acid": [{
+           "custom": { "fluid": "biogenic_acid" }
+       }],
+       "toxin": [{
+           "custom": { "fluid": "toxin" }
+       }],
+       "sulfuric_gas": [{
+           "custom": { "fluid": "sulfuric_gas" }
+       }],
+       "sulfuric_acid": [{
+           "custom": { "fluid": "sulfuric_acid" }
+       }],
+       "luminescent_liquid": [{
+           "custom": { "fluid": "luminescent_liquid" }
+       }],
+       "mana_oil": [{
+           "custom": { "fluid": "mana_oil" }
+       }],
+       "petroleum": [{
+           "custom": { "fluid": "petroleum" }
+       }],
+       "gasoline": [{
+           "custom": { "fluid": "gasoline" }
+       }],
+       "fuel_oil": [{
+           "custom": { "fluid": "fuel_oil" }
+       }],
+       "nitric_acid": [{
+           "custom": { "fluid": "nitric_acid" }
+       }],
+       "natural_gas": [{
+           "custom": { "fluid": "natural_gas" }
+       }],
+       "dissolved_toxinium": [{
+           "custom": { "fluid": "dissolved_toxinium" }
+       }]
+   }
+}

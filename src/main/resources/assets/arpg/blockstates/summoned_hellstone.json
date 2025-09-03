@@ -1,0 +1,34 @@
+{
+    "variants": {
+        "expire=0": [
+            { "model": "arpg:summoned_hellstone" },
+            { "model": "arpg:summoned_hellstone", "y": 90 },
+            { "model": "arpg:summoned_hellstone", "y": 180 },
+            { "model": "arpg:summoned_hellstone", "y": 270 }
+        ],
+		"expire=1": [
+            { "model": "arpg:summoned_hellstone" },
+            { "model": "arpg:summoned_hellstone", "y": 90 },
+            { "model": "arpg:summoned_hellstone", "y": 180 },
+            { "model": "arpg:summoned_hellstone", "y": 270 }
+        ],
+		"expire=2": [
+            { "model": "arpg:summoned_hellstone" },
+            { "model": "arpg:summoned_hellstone", "y": 90 },
+            { "model": "arpg:summoned_hellstone", "y": 180 },
+            { "model": "arpg:summoned_hellstone", "y": 270 }
+        ],
+		"expire=3": [
+            { "model": "arpg:summoned_hellstone" },
+            { "model": "arpg:summoned_hellstone", "y": 90 },
+            { "model": "arpg:summoned_hellstone", "y": 180 },
+            { "model": "arpg:summoned_hellstone", "y": 270 }
+        ],
+		"expire=4": [
+            { "model": "arpg:summoned_hellstone" },
+            { "model": "arpg:summoned_hellstone", "y": 90 },
+            { "model": "arpg:summoned_hellstone", "y": 180 },
+            { "model": "arpg:summoned_hellstone", "y": 270 }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LSL"
+],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "string"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "dustGlowstone"
+        },"S": {
+            "item": "arpg:gift"
+        }},
+    "result": {
+        "item": "arpg:garland",
+        "count": 12
+    }
+}

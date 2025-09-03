@@ -1,0 +1,25 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LSM"
+],
+    "key": {"L": {
+            "type": "forge:ore_dict",
+			"ore": "feather"
+        },"M": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "paper"
+        },"S": {
+            "item": "minecraft:sign"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:magic_writing_kit",
+        "count": 1
+    }
+}

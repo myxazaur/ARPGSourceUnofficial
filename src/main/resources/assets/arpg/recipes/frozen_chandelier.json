@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MMM",
+        "LSL",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "arpg:frozen_stone_bricks"
+        },
+        "L": {
+            "item": "minecraft:iron_ingot"
+        },
+        "M": {
+            "item": "arpg:frozen_torch"
+        }
+    },
+    "result": {
+        "item": "arpg:frozen_chandelier",
+        "count": 1
+    }
+}

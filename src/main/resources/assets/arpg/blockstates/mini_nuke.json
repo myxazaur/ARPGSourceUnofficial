@@ -1,0 +1,8 @@
+{
+    "variants": {
+    
+    "explode=false": { "model": "arpg:mini_nuke"},
+	"explode=true": { "model": "arpg:mini_nuke"}
+	
+  }
+}

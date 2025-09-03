@@ -1,0 +1,45 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "arpg:acropora_white",
+        "acropora_white": "arpg:acropora_white"
+    },
+    "elements": [
+        {
+            "from": [ 2, 0, 8 ], 
+            "to": [ 14, 18, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#acropora_white", "uv": [ 0, 0, 12, 16 ] },
+                "south": { "texture": "#acropora_white", "uv": [ 3, 0, 13, 16 ] }
+            }
+        },
+        {
+            "from": [ -1, 5, 8 ], 
+            "to": [ 17, 23, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#acropora_white", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#acropora_white", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 0, 8, 8 ], 
+            "to": [ 18, 26, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#acropora_white", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#acropora_white", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ -4, 11, 10 ], 
+            "to": [ 14, 29, 10 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#acropora_white", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#acropora_white", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+    ]
+}

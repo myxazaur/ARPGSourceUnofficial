@@ -1,0 +1,28 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "seagrass": "arpg:seagrass"
+    },
+    "elements": [
+        {
+            "from": [ -1, 0, 8 ], 
+            "to": [ 17, 28, 8 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#seagrass", "uv": [ 8, 1, 16, 15 ] },
+                "south": { "texture": "#seagrass", "uv": [ 8, 1, 16, 15 ] }
+            }
+        },
+        {
+            "from": [ -1, 0, 8 ], 
+            "to": [ 17, 28, 8 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#seagrass", "uv": [ 8, 1, 16, 15 ] },
+                "south": { "texture": "#seagrass", "uv": [ 8, 1, 16, 15 ] }
+            }
+        }
+    ]
+}

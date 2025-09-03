@@ -1,0 +1,22 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "slimeblob": "arpg:slime_blob",
+		"particle": "arpg:slime_blob"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 0, 4 ], 
+            "to": [ 12, 8, 12 ], 
+            "faces": {
+                "north": { "texture": "#slimeblob", "uv": [ 8, 8, 16, 16 ] },
+                "east": { "texture": "#slimeblob", "uv": [ 8, 8, 16, 16 ] },
+                "south": { "texture": "#slimeblob", "uv": [ 8, 8, 16, 16 ] },
+                "west": { "texture": "#slimeblob", "uv": [ 8, 8, 16, 16 ] },
+                "up": { "texture": "#slimeblob", "uv": [ 8, 8, 16, 16 ] },
+                "down": { "texture": "#slimeblob", "uv": [ 8, 8, 16, 16 ] }
+            }
+        }
+    ]
+}

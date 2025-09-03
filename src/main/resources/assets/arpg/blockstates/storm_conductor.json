@@ -1,0 +1,34 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "arpg:storm_conductor5",
+        "textures": {
+			"particle": "arpg:storm_conductor_side"
+			
+			}
+    },
+    "variants": {    
+        "normal": [{}], 
+		"inventory": [{ "model": "arpg:storm_conductor1" }],
+		"axis=0,back=false,forw=false": [{}], 
+		"axis=0,back=false,forw=true": [{}], 
+		"axis=0,back=true,forw=true": [{}], 
+		"axis=0,back=true,forw=false": [{}],
+        "axis=1,back=false,forw=false": [{ "model": "arpg:storm_conductor1", "x": 90, "y": 90 }],
+		"axis=1,back=false,forw=true": [{ "model": "arpg:storm_conductor2", "x": 90, "y": 90 }],
+		"axis=1,back=true,forw=true": [{ "model": "arpg:storm_conductor4", "x": 90, "y": 90 }],
+		"axis=1,back=true,forw=false": [{ "model": "arpg:storm_conductor3", "x": 90, "y": 90 }],
+		"axis=2,back=false,forw=false": [{ "model": "arpg:storm_conductor1" }],
+		"axis=2,back=false,forw=true": [{ "model": "arpg:storm_conductor2" }],
+		"axis=2,back=true,forw=true": [{ "model": "arpg:storm_conductor4" }],
+		"axis=2,back=true,forw=false": [{ "model": "arpg:storm_conductor3" }],
+		"axis=3,back=false,forw=false": [{ "model": "arpg:storm_conductor1", "x": 90 }],
+		"axis=3,back=false,forw=true": [{ "model": "arpg:storm_conductor3", "x": 90 }],
+		"axis=3,back=true,forw=true": [{ "model": "arpg:storm_conductor4", "x": 90 }],
+		"axis=3,back=true,forw=false": [{ "model": "arpg:storm_conductor2", "x": 90 }]
+		
+		
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "down": "arpg:toxic_planks",
+	  "up": "arpg:toxic_planks",
+	  "north": "arpg:toxic_planks",
+	  "south": "arpg:toxic_planks",
+	  "west": "arpg:toxic_planks",
+	  "east": "arpg:toxic_planks",
+	  "particle": "arpg:toxic_planks"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:pilaster" },
+	"facing=down": { "model": "arpg:pilaster_up" },
+    "facing=east": { "model": "arpg:pilaster_east" },
+    "facing=south": { "model": "arpg:pilaster_south" },
+    "facing=west": { "model": "arpg:pilaster_west" },
+    "facing=north": { "model": "arpg:pilaster_north" }
+  }
+}

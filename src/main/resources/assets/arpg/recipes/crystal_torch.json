@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L",
+        "G"],
+    "key": {"L": {
+            "item": "arpg:magic_cave_crystal"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "obsidian"
+        },"A": {
+            "item": "arpg:dolerite_pilaster"
+        }},
+    "result": {
+        "item": "arpg:crystal_torch",
+        "count": 4
+    }
+}

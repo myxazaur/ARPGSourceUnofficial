@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:debug_color_block" }
+    }
+}

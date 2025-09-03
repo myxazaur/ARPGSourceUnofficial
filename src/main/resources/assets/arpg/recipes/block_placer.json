@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "ASM",
+        "AAA"],
+    "key": {"M": {
+            "type": "forge:ore_dict",
+			"ore": "ingotZinc"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "cobblestone"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        }},
+    "result": {
+        "item": "arpg:block_placer",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LAL",
+        "AHA"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetSilver"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "gemAmethyst"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "gemTopaz"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "gemCitrine"
+        }},
+    "result": {
+        "item": "arpg:stained_glass_sunset",
+        "count": 4
+    }
+}

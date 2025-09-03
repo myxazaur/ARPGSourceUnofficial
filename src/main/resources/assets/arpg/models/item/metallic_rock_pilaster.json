@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:metallic_rock1",
+	  "up": "arpg:metallic_rock1",
+	  "north": "arpg:metallic_rock2",
+	  "south": "arpg:metallic_rock2",
+	  "west": "arpg:metallic_rock1",
+	  "east": "arpg:metallic_rock1"
+    }
+}

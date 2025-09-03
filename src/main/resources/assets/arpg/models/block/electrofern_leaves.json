@@ -1,0 +1,92 @@
+{
+    "textures": {
+        "electrofern": "arpg:electrofern",
+        "particle": "arpg:electrofern"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 7, 7, 0 ], 
+            "to": [ 9, 9, 16 ], 
+            "faces": {
+                "north": { "texture": "#electrofern", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#electrofern", "uv": [ 1, 0, 3, 16 ], "rotation": 90 },
+                "south": { "texture": "#electrofern", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#electrofern", "uv": [ 1, 0, 3, 16 ], "rotation": 90 },
+                "up": { "texture": "#electrofern", "uv": [ 1, 0, 3, 16 ] },
+                "down": { "texture": "#electrofern", "uv": [ 1, 0, 3, 16 ] }
+            }
+        },
+        {
+            "from": [ -9, 8, 5 ], 
+            "to": [ 7, 8, 17 ], 
+            "faces": {
+                "up": { "texture": "#electrofern", "uv": [ 4, 0, 16, 16 ], "rotation": 270 },
+                "down": { "texture": "#electrofern", "uv": [ 16, 0, 4, 16 ], "rotation": 270 }
+            }
+        },
+        {
+            "from": [ -5, 8.1, -4 ], 
+            "to": [ 9, 8.1, 8 ], 
+            "faces": {
+                "up": { "texture": "#electrofern", "uv": [ 4, 0, 16, 14 ], "rotation": 270 },
+                "down": { "texture": "#electrofern", "uv": [ 16, 0, 4, 14 ], "rotation": 270 }
+            }
+        },
+        {
+            "from": [ 2, 8.2, -16 ], 
+            "to": [ 14, 8.2, 0 ], 
+            "faces": {
+                "up": { "texture": "#electrofern", "uv": [ 4, 0, 16, 16 ] },
+                "down": { "texture": "#electrofern", "uv": [ 16, 0, 4, 16 ], "rotation": 180 }
+            }
+        },
+        {
+            "from": [ 7, 8.1, -6 ], 
+            "to": [ 21, 8.1, 6 ], 
+            "faces": {
+                "up": { "texture": "#electrofern", "uv": [ 4, 0, 16, 14 ], "rotation": 90 },
+                "down": { "texture": "#electrofern", "uv": [ 16, 0, 4, 14 ], "rotation": 90 }
+            }
+        },
+        {
+            "from": [ 9, 8, 3 ], 
+            "to": [ 25, 8, 15 ], 
+            "faces": {
+                "up": { "texture": "#electrofern", "uv": [ 4, 0, 16, 16 ], "rotation": 90 },
+                "down": { "texture": "#electrofern", "uv": [ 16, 0, 4, 16 ], "rotation": 90 }
+            }
+        }
+    ]
+}

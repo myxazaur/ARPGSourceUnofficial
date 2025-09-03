@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:rust_lamp",
+    "textures": {
+	  "all": "arpg:rust_lamp"
+    }
+  },
+  "variants": {
+        "fruitage=true": { "model": "arpg:red_pepper_fruitage" },
+        "fruitage=false": { "model": "arpg:red_pepper_vine" }
+    }
+}
+

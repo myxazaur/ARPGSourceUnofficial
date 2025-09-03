@@ -1,0 +1,106 @@
+{
+    "textures": {
+        "coral_vase": "arpg:coral_vase",
+		"particle": "arpg:coral_vase"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 2, 11 ], 
+            "faces": {
+                "north": { "texture": "#coral_vase", "uv": [ 1, 5, 4, 6 ] },
+                "east": { "texture": "#coral_vase", "uv": [ 1, 5, 4, 6 ] },
+                "south": { "texture": "#coral_vase", "uv": [ 1, 5, 4, 6 ] },
+                "west": { "texture": "#coral_vase", "uv": [ 1, 5, 4, 6 ] },
+                "down": { "texture": "#coral_vase", "uv": [ 6, 7, 9, 10 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 2, 3 ], 
+            "to": [ 13, 12, 13 ], 
+            "faces": {
+                "north": { "texture": "#coral_vase", "uv": [ 0, 0, 5, 5 ] },
+                "east": { "texture": "#coral_vase", "uv": [ 0, 0, 5, 5 ] },
+                "south": { "texture": "#coral_vase", "uv": [ 0, 0, 5, 5 ] },
+                "west": { "texture": "#coral_vase", "uv": [ 0, 0, 5, 5 ] },
+                "up": { "texture": "#coral_vase", "uv": [ 5, 0, 10, 5 ] },
+                "down": { "texture": "#coral_vase", "uv": [ 5, 0, 10, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 12, 4 ], 
+            "to": [ 12, 16, 12 ], 
+            "faces": {
+                "north": { "texture": "#coral_vase", "uv": [ 6, 10, 10, 12 ] },
+                "east": { "texture": "#coral_vase", "uv": [ 6, 10, 10, 12 ] },
+                "south": { "texture": "#coral_vase", "uv": [ 6, 10, 10, 12 ] },
+                "west": { "texture": "#coral_vase", "uv": [ 6, 10, 10, 12 ] },
+                "up": { "texture": "#coral_vase", "uv": [ 6, 12, 10, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 16, 8 ], 
+            "to": [ 14, 30, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_vase", "uv": [ 10, 9, 16, 16 ] },
+                "south": { "texture": "#coral_vase", "uv": [ 10, 9, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 16, 8 ], 
+            "to": [ 14, 30, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_vase", "uv": [ 0, 9, 6, 16 ] },
+                "south": { "texture": "#coral_vase", "uv": [ 0, 9, 6, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 16, 8 ], 
+            "to": [ 14, 30, 8 ], 
+            "faces": {
+                "north": { "texture": "#coral_vase", "uv": [ 10, 0, 16, 7 ] },
+                "south": { "texture": "#coral_vase", "uv": [ 10, 0, 16, 7 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "arpg:snowcoat_chestplate_0"
+  },
+  
+  "overrides": [
+        {
+            "predicate": {
+                "type": 0
+            },
+            "model": "arpg:item/snowcoat_chestplate_0"
+        },
+		{
+            "predicate": {
+                "type": 1
+            },
+            "model": "arpg:item/snowcoat_chestplate_1"
+        },
+		{
+            "predicate": {
+                "type": 2
+            },
+            "model": "arpg:item/snowcoat_chestplate_2"
+        }
+    ]
+}

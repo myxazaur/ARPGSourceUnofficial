@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:beryllium_grains"
+        }},
+    "result": {
+        "item": "arpg:beryllium_dust",
+        "count": 1
+    }
+}

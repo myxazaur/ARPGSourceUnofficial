@@ -1,0 +1,163 @@
+uniform sampler2D bgl_RenderedTexture;
+
+void main()
+{
+    vec2 texcoord = vec2(gl_TexCoord[0]);
+    vec4 col = texture2D(bgl_RenderedTexture, texcoord);
+	
+	col.r = col.r/3.0;
+    col.b = min(1.0 , col.b * 1.2);
+	
+    gl_FragColor = col;
+}
+
+
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 uv = fragCoord/iResolution.xy;
+
+    vec2 coord = iMouse.xy/iResolution.xy;
+    
+    vec4 col = texture(iChannel0, uv);
+    
+    col.r = max( col.r ,(col.r + 0.95 - distance(vec2(coord.x,coord.y*0.6), vec2(uv.x,uv.y*0.6)) * 11.0));
+
+    // Output to screen
+    fragColor = vec4(col.rgb - vec3(0.3,0.3,0.3),0.4);
+}
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    float time = iTime;
+    vec2 texCoord = fragCoord/iResolution.xy;
+    texCoord.x = texCoord.x+cos(texCoord.y*17.0+time*1.5)*0.005;
+    texCoord.y = texCoord.y+sin(texCoord.x*10.0+time*1.5)*0.005;
+    fragColor = texture(iChannel0, texCoord);
+}
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    
+    vec2 uv = fragCoord/iResolution.xy;
+    
+    float maini = 5.0;
+    bool enabled = true;
+    vec4 color = texture(iChannel0, uv);
+    vec2 newcoords = vec2(0.0);
+    
+    
+    vec2 center = iResolution.xy/2.0;
+    float circleRadius = float(1.1);
+    float minZoom = 0.6;
+    float maxZoom = 0.3;
+    
+    uv.x *= (iResolution.x/iResolution.y);
+    vec2 aspect_center = vec2(0.0, 0.0);
+    aspect_center.x = (center.x / iResolution.x) * (iResolution.x/iResolution.y);
+    aspect_center.y = center.y / iResolution.y;
+    float maxX = aspect_center.x + circleRadius;
+    float minX = aspect_center.x - circleRadius;
+    float maxY = aspect_center.y + circleRadius;
+    float minY = aspect_center.y - circleRadius;
+    if( uv.x > minX && uv.x < maxX && uv.y > minY && uv.y < maxY)
+    {
+    float relX = uv.x - aspect_center.x;
+    float relY = uv.y - aspect_center.y;
+    float ang = atan(relY, relX);
+    float dist = sqrt(relX*relX + relY*relY);
+    if( dist <= circleRadius )
+    {
+    float newRad = dist * ( (maxZoom * dist/circleRadius) + minZoom );
+    float newX = aspect_center.x + cos( ang ) * newRad;
+    newX *= (iResolution.y/iResolution.x);
+    float newY = aspect_center.y + sin( ang ) * newRad;
+    newcoords = vec2(newX, newY);
+    color = texture(iChannel0, newcoords);
+    }
+    else
+    {
+    color = texture(iChannel0, fragCoord);
+    }
+    }
+    
+    
+    
+    if (enabled)
+    {
+    for (float i = -maini ; i < maini ; i++)
+    {
+        
+        vec2 uvb = vec2(newcoords.x*iResolution.x + i, newcoords.y*iResolution.y + i)/iResolution.xy;
+        color.r = (color.r + texture(iChannel0, uvb).r);
+        color.g = (color.g + texture(iChannel0, uvb).g);
+        color.b = (color.b + texture(iChannel0, uvb).b);
+        
+    }
+    
+    for (float i = -maini ; i < maini ; i++)
+    {
+        
+        vec2 uvb = vec2(newcoords.x*iResolution.x - i, newcoords.y*iResolution.y - i)/iResolution.xy;
+        color.r = (color.r + texture(iChannel0, uvb).r);
+        color.g = (color.g + texture(iChannel0, uvb).g);
+        color.b = (color.b + texture(iChannel0, uvb).b);
+        
+    }
+    
+    for (float i = -maini ; i < maini ; i++)
+    {
+        
+        vec2 uvb = vec2(newcoords.x*iResolution.x + i, newcoords.y*iResolution.y - i)/iResolution.xy;
+        color.r = (color.r + texture(iChannel0, uvb).r);
+        color.g = (color.g + texture(iChannel0, uvb).g);
+        color.b = (color.b + texture(iChannel0, uvb).b);
+        
+    }
+    
+    for (float i = -maini ; i < maini ; i++)
+    {
+        
+        vec2 uvb = vec2(newcoords.x*iResolution.x - i, newcoords.y*iResolution.y + i)/iResolution.xy;
+        color.r = (color.r + texture(iChannel0, uvb).r);
+        color.g = (color.g + texture(iChannel0, uvb).g);
+        color.b = (color.b + texture(iChannel0, uvb).b);
+        
+    }
+    color.rgb = color.rgb / (maini * 8.0);
+    }
+    
+    float dist = distance(newcoords, vec2(0.5,0.5))*3.0;
+    vec4 text = texture(iChannel0, newcoords);
+    
+    color.r = (color.r - text.r)*dist + text.r;
+    color.g = (color.g - text.g)*dist + text.g;
+    color.b = (color.b - text.b)*dist + text.b;
+    
+	fragColor = color;
+   }
+
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+
+
+   {
+    vec2 uv = fragCoord/iResolution.xy;
+    vec4 color;
+    float coof = 0.2;
+    float t = sin(iTime);
+    float ct = cos(iTime);
+       
+    color.g = texture(iChannel0 , vec2(uv.x - 0.1 *cos(iTime)*coof , uv.y - 0.1 *sin(iTime)*coof)).g;
+    
+    color.r = texture(iChannel0 , vec2(uv.x - 0.3*sin(iTime)*coof , uv.y - 0.3*cos(iTime)*coof)).r;
+       
+    color.b = texture(iChannel0 , vec2(uv.x - 0.1 *cos(iTime)*coof , uv.y - 0.1 *sin(iTime)*coof)).b
+        +texture(iChannel0 , vec2(uv.x - 0.3*sin(iTime)*coof , uv.y - 0.3*cos(iTime)*coof)).b/1.9;
+    color.b /= 1.7;   
+       
+    
+       
+    fragColor = color;
+   }

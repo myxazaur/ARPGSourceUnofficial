@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "A A",
+        "AAA"],
+    "key": {"A": {
+            "item": "arpg:black_strap"
+        }},
+    "result": {
+        "item": "arpg:dash_belt_black",
+        "count": 1
+    }
+}

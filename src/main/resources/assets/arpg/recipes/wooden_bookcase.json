@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "   ",
+        "ABA"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "plankWood"
+        },"B": {
+            "item": "arpg:magic_wood"
+        }},
+    "result": {
+        "item": "arpg:wooden_bookcase",
+        "count": 2
+    }
+}

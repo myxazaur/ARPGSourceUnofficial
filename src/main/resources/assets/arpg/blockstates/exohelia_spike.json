@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+		"inventory": { "model": "arpg:exohelia_spike" },
+		"facing=up,rotated=false": { "model": "arpg:exohelia_spike_z" },
+		"facing=east,rotated=false": { "model": "arpg:exohelia_spike", "x": 90, "y": 90 },
+		"facing=south,rotated=false": { "model": "arpg:exohelia_spike", "x": 90, "y": 180 },
+		"facing=west,rotated=false": { "model": "arpg:exohelia_spike", "x": 90, "y": 270 },
+		"facing=north,rotated=false": { "model": "arpg:exohelia_spike", "x": 90 },
+		"facing=down,rotated=false": { "model": "arpg:exohelia_spike_z", "x": 180 },
+		"facing=up,rotated=true": { "model": "arpg:exohelia_spike" },
+		"facing=east,rotated=true": { "model": "arpg:exohelia_spike_z", "x": 90, "y": 90 },
+		"facing=south,rotated=true": { "model": "arpg:exohelia_spike_z", "x": 90, "y": 180 },
+		"facing=west,rotated=true": { "model": "arpg:exohelia_spike_z", "x": 90, "y": 270 },
+		"facing=north,rotated=true": { "model": "arpg:exohelia_spike_z", "x": 90 },
+		"facing=down,rotated=true": { "model": "arpg:exohelia_spike", "x": 180 }
+  
+  }
+}

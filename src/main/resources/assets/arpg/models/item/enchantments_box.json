@@ -1,0 +1,62 @@
+{
+    
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.825, 0.825, 0.825 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.6, 0.6, 0.6 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.575, 0.575, 0.575 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 2, 4 ], 
+            "to": [ 12, 10, 12 ], 
+            "faces": {
+                "north": { "texture": "#all", "uv": [ 0, 8, 8, 16 ] },
+                "east": { "texture": "#all", "uv": [ 0, 8, 8, 16 ] },
+                "south": { "texture": "#all", "uv": [ 0, 0, 8, 8 ] },
+                "west": { "texture": "#all", "uv": [ 0, 8, 8, 16 ] },
+                "up": { "texture": "#all", "uv": [ 8, 8, 16, 16 ] },
+                "down": { "texture": "#all", "uv": [ 8, 8, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 5, 12 ], 
+            "to": [ 9, 8, 13 ], 
+            "faces": {
+                "east": { "texture": "#all", "uv": [ 11, 1, 12, 4 ] },
+                "south": { "texture": "#all", "uv": [ 9, 1, 11, 4 ] },
+                "west": { "texture": "#all", "uv": [ 8, 1, 9, 4 ] },
+                "up": { "texture": "#all", "uv": [ 9, 0, 11, 1 ] },
+                "down": { "texture": "#all", "uv": [ 9, 4, 11, 5 ] }
+            }
+        }
+    ]
+}

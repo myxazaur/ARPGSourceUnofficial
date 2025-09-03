@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["ABA",
+        "LLL",
+        " H "],
+    "key": {"H": {
+            "item": "arpg:toxic_planks"
+        },"L": {
+            "item": "arpg:toxiberry_stick"
+        },"B": {
+            "item": "arpg:glowing_toxiberry"
+        },"A": {
+            "item": "arpg:plant_fiber"
+        }},
+    "result": {
+        "item": "arpg:toxic_chandelier",
+        "count": 1
+    }
+}

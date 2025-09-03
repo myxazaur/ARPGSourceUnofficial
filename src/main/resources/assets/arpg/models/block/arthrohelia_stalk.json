@@ -1,0 +1,171 @@
+{
+    "textures": {
+        "arthrohelia_stem": "arpg:arthrohelia_stem",
+        "arthrohelia_leaves": "arpg:arthrohelia_leaves",
+        "particle": "arpg:arthrohelia_leaves"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 4, 15, 5 ], 
+            "to": [ 12, 31, 5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] },
+                "south": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] }
+            }
+        },
+        {
+            "from": [ 3, 8, 11.32 ], 
+            "to": [ 13, 19, 11.32 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] },
+                "south": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] }
+            }
+        },
+        {
+            "from": [ 3, 1.35, 3 ], 
+            "to": [ 13, 11.35, 13 ], 
+            "faces": {
+                "north": { "texture": "#arthrohelia_stem", "uv": [ 0, 1, 10, 11 ] },
+                "east": { "texture": "#arthrohelia_stem", "uv": [ 0, 1, 10, 11 ] },
+                "south": { "texture": "#arthrohelia_stem", "uv": [ 0, 1, 10, 11 ] },
+                "west": { "texture": "#arthrohelia_stem", "uv": [ 0, 1, 10, 11 ] }
+            }
+        },
+        {
+            "from": [ 6, 19.4, 6.9 ], 
+            "to": [ 10, 23.4, 6.9 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] },
+                "south": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] }
+            }
+        },
+        {
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 16, 11 ], 
+            "faces": {
+                "north": { "texture": "#arthrohelia_stem", "uv": [ 10, 0, 16, 16 ] },
+                "east": { "texture": "#arthrohelia_stem", "uv": [ 10, 0, 16, 16 ] },
+                "south": { "texture": "#arthrohelia_stem", "uv": [ 10, 0, 16, 16 ] },
+                "west": { "texture": "#arthrohelia_stem", "uv": [ 10, 0, 16, 16 ] },
+                "up": { "texture": "#arthrohelia_stem", "uv": [ 2, 10, 8, 16 ] },
+                "down": { "texture": "#arthrohelia_stem", "uv": [ 2, 10, 8, 16 ] }
+            }
+        },
+        {
+            "from": [ 11.32, 8, 3 ], 
+            "to": [ 11.32, 19, 13 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -22.5 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] },
+                "west": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] }
+            }
+        },
+        {
+            "from": [ 6.9, 19.4, 6 ], 
+            "to": [ 6.9, 23.4, 10 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] },
+                "west": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] }
+            }
+        },
+        {
+            "from": [ 11, 15, 4 ], 
+            "to": [ 11, 31, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] },
+                "west": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] }
+            }
+        },
+        {
+            "from": [ 9.1, 19.4, 6 ], 
+            "to": [ 9.1, 23.4, 10 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] },
+                "west": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] }
+            }
+        },
+        {
+            "from": [ 4.68, 8, 3 ], 
+            "to": [ 4.68, 19, 13 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] },
+                "west": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] }
+            }
+        },
+        {
+            "from": [ 3, 8, 4.68 ], 
+            "to": [ 13, 19, 4.68 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] },
+                "south": { "texture": "#arthrohelia_leaves", "uv": [ 3, 4, 13, 15 ] }
+            }
+        },
+        {
+            "from": [ 6, 19.4, 9.1 ], 
+            "to": [ 10, 23.4, 9.1 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] },
+                "south": { "texture": "#arthrohelia_leaves", "uv": [ 6, 0, 10, 4 ] }
+            }
+        },
+        {
+            "from": [ 4, 15, 11 ], 
+            "to": [ 12, 31, 11 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] },
+                "south": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] }
+            }
+        },
+        {
+            "from": [ 5, 15, 4 ], 
+            "to": [ 5, 31, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] },
+                "west": { "texture": "#arthrohelia_leaves", "uv": [ 4, 0, 12, 16 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L",
+        "G"],
+    "key": {"L": {
+            "type": "forge:ore_dict",
+			"ore": "materialAdvancedPlastic"
+        },"A": {
+            "item": "arpg:rust_armature"
+        },"G": {
+            "item": "minecraft:redstone_lamp"
+        }},
+    "result": {
+        "item": "arpg:rust_lamp",
+        "count": 2
+    }
+}

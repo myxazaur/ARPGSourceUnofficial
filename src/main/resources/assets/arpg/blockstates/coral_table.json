@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+	  "particle": "arpg:coral_table"
+    }
+  },
+  "variants": {
+    "flat=false": { "model": "arpg:coral_table" },
+    "flat=true": { "model": "arpg:coral_table_flat" }
+  }
+}

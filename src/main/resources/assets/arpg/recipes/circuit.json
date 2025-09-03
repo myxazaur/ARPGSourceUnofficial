@@ -1,0 +1,21 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LSL",
+        "LHL"],
+    "key": {"S": {
+            "item": "arpg:slime_plastic"
+        },"A": {
+            "item": "arpg:copper_wire"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "ingotTin"
+        }},
+    "result": {
+        "item": "arpg:circuit",
+        "count": 1
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "textures": {
+        "sea_stone_over": "arpg:sea_stone_over",
+        "sea_stone": "arpg:sea_stone",
+		"particle": "arpg:sea_stone"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.525, 0.525, 0.525 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#sea_stone", "uv": [ 0, 0, 16, 16 ], "cullface": "north" },
+                "east": { "texture": "#sea_stone", "uv": [ 0, 0, 16, 16 ], "cullface": "east" },
+                "south": { "texture": "#sea_stone", "uv": [ 0, 0, 16, 16 ], "cullface": "south" },
+                "west": { "texture": "#sea_stone", "uv": [ 0, 0, 16, 16 ], "cullface": "west" },
+                "up": { "texture": "#sea_stone", "uv": [ 0, 0, 16, 16 ], "cullface": "up" },
+                "down": { "texture": "#sea_stone", "uv": [ 0, 0, 16, 16 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "CubeSE",
+            "from": [ 8, -2, 8 ], 
+            "to": [ 8, 18, 24 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "east" },
+                "west": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "south" }
+            }
+        },
+        {
+            "name": "CubeEN",
+            "from": [ 8, -2, -8 ], 
+            "to": [ 8, 18, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "east" },
+                "west": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "north" }
+            }
+        },
+        {
+            "name": "CubeWS",
+            "from": [ 8, -2, 8 ], 
+            "to": [ 8, 18, 24 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "south" },
+                "west": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "CubeWN",
+            "from": [ 8, -2, -8 ], 
+            "to": [ 8, 18, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "north" },
+                "west": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 16 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "CubeUPA",
+            "from": [ 8, 16, -2 ], 
+            "to": [ 8, 22, 18 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 6 ], "cullface": "up" },
+                "west": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 6 ], "cullface": "up" }
+            }
+        },
+        {
+            "name": "CubeUPB",
+            "from": [ -2, 16, 8 ], 
+            "to": [ 18, 22, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 6 ], "cullface": "up" },
+                "south": { "texture": "#sea_stone_over", "uv": [ 0, 0, 16, 6 ], "cullface": "up" }
+            }
+        },
+        {
+            "name": "CubeDNA",
+            "from": [ 8, -6, -2 ], 
+            "to": [ 8, 0, 18 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "east": { "texture": "#sea_stone_over", "uv": [ 0, 10, 16, 16 ], "cullface": "down" },
+                "west": { "texture": "#sea_stone_over", "uv": [ 0, 10, 16, 16 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "CubeDNB",
+            "from": [ -2, -6, 8 ], 
+            "to": [ 18, 0, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#sea_stone_over", "uv": [ 0, 10, 16, 16 ], "cullface": "down" },
+                "south": { "texture": "#sea_stone_over", "uv": [ 0, 10, 16, 16 ], "cullface": "down" }
+            }
+        }
+    ]
+}

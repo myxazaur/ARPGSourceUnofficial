@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "arpg:health_flower_leaves_1" },
+            { "model": "arpg:health_flower_leaves_1", "y": 90 },
+            { "model": "arpg:health_flower_leaves_1", "y": 180 },
+            { "model": "arpg:health_flower_leaves_1", "y": 270 },
+			{ "model": "arpg:health_flower_leaves_2" },
+            { "model": "arpg:health_flower_leaves_2", "y": 90 },
+            { "model": "arpg:health_flower_leaves_2", "y": 180 },
+            { "model": "arpg:health_flower_leaves_2", "y": 270 }
+        ]
+    }
+}

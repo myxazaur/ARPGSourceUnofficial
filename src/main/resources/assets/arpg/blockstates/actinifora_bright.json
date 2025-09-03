@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:acropora",
+    "textures": {
+	  "all": "arpg:actinifora_bright"
+    }
+  },
+  "variants": {
+		"normal": [{}], 
+		"inventory": [{}],
+		"facing=up,level=0,wet=true": { "model": "arpg:acropora" },
+		"facing=east,level=0,wet=true": { "model": "arpg:acropora", "x": 90, "y": 90 },
+		"facing=south,level=0,wet=true": { "model": "arpg:acropora", "x": 90, "y": 180 },
+		"facing=west,level=0,wet=true": { "model": "arpg:acropora", "x": 90, "y": 270 },
+		"facing=north,level=0,wet=true": { "model": "arpg:acropora", "x": 90 },
+		"facing=down,level=0,wet=true": { "model": "arpg:acropora", "x": 180 },
+		"facing=up,level=0,wet=false": { "model": "arpg:acropora" },
+		"facing=east,level=0,wet=false": { "model": "arpg:acropora", "x": 90, "y": 90 },
+		"facing=south,level=0,wet=false": { "model": "arpg:acropora", "x": 90, "y": 180 },
+		"facing=west,level=0,wet=false": { "model": "arpg:acropora", "x": 90, "y": 270 },
+		"facing=north,level=0,wet=false": { "model": "arpg:acropora", "x": 90 },
+		"facing=down,level=0,wet=false": { "model": "arpg:acropora", "x": 180 }
+  }
+}

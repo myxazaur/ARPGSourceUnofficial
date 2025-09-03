@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:palm_log"
+        }},
+    "result": {
+        "item": "arpg:palm_planks",
+        "count": 4
+    }
+}

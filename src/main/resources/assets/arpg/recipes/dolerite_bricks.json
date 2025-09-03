@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA",
+        "AA"
+],
+    "key": {"A": {
+            "item": "arpg:dolerite"
+        }},
+    "result": {
+        "item": "arpg:dolerite_bricks",
+        "count": 4
+    }
+}

@@ -1,0 +1,174 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "frost_bolt": "arpg:frost_bolt"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 40, 150, -35 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.75, 0.75, 0.75 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 20 ],
+            "translation": [ 0, 2.5, -8 ],
+            "scale": [ 0.75, 0.75, 0.75 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, -90, 0 ],
+            "translation": [ 0, -1.0, -3.0 ],
+            "scale": [ 0.865, 0.865, 0.865 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 13, -14, 7.5 ], 
+            "to": [ 14, 2, 8.5 ], 
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 0, 0, 1, 16 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 0, 0, 1, 16 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 0, 0, 1, 16 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 0, 0, 1, 1 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12.5, 2, 7 ], 
+            "to": [ 14.5, 9, 9 ], 
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 14, 0, 16, 7 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 14, 0, 16, 7 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 14, 0, 16, 7 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 14, 0, 16, 7 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 14, 11, 16, 13 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 14, 11, 16, 13 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 9, 7.5 ], 
+            "to": [ 14, 17, 8.5 ], 
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 2, 0, 3, 8 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 2, 0, 3, 8 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 2, 0, 3, 8 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 2, 0, 3, 8 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 2, 0, 3, 1 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 14, 12 ], 
+            "to": [ 14, 18, 13 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 4, 10, 5, 14 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 6, 10, 7, 14 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 8, 10, 9, 14 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 10, 10, 11, 14 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 4, 0, 5, 1 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 4, 0, 5, 1 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 12, 14 ], 
+            "to": [ 14, 13, 18 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 4, 0, 5, 1 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 4, 0, 8, 1 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 4, 0, 5, 1 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 4, 2, 8, 3 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 8, 10, 9, 14 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 4, 10, 5, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 19, 14 ], 
+            "to": [ 14, 20, 18 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 4, 0, 5, 1 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 4, 0, 8, 1 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 4, 10, 5, 11 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 4, 6, 8, 7 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 8, 10, 9, 14 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 6, 10, 7, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 14, 19 ], 
+            "to": [ 14, 18, 20 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 6, 10, 7, 14 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 4, 10, 5, 14 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 4, 10, 5, 14 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 10, 10, 11, 14 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 4, 6, 5, 7 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 7, 4, 8, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 13.5, 15.5 ], 
+            "to": [ 14, 18.5, 16.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 9, 8, 14, 9 ], "rotation": 90 },
+                "east": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 9, 8, 10, 9 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 9, 8, 10, 9 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13.1, 13.5, -0.5 ], 
+            "to": [ 14.1, 18.5, 0.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 3 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 3 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12.9, 18.9, 5.5 ], 
+            "to": [ 13.9, 19.9, 10.5 ], 
+            "faces": {
+                "north": { "texture": "#frost_bolt", "uv": [ 9, 8, 10, 9 ] },
+                "east": { "texture": "#frost_bolt", "uv": [ 9, 8, 14, 9 ] },
+                "south": { "texture": "#frost_bolt", "uv": [ 9, 8, 10, 9 ] },
+                "west": { "texture": "#frost_bolt", "uv": [ 9, 8, 14, 9 ] },
+                "up": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] },
+                "down": { "texture": "#frost_bolt", "uv": [ 10, 2, 11, 7 ] }
+            }
+        }
+    ]
+}

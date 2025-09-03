@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA"
+],
+    "key": {"A": {
+            "item": "arpg:dolerite_bricks"
+        }},
+    "result": {
+        "item": "arpg:dolerite_pilaster",
+        "count": 4
+    }
+}

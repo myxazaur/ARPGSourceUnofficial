@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A",
+        "L",
+        "G"],
+    "key": {"A": {
+            "item": "arpg:processor_pattern"
+        },"L": {
+            "item": "arpg:toxiberry_juice_drip"
+        },"G": {
+            "item": "arpg:silicium_wafer"
+        }},
+    "result": {
+        "item": "arpg:photoresisted_plate",
+        "count": 1
+    }
+}

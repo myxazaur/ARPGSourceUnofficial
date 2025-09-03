@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L",
+        "A"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotLead"
+        },"L": {
+            "item": "arpg:fiber_cloth"
+        }},
+    "result": {
+        "item": "arpg:anti_rad_plating",
+        "count": 1
+    }
+}

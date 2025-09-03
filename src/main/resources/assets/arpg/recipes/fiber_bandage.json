@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        "B "
+],
+    "key": {"B": {
+            "item": "arpg:fiber_cloth"
+        }},
+    "result": {
+        "item": "arpg:fiber_bandage",
+        "count": 1
+    }
+}

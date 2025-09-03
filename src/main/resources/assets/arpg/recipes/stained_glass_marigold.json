@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LAL",
+        "ABA"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetSilver"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "gemEmerald"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "gemRuby"
+        }},
+    "result": {
+        "item": "arpg:stained_glass_marigold",
+        "count": 4
+    }
+}

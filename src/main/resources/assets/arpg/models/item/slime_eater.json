@@ -1,0 +1,13 @@
+{
+  "parent": "item/generated",
+  "display": {
+        "head": {
+            "rotation": [ 0, 0, -45 ],
+            "translation": [ 0, -4, -2.5 ],
+            "scale": [ 0.45, 0.45, 0.45 ]
+        }
+    },
+  "textures": {
+    "layer0": "arpg:slime_eater"
+  }
+}

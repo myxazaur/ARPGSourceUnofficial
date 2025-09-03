@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA"
+],
+    "key": {"A": {
+            "item": "arpg:storm_masonry"
+        }},
+    "result": {
+        "item": "arpg:storm_pilaster",
+        "count": 4
+    }
+}

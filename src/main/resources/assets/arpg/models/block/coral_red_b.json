@@ -1,0 +1,110 @@
+{
+    "textures": {
+        "coral_red": "arpg:coral_red",
+		"particle": "arpg:coral_red"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 0, 0, 16, 16 ], "cullface": "north" },
+                "east": { "texture": "#coral_red", "uv": [ 0, 0, 16, 16 ], "cullface": "east" },
+                "south": { "texture": "#coral_red", "uv": [ 0, 0, 16, 16 ], "cullface": "south" },
+                "west": { "texture": "#coral_red", "uv": [ 0, 0, 16, 16 ], "cullface": "west" },
+                "up": { "texture": "#coral_red", "uv": [ 0, 0, 16, 16 ], "cullface": "up" },
+                "down": { "texture": "#coral_red", "uv": [ 0, 0, 16, 16 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "CubEA",
+            "from": [ 13, 10, 8 ], 
+            "to": [ 17, 26, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 10, 0, 14, 16 ], "cullface": "east" },
+                "east": { "texture": "#coral_red", "uv": [ 10, 0, 14, 16 ], "cullface": "east" },
+                "south": { "texture": "#coral_red", "uv": [ 10, 0, 14, 16 ], "cullface": "east" },
+                "west": { "texture": "#coral_red", "uv": [ 9, 0, 13, 16 ], "cullface": "east" },
+                "up": { "texture": "#coral_red", "uv": [ 10, 8, 14, 12 ], "cullface": "east" }
+            }
+        },
+        {
+            "name": "CubEB",
+            "from": [ 19, 12, 6 ], 
+            "to": [ 24, 21, 11 ], 
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 2, 7, 7, 16 ], "cullface": "east" },
+                "east": { "texture": "#coral_red", "uv": [ 2, 7, 7, 16 ], "cullface": "east" },
+                "south": { "texture": "#coral_red", "uv": [ 2, 7, 7, 16 ], "cullface": "east" },
+                "west": { "texture": "#coral_red", "uv": [ 2, 7, 7, 16 ], "cullface": "east" },
+                "up": { "texture": "#coral_red", "uv": [ 6, 5, 11, 10 ], "cullface": "east" },
+                "down": { "texture": "#coral_red", "uv": [ 9, 7, 14, 12 ], "cullface": "east" }
+            }
+        },
+        {
+            "name": "CubWA",
+            "from": [ -1, 10, 5 ], 
+            "to": [ 2, 24, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 10, 0, 13, 14 ], "cullface": "west" },
+                "east": { "texture": "#coral_red", "uv": [ 6, 2, 9, 16 ], "cullface": "west" },
+                "south": { "texture": "#coral_red", "uv": [ 3, 0, 6, 14 ], "cullface": "west" },
+                "west": { "texture": "#coral_red", "uv": [ 1, 0, 4, 14 ], "cullface": "west" },
+                "up": { "texture": "#coral_red", "uv": [ 5, 12, 8, 15 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "CubWB",
+            "from": [ -6, 11, 6.5 ], 
+            "to": [ -2, 23, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 7, 4, 11, 16 ], "cullface": "west" },
+                "east": { "texture": "#coral_red", "uv": [ 11, 4, 14, 16 ], "cullface": "west" },
+                "south": { "texture": "#coral_red", "uv": [ 3, 0, 7, 12 ], "cullface": "west" },
+                "west": { "texture": "#coral_red", "uv": [ 6, 2, 9, 14 ], "cullface": "west" },
+                "up": { "texture": "#coral_red", "uv": [ 8, 12, 12, 15 ], "cullface": "west" },
+                "down": { "texture": "#coral_red", "uv": [ 7, 5, 11, 8 ], "cullface": "west" }
+            }
+        },
+        {
+            "name": "CubUA",
+            "from": [ 8, 21, 4.5 ], 
+            "to": [ 11, 27, 7.5 ], 
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 11, 5, 14, 11 ], "cullface": "up" },
+                "east": { "texture": "#coral_red", "uv": [ 11, 4, 14, 10 ], "cullface": "up" },
+                "south": { "texture": "#coral_red", "uv": [ 11, 4, 14, 10 ], "cullface": "up" },
+                "west": { "texture": "#coral_red", "uv": [ 11, 5, 14, 11 ], "cullface": "up" },
+                "up": { "texture": "#coral_red", "uv": [ 5, 12, 8, 15 ], "cullface": "up" }
+            }
+        },
+        {
+            "name": "CubUB",
+            "from": [ 9, 16, 1.5 ], 
+            "to": [ 14, 21, 6.5 ], 
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 2, 7, 7, 12 ], "cullface": "up" },
+                "east": { "texture": "#coral_red", "uv": [ 6, 5, 11, 10 ], "cullface": "up" },
+                "south": { "texture": "#coral_red", "uv": [ 6, 5, 11, 10 ], "cullface": "up" },
+                "west": { "texture": "#coral_red", "uv": [ 9, 8, 14, 13 ], "cullface": "up" },
+                "up": { "texture": "#coral_red", "uv": [ 6, 4, 11, 9 ], "cullface": "up" }
+            }
+        },
+        {
+            "name": "CubEC",
+            "from": [ 26, 14, 10 ], 
+            "to": [ 29, 24, 14 ], 
+            "faces": {
+                "north": { "texture": "#coral_red", "uv": [ 11, 4, 14, 14 ], "cullface": "east" },
+                "east": { "texture": "#coral_red", "uv": [ 10, 4, 14, 14 ], "cullface": "east" },
+                "south": { "texture": "#coral_red", "uv": [ 11, 4, 14, 14 ], "cullface": "east" },
+                "west": { "texture": "#coral_red", "uv": [ 10, 4, 14, 14 ], "cullface": "east" },
+                "up": { "texture": "#coral_red", "uv": [ 8, 5, 11, 9 ], "cullface": "east" },
+                "down": { "texture": "#coral_red", "uv": [ 10, 8, 13, 12 ], "cullface": "east" }
+            }
+        }
+    ]
+}

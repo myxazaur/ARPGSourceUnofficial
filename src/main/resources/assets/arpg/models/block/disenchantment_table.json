@@ -1,0 +1,99 @@
+{
+    "textures": {
+        "disenchantment_table": "arpg:disenchantment_table",
+        "particle": "arpg:disenchantment_table"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 3, 9, 3 ], 
+            "to": [ 13, 9, 13 ], 
+            "faces": {
+                "up": { "texture": "#disenchantment_table", "uv": [ 9, 9, 15, 15 ] }
+            }
+        },
+        {
+            "from": [ 2, 9, 2 ], 
+            "to": [ 14, 13, 3 ], 
+            "faces": {
+                "north": { "texture": "#disenchantment_table", "uv": [ 9, 0, 15, 2 ] },
+                "east": { "texture": "#disenchantment_table", "uv": [ 10, 0, 10.5, 2 ] },
+                "south": { "texture": "#disenchantment_table", "uv": [ 9, 0, 15, 2 ] },
+                "west": { "texture": "#disenchantment_table", "uv": [ 10, 0, 10.5, 2 ] },
+                "up": { "texture": "#disenchantment_table", "uv": [ 1, 15, 7, 15.5 ] }
+            }
+        },
+        {
+            "from": [ 2, 9, 3 ], 
+            "to": [ 3, 13, 13 ], 
+            "faces": {
+                "east": { "texture": "#disenchantment_table", "uv": [ 9, 0, 14, 2 ] },
+                "west": { "texture": "#disenchantment_table", "uv": [ 9, 0, 14, 2 ] },
+                "up": { "texture": "#disenchantment_table", "uv": [ 1.5, 13, 6.5, 13.5 ], "rotation": 90 }
+            }
+        },
+        {
+            "from": [ 2, 9, 13 ], 
+            "to": [ 14, 13, 14 ], 
+            "faces": {
+                "north": { "texture": "#disenchantment_table", "uv": [ 9, 0, 15, 2 ] },
+                "east": { "texture": "#disenchantment_table", "uv": [ 10, 0, 10.5, 2 ] },
+                "south": { "texture": "#disenchantment_table", "uv": [ 9, 0, 15, 2 ] },
+                "west": { "texture": "#disenchantment_table", "uv": [ 10, 0, 10.5, 2 ] },
+                "up": { "texture": "#disenchantment_table", "uv": [ 1, 15, 7, 15.5 ] }
+            }
+        },
+        {
+            "from": [ 13, 9, 3 ], 
+            "to": [ 14, 13, 13 ], 
+            "faces": {
+                "east": { "texture": "#disenchantment_table", "uv": [ 9, 0, 14, 2 ] },
+                "west": { "texture": "#disenchantment_table", "uv": [ 9, 0, 14, 2 ] },
+                "up": { "texture": "#disenchantment_table", "uv": [ 1.5, 13, 6.5, 13.5 ], "rotation": 90 }
+            }
+        },
+        {
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 12, 16 ], 
+            "faces": {
+                "north": { "texture": "#disenchantment_table", "uv": [ 0, 10, 8, 16 ] },
+                "east": { "texture": "#disenchantment_table", "uv": [ 0, 10, 8, 16 ] },
+                "south": { "texture": "#disenchantment_table", "uv": [ 0, 10, 8, 16 ] },
+                "west": { "texture": "#disenchantment_table", "uv": [ 0, 10, 8, 16 ] },
+                "up": { "texture": "#disenchantment_table", "uv": [ 0, 0, 8, 8 ] },
+                "down": { "texture": "#disenchantment_table", "uv": [ 8, 0, 16, 8 ] }
+            }
+        }
+    ]
+}

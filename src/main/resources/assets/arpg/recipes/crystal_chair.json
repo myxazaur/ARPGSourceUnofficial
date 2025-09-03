@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B",
+        "LB",
+        "GG"],
+    "key": {"L": {
+            "item": "arpg:magic_cave_crystal"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "obsidian"
+        },"B": {
+            "item": "arpg:dolerite_bricks"
+        }},
+    "result": {
+        "item": "arpg:crystal_chair",
+        "count": 1
+    }
+}

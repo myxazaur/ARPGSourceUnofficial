@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" BC",
+        "BCB",
+        "CB "],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "materialRubber"
+        },"C": {
+            "type": "forge:ore_dict",
+			"ore": "ingotCopper"
+        }},
+    "result": {
+        "item": "arpg:copper_wire",
+        "count": 4
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:stormbrass_ingot"
+        }},
+    "result": {
+        "item": "arpg:stormbrass_nugget",
+        "count": 9
+    }
+}

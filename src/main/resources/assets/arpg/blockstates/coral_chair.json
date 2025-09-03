@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:coral_chair",
+	  "particle": "arpg:coral_chair"
+    }
+  },
+  "variants": {
+    "facing=east": { "model": "arpg:coral_chair" },
+    "facing=south": { "model": "arpg:coral_chair", "y": 90 },
+    "facing=west": { "model": "arpg:coral_chair", "y": 180 },
+    "facing=north": { "model": "arpg:coral_chair", "y": 270 }
+  }
+}

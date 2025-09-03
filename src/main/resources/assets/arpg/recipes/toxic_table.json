@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "LLL",
+        "G G"],
+    "key": {"A": {
+            "item": "arpg:toxic_planks"
+        },"G": {
+            "item": "arpg:toxiberry_stick"
+        },"L": {
+            "item": "arpg:plant_fiber"
+        }},
+    "result": {
+        "item": "arpg:toxic_table",
+        "count": 1
+    }
+}

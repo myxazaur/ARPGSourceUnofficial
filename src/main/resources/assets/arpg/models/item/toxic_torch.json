@@ -1,0 +1,6 @@
+{
+    "parent": "arpg:block/torch_long",
+    "textures": {
+        "torch": "arpg:toxic_torch"
+  }
+}

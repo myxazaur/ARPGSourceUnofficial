@@ -1,0 +1,19 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        " S ",
+        " S "],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "gemSapphire"
+        },"S": {
+            "item": "arpg:magic_wood"
+        }},
+    "result": {
+        "item": "arpg:absorption_totem",
+        "count": 1
+    }
+}

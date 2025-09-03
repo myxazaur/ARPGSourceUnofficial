@@ -1,0 +1,34 @@
+{
+    "multipart": [
+        {   "when": {"north": false, "east": false, "south": false, "west": false, "up": false},
+            "apply": [
+                { "model": "arpg:sulfur_crystal" }
+            ]
+        },
+        {   "when": {"north": true},
+            "apply": [
+                { "model": "arpg:sulfur_crystal", "x": 90, "y": 180 }
+            ]
+        },
+        {   "when": {"east": true},
+            "apply": [
+                { "model": "arpg:sulfur_crystal", "x": 90, "y": 270 }
+            ]
+        },
+        {   "when": {"south": true},
+            "apply": [
+                { "model": "arpg:sulfur_crystal", "x": 90 }
+            ]
+        },
+        {   "when": {"west": true},
+            "apply": [
+                { "model": "arpg:sulfur_crystal", "x": 90, "y": 90 }
+            ]
+        },
+        {   "when": {"up": true},
+            "apply": [
+                { "model": "arpg:sulfur_crystal", "x": 180 }
+            ]
+        }
+    ]
+}

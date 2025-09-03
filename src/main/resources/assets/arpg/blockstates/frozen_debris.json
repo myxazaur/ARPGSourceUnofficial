@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "model": "cube_column",
+        "textures": {"end": "arpg:frozen_debris_top","side": "arpg:frozen_debris_side"}
+    },
+    "variants": {    
+        "normal": [{}], "inventory": [{}]
+    }
+}

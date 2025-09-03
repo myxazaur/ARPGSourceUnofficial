@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_directional",
+    "textures": {
+        "end": "arpg:conifer_top",
+        "side": "arpg:conifer_log"
+    }
+}

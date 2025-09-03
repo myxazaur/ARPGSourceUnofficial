@@ -1,0 +1,13 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "dustSalt"
+        }},
+    "result": {
+        "item": "arpg:salt_grains",
+        "count": 9
+    }
+}

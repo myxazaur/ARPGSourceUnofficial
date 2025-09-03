@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A A",
+        "L L"
+],
+    "key": {"A": {
+            "item": "arpg:magic_powder"
+        },"L": {
+            "item": "arpg:wizard_cloth"
+        }},
+    "result": {
+        "item": "arpg:wizard_boots",
+        "count": 1
+    }
+}

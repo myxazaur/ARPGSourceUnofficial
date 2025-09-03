@@ -1,0 +1,167 @@
+//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\Admin\Desktop\stuff\asbtractrpg\Minecraft-Deobfuscator3000-master\1.12 stable mappings"!
+
+package com.Vivern.Arpg.elements.models;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+
+public class SoulCatcherModel extends ModelBase {
+   public ModelRenderer shape1;
+   public ModelRenderer shape1_1;
+   public ModelRenderer shape1_2;
+   public ModelRenderer shape19;
+   public ModelRenderer shape19_1;
+   public ModelRenderer horn;
+   public ModelRenderer horn_1;
+   public ModelRenderer shape1_3;
+   public ModelRenderer shape1_4;
+   public ModelRenderer shape1_5;
+   public ModelRenderer shape1_6;
+   public ModelRenderer shape1_7;
+   public ModelRenderer shape1_8;
+   public ModelRenderer shape1_9;
+   public ModelRenderer shape1_10;
+   public ModelRenderer horn_2;
+   public ModelRenderer horn_3;
+   public ModelRenderer horn_4;
+   public ModelRenderer horn_5;
+   public ModelRenderer horn_6;
+   public ModelRenderer horn_7;
+   public ModelRenderer horn_8;
+   public ModelRenderer horn_9;
+   public ModelRenderer horn_10;
+   public ModelRenderer horn_11;
+
+   public SoulCatcherModel() {
+      this.textureWidth = 96;
+      this.textureHeight = 64;
+      this.shape1_5 = new ModelRenderer(this, 0, 0);
+      this.shape1_5.setRotationPoint(0.0F, 0.0F, -13.0F);
+      this.shape1_5.addBox(-7.0F, 0.0F, 0.0F, 4, 5, 13, 0.0F);
+      this.horn_11 = new ModelRenderer(this, 86, 38);
+      this.horn_11.setRotationPoint(0.0F, 4.0F, 0.0F);
+      this.horn_11.addBox(-0.5F, 0.0F, -0.5F, 1, 2, 1, 0.0F);
+      this.setRotateAngle(this.horn_11, -0.31869712F, 0.0F, 0.0F);
+      this.shape1_2 = new ModelRenderer(this, 0, 29);
+      this.shape1_2.setRotationPoint(0.0F, 2.0F, -3.0F);
+      this.shape1_2.addBox(-6.0F, 0.0F, -12.0F, 12, 5, 10, 0.0F);
+      this.setRotateAngle(this.shape1_2, (float) (-Math.PI / 2), 0.0F, 0.0F);
+      this.horn_10 = new ModelRenderer(this, 76, 35);
+      this.horn_10.setRotationPoint(0.0F, 6.0F, 0.0F);
+      this.horn_10.addBox(-1.0F, 0.0F, -1.0F, 2, 4, 2, 0.0F);
+      this.setRotateAngle(this.horn_10, -0.31869712F, 0.0F, 0.0F);
+      this.shape1_8 = new ModelRenderer(this, 0, 44);
+      this.shape1_8.setRotationPoint(0.0F, -4.0F, -15.0F);
+      this.shape1_8.addBox(-9.0F, 0.0F, 0.0F, 4, 5, 15, 0.0F);
+      this.shape1_7 = new ModelRenderer(this, 0, 44);
+      this.shape1_7.setRotationPoint(0.0F, -4.0F, -15.0F);
+      this.shape1_7.addBox(5.0F, 0.0F, 0.0F, 4, 5, 15, 0.0F);
+      this.horn_9 = new ModelRenderer(this, 62, 33);
+      this.horn_9.setRotationPoint(0.0F, 8.0F, 0.0F);
+      this.horn_9.addBox(-1.5F, 0.0F, -1.5F, 3, 6, 3, 0.0F);
+      this.setRotateAngle(this.horn_9, -0.31869712F, 0.0F, 0.0F);
+      this.horn_3 = new ModelRenderer(this, 45, 32);
+      this.horn_3.setRotationPoint(0.0F, 10.0F, 0.0F);
+      this.horn_3.addBox(-2.0F, 0.0F, -2.0F, 4, 8, 4, 0.0F);
+      this.setRotateAngle(this.horn_3, -0.31869712F, 0.0F, 0.0F);
+      this.shape1 = new ModelRenderer(this, 0, 0);
+      this.shape1.setRotationPoint(0.0F, 16.0F, -2.0F);
+      this.shape1.addBox(-8.0F, -6.0F, -3.0F, 16, 14, 15, 0.0F);
+      this.setRotateAngle(this.shape1, 0.63739425F, 0.0F, 0.0F);
+      this.shape1_3 = new ModelRenderer(this, 0, 0);
+      this.shape1_3.setRotationPoint(0.0F, 0.0F, -13.0F);
+      this.shape1_3.addBox(3.0F, 0.0F, 0.0F, 4, 5, 13, 0.0F);
+      this.shape1_1 = new ModelRenderer(this, 60, 44);
+      this.shape1_1.mirror = true;
+      this.shape1_1.setRotationPoint(0.0F, 2.0F, -3.0F);
+      this.shape1_1.addBox(-4.0F, -5.0F, -10.0F, 8, 5, 10, 0.0F);
+      this.horn_6 = new ModelRenderer(this, 86, 37);
+      this.horn_6.setRotationPoint(0.0F, 4.0F, 0.0F);
+      this.horn_6.addBox(-0.5F, 0.0F, -0.5F, 1, 2, 1, 0.0F);
+      this.setRotateAngle(this.horn_6, -0.31869712F, 0.0F, 0.0F);
+      this.shape19 = new ModelRenderer(this, 23, 0);
+      this.shape19.setRotationPoint(0.0F, -13.0F, 1.0F);
+      this.shape19.addBox(1.0F, 0.0F, 0.0F, 8, 9, 18, 0.0F);
+      this.setRotateAngle(this.shape19, -0.4537856F, 0.091106184F, 0.0F);
+      this.shape1_10 = new ModelRenderer(this, 23, 46);
+      this.shape1_10.setRotationPoint(0.0F, 1.0F, -15.0F);
+      this.shape1_10.addBox(-8.0F, 0.0F, 0.0F, 16, 7, 0, 0.0F);
+      this.horn_2 = new ModelRenderer(this, 75, 18);
+      this.horn_2.setRotationPoint(0.0F, 12.0F, 0.0F);
+      this.horn_2.addBox(-2.5F, 0.0F, -2.5F, 5, 10, 5, 0.0F);
+      this.setRotateAngle(this.horn_2, 0.3642502F, 0.0F, 0.0F);
+      this.horn_8 = new ModelRenderer(this, 45, 32);
+      this.horn_8.setRotationPoint(0.0F, 10.0F, 0.0F);
+      this.horn_8.addBox(-2.0F, 0.0F, -2.0F, 4, 8, 4, 0.0F);
+      this.setRotateAngle(this.horn_8, -0.31869712F, 0.0F, 0.0F);
+      this.shape1_4 = new ModelRenderer(this, 0, 0);
+      this.shape1_4.setRotationPoint(0.0F, 0.0F, -13.0F);
+      this.shape1_4.addBox(1.0F, 0.0F, 0.0F, 2, 6, 3, 0.0F);
+      this.shape1_6 = new ModelRenderer(this, 0, 0);
+      this.shape1_6.setRotationPoint(0.0F, 0.0F, -13.0F);
+      this.shape1_6.addBox(-3.0F, 0.0F, 0.0F, 2, 6, 3, 0.0F);
+      this.horn_1 = new ModelRenderer(this, 71, 0);
+      this.horn_1.setRotationPoint(-8.0F, -2.0F, 10.0F);
+      this.horn_1.addBox(-3.0F, 0.0F, -3.0F, 6, 12, 6, 0.0F);
+      this.setRotateAngle(this.horn_1, -2.5953045F, 0.63739425F, 0.18203785F);
+      this.horn_5 = new ModelRenderer(this, 76, 35);
+      this.horn_5.setRotationPoint(0.0F, 6.0F, 0.0F);
+      this.horn_5.addBox(-1.0F, 0.0F, -1.0F, 2, 4, 2, 0.0F);
+      this.setRotateAngle(this.horn_5, -0.31869712F, 0.0F, 0.0F);
+      this.horn = new ModelRenderer(this, 71, 0);
+      this.horn.setRotationPoint(8.0F, -2.0F, 10.0F);
+      this.horn.addBox(-3.0F, 0.0F, -3.0F, 6, 12, 6, 0.0F);
+      this.setRotateAngle(this.horn, -2.5953045F, -0.63739425F, -0.18203785F);
+      this.shape1_9 = new ModelRenderer(this, 34, 54);
+      this.shape1_9.setRotationPoint(0.0F, -4.0F, -15.0F);
+      this.shape1_9.addBox(-5.0F, 0.0F, 0.0F, 10, 5, 5, 0.0F);
+      this.horn_7 = new ModelRenderer(this, 75, 18);
+      this.horn_7.setRotationPoint(0.0F, 12.0F, 0.0F);
+      this.horn_7.addBox(-2.5F, 0.0F, -2.5F, 5, 10, 5, 0.0F);
+      this.setRotateAngle(this.horn_7, 0.3642502F, 0.0F, 0.0F);
+      this.shape19_1 = new ModelRenderer(this, 23, 0);
+      this.shape19_1.setRotationPoint(0.0F, -13.0F, 1.0F);
+      this.shape19_1.addBox(-9.0F, 0.0F, 0.0F, 8, 9, 18, 0.0F);
+      this.setRotateAngle(this.shape19_1, -0.4537856F, -0.091106184F, 0.0F);
+      this.horn_4 = new ModelRenderer(this, 62, 33);
+      this.horn_4.setRotationPoint(0.0F, 8.0F, 0.0F);
+      this.horn_4.addBox(-1.5F, 0.0F, -1.5F, 3, 6, 3, 0.0F);
+      this.setRotateAngle(this.horn_4, -0.31869712F, 0.0F, 0.0F);
+      this.shape1_1.addChild(this.shape1_5);
+      this.horn_10.addChild(this.horn_11);
+      this.shape1.addChild(this.shape1_2);
+      this.horn_9.addChild(this.horn_10);
+      this.shape1_2.addChild(this.shape1_8);
+      this.shape1_2.addChild(this.shape1_7);
+      this.horn_8.addChild(this.horn_9);
+      this.horn_2.addChild(this.horn_3);
+      this.shape1_1.addChild(this.shape1_3);
+      this.shape1.addChild(this.shape1_1);
+      this.horn_5.addChild(this.horn_6);
+      this.shape1.addChild(this.shape19);
+      this.shape1_2.addChild(this.shape1_10);
+      this.horn.addChild(this.horn_2);
+      this.horn_7.addChild(this.horn_8);
+      this.shape1_1.addChild(this.shape1_4);
+      this.shape1_1.addChild(this.shape1_6);
+      this.shape1.addChild(this.horn_1);
+      this.horn_4.addChild(this.horn_5);
+      this.shape1.addChild(this.horn);
+      this.shape1_2.addChild(this.shape1_9);
+      this.horn_1.addChild(this.horn_7);
+      this.shape1.addChild(this.shape19_1);
+      this.horn_3.addChild(this.horn_4);
+   }
+
+   public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+      this.shape1.rotateAngleX = 0.63739425F + f * 0.017453F;
+      this.shape1.render(f5);
+   }
+
+   public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+      modelRenderer.rotateAngleX = x;
+      modelRenderer.rotateAngleY = y;
+      modelRenderer.rotateAngleZ = z;
+   }
+}

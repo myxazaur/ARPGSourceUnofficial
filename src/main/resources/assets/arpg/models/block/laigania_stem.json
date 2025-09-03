@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:laigania_stem_side",
+        "bottom": "arpg:laigania_stem_top",
+        "top": "arpg:laigania_stem_top",
+        "side": "arpg:laigania_stem_side"
+    }
+}

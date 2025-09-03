@@ -1,0 +1,64 @@
+{
+    "textures": {
+        "coral_bricks": "arpg:coral_bricks"
+    },
+    "elements": [
+        {
+            "name": "Cube5",
+            "from": [ 2, 4, 16 ], 
+            "to": [ 6, 8, 18 ], 
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 0, 12, 1, 14 ] },
+                "south": { "texture": "#coral_bricks", "uv": [ 2, 12, 4, 14 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 1, 12, 2, 14 ] },
+                "up": { "texture": "#coral_bricks", "uv": [ 2, 13, 4, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "north" },
+                "east": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "east" },
+                "south": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "south" },
+                "west": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "west" },
+                "up": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "up" },
+                "down": { "texture": "#coral_bricks", "uv": [ 0, 0, 8, 8 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "Cube1",
+            "from": [ 4, 9, 16 ], 
+            "to": [ 8, 13, 18 ], 
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 0, 12, 1, 14 ] },
+                "south": { "texture": "#coral_bricks", "uv": [ 0, 12, 2, 14 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 1, 12, 2, 14 ] },
+                "up": { "texture": "#coral_bricks", "uv": [ 2, 13, 4, 14 ] }
+            }
+        },
+        {
+            "name": "Cube2",
+            "from": [ 3, 4, -2 ], 
+            "to": [ 7, 8, 0 ], 
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 0, 14, 2, 16 ] },
+                "east": { "texture": "#coral_bricks", "uv": [ 3, 14, 4, 16 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 2, 14, 3, 16 ] },
+                "up": { "texture": "#coral_bricks", "uv": [ 2, 14, 4, 15 ] }
+            }
+        },
+        {
+            "name": "Cube3",
+            "from": [ 8, 1, -2 ], 
+            "to": [ 12, 5, 0 ], 
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 2, 12, 4, 14 ] },
+                "east": { "texture": "#coral_bricks", "uv": [ 3, 12, 4, 14 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 2, 12, 3, 14 ] },
+                "up": { "texture": "#coral_bricks", "uv": [ 2, 12, 4, 13 ] }
+            }
+        }
+    ]
+}

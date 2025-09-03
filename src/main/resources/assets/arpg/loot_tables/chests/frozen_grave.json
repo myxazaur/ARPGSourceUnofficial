@@ -1,0 +1,249 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+			"name": "frozen_grave_chest1",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "arpg:ice_gem",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:snow_cloth",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:coin",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 30
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:amethyst",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:citrine",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:sapphire",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ruby",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:rhinestone",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:topaz",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:emerald",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:bone",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 5,
+                                "max": 14
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+			"name": "frozen_grave_chest2",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "arpg:weapon_enchantments_box",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:simple_enchantments_box",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:all_enchantments_box",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:soul_stone",
+                    "weight": 6
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ancient_ice_shard",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:liveblood_necklace",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:ice_dust",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:conifer_rosin",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:hail_tear",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+			"name": "frozen_grave_chest3",
+            "entries": [
+                
+                {
+                    "type": "item",
+                    "name": "arpg:northern_ingot",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:silver_ingot",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 11
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:chromium_ingot",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "arpg:molten_ingot",
+                    "weight": 4
+                }
+            ]
+        }
+    ]
+}

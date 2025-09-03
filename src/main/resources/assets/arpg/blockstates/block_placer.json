@@ -1,0 +1,25 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+		"textures": {
+		  "face": "arpg:block_placer",
+		  "top": "blocks/furnace_top",
+		  "side": "blocks/furnace_side",
+		  "back": "blocks/furnace_side"
+		}
+	  },
+    "variants": {
+        "facing=down,triggered=false":  { "model": "arpg:orientable_vertical", "x": 180 },
+        "facing=up,triggered=false":    { "model": "arpg:orientable_vertical" },
+        "facing=north,triggered=false": { "model": "arpg:orientable" },
+        "facing=south,triggered=false": { "model": "arpg:orientable", "y": 180 },
+        "facing=west,triggered=false":  { "model": "arpg:orientable", "y": 270 },
+        "facing=east,triggered=false":  { "model": "arpg:orientable", "y": 90 },
+        "facing=down,triggered=true":  { "model": "arpg:orientable_vertical", "x": 180 },
+        "facing=up,triggered=true":    { "model": "arpg:orientable_vertical" },
+        "facing=north,triggered=true": { "model": "arpg:orientable" },
+        "facing=south,triggered=true": { "model": "arpg:orientable", "y": 180 },
+        "facing=west,triggered=true":  { "model": "arpg:orientable", "y": 270 },
+        "facing=east,triggered=true":  { "model": "arpg:orientable", "y": 90 } 
+    }
+}

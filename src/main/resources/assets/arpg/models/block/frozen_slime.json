@@ -1,0 +1,66 @@
+{
+    "textures": {
+        "frozen_slime": "arpg:frozen_slime",
+		"particle": "arpg:frozen_slime"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 2, 2, 2 ], 
+            "to": [ 14, 14, 14 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#frozen_slime", "uv": [ 10, 0, 16, 6 ], "cullface": "north" },
+                "east": { "texture": "#frozen_slime", "uv": [ 10, 6, 16, 12 ], "cullface": "east" },
+                "south": { "texture": "#frozen_slime", "uv": [ 0, 10, 6, 16 ], "cullface": "south" },
+                "west": { "texture": "#frozen_slime", "uv": [ 10, 6, 16, 12 ], "cullface": "west" },
+                "up": { "texture": "#frozen_slime", "uv": [ 10, 0, 16, 6 ], "rotation": 180, "cullface": "up" },
+                "down": { "texture": "#frozen_slime", "uv": [ 0, 10, 6, 16 ], "cullface": "down" }
+            }
+        },
+		{
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "shade": false,
+            "faces": {
+                "north": { "texture": "#frozen_slime", "uv": [ 0, 0, 8, 8 ], "cullface": "north" },
+                "east": { "texture": "#frozen_slime", "uv": [ 0, 0, 8, 8 ], "cullface": "east" },
+                "south": { "texture": "#frozen_slime", "uv": [ 0, 0, 8, 8 ], "cullface": "south" },
+                "west": { "texture": "#frozen_slime", "uv": [ 0, 0, 8, 8 ], "cullface": "west" },
+                "up": { "texture": "#frozen_slime", "uv": [ 0, 0, 8, 8 ], "cullface": "up" },
+                "down": { "texture": "#frozen_slime", "uv": [ 0, 0, 8, 8 ], "cullface": "down" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "arpg:demonite"
+        }},
+    "result": {
+        "item": "arpg:demonite_shard",
+        "count": 4
+    }
+}

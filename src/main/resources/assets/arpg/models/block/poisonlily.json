@@ -1,0 +1,46 @@
+{
+"ambientocclusion": false,
+    "textures": {
+		"0": "arpg:poisonlily",
+        "particle": "arpg:poisonlily"
+    },
+    "elements": [
+        {
+            "name": "Element",
+            "from": [ 0.0, 0.25, 0.0 ], 
+            "to": [ 16.0, 0.25, 16.0 ], 
+            "faces": {
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 8.0 ], "rotation": 180 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3.0, -16.0, 7.0 ], 
+            "to": [ 11.0, 0.0, 7.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 10.0, 0.0, 14.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 14.0, 0.0, 10.0, 8.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 0.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 0.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 5.0, -16.0, 7.0 ], 
+            "to": [ 13.0, 0.0, 7.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 10.0, 0.0, 14.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 14.0, 0.0, 10.0, 8.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 0.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 0.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 0.0 ] }
+            }
+        }
+    ]
+}

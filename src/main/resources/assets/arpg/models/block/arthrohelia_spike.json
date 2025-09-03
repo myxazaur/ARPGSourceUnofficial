@@ -1,0 +1,88 @@
+{
+    "textures": {
+        "arthrohelia_spike": "arpg:arthrohelia_spike",
+        "particle": "arpg:arthrohelia_spike"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 6, 4, 6 ], 
+            "to": [ 10, 12, 10 ], 
+            "faces": {
+                "north": { "texture": "#arthrohelia_spike", "uv": [ 8, 0, 12, 8 ] },
+                "east": { "texture": "#arthrohelia_spike", "uv": [ 8, 0, 12, 8 ] },
+                "south": { "texture": "#arthrohelia_spike", "uv": [ 8, 0, 12, 8 ] },
+                "west": { "texture": "#arthrohelia_spike", "uv": [ 8, 0, 12, 8 ] },
+                "up": { "texture": "#arthrohelia_spike", "uv": [ 8, 12, 12, 16 ] },
+                "down": { "texture": "#arthrohelia_spike", "uv": [ 8, 8, 12, 12 ] }
+            }
+        },
+        {
+            "from": [ 8, 16, 6.5 ], 
+            "to": [ 8, 32, 9.5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_spike", "uv": [ 0, 0, 3, 16 ] },
+                "west": { "texture": "#arthrohelia_spike", "uv": [ 0, 0, 3, 16 ] }
+            }
+        },
+        {
+            "from": [ 8, 0, 5.5 ], 
+            "to": [ 8, 16, 10.5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_spike", "uv": [ 3, 0, 8, 16 ] },
+                "west": { "texture": "#arthrohelia_spike", "uv": [ 3, 0, 8, 16 ] }
+            }
+        },
+        {
+            "from": [ 8, 0, 5.5 ], 
+            "to": [ 8, 16, 10.5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_spike", "uv": [ 3, 0, 8, 16 ] },
+                "west": { "texture": "#arthrohelia_spike", "uv": [ 3, 0, 8, 16 ] }
+            }
+        },
+        {
+            "from": [ 8, 16, 6.5 ], 
+            "to": [ 8, 32, 9.5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "east": { "texture": "#arthrohelia_spike", "uv": [ 0, 0, 3, 16 ] },
+                "west": { "texture": "#arthrohelia_spike", "uv": [ 0, 0, 3, 16 ] }
+            }
+        }
+    ]
+}

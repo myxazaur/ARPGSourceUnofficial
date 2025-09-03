@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AB",
+        "BA"
+],
+    "key": {"A": {
+            "item": "arpg:frozen_cobblestone"
+        },"B": {
+            "item": "arpg:glacier"
+        }},
+    "result": {
+        "item": "arpg:frozen_tile_roof",
+        "count": 4
+    }
+}

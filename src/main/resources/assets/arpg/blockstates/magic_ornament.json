@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:magic_ornament_all" },
+		"type=0": { "model": "arpg:magic_ornament_all"},
+		"type=1": { "model": "arpg:magic_ornament_up"},
+		"type=2": { "model": "arpg:magic_ornament_down"}
+    }
+}

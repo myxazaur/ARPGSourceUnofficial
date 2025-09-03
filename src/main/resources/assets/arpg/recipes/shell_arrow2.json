@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B",
+        " S",
+        " B"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        },"B": {
+            "item": "arpg:seashell"
+        }},
+    "result": {
+        "item": "arpg:shell_arrow",
+        "count": 10
+    }
+}

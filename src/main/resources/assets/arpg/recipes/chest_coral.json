@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AAA",
+        "LSL",
+        "LLL"],
+    "key": {"A": {
+            "item": "arpg:glowing_pearl"
+        },"S": {
+            "item": "arpg:aquatic_ingot"
+        },"L": {
+            "item": "arpg:coral"
+        }},
+    "result": {
+        "item": "arpg:chest_coral",
+        "count": 1
+    }
+}

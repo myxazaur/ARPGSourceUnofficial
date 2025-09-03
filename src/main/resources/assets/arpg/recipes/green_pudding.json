@@ -1,0 +1,22 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B ",
+        "LSM",
+        " H "],
+    "key": {"L": {
+            "item": "minecraft:sugar"
+        },"B": {
+            "item": "arpg:glowing_toxiberry"
+        },"M": {
+            "item": "minecraft:melon"
+        },"H": {
+            "item": "minecraft:cookie"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "slimeball"
+        }},
+    "result": {
+        "item": "arpg:green_pudding",
+        "count": 1
+    }
+}

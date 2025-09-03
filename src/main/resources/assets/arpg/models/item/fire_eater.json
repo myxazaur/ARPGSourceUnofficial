@@ -1,0 +1,13 @@
+{
+  "parent": "item/generated",
+  "display": {
+        "head": {
+            "rotation": [ 0, 0, -45 ],
+            "translation": [ 0, -6.5, -2.6 ],
+            "scale": [ 0.45, 0.45, 0.45 ]
+        }
+    },
+  "textures": {
+    "layer0": "arpg:fire_eater"
+  }
+}

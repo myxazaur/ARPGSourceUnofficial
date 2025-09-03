@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:decorative_chain" },
+        "inventory": { "model": "arpg:decorative_chain_all" },
+		"type=0": { "model": "arpg:decorative_chain"},
+		"type=1": { "model": "arpg:decorative_chain_all"},
+		"type=2": { "model": "arpg:decorative_chain_down"},
+		"type=3": { "model": "arpg:decorative_chain_up"}
+    }
+}

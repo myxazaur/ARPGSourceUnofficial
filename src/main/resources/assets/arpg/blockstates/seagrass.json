@@ -1,0 +1,18 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	"model": "arpg:seagrass1",
+    "textures": {
+	  "all": "arpg:seagrass",
+	  "particle": "arpg:seagrass"
+    }
+  },
+  "variants": {
+		"level=0": [
+            { "model": "arpg:seagrass1" },
+            { "model": "arpg:seagrass2" },
+            { "model": "arpg:seagrass3" },
+            { "model": "arpg:seagrass4" }
+        ]
+  }
+}

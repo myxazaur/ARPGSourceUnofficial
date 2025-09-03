@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:block_puzzle_side",
+        "bottom": "arpg:block_puzzle_side",
+        "top": "arpg:block_puzzle_top",
+        "side": "arpg:block_puzzle_side"
+    }
+}

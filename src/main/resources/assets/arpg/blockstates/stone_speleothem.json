@@ -1,0 +1,57 @@
+{
+    "forge_marker": 1,
+    "defaults":
+    {
+        "transform": "forge:default-block",
+        "textures": {
+		"particle": "arpg:stalacts/stone_speleothem"
+        }
+    },
+    "variants": {
+		"normal": [{}], 
+		"type=0": [
+            { "model": "arpg:stalacts/stone_speleothem00" },
+            { "model": "arpg:stalacts/stone_speleothem10" },
+			{ "model": "arpg:stalacts/stone_speleothem20" }
+        ],
+		"type=1": [
+            { "model": "arpg:stalacts/stone_speleothem01" },
+            { "model": "arpg:stalacts/stone_speleothem11" },
+			{ "model": "arpg:stalacts/stone_speleothem21" }
+        ],
+		"type=2": [
+            { "model": "arpg:stalacts/stone_speleothem02" },
+            { "model": "arpg:stalacts/stone_speleothem12" },
+			{ "model": "arpg:stalacts/stone_speleothem22" }
+        ],
+		"type=3": [
+            { "model": "arpg:stalacts/stone_speleothem03" },
+            { "model": "arpg:stalacts/stone_speleothem13" },
+			{ "model": "arpg:stalacts/stone_speleothem23" }
+        ],
+		"type=4": [
+            { "model": "arpg:stalacts/stone_speleothem04" },
+            { "model": "arpg:stalacts/stone_speleothem14" },
+			{ "model": "arpg:stalacts/stone_speleothem24" }
+        ],
+		"type=5": [
+            { "model": "arpg:stalacts/stone_speleothem30" },
+            { "model": "arpg:stalacts/stone_speleothem40" },
+			{ "model": "arpg:stalacts/stone_speleothem32" }
+        ],
+		"type=6": [
+            { "model": "arpg:stalacts/stone_speleothem34" },
+            { "model": "arpg:stalacts/stone_speleothem44" },
+			{ "model": "arpg:stalacts/stone_speleothem42" }
+        ],
+		"type=7": [
+            { "model": "arpg:stalacts/stone_speleothem31" },
+            { "model": "arpg:stalacts/stone_speleothem41" }
+        ],
+		"type=8": [
+            { "model": "arpg:stalacts/stone_speleothem33" },
+            { "model": "arpg:stalacts/stone_speleothem43" }
+        ]
+		
+  }
+}

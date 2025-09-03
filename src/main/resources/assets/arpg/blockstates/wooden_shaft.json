@@ -1,0 +1,75 @@
+{
+    "multipart": [
+        
+        {   "when": {"north": true, "down": true},
+            "apply": [
+                { "model": "arpg:shaft_add", "y": 270 }
+            ]
+        },
+        {   "when": {"east": true, "down": true},
+            "apply": [
+                { "model": "arpg:shaft_add" }
+            ]
+        },
+        {   "when": {"south": true, "down": true},
+            "apply": [
+                { "model": "arpg:shaft_add", "y": 90}
+            ]
+        },
+        {   "when": {"west": true, "down": true},
+            "apply": [
+                { "model": "arpg:shaft_add", "y": 180 }
+            ]
+        },
+        {   "when": {"up": true, "down": false, "north": false, "east": false, "south": false, "west": false},
+            "apply": [
+                { "model": "arpg:shaft" }
+            ]
+        },
+		{   "when": {"up": true, "down": true},
+            "apply": [
+                { "model": "arpg:shaft" }
+            ]
+        },
+		{   "when": {"up": false, "down": true},
+            "apply": [
+                { "model": "arpg:shaft" }
+            ]
+        },
+		{   "when": {"north": true, "south": false},
+            "apply": [
+                { "model": "arpg:shaft_up", "y": 90 }
+            ]
+        },
+        {   "when": {"south": true, "north": false},
+            "apply": [
+                { "model": "arpg:shaft_up", "y": 90 }
+            ]
+        },
+        {   "when": {"south": true, "north": true},
+            "apply": [
+                { "model": "arpg:shaft_up", "y": 90 }
+            ]
+        },
+        {   "when": {"west": true, "east": false},
+            "apply": [
+                { "model": "arpg:shaft_up2"}
+            ]
+        },
+        {   "when": {"east": true, "west": false},
+            "apply": [
+                { "model": "arpg:shaft_up2"}
+            ]
+        },
+        {   "when": {"east": true, "west": true},
+            "apply": [
+                { "model": "arpg:shaft_up2"}
+            ]
+        },
+        {   "when": {"up": false, "down": false, "north": false, "east": false, "south": false, "west": false},
+            "apply": [
+                { "model": "arpg:shaft" }
+            ]
+        }
+    ]
+}

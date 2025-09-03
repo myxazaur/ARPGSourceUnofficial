@@ -1,0 +1,66 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "slimeblob": "arpg:slime_blob",
+		"particle": "arpg:slime_blob"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 5, 0, 5 ], 
+            "to": [ 11, 6, 11 ], 
+            "faces": {
+                "north": { "texture": "#slimeblob", "uv": [ 11, 3, 16, 9 ] },
+                "east": { "texture": "#slimeblob", "uv": [ 11, 3, 16, 9 ] },
+                "south": { "texture": "#slimeblob", "uv": [ 11, 3, 16, 8 ] },
+                "west": { "texture": "#slimeblob", "uv": [ 11, 3, 16, 9 ] },
+                "up": { "texture": "#slimeblob", "uv": [ 11, 3, 16, 9 ] },
+                "down": { "texture": "#slimeblob", "uv": [ 11, 3, 16, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 6, 6 ], 
+            "to": [ 10, 9, 10 ], 
+            "faces": {
+                "north": { "texture": "#slimeblob", "uv": [ 3, 0, 7, 3 ] },
+                "east": { "texture": "#slimeblob", "uv": [ 7, 0, 11, 3 ] },
+                "south": { "texture": "#slimeblob", "uv": [ 3, 0, 7, 3 ] },
+                "west": { "texture": "#slimeblob", "uv": [ 7, 0, 11, 3 ] },
+                "up": { "texture": "#slimeblob", "uv": [ 7, 3, 11, 7 ] }
+            }
+        }
+    ]
+}

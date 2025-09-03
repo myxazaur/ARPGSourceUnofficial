@@ -1,0 +1,10 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:ancient_spawner_side",
+        "bottom": "arpg:ancient_spawner_top",
+        "top": "arpg:ancient_spawner_top",
+        "side": "arpg:ancient_spawner_side"
+    }
+}
+

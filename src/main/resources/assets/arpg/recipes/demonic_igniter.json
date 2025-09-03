@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A ",
+        " S"
+],
+    "key": {"A": {
+            "item": "arpg:molten_ingot"
+        },"S": {
+            "item": "arpg:demonite"
+        }},
+    "result": {
+        "item": "arpg:demonic_igniter",
+        "count": 1
+    }
+}

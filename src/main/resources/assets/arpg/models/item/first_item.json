@@ -1,0 +1,105 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "Applegun": "arpg:applegun"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.725, 0.725, 0.725 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 1.0, 1.0, 1.0 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 0 ],
+            "translation": [ 0, 7.5, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, -90, 0 ],
+            "translation": [ 0, 8.0, -3 ],
+            "scale": [ 1.0, 1.0, 1.0 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 2, 7 ], 
+            "to": [ 16, 4, 9 ], 
+            "faces": {
+                "north": { "texture": "#Applegun", "uv": [ 0, 0, 12, 2 ], "rotation": 180 },
+                "east": { "texture": "#Applegun", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#Applegun", "uv": [ 4, 14, 16, 16 ], "rotation": 180 },
+                "up": { "texture": "#Applegun", "uv": [ 1, 14, 13, 16 ] },
+                "down": { "texture": "#Applegun", "uv": [ 0, 0, 12, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 1, 6 ], 
+            "to": [ 4, 5, 10 ], 
+            "faces": {
+                "north": { "texture": "#Applegun", "uv": [ 0, 8, 3, 12 ] },
+                "east": { "texture": "#Applegun", "uv": [ 0, 3, 4, 7 ] },
+                "south": { "texture": "#Applegun", "uv": [ 0, 8, 3, 12 ] },
+                "west": { "texture": "#Applegun", "uv": [ 0, 3, 4, 7 ] },
+                "up": { "texture": "#Applegun", "uv": [ 0, 8, 3, 12 ] },
+                "down": { "texture": "#Applegun", "uv": [ 0, 8, 3, 12 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 8, -3, 7 ], 
+            "to": [ 10, 2, 9 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#Applegun", "uv": [ 5, 8, 7, 13 ] },
+                "east": { "texture": "#Applegun", "uv": [ 5, 8, 7, 13 ] },
+                "south": { "texture": "#Applegun", "uv": [ 5, 8, 7, 13 ] },
+                "west": { "texture": "#Applegun", "uv": [ 5, 8, 7, 13 ] },
+                "up": { "texture": "#Applegun", "uv": [ 8, 8, 10, 10 ] },
+                "down": { "texture": "#Applegun", "uv": [ 8, 8, 10, 10 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 9, 1, 6 ], 
+            "to": [ 15, 2, 10 ], 
+            "faces": {
+                "north": { "texture": "#Applegun", "uv": [ 5, 3, 11, 4 ] },
+                "east": { "texture": "#Applegun", "uv": [ 7, 3, 11, 4 ] },
+                "south": { "texture": "#Applegun", "uv": [ 5, 3, 11, 4 ] },
+                "west": { "texture": "#Applegun", "uv": [ 5, 3, 9, 4 ] },
+                "up": { "texture": "#Applegun", "uv": [ 5, 3, 11, 7 ] },
+                "down": { "texture": "#Applegun", "uv": [ 5, 3, 11, 7 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 2, 6 ], 
+            "to": [ 13, 3, 10 ], 
+            "faces": {
+                "north": { "texture": "#Applegun", "uv": [ 5, 3, 11, 4 ] },
+                "east": { "texture": "#Applegun", "uv": [ 6, 3, 10, 4 ] },
+                "south": { "texture": "#Applegun", "uv": [ 5, 3, 11, 4 ] },
+                "west": { "texture": "#Applegun", "uv": [ 6, 3, 10, 4 ] },
+                "up": { "texture": "#Applegun", "uv": [ 5, 3, 11, 7 ] },
+                "down": { "texture": "#Applegun", "uv": [ 5, 3, 11, 7 ] }
+            }
+        }
+    ]
+}

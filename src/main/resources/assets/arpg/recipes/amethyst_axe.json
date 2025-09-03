@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AA",
+        "AS",
+        " S"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "gemAmethyst"
+        }},
+    "result": {
+        "item": "arpg:amethyst_axe",
+        "count": 1
+    }
+}

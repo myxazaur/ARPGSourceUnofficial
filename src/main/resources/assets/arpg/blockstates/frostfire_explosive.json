@@ -1,0 +1,8 @@
+{
+    "variants": {
+    
+    "explode=false": { "model": "arpg:frostfire_explosive"},
+	"explode=true": { "model": "arpg:frostfire_explosive"}
+	
+  }
+}

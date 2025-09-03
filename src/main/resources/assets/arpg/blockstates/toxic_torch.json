@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "torch": "arpg:toxic_torch"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:torch_long" },
+    "facing=east": { "model": "arpg:torch_long_wall" },
+    "facing=south": { "model": "arpg:torch_long_wall", "y": 90 },
+    "facing=west": { "model": "arpg:torch_long_wall", "y": 180 },
+    "facing=north": { "model": "arpg:torch_long_wall", "y": 270 }
+  }
+}

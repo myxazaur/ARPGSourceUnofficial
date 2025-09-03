@@ -1,0 +1,39 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "#cross"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ -8.0, -1.0, 8.0 ], 
+            "to": [ 24.0, 31.0, 8.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": -45.0 },
+			"shade": false,
+            "faces": {
+                "north": { "texture": "#cross", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#cross", "uv": [ 0.0, 0.0, 0.0, 32.0 ] },
+                "south": { "texture": "#cross", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#cross", "uv": [ 0.0, 0.0, 0.0, 32.0 ] },
+                "up": { "texture": "#cross", "uv": [ 0.0, 0.0, 32.0, 0.0 ] },
+                "down": { "texture": "#cross", "uv": [ 0.0, 0.0, 32.0, 0.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ -8.0, -1.0, 8.0 ], 
+            "to": [ 24.0, 31.0, 8.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": 45.0 },
+			"shade": false,
+            "faces": {
+                "north": { "texture": "#cross", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#cross", "uv": [ 0.0, 0.0, 0.0, 32.0 ] },
+                "south": { "texture": "#cross", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#cross", "uv": [ 0.0, 0.0, 0.0, 32.0 ] },
+                "up": { "texture": "#cross", "uv": [ 0.0, 0.0, 32.0, 0.0 ] },
+                "down": { "texture": "#cross", "uv": [ 0.0, 0.0, 32.0, 0.0 ] }
+            }
+        }
+    ]
+}

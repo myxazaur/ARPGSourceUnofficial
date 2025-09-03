@@ -1,0 +1,101 @@
+{
+    "textures": {
+        "palm_fruit_bunch": "arpg:palm_fruit_bunch"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 5, 0, 3 ], 
+            "to": [ 11, 6, 9 ], 
+            "faces": {
+                "north": { "texture": "#palm_fruit_bunch", "uv": [ 10, 10, 16, 16 ] },
+                "east": { "texture": "#palm_fruit_bunch", "uv": [ 10, 10, 16, 16 ] },
+                "south": { "texture": "#palm_fruit_bunch", "uv": [ 10, 10, 16, 16 ] },
+                "west": { "texture": "#palm_fruit_bunch", "uv": [ 10, 10, 16, 16 ] },
+                "up": { "texture": "#palm_fruit_bunch", "uv": [ 4, 10, 10, 16 ] },
+                "down": { "texture": "#palm_fruit_bunch", "uv": [ 4, 10, 10, 16 ] }
+            }
+        },
+        {
+            "from": [ 3, 5, 10 ], 
+            "to": [ 8, 10, 15 ], 
+            "faces": {
+                "north": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "east": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "south": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "west": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "up": { "texture": "#palm_fruit_bunch", "uv": [ 11, 5, 16, 10 ] },
+                "down": { "texture": "#palm_fruit_bunch", "uv": [ 11, 5, 16, 10 ] }
+            }
+        },
+        {
+            "from": [ 9, 9, 6 ], 
+            "to": [ 14, 14, 11 ], 
+            "faces": {
+                "north": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "east": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "south": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "west": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 16, 5 ] },
+                "up": { "texture": "#palm_fruit_bunch", "uv": [ 11, 5, 16, 10 ] },
+                "down": { "texture": "#palm_fruit_bunch", "uv": [ 11, 5, 16, 10 ] }
+            }
+        },
+        {
+            "from": [ 0, 11, 9 ], 
+            "to": [ 11, 16, 9 ], 
+            "faces": {
+                "north": { "texture": "#palm_fruit_bunch", "uv": [ 11, 0, 0, 5 ] },
+                "south": { "texture": "#palm_fruit_bunch", "uv": [ 0, 0, 11, 5 ] }
+            }
+        },
+        {
+            "from": [ 3, 5, 7 ], 
+            "to": [ 8, 16, 7 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#palm_fruit_bunch", "uv": [ 0, 5, 11, 10 ], "rotation": 90 },
+                "south": { "texture": "#palm_fruit_bunch", "uv": [ 0, 5, 11, 10 ] }
+            }
+        },
+        {
+            "from": [ 2, 10, 12 ], 
+            "to": [ 8, 14, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#palm_fruit_bunch", "uv": [ 4, 10, 0, 16 ], "rotation": 270 },
+                "south": { "texture": "#palm_fruit_bunch", "uv": [ 0, 10, 4, 16 ], "rotation": 90 }
+            }
+        }
+    ]
+}

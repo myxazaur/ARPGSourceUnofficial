@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["A",
+        "L",
+        "L"],
+    "key": {"L": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        },"A": {
+            "item": "arpg:rhinestone"
+        }},
+    "result": {
+        "item": "arpg:rhinestone_shovel",
+        "count": 1
+    }
+}

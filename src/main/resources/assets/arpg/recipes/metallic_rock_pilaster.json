@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA"
+],
+    "key": {"A": {
+            "item": "arpg:metallic_rock"
+        }},
+    "result": {
+        "item": "arpg:metallic_rock_pilaster",
+        "count": 4
+    }
+}

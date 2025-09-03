@@ -1,0 +1,136 @@
+{
+    "textures": {
+        "absorption_totem": "arpg:absorption_totem",
+		"particle": "arpg:absorption_totem"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 7, 3, 7 ], 
+            "to": [ 9, 10, 9 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 11, 0, 13, 7 ] },
+                "east": { "texture": "#absorption_totem", "uv": [ 12, 2, 14, 9 ] },
+                "south": { "texture": "#absorption_totem", "uv": [ 12, 6, 14, 13 ] },
+                "west": { "texture": "#absorption_totem", "uv": [ 10, 8, 12, 15 ] }
+            }
+        },
+        {
+            "from": [ 6.5, 10, 6.5 ], 
+            "to": [ 9.5, 15, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 9, 3, 12, 8 ] },
+                "east": { "texture": "#absorption_totem", "uv": [ 9, 6, 12, 11 ] },
+                "south": { "texture": "#absorption_totem", "uv": [ 10, 10, 13, 15 ] },
+                "west": { "texture": "#absorption_totem", "uv": [ 11, 5, 14, 10 ] },
+                "up": { "texture": "#absorption_totem", "uv": [ 3, 7, 6, 10 ] },
+                "down": { "texture": "#absorption_totem", "uv": [ 7, 0, 10, 3 ] }
+            }
+        },
+        {
+            "from": [ 5.5, 0, 5.5 ], 
+            "to": [ 10.5, 1, 10.5 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 0, 15, 5, 16 ] },
+                "east": { "texture": "#absorption_totem", "uv": [ 0, 15, 5, 16 ] },
+                "south": { "texture": "#absorption_totem", "uv": [ 0, 15, 5, 16 ] },
+                "west": { "texture": "#absorption_totem", "uv": [ 0, 15, 5, 16 ] },
+                "up": { "texture": "#absorption_totem", "uv": [ 0, 11, 5, 16 ] },
+                "down": { "texture": "#absorption_totem", "uv": [ 0, 11, 5, 16 ] }
+            }
+        },
+        {
+            "from": [ 6.5, 1, 6.5 ], 
+            "to": [ 9.5, 3, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 7, 14, 10, 16 ], "rotation": 180 },
+                "east": { "texture": "#absorption_totem", "uv": [ 9, 14, 12, 16 ], "rotation": 180 },
+                "south": { "texture": "#absorption_totem", "uv": [ 11, 14, 14, 16 ], "rotation": 180 },
+                "west": { "texture": "#absorption_totem", "uv": [ 13, 14, 16, 16 ], "rotation": 180 },
+                "up": { "texture": "#absorption_totem", "uv": [ 13, 0, 16, 3 ] }
+            }
+        },
+        {
+            "from": [ 6.5, 15, 6.5 ], 
+            "to": [ 9.5, 16, 6.5 ], 
+            "faces": {
+                "south": { "texture": "#absorption_totem", "uv": [ 9, 10, 12, 11 ] }
+            }
+        },
+        {
+            "from": [ 6.5, 15, 9.5 ], 
+            "to": [ 9.5, 16, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 11, 10, 14, 11 ] }
+            }
+        },
+        {
+            "from": [ 6.5, 15, 6.5 ], 
+            "to": [ 6.5, 16, 9.5 ], 
+            "faces": {
+                "east": { "texture": "#absorption_totem", "uv": [ 9, 8, 12, 9 ] }
+            }
+        },
+        {
+            "from": [ 9.5, 15, 6.5 ], 
+            "to": [ 9.5, 16, 9.5 ], 
+            "faces": {
+                "west": { "texture": "#absorption_totem", "uv": [ 11, 10, 14, 11 ] }
+            }
+        },
+        {
+            "from": [ 4.5, 14, 4.5 ], 
+            "to": [ 11.5, 16, 11.5 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 8, 14, 15, 16 ] },
+                "east": { "texture": "#absorption_totem", "uv": [ 9, 14, 16, 16 ] },
+                "south": { "texture": "#absorption_totem", "uv": [ 7, 14, 14, 16 ] },
+                "west": { "texture": "#absorption_totem", "uv": [ 8, 14, 15, 16 ] },
+                "up": { "texture": "#absorption_totem", "uv": [ 0, 0, 7, 7 ], "rotation": 270 },
+                "down": { "texture": "#absorption_totem", "uv": [ 0, 0, 7, 7 ], "rotation": 90 }
+            }
+        },
+        {
+            "from": [ 6.5, 16, 6.5 ], 
+            "to": [ 9.5, 16.1, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#absorption_totem", "uv": [ 0, 8, 3, 8.1 ] },
+                "east": { "texture": "#absorption_totem", "uv": [ 0, 8, 3, 8.1 ] },
+                "south": { "texture": "#absorption_totem", "uv": [ 0, 8, 3, 8.1 ] },
+                "west": { "texture": "#absorption_totem", "uv": [ 0, 8, 3, 8.1 ] },
+                "up": { "texture": "#absorption_totem", "uv": [ 0, 7, 3, 10 ], "rotation": 270 }
+            }
+        }
+    ]
+}

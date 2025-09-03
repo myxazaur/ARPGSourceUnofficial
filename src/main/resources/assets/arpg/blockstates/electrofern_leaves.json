@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    
+  },
+  "variants": {
+    "normal": { "model": "arpg:electrofern_leaves" },
+    "inventory": { "model": "arpg:electrofern_leaves" },
+    "facing=up,rotated=false": { "model": "arpg:electrofern_leaves", "x": -90 },
+    "facing=down,rotated=false": { "model": "arpg:electrofern_leaves", "x": 90 },
+	
+    "facing=east,rotated=false": { "model": "arpg:electrofern_leaves", "y": 90 },
+    "facing=south,rotated=false": { "model": "arpg:electrofern_leaves", "y": 180 },
+    "facing=west,rotated=false": { "model": "arpg:electrofern_leaves", "y": 270 },
+    "facing=north,rotated=false": { "model": "arpg:electrofern_leaves" },
+	
+    "facing=up,rotated=true": { "model": "arpg:electrofern_leaves", "x": -90, "y": 90 },
+    "facing=down,rotated=true": { "model": "arpg:electrofern_leaves", "x": 90, "y": 90 },
+	
+    "facing=east,rotated=true": { "model": "arpg:electrofern_leaves_z", "y": 90 },
+    "facing=south,rotated=true": { "model": "arpg:electrofern_leaves_z", "y": 180 },
+    "facing=west,rotated=true": { "model": "arpg:electrofern_leaves_z", "y": 270 },
+    "facing=north,rotated=true": { "model": "arpg:electrofern_leaves_z" }
+  }
+}

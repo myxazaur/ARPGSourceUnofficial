@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        " S",
+        " H"],
+    "key": {"S": {
+            "item": "minecraft:chorus_fruit_popped"
+        },"B": {
+            "item": "arpg:void_crystal"
+        },"H": {
+            "item": "minecraft:shulker_shell"
+        }},
+    "result": {
+        "item": "arpg:void_arrow",
+        "count": 24
+    }
+}

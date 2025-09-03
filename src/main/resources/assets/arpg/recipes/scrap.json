@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA",
+        "AA"
+],
+    "key": {"A": {
+            "item": "arpg:junk_pile"
+        }},
+    "result": {
+        "item": "arpg:scrap",
+        "count": 1
+    }
+}

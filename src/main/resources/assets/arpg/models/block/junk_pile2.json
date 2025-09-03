@@ -1,0 +1,79 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "scrap": "arpg:scrap",
+		"particle": "arpg:scrap"
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 0, 1 ], 
+            "to": [ 8, 3, 5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#scrap", "uv": [ 12, 7, 16, 10 ] },
+                "east": { "texture": "#scrap", "uv": [ 13, 7, 16, 10 ] },
+                "south": { "texture": "#scrap", "uv": [ 12, 7, 16, 10 ] },
+                "west": { "texture": "#scrap", "uv": [ 13, 8, 16, 11 ] },
+                "up": { "texture": "#scrap", "uv": [ 12, 7, 16, 11 ] },
+                "down": { "texture": "#scrap", "uv": [ 0, 0, 4, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12, 0, 8 ], 
+            "to": [ 16, 4, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#scrap", "uv": [ 3, 1, 7, 5 ] },
+                "east": { "texture": "#scrap", "uv": [ 3, 1, 7, 5 ] },
+                "south": { "texture": "#scrap", "uv": [ 1, 1, 5, 5 ] },
+                "west": { "texture": "#scrap", "uv": [ 2, 1, 6, 5 ] },
+                "up": { "texture": "#scrap", "uv": [ 3, 3, 7, 7 ] },
+                "down": { "texture": "#scrap", "uv": [ 3, 3, 7, 7 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 4, 9 ], 
+            "to": [ 15, 8, 11 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#scrap", "uv": [ 3, 1, 5, 5 ] },
+                "east": { "texture": "#scrap", "uv": [ 3, 1, 5, 5 ] },
+                "south": { "texture": "#scrap", "uv": [ 1, 1, 3, 5 ] },
+                "west": { "texture": "#scrap", "uv": [ 2, 1, 4, 5 ] },
+                "up": { "texture": "#scrap", "uv": [ 3, 12, 5, 14 ] },
+                "down": { "texture": "#scrap", "uv": [ 3, 3, 5, 5 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 0, 8 ], 
+            "to": [ 10, 6, 15 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#scrap", "uv": [ 2, 9, 9, 15 ] },
+                "east": { "texture": "#scrap", "uv": [ 4, 9, 11, 15 ] },
+                "south": { "texture": "#scrap", "uv": [ 3, 6, 10, 12 ] },
+                "west": { "texture": "#scrap", "uv": [ 4, 3, 11, 9 ] },
+                "up": { "texture": "#scrap", "uv": [ 5, 6, 12, 13 ] },
+                "down": { "texture": "#scrap", "uv": [ 4, 7, 11, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 10, 0, 4 ], 
+            "to": [ 11, 1, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#scrap", "uv": [ 2, 13, 3, 14 ] },
+                "east": { "texture": "#scrap", "uv": [ 0, 15, 8, 16 ] },
+                "south": { "texture": "#scrap", "uv": [ 2, 13, 3, 14 ] },
+                "west": { "texture": "#scrap", "uv": [ 0, 15, 8, 16 ] },
+                "up": { "texture": "#scrap", "uv": [ 3, 8, 4, 16 ] },
+                "down": { "texture": "#scrap", "uv": [ 2, 8, 3, 16 ] }
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LSL",
+        "A A"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"B": {
+            "item": "arpg:magic_powder"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotGold"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetGold"
+        }},
+    "result": {
+        "item": "arpg:spell_pliers",
+        "count": 1
+    }
+}

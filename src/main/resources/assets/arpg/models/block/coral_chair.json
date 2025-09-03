@@ -1,0 +1,116 @@
+{
+    "textures": {
+        "coral_chair": "arpg:coral_chair"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 225, 0 ],
+            "translation": [ 0, -3, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.65, 0.65, 0.65 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 90, -15 ],
+            "translation": [ 0, 3.5, 0 ],
+            "scale": [ 0.325, 0.325, 0.325 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, 90, 0 ],
+            "translation": [ 0, 4.0, -2.0 ],
+            "scale": [ 0.325, 0.325, 0.325 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 7, 4 ], 
+            "to": [ 12, 9, 12 ], 
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 0, 4, 4, 5 ] },
+                "east": { "texture": "#coral_chair", "uv": [ 0, 4, 4, 5 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 0, 4, 4, 5 ] },
+                "west": { "texture": "#coral_chair", "uv": [ 0, 4, 4, 5 ] },
+                "up": { "texture": "#coral_chair", "uv": [ 0, 0, 4, 4 ] },
+                "down": { "texture": "#coral_chair", "uv": [ 0, 0, 4, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 14, 4 ], 
+            "to": [ 5, 18, 12 ], 
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 15, 0, 16, 2 ] },
+                "east": { "texture": "#coral_chair", "uv": [ 12, 1, 16, 3 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 12, 0, 13, 2 ] },
+                "west": { "texture": "#coral_chair", "uv": [ 12, 1, 16, 3 ] },
+                "up": { "texture": "#coral_chair", "uv": [ 12, 0, 16, 1 ], "rotation": 90 },
+                "down": { "texture": "#coral_chair", "uv": [ 12, 2, 16, 3 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 18, 4 ], 
+            "to": [ 4, 20, 12 ], 
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 14.5, 1.5, 15.5, 2.5 ], "rotation": 180 },
+                "east": { "texture": "#coral_chair", "uv": [ 12, 0, 16, 1 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 14.5, 1.5, 15.5, 2.5 ], "rotation": 270 },
+                "west": { "texture": "#coral_chair", "uv": [ 12, 0, 16, 1 ] },
+                "up": { "texture": "#coral_chair", "uv": [ 12, 0, 16, 1 ], "rotation": 90 },
+                "down": { "texture": "#coral_chair", "uv": [ 12, 0, 16, 1 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2.5, 0, 8 ], 
+            "to": [ 13.5, 7, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 0, 12.5, 5, 16 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 0, 12.5, 5, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 6, 12.1 ], 
+            "to": [ 14, 20, 12.1 ], 
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 16, 9, 9, 16 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 9, 9, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 6, 3.9 ], 
+            "to": [ 14, 20, 3.9 ], 
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 11, 0, 4, 7 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 4, 0, 11, 7 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2.5, 0, 8 ], 
+            "to": [ 13.5, 7, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chair", "uv": [ 0, 9, 5, 12.5 ] },
+                "south": { "texture": "#coral_chair", "uv": [ 0, 9, 5, 12.5 ] }
+            }
+        }
+    ]
+}

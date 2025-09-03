@@ -1,0 +1,118 @@
+{
+    "textures": {
+        "sulfur_crystal": "arpg:sulfur_crystal",
+		"particle": "arpg:sulfur_crystal"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 0, 1, 3 ], 
+            "to": [ 4, 9, 7 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#sulfur_crystal", "uv": [ 0, 0, 4, 8 ] },
+                "east": { "texture": "#sulfur_crystal", "uv": [ 0, 8, 4, 16 ] },
+                "south": { "texture": "#sulfur_crystal", "uv": [ 0, 0, 4, 8 ] },
+                "west": { "texture": "#sulfur_crystal", "uv": [ 0, 8, 4, 16 ] },
+                "up": { "texture": "#sulfur_crystal", "uv": [ 12, 0, 16, 4 ] },
+                "down": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 6, 1, 12 ], 
+            "to": [ 10, 11, 16 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "x", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#sulfur_crystal", "uv": [ 4, 0, 8, 10 ] },
+                "east": { "texture": "#sulfur_crystal", "uv": [ 8, 6, 12, 16 ] },
+                "south": { "texture": "#sulfur_crystal", "uv": [ 4, 0, 8, 10 ] },
+                "west": { "texture": "#sulfur_crystal", "uv": [ 8, 6, 12, 16 ] },
+                "up": { "texture": "#sulfur_crystal", "uv": [ 12, 4, 16, 8 ] },
+                "down": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 8, 0, 1 ], 
+            "to": [ 12, 6, 5 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#sulfur_crystal", "uv": [ 8, 0, 12, 6 ] },
+                "east": { "texture": "#sulfur_crystal", "uv": [ 4, 10, 8, 16 ] },
+                "south": { "texture": "#sulfur_crystal", "uv": [ 8, 0, 12, 6 ] },
+                "west": { "texture": "#sulfur_crystal", "uv": [ 4, 10, 8, 16 ] },
+                "up": { "texture": "#sulfur_crystal", "uv": [ 12, 8, 16, 12 ] },
+                "down": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "from": [ 5, 0, 1 ], 
+            "to": [ 7, 2, 3 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#sulfur_crystal", "uv": [ 8, 0, 10, 2 ] },
+                "east": { "texture": "#sulfur_crystal", "uv": [ 4, 10, 6, 12 ] },
+                "south": { "texture": "#sulfur_crystal", "uv": [ 13, 14, 15, 16 ] },
+                "west": { "texture": "#sulfur_crystal", "uv": [ 2, 13, 4, 15 ] },
+                "up": { "texture": "#sulfur_crystal", "uv": [ 13, 11, 15, 13 ] },
+                "down": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 14, 14 ] }
+            }
+        },
+        {
+            "from": [ 11, 0, 13 ], 
+            "to": [ 13, 2, 15 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#sulfur_crystal", "uv": [ 8, 0, 10, 2 ] },
+                "east": { "texture": "#sulfur_crystal", "uv": [ 14, 12, 16, 14 ] },
+                "south": { "texture": "#sulfur_crystal", "uv": [ 12, 14, 14, 16 ] },
+                "west": { "texture": "#sulfur_crystal", "uv": [ 4, 10, 6, 12 ] },
+                "up": { "texture": "#sulfur_crystal", "uv": [ 12, 8, 14, 10 ] },
+                "down": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 14, 14 ] }
+            }
+        },
+        {
+            "from": [ 6, 0, 12 ], 
+            "to": [ 8, 3, 14 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#sulfur_crystal", "uv": [ 13, 12, 15, 15 ] },
+                "east": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 14, 15 ] },
+                "south": { "texture": "#sulfur_crystal", "uv": [ 8, 0, 10, 3 ] },
+                "west": { "texture": "#sulfur_crystal", "uv": [ 4, 10, 6, 13 ] },
+                "up": { "texture": "#sulfur_crystal", "uv": [ 13, 13, 15, 15 ] },
+                "down": { "texture": "#sulfur_crystal", "uv": [ 12, 12, 14, 14 ] }
+            }
+        }
+    ]
+}

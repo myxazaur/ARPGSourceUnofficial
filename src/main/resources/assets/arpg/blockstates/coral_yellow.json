@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "normal": [
+			{ "model": "arpg:coral_yellow" },
+            { "model": "arpg:coral_yellow_a" },
+            { "model": "arpg:coral_yellow_a", "x": 90 },
+            { "model": "arpg:coral_yellow_a", "x": 90 , "y": 90 },
+            { "model": "arpg:coral_yellow_a", "x": 90 , "y": 180 },
+            { "model": "arpg:coral_yellow_a", "x": 90 , "y": 270 },
+            { "model": "arpg:coral_yellow_a", "x": 180 }
+        ]
+    }
+}

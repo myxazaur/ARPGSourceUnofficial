@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "snowy=false": { "model": "arpg:conifer_sapling" },
+		"snowy=true": { "model": "arpg:conifer_sapling_snow" }
+    }
+}

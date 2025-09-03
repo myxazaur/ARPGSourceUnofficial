@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "arpg:fulminiflora_side",
+        "bottom": "blocks/stone",
+        "top": "arpg:fulminiflora_top",
+        "side": "arpg:fulminiflora_side"
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "textures": {
+        "map3": "arpg:palm_torch"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "from": [ 5, 0, 7 ], 
+            "to": [ 12, 10, 9 ], 
+            "faces": {
+                "north": { "texture": "#map3", "uv": [ 16, 6, 9, 16 ] },
+                "south": { "texture": "#map3", "uv": [ 1, 6, 8, 16 ] },
+                "down": { "texture": "#map3", "uv": [ 1, 14, 8, 16 ] }
+            }
+        },
+        {
+            "from": [ 7, 0, 5 ], 
+            "to": [ 9, 10, 11 ], 
+            "faces": {
+                "east": { "texture": "#map3", "uv": [ 9, 6, 15, 16 ] },
+                "west": { "texture": "#map3", "uv": [ 1, 6, 7, 16 ] }
+            }
+        },
+        {
+            "from": [ 6.5, 8, 6.5 ], 
+            "to": [ 9.5, 10, 9.5 ], 
+            "faces": {
+                "north": { "texture": "#map3", "uv": [ 0, 0, 3, 2 ] },
+                "east": { "texture": "#map3", "uv": [ 3, 0, 6, 2 ] },
+                "south": { "texture": "#map3", "uv": [ 0, 0, 3, 2 ] },
+                "west": { "texture": "#map3", "uv": [ 3, 0, 6, 2 ] },
+                "up": { "texture": "#map3", "uv": [ 9, 0, 12, 3 ] },
+                "down": { "texture": "#map3", "uv": [ 6, 0, 9, 3 ] }
+            }
+        }
+    ]
+}

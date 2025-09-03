@@ -1,0 +1,6 @@
+{
+    "parent": "arpg:block/model_sided",
+	  "textures": {
+		  "0": "arpg:infernum_furnace"
+	  }
+}

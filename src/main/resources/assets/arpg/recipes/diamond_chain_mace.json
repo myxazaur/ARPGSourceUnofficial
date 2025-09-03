@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B ",
+        "BSS",
+        " SS"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "gemDiamond"
+        }},
+    "result": {
+        "item": "arpg:diamond_chain_mace",
+        "count": 1
+    }
+}

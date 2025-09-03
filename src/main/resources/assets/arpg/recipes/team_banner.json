@@ -1,0 +1,16 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "AAA",
+        " H "],
+    "key": {"H": {
+            "item": "arpg:magic_wood"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "string"
+        }},
+    "result": {
+        "item": "arpg:team_banner",
+        "count": 1
+    }
+}

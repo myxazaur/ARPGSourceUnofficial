@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "down": "arpg:frozen_stone_bricks",
+	  "up": "arpg:frozen_stone_bricks",
+	  "north": "arpg:frozen_stone_bricks",
+	  "south": "arpg:frozen_stone_bricks",
+	  "west": "arpg:frozen_stone_bricks",
+	  "east": "arpg:frozen_stone_bricks",
+	  "particle": "arpg:frozen_stone_bricks"
+    }
+  },
+  "variants": {
+    "facing=up": { "model": "arpg:pilaster" },
+	"facing=down": { "model": "arpg:pilaster_up" },
+    "facing=east": { "model": "arpg:pilaster_east" },
+    "facing=south": { "model": "arpg:pilaster_south" },
+    "facing=west": { "model": "arpg:pilaster_west" },
+    "facing=north": { "model": "arpg:pilaster_north" }
+  }
+}

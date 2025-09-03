@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAC",
+        "AAM",
+        "AAC"],
+    "key": {"A": {
+            "type": "forge:ore_dict",
+			"ore": "itemLeather"
+        },"C": {
+            "type": "forge:ore_dict",
+			"ore": "ingotIron"
+        },"M": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        }},
+    "result": {
+        "item": "arpg:whip",
+        "count": 1
+    }
+}

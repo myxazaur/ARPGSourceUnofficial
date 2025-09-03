@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "particle": "arpg:palm_fruit_bunch"
+    }
+  },
+  "variants": {
+    "normal": [{ "model": "arpg:palm_fruit_bunch" }],
+    "inventory": [{ "model": "arpg:palm_fruit_bunch" }],
+    "facing=east": { "model": "arpg:palm_fruit_bunch" },
+    "facing=south": { "model": "arpg:palm_fruit_bunch", "y": 90 },
+    "facing=west": { "model": "arpg:palm_fruit_bunch", "y": 180 },
+    "facing=north": { "model": "arpg:palm_fruit_bunch", "y": 270 }
+  }
+}

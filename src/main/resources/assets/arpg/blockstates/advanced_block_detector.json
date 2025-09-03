@@ -1,0 +1,11 @@
+{
+	
+    "variants": {
+        "facing=down":  { "model": "arpg:advanced_block_detector", "x": 270 },
+        "facing=up":    { "model": "arpg:advanced_block_detector", "x": 90 },
+        "facing=north": { "model": "arpg:advanced_block_detector", "y": 180 },
+        "facing=south": { "model": "arpg:advanced_block_detector"},
+        "facing=west":  { "model": "arpg:advanced_block_detector", "y": 90 },
+        "facing=east":  { "model": "arpg:advanced_block_detector", "y": 270 }
+    }
+}

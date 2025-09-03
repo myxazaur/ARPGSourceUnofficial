@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["AA",
+        " S",
+        " S"],
+    "key": {"A": {
+            "item": "arpg:frozen_cobblestone"
+        },"S": {
+            "item": "arpg:conifer_stick"
+        }},
+    "result": {
+        "item": "minecraft:stone_hoe",
+        "count": 1
+    }
+}

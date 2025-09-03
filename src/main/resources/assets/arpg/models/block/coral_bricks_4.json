@@ -1,0 +1,69 @@
+{
+    "textures": {
+        "coral_bricks": "arpg:coral_bricks",
+        "particle": "arpg:coral_bricks"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        
+        {
+            "name": "Cube2",
+            "from": [ 7, 6, 17 ], 
+            "to": [ 15, 14, 17 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_bricks", "uv": [ 8, 12, 12, 16 ], "rotation": 270 },
+                "south": { "texture": "#coral_bricks", "uv": [ 8, 12, 12, 16 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube3",
+            "from": [ -1, 7, 1 ], 
+            "to": [ -1, 15, 9 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5 },
+            "faces": {
+                "east": { "texture": "#coral_bricks", "uv": [ 12, 12, 16, 16 ] },
+                "west": { "texture": "#coral_bricks", "uv": [ 12, 12, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube4",
+            "from": [ -0.5, 6, 1 ], 
+            "to": [ -0.5, 12, 9 ], 
+            "faces": {
+                "west": { "texture": "#coral_bricks", "uv": [ 12, 12, 16, 15 ] }
+            }
+        }
+    ]
+}

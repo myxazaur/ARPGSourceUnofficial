@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "0": "arpg:nether_melter",
+	  "particle": "arpg:nether_melter"
+    }
+  },
+  "variants": {
+    "facing=east": { "model": "arpg:nether_melter", "y": 270 },
+    "facing=south": { "model": "arpg:nether_melter" },
+    "facing=west": { "model": "arpg:nether_melter", "y": 90 },
+    "facing=north": { "model": "arpg:nether_melter", "y": 180 }
+  }
+}

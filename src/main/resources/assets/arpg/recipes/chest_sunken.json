@@ -1,0 +1,23 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAA",
+        "LSL",
+        "GHG"],
+    "key": {"A": {
+            "item": "arpg:glowing_pearl"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotGold"
+        },"G": {
+            "item": "arpg:seaweed_block"
+        },"H": {
+            "item": "arpg:sea_stone"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "logWood"
+        }},
+    "result": {
+        "item": "arpg:chest_sunken",
+        "count": 1
+    }
+}

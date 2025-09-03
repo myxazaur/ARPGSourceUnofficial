@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": { "model": "arpg:block_money_box" },
+    "inventory": { "model": "arpg:block_money_box" },
+    "facing=east": { "model": "arpg:block_money_box", "y": 270 },
+    "facing=south": { "model": "arpg:block_money_box" },
+    "facing=west": { "model": "arpg:block_money_box", "y": 90 },
+    "facing=north": { "model": "arpg:block_money_box", "y": 180 }
+  }
+}

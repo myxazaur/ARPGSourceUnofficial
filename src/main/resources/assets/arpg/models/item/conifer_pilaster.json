@@ -1,0 +1,11 @@
+{
+    "parent": "arpg:block/pilaster",
+	"textures": {
+      "down": "arpg:conifer_planks",
+	  "up": "arpg:conifer_planks",
+	  "north": "arpg:conifer_planks",
+	  "south": "arpg:conifer_planks",
+	  "west": "arpg:conifer_planks",
+	  "east": "arpg:conifer_planks"
+    }
+}

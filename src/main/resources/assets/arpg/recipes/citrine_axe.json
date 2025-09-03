@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AA",
+        "AS",
+        " S"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "stickWood"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "gemCitrine"
+        }},
+    "result": {
+        "item": "arpg:citrine_axe",
+        "count": 1
+    }
+}

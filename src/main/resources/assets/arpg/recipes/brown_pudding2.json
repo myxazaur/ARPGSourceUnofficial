@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B ",
+        "LSM",
+        " H "],
+    "key": {"L": {
+            "item": "minecraft:sugar"
+        },"S": {
+            "item": "arpg:white_slimeball"
+        },"M": {
+            "item": "arpg:chocolate"
+        },"B": {
+            "item": "arpg:cocoa_powder"
+        },"H": {
+            "item": "arpg:biscuit"
+        }},
+    "result": {
+        "item": "arpg:brown_pudding",
+        "count": 1
+    }
+}

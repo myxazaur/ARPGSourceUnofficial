@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "BSB",
+        "ABA"],
+    "key": {"S": {
+            "type": "forge:ore_dict",
+			"ore": "ingotSilver"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "gemTopaz"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "glowstone"
+        }},
+    "result": {
+        "item": "arpg:topaz_lantern",
+        "count": 4
+    }
+}

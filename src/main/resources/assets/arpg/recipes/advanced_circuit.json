@@ -1,0 +1,29 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["ABA",
+        "LSL",
+        "GHG"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "ingotZinc"
+        },"S": {
+            "type": "forge:ore_dict",
+			"ore": "circuitBasic"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "ingotGold"
+        },"L": {
+            "type": "forge:ore_dict",
+			"ore": "dustRedstone"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "gemLapis"
+        },"H": {
+            "type": "forge:ore_dict",
+			"ore": "dustGlowstone"
+        }},
+    "result": {
+        "item": "arpg:advanced_circuit",
+        "count": 1
+    }
+}

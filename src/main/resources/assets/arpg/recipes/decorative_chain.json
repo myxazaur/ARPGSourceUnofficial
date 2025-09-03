@@ -1,0 +1,14 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B",
+        " B",
+        " B"],
+    "key": {"B": {
+            "type": "forge:ore_dict",
+			"ore": "nuggetSilver"
+        }},
+    "result": {
+        "item": "arpg:decorative_chain",
+        "count": 3
+    }
+}

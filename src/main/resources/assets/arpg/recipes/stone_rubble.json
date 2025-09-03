@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["A"
+],
+    "key": {"A": {
+            "item": "minecraft:cobblestone"
+        }},
+    "result": {
+        "item": "arpg:stone_rubble",
+        "count": 4
+    }
+}

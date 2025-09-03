@@ -1,0 +1,23 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [" B ",
+        "LSL",
+        "GHG"],
+    "key": {"S": {
+            "item": "arpg:lead_bearing"
+        },"G": {
+            "type": "forge:ore_dict",
+			"ore": "ingotChromium"
+        },"L": {
+            "item": "arpg:electric_motor"
+        },"B": {
+            "type": "forge:ore_dict",
+			"ore": "blockGlassHardened"
+        },"H": {
+            "item": "arpg:machinery_casing"
+        }},
+    "result": {
+        "item": "arpg:industrial_mixer",
+        "count": 1
+    }
+}

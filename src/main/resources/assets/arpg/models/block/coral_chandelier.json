@@ -1,0 +1,152 @@
+{
+    "textures": {
+        "coral_chandelier": "arpg:coral_chandelier"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 2.2, 13, 7 ], 
+            "to": [ 3.2, 21, 9 ], 
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 15, 5, 15.5, 9 ] },
+                "east": { "texture": "#coral_chandelier", "uv": [ 15, 0, 16, 4 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 15.5, 5, 16, 9 ] },
+                "west": { "texture": "#coral_chandelier", "uv": [ 15, 5, 16, 9 ] },
+                "up": { "texture": "#coral_chandelier", "uv": [ 15.5, 0, 16, 1 ] },
+                "down": { "texture": "#coral_chandelier", "uv": [ 15, 3, 15.5, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 0, 8 ], 
+            "to": [ 15, 12, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 0, 10, 7, 16 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 0, 10, 7, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7.5, 16, 7 ], 
+            "to": [ 8.5, 25, 9 ], 
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 15.5, 0, 16, 4.5 ] },
+                "east": { "texture": "#coral_chandelier", "uv": [ 15, 5, 16, 9.5 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 15, 0, 15.5, 4.5 ] },
+                "west": { "texture": "#coral_chandelier", "uv": [ 15, 0, 16, 4.5 ] },
+                "up": { "texture": "#coral_chandelier", "uv": [ 15, 0, 15.5, 1 ] },
+                "down": { "texture": "#coral_chandelier", "uv": [ 15.5, 3, 16, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 11, 8 ], 
+            "to": [ 16, 27, 8 ], 
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 0, 0, 7.5, 8 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 0, 0, 7.5, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 14.5, 22, 7.5 ], 
+            "to": [ 15.5, 23, 8.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 15, 15.5, 15.5, 16 ] },
+                "east": { "texture": "#coral_chandelier", "uv": [ 15, 15, 15.5, 15.5 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 15.5, 15, 16, 15.5 ] },
+                "west": { "texture": "#coral_chandelier", "uv": [ 15.5, 15.5, 16, 16 ] },
+                "up": { "texture": "#coral_chandelier", "uv": [ 15, 15, 15.5, 15.5 ] },
+                "down": { "texture": "#coral_chandelier", "uv": [ 15.5, 15.5, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 0, 8 ], 
+            "to": [ 15, 12, 8 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 7, 10, 14, 16 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 7, 10, 14, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12.8, 13, 7 ], 
+            "to": [ 13.8, 21, 9 ], 
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 15, 0, 15.5, 4 ] },
+                "east": { "texture": "#coral_chandelier", "uv": [ 15, 5.5, 16, 9.5 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 15, 5, 15.5, 9 ] },
+                "west": { "texture": "#coral_chandelier", "uv": [ 15, 0, 16, 4 ] },
+                "up": { "texture": "#coral_chandelier", "uv": [ 15.5, 0, 16, 1 ] },
+                "down": { "texture": "#coral_chandelier", "uv": [ 15, 3, 15.5, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0.5, 22, 7.5 ], 
+            "to": [ 1.5, 23, 8.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 15, 15.5, 15.5, 16 ] },
+                "east": { "texture": "#coral_chandelier", "uv": [ 15, 15, 15.5, 15.5 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 15.5, 15, 16, 15.5 ] },
+                "west": { "texture": "#coral_chandelier", "uv": [ 15.5, 15.5, 16, 16 ] },
+                "up": { "texture": "#coral_chandelier", "uv": [ 15, 15, 15.5, 15.5 ] },
+                "down": { "texture": "#coral_chandelier", "uv": [ 15.5, 15.5, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 20.5, 20.5, 7.5 ], 
+            "to": [ 21.5, 21.5, 8.5 ], 
+            "shade": false,
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#coral_chandelier", "uv": [ 15, 15.5, 15.5, 16 ] },
+                "east": { "texture": "#coral_chandelier", "uv": [ 15, 15, 15.5, 15.5 ] },
+                "south": { "texture": "#coral_chandelier", "uv": [ 15.5, 15, 16, 15.5 ] },
+                "west": { "texture": "#coral_chandelier", "uv": [ 15.5, 15.5, 16, 16 ] },
+                "up": { "texture": "#coral_chandelier", "uv": [ 15, 15, 15.5, 15.5 ] },
+                "down": { "texture": "#coral_chandelier", "uv": [ 15.5, 15.5, 16, 16 ] }
+            }
+        }
+    ]
+}

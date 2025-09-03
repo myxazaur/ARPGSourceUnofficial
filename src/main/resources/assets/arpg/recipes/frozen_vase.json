@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " M ",
+        "MLM",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "arpg:frozen_stone_bricks"
+        },
+        "L": {
+            "item": "arpg:ice_gem"
+        },
+        "M": {
+            "item": "arpg:frozen_stone"
+        }
+    },
+    "result": {
+        "item": "arpg:frozen_vase",
+        "count": 1
+    }
+}

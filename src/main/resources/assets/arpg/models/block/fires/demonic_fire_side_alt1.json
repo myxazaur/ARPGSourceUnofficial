@@ -1,0 +1,7 @@
+{
+    "parent": "arpg:block/fires/fire_side_alt",
+    "textures": {
+        "particle": "arpg:fires/demonic_fire_layer_1",
+        "fire": "arpg:fires/demonic_fire_layer_1"
+    }
+}

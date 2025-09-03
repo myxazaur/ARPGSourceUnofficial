@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": ["AAC",
+        "A  ",
+        "AHH"],
+    "key": {"H": {
+            "type": "forge:ore_dict",
+			"ore": "materialPlastic"
+        },"C": {
+            "type": "forge:ore_dict",
+			"ore": "blockSlime"
+        },"A": {
+            "type": "forge:ore_dict",
+			"ore": "slimeball"
+        }},
+    "result": {
+        "item": "arpg:slime_grapling_hook",
+        "count": 1
+    }
+}

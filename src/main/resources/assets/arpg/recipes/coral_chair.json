@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" B",
+        "BB",
+        "GG"],
+    "key": {"B": {
+            "item": "arpg:coral"
+        },"G": {
+            "item": "arpg:aquatic_nugget"
+        }},
+    "result": {
+        "item": "arpg:coral_chair",
+        "count": 1
+    }
+}

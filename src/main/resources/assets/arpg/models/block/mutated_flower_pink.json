@@ -1,0 +1,6 @@
+{
+    "parent": "arpg:block/scaled_cross",
+    "textures": {
+        "cross": "arpg:mutated_flower_pink"
+    }
+}

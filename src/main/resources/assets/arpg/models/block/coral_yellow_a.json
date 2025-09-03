@@ -1,0 +1,76 @@
+{
+    "textures": {
+        "coral_yellow": "arpg:coral_yellow"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#coral_yellow", "uv": [ 0, 0, 16, 16 ], "cullface": "north" },
+                "east": { "texture": "#coral_yellow", "uv": [ 0, 0, 16, 16 ], "cullface": "east" },
+                "south": { "texture": "#coral_yellow", "uv": [ 0, 0, 16, 16 ], "cullface": "south" },
+                "west": { "texture": "#coral_yellow", "uv": [ 0, 0, 16, 16 ], "cullface": "west" },
+                "up": { "texture": "#coral_yellow", "uv": [ 0, 0, 16, 16 ], "cullface": "up" },
+                "down": { "texture": "#coral_yellow", "uv": [ 0, 0, 16, 16 ], "cullface": "down" }
+            }
+        },
+        {
+            "name": "Cub",
+            "from": [ 3, 16, 4 ], 
+            "to": [ 12, 19, 14 ], 
+            "faces": {
+                "north": { "texture": "#coral_yellow", "uv": [ 0, 5, 9, 8 ], "cullface": "up" },
+                "east": { "texture": "#coral_yellow", "uv": [ 6, 5, 16, 8 ], "cullface": "up" },
+                "south": { "texture": "#coral_yellow", "uv": [ 0, 0, 9, 3 ], "cullface": "up" },
+                "west": { "texture": "#coral_yellow", "uv": [ 1, 6, 11, 9 ], "cullface": "up" },
+                "up": { "texture": "#coral_yellow", "uv": [ 7, 0, 16, 10 ], "cullface": "up" }
+            }
+        },
+        {
+            "name": "Cub",
+            "from": [ 4, 19, 8 ], 
+            "to": [ 9, 23, 12 ], 
+            "faces": {
+                "north": { "texture": "#coral_yellow", "uv": [ 5, 9, 10, 13 ], "cullface": "up" },
+                "east": { "texture": "#coral_yellow", "uv": [ 11, 2, 15, 6 ], "cullface": "up" },
+                "south": { "texture": "#coral_yellow", "uv": [ 10, 2, 15, 6 ], "cullface": "up" },
+                "west": { "texture": "#coral_yellow", "uv": [ 0, 0, 4, 4 ], "cullface": "up" },
+                "up": { "texture": "#coral_yellow", "uv": [ 0, 3, 5, 7 ], "cullface": "up" }
+            }
+        }
+    ]
+}

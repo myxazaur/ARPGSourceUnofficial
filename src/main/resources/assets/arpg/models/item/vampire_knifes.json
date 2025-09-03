@@ -1,0 +1,289 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "vampire_knifes_launcher": "arpg:vampire_knifes_launcher"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.725, 0.725, 0.725 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.75, 0.75, 0.75 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, -10 ],
+            "translation": [ 0, 3.5, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 0, -90, 0 ],
+            "translation": [ 0, 2.1, -2.0 ],
+            "scale": [ 0.725, 0.725, 0.725 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 14, -2, 5 ], 
+            "to": [ 18, -1, 11 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 10, 5, 14, 6 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 10, 15, 16, 16 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 10, 10, 14, 11 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 10, 15, 16, 16 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 10, 5, 14, 11 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 10, 5, 14, 11 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 15, -2, 4 ], 
+            "to": [ 16, 6, 5 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 15, 16, 16 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 13, 16, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 15, -2, 11 ], 
+            "to": [ 16, 6, 12 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 8, 16, 16 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 15, 16, 16 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 11, 16, 12 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 15, 5, 5 ], 
+            "to": [ 16, 6, 11 ], 
+            "faces": {
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 5, 15, 11, 16 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 5, 15, 11, 16 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 10, 16, 16 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 15, 10, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12, 6, 6 ], 
+            "to": [ 20, 7, 10 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 4, 8, 5 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 4, 4, 5 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 4, 8, 5 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 4, 4, 5 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 4, 8, 8 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 4, 8, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 10, 7, 10 ], 
+            "to": [ 11, 8, 16 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 8, 2, 9, 3 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ], "rotation": 180 },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 9, 2, 10, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ], "rotation": 90 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ], "rotation": 270 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 10, 7, 0 ], 
+            "to": [ 11, 8, 6 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 5, 2, 6, 3 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 6, 2, 7, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ], "rotation": 180 },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ], "rotation": 270 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 4, 2, 10, 3 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 7, 7 ], 
+            "to": [ 23, 8, 9 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 3, 16, 4 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 3, 16, 4 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 0, 16, 2 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 7, 11 ], 
+            "to": [ 9, 8, 12 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ], "rotation": 180 },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 10, 8, 7 ], 
+            "to": [ 16, 9, 9 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 9, 6, 10 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 7, 9, 9, 10 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 9, 6, 10 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 7, 9, 9, 10 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 9, 6, 11 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 7, 4 ], 
+            "to": [ 9, 8, 5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "y", "angle": -45.0 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ], "rotation": 180 },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 7, 6 ], 
+            "to": [ 10, 8, 7 ], 
+            "rotation": { "origin": [ 9.0, 8.0, 8.0 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ], "rotation": 180 },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 7, 9 ], 
+            "to": [ 10, 8, 10 ], 
+            "rotation": { "origin": [ 9.0, 8.0, 8.0 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ], "rotation": 180 },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 18, 7, 9 ], 
+            "to": [ 19, 8, 11 ], 
+            "faces": {
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 180 },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 270 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 5, 7 ], 
+            "to": [ 14, 6, 9 ], 
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 15, 12, 14 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 12, 2, 13 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 14, 12, 15 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 12, 2, 13 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 12, 12, 14 ] },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 12, 12, 14 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 5, 7 ], 
+            "to": [ 3, 6, 10 ], 
+            "rotation": { "origin": [ 7.0, 8.0, 8.0 ], "axis": "y", "angle": 22.5 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 3, 3, 4, 4 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 1, 3, 4, 4 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 1, 3, 2, 4 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 1, 3, 4, 4 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 5, 3, 8, 4 ], "rotation": 90 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 5, 3, 8, 4 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 5, 6 ], 
+            "to": [ 3, 6, 9 ], 
+            "rotation": { "origin": [ 7.0, 8.0, 8.0 ], "axis": "y", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#vampire_knifes_launcher", "uv": [ 1, 3, 2, 4 ] },
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 5, 3, 8, 4 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 1, 3, 2, 4 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 3, 3, 6, 4 ] },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 3, 3, 6, 4 ], "rotation": 90 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 1, 3, 4, 4 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 16, 7, 9 ], 
+            "to": [ 17, 8, 11 ], 
+            "faces": {
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 180 },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 270 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 14, 7, 9 ], 
+            "to": [ 15, 8, 11 ], 
+            "faces": {
+                "east": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ] },
+                "south": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 1, 3 ] },
+                "west": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 180 },
+                "up": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 270 },
+                "down": { "texture": "#vampire_knifes_launcher", "uv": [ 0, 2, 2, 3 ], "rotation": 90 }
+            }
+        }
+    ]
+}

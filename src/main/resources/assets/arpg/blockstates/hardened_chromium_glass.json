@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "arpg:hardened_chromium_glass" }
+    }
+}
