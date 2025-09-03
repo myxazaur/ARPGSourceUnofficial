@@ -2,7 +2,7 @@ This is an unnoficial source code of [Abstract RPG](https://www.curseforge.com/m
 Mod is ready to compile! :)
 ---
 
-The project also has manual fixes that may slightly affect the mod
+The project also has manual fixes that may slightly affect the mod *(required for successful compilation of the mod)*
 
 ## Utils i used:
 - Decompilation: [Vineflower](https://vineflower.org)
