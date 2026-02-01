@@ -1,6 +1,6 @@
 package gloomyfolkenvivern.arpghooklib.example.coloredlightning;
 
-import com.Vivern.Arpg.events.Debugger;
+import com.vivern.arpg.events.Debugger;
 import java.util.ArrayDeque;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

@@ -1,8 +1,6 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\Admin\Desktop\stuff\asbtractrpg\Minecraft-Deobfuscator3000-master\1.12 stable mappings"!
-
 package gloomyfolkenvivern.arpghooklib.example.coloredlightning;
 
-import com.Vivern.Arpg.main.BlocksRegister;
+import com.vivern.arpg.main.BlocksRegister;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,0 @@
-
-VivernBar (AbstractRPG autor): https://discord.gg/ucdCkGRrRa
-GloomyFolken (Hooklib): https://github.com/GloomyFolken/HookLib
-Azanor (Baubles): https://github.com/Azanor/Baubles

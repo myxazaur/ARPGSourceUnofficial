@@ -1,33 +1,31 @@
-//Deobfuscated with https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000 using mappings "C:\Users\Admin\Desktop\stuff\asbtractrpg\Minecraft-Deobfuscator3000-master\1.12 stable mappings"!
-
 package gloomyfolkenvivern.arpghooklib.example;
 
-import com.Vivern.Arpg.blocks.AshBlock;
-import com.Vivern.Arpg.elements.IWeapon;
-import com.Vivern.Arpg.events.Debugger;
-import com.Vivern.Arpg.main.AnimationTimer;
-import com.Vivern.Arpg.main.BlocksRegister;
-import com.Vivern.Arpg.main.ColorConverters;
-import com.Vivern.Arpg.main.CreateItemFile;
-import com.Vivern.Arpg.main.DeathEffects;
-import com.Vivern.Arpg.main.ItemsElements;
-import com.Vivern.Arpg.main.ItemsRegister;
-import com.Vivern.Arpg.main.PropertiesRegistry;
-import com.Vivern.Arpg.main.Sounds;
-import com.Vivern.Arpg.main.Weapons;
-import com.Vivern.Arpg.mobs.AbstractMob;
-import com.Vivern.Arpg.network.IFixedTrackerEntity;
-import com.Vivern.Arpg.network.MyEntityTrackerEntry;
-import com.Vivern.Arpg.potions.AdvancedPotion;
-import com.Vivern.Arpg.potions.Freezing;
-import com.Vivern.Arpg.potions.PotionEffects;
-import com.Vivern.Arpg.potions.Stun;
-import com.Vivern.Arpg.renders.AmbientOcclusionFace;
-import com.Vivern.Arpg.renders.LoadedRGBChunk;
-import com.Vivern.Arpg.renders.ManaBar;
-import com.Vivern.Arpg.renders.PlayerAnimation;
-import com.Vivern.Arpg.renders.PlayerAnimations;
-import com.Vivern.Arpg.renders.StaticRGBLight;
+import com.vivern.arpg.blocks.AshBlock;
+import com.vivern.arpg.elements.IWeapon;
+import com.vivern.arpg.events.Debugger;
+import com.vivern.arpg.main.AnimationTimer;
+import com.vivern.arpg.main.BlocksRegister;
+import com.vivern.arpg.main.ColorConverters;
+import com.vivern.arpg.main.CreateItemFile;
+import com.vivern.arpg.main.DeathEffects;
+import com.vivern.arpg.main.ItemsElements;
+import com.vivern.arpg.main.ItemsRegister;
+import com.vivern.arpg.main.PropertiesRegistry;
+import com.vivern.arpg.main.Sounds;
+import com.vivern.arpg.main.Weapons;
+import com.vivern.arpg.mobs.AbstractMob;
+import com.vivern.arpg.network.IFixedTrackerEntity;
+import com.vivern.arpg.network.MyEntityTrackerEntry;
+import com.vivern.arpg.potions.AdvancedPotion;
+import com.vivern.arpg.potions.Freezing;
+import com.vivern.arpg.potions.PotionEffects;
+import com.vivern.arpg.potions.Stun;
+import com.vivern.arpg.renders.AmbientOcclusionFace;
+import com.vivern.arpg.renders.LoadedRGBChunk;
+import com.vivern.arpg.renders.ManaBar;
+import com.vivern.arpg.renders.PlayerAnimation;
+import com.vivern.arpg.renders.PlayerAnimations;
+import com.vivern.arpg.renders.StaticRGBLight;
 import com.google.common.collect.Ordering;
 import gloomyfolkenvivern.arpghooklib.asm.Hook;
 import gloomyfolkenvivern.arpghooklib.asm.ReturnCondition;
@@ -377,12 +375,10 @@ public class AnnotationHooks {
                var4.printStackTrace();
             }
          }
-      } catch (SecurityException | NoSuchFieldException var5) {
+      } catch (SecurityException | NoSuchFieldException | IllegalArgumentException var5) {
          var5.printStackTrace();
-      } catch (IllegalArgumentException var6) {
-         var6.printStackTrace();
-      } catch (IllegalAccessException var7) {
-         var7.printStackTrace();
+      } catch (IllegalAccessException e) {
+          e.printStackTrace();
       }
    }
 

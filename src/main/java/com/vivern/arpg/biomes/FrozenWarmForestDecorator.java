@@ -1,0 +1,134 @@
+package com.vivern.arpg.biomes;
+
+import com.vivern.arpg.blocks.FrostedWeed;
+import com.vivern.arpg.dimensions.ethernalfrost.ChestReplacersFrozen;
+import com.vivern.arpg.dimensions.generationutils.GenerationHelper;
+import com.vivern.arpg.dimensions.generationutils.WorldGenGroundFoliage;
+import com.vivern.arpg.main.BlocksRegister;
+import java.util.Random;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeDecorator;
+import net.minecraft.world.gen.ChunkGeneratorSettings.Factory;
+import net.minecraft.world.gen.structure.template.PlacementSettings;
+import net.minecraft.world.gen.structure.template.Template;
+import net.minecraft.world.gen.structure.template.TemplateManager;
+
+class FrozenWarmForestDecorator extends BiomeDecorator {
+   public WorldGenGroundFoliage redberry = new WorldGenGroundFoliage(BlocksRegister.CRIMBERRY, 32, 8, 2);
+   public WorldGenGroundFoliage willow = new WorldGenGroundFoliage(BlocksRegister.WINTERWILLOW, 22, 6, 2);
+   public WorldGenGroundFoliage tallgrass = new WorldGenGroundFoliage(BlocksRegister.FROSTEDWEED, 32, 6, 2);
+
+   public void decorate(World worldIn, Random random, Biome biome, BlockPos pos) {
+      if (this.decorating) {
+         throw new RuntimeException("Already decorating");
+      } else {
+         for (int ii = 0; ii < random.nextInt(8); ii++) {
+            BlockPos position = worldIn.getHeight(
+               new BlockPos(pos.getX() + 8 + random.nextInt(16), 0, pos.getZ() + 8 + random.nextInt(16))
+            );
+            Block blockd = worldIn.getBlockState(position.down()).getBlock();
+            if (blockd == BlocksRegister.SNOWICE || blockd == BlocksRegister.LOOSESNOW || blockd == Blocks.SNOW) {
+               WorldServer worldServer = (WorldServer)worldIn;
+               MinecraftServer minecraftServer = worldIn.getMinecraftServer();
+               TemplateManager templateManager = worldServer.getStructureTemplateManager();
+               Template template = templateManager.get(minecraftServer, new ResourceLocation("arpg:spruce_tree_" + (random.nextInt(3) + 1)));
+               PlacementSettings settings = new PlacementSettings();
+               int sx = -3;
+               int sz = -3;
+               int swr = random.nextInt(4);
+               if (swr == 0) {
+                  settings.setRotation(Rotation.CLOCKWISE_180);
+                  sx = 3;
+                  sz = 3;
+               }
+
+               if (swr == 1) {
+                  settings.setRotation(Rotation.CLOCKWISE_90);
+                  sx = 3;
+                  sz = -3;
+               }
+
+               if (swr == 2) {
+                  settings.setRotation(Rotation.COUNTERCLOCKWISE_90);
+                  sx = -3;
+                  sz = 3;
+               }
+
+               if (swr == 3) {
+                  settings.setRotation(Rotation.NONE);
+               }
+
+               template.addBlocksToWorld(worldIn, position.add(sx, 0, sz), settings);
+            }
+         }
+
+         if (random.nextFloat() < 0.01) {
+            BlockPos position = worldIn.getHeight(
+               new BlockPos(pos.getX() + 8 + random.nextInt(16), 0, pos.getZ() + 8 + random.nextInt(16))
+            );
+            Block block = worldIn.getBlockState(position.down()).getBlock();
+            if (block == BlocksRegister.SNOWICE || block == Blocks.SNOW || block == BlocksRegister.GLACIER) {
+               GenerationHelper.placeStruct(
+                  worldIn,
+                  position,
+                  random,
+                  ":frozen_meadow_decor_" + (random.nextInt(6) + 1),
+                  4,
+                  -1,
+                  random.nextInt(4),
+                  ChestReplacersFrozen.replacerStructures
+               );
+            }
+         }
+
+         if (random.nextFloat() < 0.007) {
+            BlockPos position = worldIn.getHeight(
+               new BlockPos(pos.getX() + 8 + random.nextInt(16), 0, pos.getZ() + 8 + random.nextInt(16))
+            );
+            Block block = worldIn.getBlockState(position.down()).getBlock();
+            if (block == BlocksRegister.SNOWICE || block == Blocks.SNOW || block == BlocksRegister.GLACIER) {
+               GenerationHelper.placeStruct(
+                  worldIn, position, random, ":frozen_decor_" + (random.nextInt(5) + 1), 4, -1, random.nextInt(4), ChestReplacersFrozen.replacerStructures
+               );
+            }
+         }
+
+         for (int iix = 0; iix < random.nextInt(38); iix++) {
+            BlockPos uppos = worldIn.getHeight(pos.add(random.nextInt(16), 0, random.nextInt(16)));
+            if (FrostedWeed.canStayAtPos(worldIn, uppos)) {
+               worldIn.setBlockState(uppos, BlocksRegister.FROSTEDWEED.getDefaultState());
+            }
+         }
+
+         this.chunkProviderSettings = Factory.jsonToFactory(worldIn.getWorldInfo().getGeneratorOptions()).build();
+         this.chunkPos = pos;
+         if (random.nextFloat() < 0.5) {
+            int j = random.nextInt(16) + 8;
+            int k = random.nextInt(16) + 8;
+            this.tallgrass.generate(worldIn, random, worldIn.getTopSolidOrLiquidBlock(this.chunkPos.add(j, 0, k)));
+         }
+
+         if (random.nextFloat() < 0.2) {
+            int j = random.nextInt(16) + 8;
+            int k = random.nextInt(16) + 8;
+            this.redberry.generate(worldIn, random, worldIn.getTopSolidOrLiquidBlock(this.chunkPos.add(j, 0, k)));
+         }
+
+         if (random.nextFloat() < 0.2) {
+            int j = random.nextInt(16) + 8;
+            int k = random.nextInt(16) + 8;
+            this.willow.generate(worldIn, random, worldIn.getTopSolidOrLiquidBlock(this.chunkPos.add(j, 0, k)));
+         }
+
+         this.decorating = false;
+      }
+   }
+}

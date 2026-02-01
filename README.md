@@ -1,9 +1,14 @@
-This is an unnoficial source code of [Abstract RPG](https://www.curseforge.com/minecraft/mc-mods/abstract-rpg)  
-Mod is ready to compile! :)
----
+# TEMPORARILY only in Russian
 
-The project also has manual fixes that may slightly affect the mod *(required for successful compilation of the mod)*
+## Это мой неофициальный форк AbstractRPG от VivernBar  
 
-## Utils i used:
-- Decompilation: [Vineflower](https://vineflower.org)
-- Deobfuscation: [Deobfuscator3000](https://github.com/SimplyProgrammer/Minecraft-Deobfuscator3000)
+Почему я решил сделать форк и что я планирую сделать
+
+- 
+    - В первую очередь моя цель - починить множественные проблемы мода. Если вам известны какие-либо баги/краши и т.п. - создайте issue на этом репозитории (желательно на русском или английском)
+    - Доработать всё то в моде, что сейчас есть, но не имеет полный функционал (при том условии, что этот функционал подразумевается)
+    - Реорганизовать мод, чтобы его исходный код можно было свободно читать (сейчас там, мягко говоря, дебри)
+
+Я не планирую добавлять кастомный контент в свой форк. Все изменения будут связаны исключительно с технической частью.
+
+P.s. возможно я откажусь от HookLib и перейду на MixinBooter, но пока не решил.

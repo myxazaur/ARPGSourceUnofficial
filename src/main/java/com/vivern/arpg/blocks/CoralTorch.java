@@ -1,0 +1,331 @@
+package com.vivern.arpg.blocks;
+
+import com.vivern.arpg.dimensions.aquatica.DimensionAquatica;
+import com.vivern.arpg.renders.GUNParticle;
+import com.google.common.base.Predicate;
+import java.util.Random;
+import javax.annotation.Nullable;
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.BlockFaceShape;
+import net.minecraft.block.state.BlockStateContainer;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.EnumFacing.Axis;
+import net.minecraft.util.EnumFacing.Plane;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+public class CoralTorch extends BlockUnderwater {
+   public static ResourceLocation res = new ResourceLocation("arpg:textures/mana_flow.png");
+   public static final PropertyDirection FACING = PropertyDirection.create("facing", new Predicate<EnumFacing>() {
+      public boolean apply(@Nullable EnumFacing p_apply_1_) {
+         return p_apply_1_ != EnumFacing.DOWN;
+      }
+   });
+   protected static final AxisAlignedBB STANDING_AABB = new AxisAlignedBB(0.4F, 0.0, 0.4F, 0.6F, 0.6F, 0.6F);
+   protected static final AxisAlignedBB TORCH_NORTH_AABB = new AxisAlignedBB(0.35F, 0.2F, 0.7F, 0.65F, 0.8F, 1.0);
+   protected static final AxisAlignedBB TORCH_SOUTH_AABB = new AxisAlignedBB(0.35F, 0.2F, 0.0, 0.65F, 0.8F, 0.3F);
+   protected static final AxisAlignedBB TORCH_WEST_AABB = new AxisAlignedBB(0.7F, 0.2F, 0.35F, 1.0, 0.8F, 0.65F);
+   protected static final AxisAlignedBB TORCH_EAST_AABB = new AxisAlignedBB(0.0, 0.2F, 0.35F, 0.3F, 0.8F, 0.65F);
+
+   public CoralTorch() {
+      super(Material.GLASS);
+      this.setRegistryName("coral_torch");
+      this.setTranslationKey("coral_torch");
+      this.blockHardness = 0.0F;
+      this.blockResistance = 0.0F;
+      this.setSoundType(SoundType.STONE);
+      this.setCreativeTab(CreativeTabs.DECORATIONS);
+      this.setLightLevel(0.95F);
+      this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.UP));
+   }
+
+   @Override
+   public Material getMaterial(IBlockState state) {
+      return state.getValue(WET) ? Material.WATER : Material.ROCK;
+   }
+
+   public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+      for (EnumFacing enumfacing : FACING.getAllowedValues()) {
+         if (this.canPlaceAt(worldIn, pos, enumfacing)) {
+            return true;
+         }
+      }
+
+      return false;
+   }
+
+   private boolean canPlaceAt(World worldIn, BlockPos pos, EnumFacing facing) {
+      BlockPos blockpos = pos.offset(facing.getOpposite());
+      IBlockState iblockstate = worldIn.getBlockState(blockpos);
+      Block block = iblockstate.getBlock();
+      BlockFaceShape blockfaceshape = iblockstate.getBlockFaceShape(worldIn, blockpos, facing);
+      if (facing.equals(EnumFacing.UP) && this.canPlaceOn(worldIn, blockpos)) {
+         return true;
+      } else {
+         return facing != EnumFacing.UP && facing != EnumFacing.DOWN ? !isExceptBlockForAttachWithPiston(block) && blockfaceshape == BlockFaceShape.SOLID : false;
+      }
+   }
+
+   private boolean canPlaceOn(World worldIn, BlockPos pos) {
+      Block block = worldIn.getBlockState(pos).getBlock();
+      return block.canPlaceTorchOnTop(worldIn.getBlockState(pos), worldIn, pos);
+   }
+
+   public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
+      this.checkForDrop(worldIn, pos, state);
+   }
+
+   @Override
+   public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
+      this.onNeighborChangeInternal(worldIn, pos, state);
+   }
+
+   protected boolean onNeighborChangeInternal(World worldIn, BlockPos pos, IBlockState state) {
+      if (!this.checkForDrop(worldIn, pos, state)) {
+         return true;
+      } else {
+         EnumFacing enumfacing = (EnumFacing)state.getValue(FACING);
+         Axis enumfacing$axis = enumfacing.getAxis();
+         EnumFacing enumfacing1 = enumfacing.getOpposite();
+         BlockPos blockpos = pos.offset(enumfacing1);
+         boolean flag = false;
+         if (enumfacing$axis.isHorizontal() && worldIn.getBlockState(blockpos).getBlockFaceShape(worldIn, blockpos, enumfacing) != BlockFaceShape.SOLID) {
+            flag = true;
+         } else if (enumfacing$axis.isVertical() && !this.canPlaceOn(worldIn, blockpos)) {
+            flag = true;
+         }
+
+         if (flag) {
+            this.dropBlockAsItem(worldIn, pos, state, 0);
+            worldIn.setBlockToAir(pos);
+            return true;
+         } else {
+            return false;
+         }
+      }
+   }
+
+   protected boolean checkForDrop(World worldIn, BlockPos pos, IBlockState state) {
+      if (state.getBlock() == this && this.canPlaceAt(worldIn, pos, (EnumFacing)state.getValue(FACING))) {
+         return true;
+      } else {
+         if (worldIn.getBlockState(pos).getBlock() == this) {
+            this.dropBlockAsItem(worldIn, pos, state, 0);
+            worldIn.setBlockToAir(pos);
+         }
+
+         return false;
+      }
+   }
+
+   public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+      switch ((EnumFacing)state.getValue(FACING)) {
+         case EAST:
+            return TORCH_EAST_AABB;
+         case WEST:
+            return TORCH_WEST_AABB;
+         case SOUTH:
+            return TORCH_SOUTH_AABB;
+         case NORTH:
+            return TORCH_NORTH_AABB;
+         default:
+            return STANDING_AABB;
+      }
+   }
+
+   public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+      return NULL_AABB;
+   }
+
+   @SideOnly(Side.CLIENT)
+   public BlockRenderLayer getRenderLayer() {
+      return BlockRenderLayer.CUTOUT;
+   }
+
+   @Override
+   public boolean isOpaqueCube(IBlockState state) {
+      return false;
+   }
+
+   @Override
+   public boolean isFullCube(IBlockState state) {
+      return false;
+   }
+
+   public IBlockState getStateFromMeta(int meta) {
+      IBlockState iblockstate = this.getDefaultState();
+      switch (meta) {
+         case 1:
+            iblockstate = iblockstate.withProperty(FACING, EnumFacing.EAST);
+            break;
+         case 2:
+            iblockstate = iblockstate.withProperty(FACING, EnumFacing.WEST);
+            break;
+         case 3:
+            iblockstate = iblockstate.withProperty(FACING, EnumFacing.SOUTH);
+            break;
+         case 4:
+            iblockstate = iblockstate.withProperty(FACING, EnumFacing.NORTH);
+            break;
+         case 5:
+         default:
+            iblockstate = iblockstate.withProperty(FACING, EnumFacing.UP);
+      }
+
+      return iblockstate;
+   }
+
+   public int getMetaFromState(IBlockState state) {
+      int i = 0;
+      switch ((EnumFacing)state.getValue(FACING)) {
+         case EAST:
+            i |= 1;
+            break;
+         case WEST:
+            i |= 2;
+            break;
+         case SOUTH:
+            i |= 3;
+            break;
+         case NORTH:
+            i |= 4;
+            break;
+         case DOWN:
+         case UP:
+         default:
+            i |= 5;
+      }
+
+      return i;
+   }
+
+   public IBlockState withRotation(IBlockState state, Rotation rot) {
+      return state.withProperty(FACING, rot.rotate((EnumFacing)state.getValue(FACING)));
+   }
+
+   public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
+      return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
+   }
+
+   protected BlockStateContainer createBlockState() {
+      return new BlockStateContainer(this, new IProperty[]{FACING, LEVEL, WET});
+   }
+
+   public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
+      items.add(new ItemStack(this, 1, 0));
+   }
+
+   @Override
+   public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
+      if (this.canPlaceAt(worldIn, pos, facing)) {
+         return this.getDefaultState().withProperty(FACING, facing);
+      } else {
+         for (EnumFacing enumfacing : Plane.HORIZONTAL) {
+            if (this.canPlaceAt(worldIn, pos, enumfacing)) {
+               return this.getDefaultState().withProperty(FACING, enumfacing);
+            }
+         }
+
+         return this.getDefaultState();
+      }
+   }
+
+   public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face) {
+      return BlockFaceShape.UNDEFINED;
+   }
+
+   @SideOnly(Side.CLIENT)
+   public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+      if (rand.nextFloat() < 0.19F) {
+         EnumFacing enumfacing = (EnumFacing)stateIn.getValue(FACING);
+         double d0 = pos.getX() + 0.5;
+         double d1 = pos.getY() + 0.7;
+         double d2 = pos.getZ() + 0.5;
+         double d3 = 0.05;
+         double d4 = 0.25;
+         int livetime = 80;
+         float scale = 0.2F + rand.nextFloat() / 10.0F;
+         float scaleTickAdding = scale / livetime;
+         if (enumfacing.getAxis().isHorizontal()) {
+            EnumFacing enumfacing1 = enumfacing.getOpposite();
+            GUNParticle spelll = new GUNParticle(
+               res,
+               0.15F,
+               0.0F,
+               livetime,
+               210,
+               worldIn,
+               d0 + d4 * enumfacing1.getXOffset(),
+               d1 + d3,
+               d2 + d4 * enumfacing1.getZOffset(),
+               0.0F,
+               0.0F,
+               0.0F,
+               0.5F + rand.nextFloat() * 0.1F,
+               1.0F,
+               0.85F + rand.nextFloat() * 0.15F,
+               true,
+               0
+            );
+            spelll.alpha = 1.0F;
+            spelll.alphaTickAdding = -0.0125F;
+            spelll.scaleTickAdding = scaleTickAdding;
+            spelll.alphaGlowing = true;
+            spelll.isPushedByLiquids = false;
+            worldIn.spawnEntity(spelll);
+         } else {
+            GUNParticle spelll = new GUNParticle(
+               res,
+               0.15F,
+               0.0F,
+               livetime,
+               210,
+               worldIn,
+               d0,
+               d1,
+               d2,
+               0.0F,
+               0.0F,
+               0.0F,
+               0.5F + rand.nextFloat() * 0.1F,
+               1.0F,
+               0.85F + rand.nextFloat() * 0.15F,
+               true,
+               0
+            );
+            spelll.alpha = 1.0F;
+            spelll.alphaTickAdding = -0.0125F;
+            spelll.scaleTickAdding = scaleTickAdding;
+            spelll.alphaGlowing = true;
+            spelll.isPushedByLiquids = false;
+            worldIn.spawnEntity(spelll);
+         }
+      }
+   }
+
+   @Override
+   public Vec3d getFogColor(World world, BlockPos pos, IBlockState state, Entity entity, Vec3d originalColor, float partialTicks) {
+      return world.provider.getDimension() == 103
+         ? DimensionAquatica.getBlockFogColor(world, pos, state, entity, originalColor, partialTicks)
+         : super.getFogColor(world, pos, state, entity, originalColor, partialTicks);
+   }
+}

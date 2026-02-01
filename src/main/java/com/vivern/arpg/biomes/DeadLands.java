@@ -1,0 +1,13 @@
+package com.vivern.arpg.biomes;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biome.BiomeProperties;
+
+public class DeadLands extends Biome {
+   public DeadLands() {
+      super(new BiomeProperties("Dead lands").setBaseHeight(0.46F).setHeightVariation(0.18F).setTemperature(0.3F).setWaterColor(10804223));
+      this.topBlock = Blocks.GRAVEL.getDefaultState();
+      this.fillerBlock = Blocks.STONE.getDefaultState();
+   }
+}
