@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+	
+  },
+  "variants": {
+    
+    "normal": { "model": "arpg:electric_vine" },
+    "inventory": { "model": "arpg:electric_vine" }
+	
+  }
+}

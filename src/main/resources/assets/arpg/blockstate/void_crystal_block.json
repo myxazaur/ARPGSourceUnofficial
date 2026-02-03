@@ -1,0 +1,8 @@
+{
+	"forge_marker": 1,
+	  "defaults": {}
+    "variants": {
+		"normal": [{}], 
+		"inventory": { "model": "arpg:void_crystal_block" }
+    }
+}

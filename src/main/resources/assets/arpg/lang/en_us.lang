@@ -845,6 +845,20 @@ item.rich_scrap.name=Rich Scrap
 
 
 tile.money_box.name=Money Box
+disenchantment_table=Disenchantment Table
+tile_industrial_mixer=Industrial Mixer
+tile_item_charger=Item Charger
+tile_assembly_table=Assembly Table
+tile_infernum_furnace=Infernum Furnace
+tile_alchemic_lab=Alchemic Lab
+tile_alchemic_vaporizer=Alchemic Vaporize
+tile_nether_melter=Nether Melter
+tile_spell_forge=Spell Forge
+tile_pyrocrystalline_converter=Pyrocrystalline Converter
+tile_crystallizer=Geomantic Crystallizer
+block_placer=Block Placer
+arpg_chest=Chest
+
 
 potion.potency.0=1
 potion.potency.1=2
@@ -852,6 +866,167 @@ potion.potency.2=3
 potion.potency.3=4
 potion.potency.4=5
 potion.potency.5=6
+
+
+potion.effect.Lensblur=Potion of Lensblur
+potion.effect.Waving=Potion of Waving
+potion.effect.Toxin=Potion of Toxin
+potion.effect.Insane=Potion of Insane
+potion.effect.Magic_Power=Potion of Magic Power
+potion.effect.Health_Degradation=Potion of Health Degradation
+potion.effect.Rad_Reduction=Potion of Rad Reduction
+potion.effect.FrostBurn=Potion of Frost Burn
+potion.effect.Instant_Mana=Potion of Instant Mana
+potion.effect.Incorporeity=Potion of Incorporeity
+potion.effect.Ichor_Curse=Potion of Ichor Cursse
+potion.effect.Fiery_Oil=Potion of Fiery Oil
+potion.effect.Mana_Regeneration=Potion of Mana Regeneration
+potion.effect.Instant_Agree=Potion of Instant Agree
+potion.effect.Health_Boost=Potion of Health Boost
+potion.effect.Fire_Aura=Potion of Fire Aura
+potion.effect.Broken_Armor=Potion of Broken Armor
+potion.effect.Incorporeity=Potion of Incorporeity
+potion.effect.Winter_Curse=Potion of Winter Curse
+potion.effect.Swimming=Potion of Swimming
+potion.effect.Rainbow=Potion of Rainbow
+potion.effect.Siren_Song=Potion of Siren Song
+potion.effect.Tenacity=Potion of Tenacity
+potion.effect.Freeze_Immunity=Potion of Freeze Immunity
+potion.effect.Demonic_Burn=Potion of Demonic Burn
+potion.effect.Spiked=Potion of Spiked
+potion.effect.Slime=Potion of Slime
+potion.effect.Wither=Potion of Wither
+potion.effect.Freezing=Potion of Freezing
+potion.effect.Shock=Potion of Shock
+potion.effect.Mana_Oil=Potion of Mana Oil
+potion.effect.Walking_Bomb=Potion of Walking Bomb
+potion.effect.Chlorite=Potion of Chlorite
+potion.effect.Hunger=Potion of Hunger
+potion.effect.Health_Degradation=Potion of Health Degradation
+potion.effect.Electrification=Potion of Electrification
+potion.effect.Ender_Poison=Potion of Ender Poison
+potion.effect.Berserk=Potion of Berserk
+potion.effect.Blood_Thirst=Potion of Blood Thirst
+
+splash_potion.effect.Lensblur=Splash Potion of Lensblur
+splash_potion.effect.Waving=Splash Potion of Waving
+splash_potion.effect.Toxin=Splash Potion of Toxin
+splash_potion.effect.Insane=Splash Potion of Insane
+splash_potion.effect.Magic_Power=Splash Potion of Magic Power
+splash_potion.effect.Health_Degradation=Splash Potion of Health Degradation
+splash_potion.effect.Rad_Reduction=Splash Potion of Rad Reduction
+splash_potion.effect.FrostBurn=Splash Potion of Frost Burn
+splash_potion.effect.Instant_Mana=Splash Potion of Instant Mana
+splash_potion.effect.Incorporeity=Splash Potion of Incorporeity
+splash_potion.effect.Ichor_Curse=Splash Potion of Ichor Cursse
+splash_potion.effect.Fiery_Oil=Splash Potion of Fiery Oil
+splash_potion.effect.Mana_Regeneration=Splash Potion of Mana Regeneration
+splash_potion.effect.Instant_Agree=Splash Potion of Instant Agree
+splash_potion.effect.Health_Boost=Splash Potion of Health Boost
+splash_potion.effect.Fire_Aura=Splash Potion of Fire Aura
+splash_potion.effect.Broken_Armor=Splash Potion of Broken Armor
+splash_potion.effect.Incorporeity=Splash Potion of Incorporeity
+splash_potion.effect.Winter_Curse=Splash Potion of Winter Curse
+splash_potion.effect.Swimming=Splash Potion of Swimming
+splash_potion.effect.Rainbow=Splash Potion of Rainbow
+splash_potion.effect.Siren_Song=Splash Potion of Siren Song
+splash_potion.effect.Tenacity=Splash Potion of Tenacity
+splash_potion.effect.Freeze_Immunity=Splash Potion of Freeze Immunity
+splash_potion.effect.Demonic_Burn=Splash Potion of Demonic Burn
+splash_potion.effect.Spiked=Splash Potion of Spiked
+splash_potion.effect.Slime=Splash Potion of Slime
+splash_potion.effect.Wither=Splash Potion of Wither
+splash_potion.effect.Freezing=Splash Potion of Freezing
+splash_potion.effect.Shock=Splash Potion of Shock
+splash_potion.effect.Mana_Oil=Splash Potion of Mana Oil
+splash_potion.effect.Walking_Bomb=Splash Potion of Walking Bomb
+splash_potion.effect.Chlorite=Splash Potion of Chlorite
+splash_potion.effect.Hunger=Splash Potion of Hunger
+splash_potion.effect.Health_Degradation=Splash Potion of Health Degradation
+splash_potion.effect.Electrification=Splash Potion of Electrification
+splash_potion.effect.Ender_Poison=Splash Potion of Ender Poison
+splash_potion.effect.Berserk=Splash Potion of Berserk
+splash_potion.effect.Blood_Thirst=Splash Potion of Blood Thirst
+
+tipped_arrow.effect.Lensblur=Arrow of Lensblur
+tipped_arrow.effect.Waving=Arrow of Waving
+tipped_arrow.effect.Toxin=Arrow of Toxin
+tipped_arrow.effect.Insane=Arrow of Insane
+tipped_arrow.effect.Magic_Power=Arrow of Magic Power
+tipped_arrow.effect.Health_Degradation=Arrow of Health Degradation
+tipped_arrow.effect.Rad_Reduction=Arrow of Rad Reduction
+tipped_arrow.effect.FrostBurn=Arrow of Frost Burn
+tipped_arrow.effect.Instant_Mana=Arrow of Instant Mana
+tipped_arrow.effect.Incorporeity=Arrow of Incorporeity
+tipped_arrow.effect.Ichor_Curse=Arrow of Ichor Cursse
+tipped_arrow.effect.Fiery_Oil=Arrow of Fiery Oil
+tipped_arrow.effect.Mana_Regeneration=Arrow of Mana Regeneration
+tipped_arrow.effect.Instant_Agree=Arrow of Instant Agree
+tipped_arrow.effect.Health_Boost=Arrow of Health Boost
+tipped_arrow.effect.Fire_Aura=Arrow of Fire Aura
+tipped_arrow.effect.Broken_Armor=Arrow of Broken Armor
+tipped_arrow.effect.Incorporeity=Arrow of Incorporeity
+tipped_arrow.effect.Winter_Curse=Arrow of Winter Curse
+tipped_arrow.effect.Swimming=Arrow of Swimming
+tipped_arrow.effect.Rainbow=Arrow of Rainbow
+tipped_arrow.effect.Siren_Song=Arrow of Siren Song
+tipped_arrow.effect.Tenacity=Arrow of Tenacity
+tipped_arrow.effect.Freeze_Immunity=Arrow of Freeze Immunity
+tipped_arrow.effect.Demonic_Burn=Arrow of Demonic Burn
+tipped_arrow.effect.Spiked=Arrow of Spiked
+tipped_arrow.effect.Slime=Arrow of Slime
+tipped_arrow.effect.Wither=Arrow of Wither
+tipped_arrow.effect.Freezing=Arrow of Freezing
+tipped_arrow.effect.Shock=Arrow of Shock
+tipped_arrow.effect.Mana_Oil=Arrow of Mana Oil
+tipped_arrow.effect.Walking_Bomb=Arrow of Walking Bomb
+tipped_arrow.effect.Chlorite=Arrow of Chlorite
+tipped_arrow.effect.Hunger=Arrow of Hunger
+tipped_arrow.effect.Health_Degradation=Arrow of Health Degradation
+tipped_arrow.effect.Electrification=Arrow of Electrification
+tipped_arrow.effect.Ender_Poison=Arrow of Ender Poison
+tipped_arrow.effect.Berserk=Arrow of Berserk
+tipped_arrow.effect.Blood_Thirst=Arrow of Blood Thirst
+
+lingering_potion.effect.Lensblur=Lingering Potion of Lensblur
+lingering_potion.effect.Waving=Lingering Potion of Waving
+lingering_potion.effect.Toxin=Lingering Potion of Toxin
+lingering_potion.effect.Insane=Lingering Potion of Insane
+lingering_potion.effect.Magic_Power=Lingering Potion of Magic Power
+lingering_potion.effect.Health_Degradation=Lingering Potion of Health Degradation
+lingering_potion.effect.Rad_Reduction=Lingering Potion of Rad Reduction
+lingering_potion.effect.FrostBurn=Lingering Potion of Frost Burn
+lingering_potion.effect.Instant_Mana=Lingering Potion of Instant Mana
+lingering_potion.effect.Incorporeity=Lingering Potion of Incorporeity
+lingering_potion.effect.Ichor_Curse=Lingering Potion of Ichor Cursse
+lingering_potion.effect.Fiery_Oil=Lingering Potion of Fiery Oil
+lingering_potion.effect.Mana_Regeneration=Lingering Potion of Mana Regeneration
+lingering_potion.effect.Instant_Agree=Lingering Potion of Instant Agree
+lingering_potion.effect.Health_Boost=Lingering Potion of Health Boost
+lingering_potion.effect.Fire_Aura=Lingering Potion of Fire Aura
+lingering_potion.effect.Broken_Armor=Lingering Potion of Broken Armor
+lingering_potion.effect.Incorporeity=Lingering Potion of Incorporeity
+lingering_potion.effect.Winter_Curse=Lingering Potion of Winter Curse
+lingering_potion.effect.Swimming=Lingering Potion of Swimming
+lingering_potion.effect.Rainbow=Lingering Potion of Rainbow
+lingering_potion.effect.Siren_Song=Lingering Potion of Siren Song
+lingering_potion.effect.Tenacity=Lingering Potion of Tenacity
+lingering_potion.effect.Freeze_Immunity=Lingering Potion of Freeze Immunity
+lingering_potion.effect.Demonic_Burn=Lingering Potion of Demonic Burn
+lingering_potion.effect.Spiked=Lingering Potion of Spiked
+lingering_potion.effect.Slime=Lingering Potion of Slime
+lingering_potion.effect.Wither=Lingering Potion of Wither
+lingering_potion.effect.Freezing=Lingering Potion of Freezing
+lingering_potion.effect.Shock=Lingering Potion of Shock
+lingering_potion.effect.Mana_Oil=Lingering Potion of Mana Oil
+lingering_potion.effect.Walking_Bomb=Lingering Potion of Walking Bomb
+lingering_potion.effect.Chlorite=Lingering Potion of Chlorite
+lingering_potion.effect.Hunger=Lingering Potion of Hunger
+lingering_potion.effect.Health_Degradation=Lingering Potion of Health Degradation
+lingering_potion.effect.Electrification=Lingering Potion of Electrification
+lingering_potion.effect.Ender_Poison=Lingering Potion of Ender Poison
+lingering_potion.effect.Berserk=Lingering Potion of Berserk
+lingering_potion.effect.Blood_Thirst=Lingering Potion of Blood Thirst
 
 death.attack.weapon=%1$s was destroyed
 death.attack.explode=%1$s was ripped by pieces
@@ -877,6 +1052,7 @@ death.attack.shards=%1$s stabbed by shards
 death.attack.sand=%1$s turned into sand
 death.attack.vines=%1$s become a fertilizer for vines
 death.attack.drill=%1$s was drilled
+
 
 entity.Gnater.name=Gnater
 entity.Troglodyte.name=Troglodyte
@@ -957,6 +1133,38 @@ entity.Windbreak.name=Windbreak
 entity.Cloudbug.name=Cloudbug
 entity.Homingbird.name=Homingbird
 entity.Cloud Eater.name=Cloud Eater
+
+entity.Spine Minion.name=Spine Minion
+entity.Spine.name=Spine
+entity.Mermaid.name=Mermaid
+entity.Dark Mermaid.name=Dark Mermaid
+entity.Kraken Tentacle Crash.name=Kraken Tentacle Crash
+entity.Kraken Tentacle Shock.name=Kraken Tentacle Shock
+entity.Kraken Tentacle Grab.name=Kraken Tentacle Grab
+entity.Kraker Tentacle Main.name=Kraker Tentacle Main
+entity.Kraken Tentacle Bite.name=Kraken Tentacle Bite
+entity.Shadow Mage.name=Shadow Mage
+entity.Larva.name=Larva
+entity.Larva Flyer.name=Larva Flyer
+entity.Nexus Cap.name=Nexus Cap
+entity.Zarpion Trader.name=Zarpion Trader
+entity.Harridan Of Ice.name=Harridan Of Ice
+entity.Horrible Evoker.name=Horrible Evoker
+entity.Horrible Vindicator.name=Horrible Vindicator
+entity.Mechanical Watcher.name=Mechanical Watcher
+entity.Equestrian.name=Equestrian
+entity.Summoned Blaze.name=Summoned Blaze
+entity.Auroras Phantasm.name=Auroras Phantasm
+entity.Snowrover.name=Snowrover
+entity.Boss Ophanim.name=Ophanim
+entity.Ophanim Guard.name=Ophanim Guard
+entity.Summoned Snowman.name=Summoned Snowman
+entity.Bristling.name=Bristling
+entity.Snow Clod.name=Snow Clod
+entity.Entity Part.name=Entity Part
+entity.Siren.name=Siren
+entity.Wizard.name=Wizard
+entity.Niveous Slider=Niveous Slider
 
 
 description.ichor_shower=Shoots a jet of booming ichor that penetrates enemies, which corrodes armor
@@ -1265,15 +1473,77 @@ description.bullet_coral=Releases small and hungry coral polyp on impact
 description.bullet_diving=Killing enemy with this bullet will refill your breath and gives increasing swim speed bonus
 description.bullet_adamantium=Heavy adamantium bullet
 
+description.void_rocket=
+description.waterblast_rocket=
+description.mining_rocket=
+description.surprise_rocket=
+description.shell_rocket=
+description.demolishing_rocket=
+description.arcane_rocket=
+description.napalm_rocket=
+description.chemical_rocket=
+description.common_rocket=
+description.frostfire_rocket=
+
+description.diamond_drill_electric=
+description.diamond_drill_fuel=
+description.diamond_chainsaw_electric=
+description.diamond_chainsaw_fuel=
+description.laser_digger=
+description.toxinium_drill_electric=
+description.toxinium_drill_fuel=
+description.toxinium_chainsaw_electric=
+description.toxinium_chainsaw_fuel=
+description.nuclear_mining_ray=
+description.adamantium_drill_electric=
+description.adamantium_drill_fuel=
+description.adamantium_chainsaw_electric=
+description.adamantium_chainsaw_fuel=
+description.eyelight_prospector=
+description.aquatic_drill_electric=
+description.aquatic_drill_fuel=
+description.aquatic_chainsaw_electric=
+description.aquatic_chainsaw_fuel=
+description.corrosive_waterblaster=
+description.storm_drill_electric=
+description.storm_drill_fuel=
+description.storm_chainsaw_electric=
+description.storm_chainsaw_fuel=
+description.plasma_cutter=
 
 
 bow_damage_velocity=The arrow's damage is multiplied by its velocity
+
+
+attribute.name.arpg.mana=Mana
+attribute.name.arpg.leadership=Leadership
+attribute.name.arpg.manaspeed=Mana Speed
+attribute.name.arpg.armor_protection=Armor Protection
+attribute.name.arpg.magic_power=Magic Power
+attribute.name.arpg.airborne_mobility=Airborne Mobility
+attribute.name.arpg.jump_height_bonus=Jump Height Bonus
+attribute.name.arpg.color_white=Color White
+attribute.name.arpg.color_orange=Color Orange
+attribute.name.arpg.color_magenta=Color Magenta
+attribute.name.arpg.color_blue=Color Blue
+attribute.name.arpg.color_yellow=Color Yellow
+attribute.name.arpg.color_lime=Color Lime
+attribute.name.arpg.color_pink=Color Pink
+attribute.name.arpg.color_gray=Color Gray
+attribute.name.arpg.color_cyan=Color Cyan
+attribute.name.arpg.color_purple=Color Purple
+attribute.name.arpg.color_brown=Color Brown
+attribute.name.arpg.color_green=Color Green
+attribute.name.arpg.color_red=Color Red
+attribute.name.arpg.color_black=Color Black
+
 
 tool.drill.mode.normal=Normal Mode
 tool.drill.mode.large=Large Mode
 tool.chainsaw.mode.normal=Normal Mode
 tool.chainsaw.mode.treecapitator=Tree Chopping Mode
 tool.chainsaw.mode.treecapitatorleaves=Tree + Leaves Chopping Mode
+
 
 soul.name.common=Common
 soul.desc.common=You feel the energy of a living being whose soul is enclosed in a stone
@@ -1312,6 +1582,7 @@ soul.desc.ionized=A soul of extremely unusual structure, pulsating with spark di
 soul.name.light=Light
 soul.desc.light=The soul of a creature that roamed the expanses of the endless heavens
 
+
 swarm_nether_alert=Demons are Hunting for You
 swarm_ender_alert=Unknown Beings are looking at You from the Void
 swarm_everfrost_alert=The Cold is chilling to the bone
@@ -1319,14 +1590,6 @@ swarm_toxicomania_alert=The Mutants rises from the Nuclear Ashes
 swarm_dungeon_alert=Creatures from The Darkness follow your scent
 swarm_aquatica_alert=The Inhabitants of the Sea are hungry for Your Blood
 swarm_stormledge_alert=The Air is getting Strained
-
-
-
-
-
-
-
-
 
 
 tile.demonic_fire.name=Demonic Fire
@@ -1745,3 +2008,59 @@ tile.chest_storm.name=Chest Storm
 tile.debug_color_block.name=Debug Color Block
 tile.magic_generator.name=Magic Generator
 tile.team_banner.name=Team Banner
+
+
+fluid.biogenic_acid=Biodenic Acid
+fluid.fuel_oil=Fuel Oil
+fluid.petroleum=Petroleum
+fluid.cryon=Cryon
+fluid.gasoline=Gasoline
+fluid.natural_gas=Natural Gas
+fluid.luminescent_liquid=Luminiscent Liquid
+fluid.slime=Slime Liquid
+fluid.hydrothermal_solution=Hydrothermal Liquid
+fluid.poison=Poison Water
+fluid.dissolved_toxinium=Dissolved Toxinium
+fluid.sulfuric_gas=Sulfuric Gas
+fluid.sulfuric_acid=Sulfuric Acid
+fluid.mana_oil=Mana Oil
+fluid.nitric_acid=Nitric Acid
+fluid.larva_water=Larva Water
+fluid.toxin=Toxic Water
+
+
+enchantment.Might I=Might I
+enchantment.Might II=Might II
+enchantment.Might III=Might III
+enchantment.Might IV=Might IV
+enchantment.Might V=Might V
+enchantment.Might VI=Might VI
+enchantment.Might VII=Might VII
+enchantment.Accuracy I=Accuracy I
+enchantment.Accuracy II=Accuracy II
+enchantment.Accuracy III=Accuracy III
+enchantment.Special=Special
+enchantment.Impulse I=Impulse I
+enchantment.Impulse II=Impulse II
+enchantment.Impulse III=Impulse III
+enchantment.Impulse IV=Impulse IV
+enchantment.Impulse V=Impulse V
+enchantment.Reuse I=Reuse I
+enchantment.Reuse II=Reuse II
+enchantment.Rapidity I=Rapidity I
+enchantment.Rapidity II=Rapidity II
+enchantment.Sorcery I=Sorcery I
+enchantment.Sorcery II=Sorcery II
+enchantment.Sorcery III=Sorcery III
+enchantment.Sorcery IV=Sorcery IV
+enchantment.Reloading I=Reloading I
+enchantment.Reloading II=Reloading II
+enchantment.Range I=Range I
+enchantment.Range II=Range II
+enchantment.Range III=Range III
+enchantment.Range IV=Range IV
+enchantment.Witchery I=Witchery I
+enchantment.Witchery II=Witchery II
+enchantment.Witchery III=Witchery III
+enchantment.Witchery IV=Witchery IV
+enchantment.Witchery V=Witchery V

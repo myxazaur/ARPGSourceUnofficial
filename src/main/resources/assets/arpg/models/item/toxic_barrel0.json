@@ -1,7 +1,7 @@
 {
     "textures": {
         "toxicbarrel": "arpg:toxic_barrel",
-		"particle": "#toxicbarrel"
+		"particle": "arpg:toxicomania_portal_frame_top"
     },
     "display": {
         "gui": {

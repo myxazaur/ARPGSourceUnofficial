@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "arpg:orb_of_destroy"
+		"layer0": "arpg:fairy_wings"
 	}
 }

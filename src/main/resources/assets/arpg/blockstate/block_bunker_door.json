@@ -1,0 +1,21 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+		"textures": {
+		  "face": "arpg:bunker_door_side",
+		  "top": "arpg:bunker_door_side",
+		  "side": "arpg:bunker_door_side",
+		  "back": "arpg:bunker_door_face"
+		}
+	  },
+    "variants": {
+		"normal": [{}], 
+		"inventory": { "model": "arpg:block_bunker_door" },
+        "facing=down":  { "model": "arpg:orientable_vertical", "x": 180 },
+        "facing=up":    { "model": "arpg:orientable_vertical" },
+        "facing=north": { "model": "arpg:orientable" },
+        "facing=south": { "model": "arpg:orientable", "y": 180 },
+        "facing=west":  { "model": "arpg:orientable", "y": 270 },
+        "facing=east":  { "model": "arpg:orientable", "y": 90 }
+    }
+}
