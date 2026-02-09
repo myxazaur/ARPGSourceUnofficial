@@ -25,10 +25,10 @@ repositories {
             includeGroup 'maven.modrinth'
         }
     }
-    maven {
-        name "JitPack"
-        url 'https://jitpack.io'
-    }
+//    maven {
+//        name "JitPack"
+//        url 'https://jitpack.io'
+//    }
     maven {
         name 'GTCEu Maven'
         url 'https://maven.gtceu.com'
@@ -37,10 +37,10 @@ repositories {
         name 'CleanroomMC Maven'
         url 'https://repo.cleanroommc.com/releases'
     }
-    maven {
-        name 'BlameJared'
-        url 'https://maven.blamejared.com/'
-    }
+//    maven {
+//        name 'BlameJared'
+//        url 'https://maven.blamejared.com/'
+//    }
     mavenLocal() // Must be last for caching to work
 }
 
@@ -87,7 +87,7 @@ dependencies {
 
     implementation 'mezz:jei:4.29.15'
     implementation rfg.deobf("curse.maven:baubles-227083:2518667")
-    implementation 'com.github.hohserg1:HookLib:3.28'
+//    implementation 'com.github.hohserg1:HookLib:3.28'
 //    implementation('com.enderio:endercore:0.5.78') {transitive = false}
 //    implementation('crazypants:enderio:5.3.72') {transitive = false}
     implementation rfg.deobf("curse.maven:cofh_core-69162:2920433")
