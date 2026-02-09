@@ -1392,8 +1392,8 @@ public class ItemGrenade extends ItemWeapon {
       }
    }
 
-   public static class MolotovпїЅocktail extends ItemGrenade {
-      public MolotovпїЅocktail(String name, int maxstacksize, byte id, int firstExplodeDelay, float damage, float knockback, ResourceLocation texture) {
+   public static class MolotovCocktail extends ItemGrenade {
+      public MolotovCocktail(String name, int maxstacksize, byte id, int firstExplodeDelay, float damage, float knockback, ResourceLocation texture) {
          super(name, maxstacksize, id, firstExplodeDelay, damage, knockback, texture);
       }
 

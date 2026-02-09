@@ -97,15 +97,15 @@ import java.util.*;
 @HookContainer
 public class ARPGHooks {
    private static final List<BlockPos> listMarkRelightPoses = new ArrayList<>();
-   private static final BlockColors blockColors = new BlockColors();
+   public static BlockColors blockColors = new BlockColors();
    private static final float BLOCK_COLOR_INTENSITY = 0.75F;
-   private static ResourceLocation bindEnotherTexture = null;
+   public static ResourceLocation bindEnotherTexture = null;
 //   private static boolean useTeleportHook = false;
 //   private static Random hooksRand = new Random();
    static ItemCameraTransforms cameraTransforms;
    private static boolean soundManagerUpdatingNow = false;
    static boolean dontRecurse;
-   private static int moveSlot = 0;
+   public static int moveSlot = 0;
 
    @SideOnly(Side.CLIENT)
    @Hook

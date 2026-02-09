@@ -1,7 +1,7 @@
 package com.vivern.arpg.potions;
 
+import com.vivern.arpg.hooks.ARPGHooks;
 import com.vivern.arpg.main.PropertiesRegistry;
-import gloomyfolkenvivern.arpghooklib.example.AnnotationHooks;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.GlStateManager.DestFactor;
 import net.minecraft.client.renderer.GlStateManager.SourceFactor;
@@ -57,11 +57,11 @@ public class BrokenArmor extends AdvancedPotion {
       GlStateManager.depthMask(false);
       GlStateManager.enableBlend();
       GlStateManager.matrixMode(5888);
-      AnnotationHooks.bindEnotherTexture = tex;
+      ARPGHooks.bindEnotherTexture = tex;
       entityRenderer.doRender(entityOnEffect, x, y, z, yaw, partialTicks);
       GlStateManager.disableBlend();
       GlStateManager.depthMask(true);
       GlStateManager.popMatrix();
-      AnnotationHooks.bindEnotherTexture = null;
+      ARPGHooks.bindEnotherTexture = null;
    }
 }

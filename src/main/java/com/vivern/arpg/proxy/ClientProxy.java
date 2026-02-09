@@ -160,6 +160,8 @@ import com.vivern.arpg.entity.WandColdWave;
 import com.vivern.arpg.entity.WhispersShoot;
 import com.vivern.arpg.entity.XmassBall;
 import com.vivern.arpg.entity.XmassRocket;
+import com.vivern.arpg.hooks.ARPGHooks;
+import com.vivern.arpg.hooks.coloredlightning.ColoredLightning;
 import com.vivern.arpg.main.AnimationTimer;
 import com.vivern.arpg.main.BlocksRegister;
 import com.vivern.arpg.main.DeathEffects;
@@ -321,8 +323,6 @@ import com.vivern.arpg.tileentity.TileTritonHearth;
 import com.vivern.arpg.tileentity.TileVial;
 import com.vivern.arpg.tileentity.TileVoidCrystal;
 import com.vivern.arpg.weather.Weather;
-import gloomyfolkenvivern.arpghooklib.example.AnnotationHooks;
-import gloomyfolkenvivern.arpghooklib.example.coloredlightning.ColoredLightning;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
@@ -1098,7 +1098,7 @@ public class ClientProxy extends CommonProxy {
          for (Field field : BlockModelRenderer.class.getDeclaredFields()) {
             if (field.getType() == BlockColors.class) {
                field.setAccessible(true);
-               AnnotationHooks.blockColors = (BlockColors)field.get(Minecraft.getMinecraft().getBlockRendererDispatcher().getBlockModelRenderer());
+               ARPGHooks.blockColors = (BlockColors)field.get(Minecraft.getMinecraft().getBlockRendererDispatcher().getBlockModelRenderer());
             }
          }
       } catch (IllegalArgumentException var6) {
