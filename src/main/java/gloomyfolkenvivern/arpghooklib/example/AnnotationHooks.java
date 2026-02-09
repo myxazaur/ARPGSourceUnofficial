@@ -251,9 +251,7 @@ public class AnnotationHooks {
    }
 
    private static float getVolume(SoundManager soundManager, SoundCategory category) {
-      // FIX: Hardcoded value (TEMPORARY FIX)
-      // return category != null && category != SoundCategory.MASTER ? soundManager.options.getSoundLevel(category) : 1.0F;
-      return 1.0F;
+       return category != null && category != SoundCategory.MASTER ? soundManager.options.getSoundLevel(category) : 1.0F;
    }
 
    private static float getClampedPitch(SoundManager soundManager, ISound soundIn) {
@@ -285,83 +283,82 @@ public class AnnotationHooks {
       return soundManagerUpdatingNow;
    }
 
-   // FIX: this method unused and problematic
-//   @Hook(
-//      returnCondition = ReturnCondition.ALWAYS
-//   )
-//   public static void updateAllSounds(SoundManager soundManager) {
-//      soundManagerUpdatingNow = true;
-//      soundManager.playTime++;
-//      SoundSystem soundsystem = soundManager.sndSystem;
-//      int tickableSoundsCount = soundManager.tickableSounds.size();
-//      ITickableSound[] tickableSoundsCopy = new ITickableSound[tickableSoundsCount];
-//
-//      for (int i = 0; i < tickableSoundsCount; i++) {
-//         if (soundManager.tickableSounds.size() > 0 && i < soundManager.tickableSounds.size()) {
-//            tickableSoundsCopy[i] = (ITickableSound)soundManager.tickableSounds.get(i);
-//         }
-//      }
-//
-//      for (ITickableSound itickablesound : tickableSoundsCopy) {
-//         itickablesound.update();
-//         if (itickablesound.isDonePlaying()) {
-//            soundManager.stopSound(itickablesound);
-//         } else {
-//            String s = (String)soundManager.invPlayingSounds.get(itickablesound);
-//            soundsystem.setVolume(s, getClampedVolume(soundManager, itickablesound));
-//            soundsystem.setPitch(s, getClampedPitch(soundManager, itickablesound));
-//            soundsystem.setPosition(s, itickablesound.getXPosF(), itickablesound.getYPosF(), itickablesound.getZPosF());
-//         }
-//      }
-//
-//      Iterator<Entry<String, ISound>> iterator = soundManager.playingSounds.entrySet().iterator();
-//
-//      while (iterator.hasNext()) {
-//         Entry<String, ISound> entry = iterator.next();
-//         String s1 = entry.getKey();
-//         ISound isound = entry.getValue();
-//         if (!soundsystem.playing(s1)) {
-//            int ix = (Integer)soundManager.playingSoundsStopTime.get(s1);
-//            if (ix <= soundManager.playTime) {
-//               int j = isound.getRepeatDelay();
-//               if (isound.canRepeat() && j > 0) {
-//                  soundManager.delayedSounds.put(isound, soundManager.playTime + j);
-//               }
-//
-//               iterator.remove();
-//               SoundManager.LOGGER.debug(SoundManager.LOG_MARKER, "Removed channel {} because it's not playing anymore", s1);
-//               soundsystem.removeSource(s1);
-//               soundManager.playingSoundsStopTime.remove(s1);
-//
-//               try {
-//                  soundManager.categorySounds.remove(isound.getCategory(), s1);
-//               } catch (RuntimeException var11) {
-//               }
-//
-//               if (isound instanceof ITickableSound) {
-//                  soundManager.tickableSounds.remove(isound);
-//               }
-//            }
-//         }
-//      }
-//
-//      Iterator<Entry<ISound, Integer>> iterator1 = soundManager.delayedSounds.entrySet().iterator();
-//
-//      while (iterator1.hasNext()) {
-//         Entry<ISound, Integer> entry1 = iterator1.next();
-//         if (soundManager.playTime >= entry1.getValue()) {
-//            ISound isound1 = entry1.getKey();
-//            if (isound1 instanceof ITickableSound) {
-//               ((ITickableSound)isound1).update();
-//            }
-//
-//            soundManager.playSound(isound1);
-//            iterator1.remove();
-//         }
-//      }
-//
-//      soundManagerUpdatingNow = false;
-//   }
+   @Hook(
+      returnCondition = ReturnCondition.ALWAYS
+   )
+   public static void updateAllSounds(SoundManager soundManager) {
+      soundManagerUpdatingNow = true;
+      soundManager.playTime++;
+      SoundSystem soundsystem = soundManager.sndSystem;
+      int tickableSoundsCount = soundManager.tickableSounds.size();
+      ITickableSound[] tickableSoundsCopy = new ITickableSound[tickableSoundsCount];
+
+      for (int i = 0; i < tickableSoundsCount; i++) {
+         if (soundManager.tickableSounds.size() > 0 && i < soundManager.tickableSounds.size()) {
+            tickableSoundsCopy[i] = (ITickableSound)soundManager.tickableSounds.get(i);
+         }
+      }
+
+      for (ITickableSound itickablesound : tickableSoundsCopy) {
+         itickablesound.update();
+         if (itickablesound.isDonePlaying()) {
+            soundManager.stopSound(itickablesound);
+         } else {
+            String s = (String)soundManager.invPlayingSounds.get(itickablesound);
+            soundsystem.setVolume(s, getClampedVolume(soundManager, itickablesound));
+            soundsystem.setPitch(s, getClampedPitch(soundManager, itickablesound));
+            soundsystem.setPosition(s, itickablesound.getXPosF(), itickablesound.getYPosF(), itickablesound.getZPosF());
+         }
+      }
+
+      Iterator<Entry<String, ISound>> iterator = soundManager.playingSounds.entrySet().iterator();
+
+      while (iterator.hasNext()) {
+         Entry<String, ISound> entry = iterator.next();
+         String s1 = entry.getKey();
+         ISound isound = entry.getValue();
+         if (!soundsystem.playing(s1)) {
+            int ix = (Integer)soundManager.playingSoundsStopTime.get(s1);
+            if (ix <= soundManager.playTime) {
+               int j = isound.getRepeatDelay();
+               if (isound.canRepeat() && j > 0) {
+                  soundManager.delayedSounds.put(isound, soundManager.playTime + j);
+               }
+
+               iterator.remove();
+               SoundManager.LOGGER.debug(SoundManager.LOG_MARKER, "Removed channel {} because it's not playing anymore", s1);
+               soundsystem.removeSource(s1);
+               soundManager.playingSoundsStopTime.remove(s1);
+
+               try {
+                  soundManager.categorySounds.remove(isound.getCategory(), s1);
+               } catch (RuntimeException var11) {
+               }
+
+               if (isound instanceof ITickableSound) {
+                  soundManager.tickableSounds.remove(isound);
+               }
+            }
+         }
+      }
+
+      Iterator<Entry<ISound, Integer>> iterator1 = soundManager.delayedSounds.entrySet().iterator();
+
+      while (iterator1.hasNext()) {
+         Entry<ISound, Integer> entry1 = iterator1.next();
+         if (soundManager.playTime >= entry1.getValue()) {
+            ISound isound1 = entry1.getKey();
+            if (isound1 instanceof ITickableSound) {
+               ((ITickableSound)isound1).update();
+            }
+
+            soundManager.playSound(isound1);
+            iterator1.remove();
+         }
+      }
+
+      soundManagerUpdatingNow = false;
+   }
 
    public static void update(SoundHandler soundhandler) {
       try {
