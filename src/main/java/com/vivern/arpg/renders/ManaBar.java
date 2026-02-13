@@ -2,6 +2,7 @@ package com.vivern.arpg.renders;
 
 import com.vivern.arpg.elements.IWeapon;
 import com.vivern.arpg.events.Debugger;
+import com.vivern.arpg.hooks.ARPGHooks;
 import com.vivern.arpg.main.AnimationTimer;
 import com.vivern.arpg.main.Coins;
 import com.vivern.arpg.main.ColorConverters;
@@ -12,7 +13,6 @@ import com.vivern.arpg.main.NBTHelper;
 import com.vivern.arpg.main.ShardType;
 import com.vivern.arpg.main.Shards;
 import com.vivern.arpg.tileentity.TileSpellForge;
-import gloomyfolkenvivern.arpghooklib.example.AnnotationHooks;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.client.Minecraft;
@@ -202,10 +202,10 @@ public class ManaBar {
 
          KillScore.renderAll(this.mc.fontRenderer, i, f);
          InvasionInfo.render(this.mc.fontRenderer, player, i, f);
-         if (AnnotationHooks.moveslot != player.inventory.currentItem) {
+         if (ARPGHooks.moveSlot != player.inventory.currentItem) {
             this.mc.getTextureManager().bindTexture(HotbarSlot);
             GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-            drawCustomSizedTexturedRect(i / 2 - 91 + AnnotationHooks.moveslot * 20, f - 22, 22, 22, 0.0);
+            drawCustomSizedTexturedRect(i / 2 - 91 + ARPGHooks.moveSlot * 20, f - 22, 22, 22, 0.0);
          }
 
          GlStateManager.enableRescaleNormal();

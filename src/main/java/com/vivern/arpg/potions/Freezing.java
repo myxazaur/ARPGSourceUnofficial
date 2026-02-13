@@ -1,12 +1,12 @@
 package com.vivern.arpg.potions;
 
+import com.vivern.arpg.hooks.ARPGHooks;
 import com.vivern.arpg.main.Booom;
 import com.vivern.arpg.main.Sounds;
 import com.vivern.arpg.main.Weapons;
 import com.vivern.arpg.mobs.AbstractMob;
 import com.vivern.arpg.renders.LayerIce;
 import com.vivern.arpg.renders.PotionBurningEffects;
-import gloomyfolkenvivern.arpghooklib.example.AnnotationHooks;
 import java.util.Map.Entry;
 import javax.annotation.Nullable;
 import net.minecraft.client.Minecraft;
@@ -185,12 +185,12 @@ public class Freezing extends AdvancedPotion {
          GlStateManager.depthMask(false);
          GlStateManager.enableBlend();
          GlStateManager.matrixMode(5888);
-         AnnotationHooks.bindEnotherTexture = textur;
+         ARPGHooks.bindEnotherTexture = textur;
          entityRenderer.doRender(entityOnEffect, x, y, z, yaw, partialTicks);
          GlStateManager.disableBlend();
          GlStateManager.depthMask(true);
          GlStateManager.popMatrix();
-         AnnotationHooks.bindEnotherTexture = null;
+         ARPGHooks.bindEnotherTexture = null;
       }
    }
 
