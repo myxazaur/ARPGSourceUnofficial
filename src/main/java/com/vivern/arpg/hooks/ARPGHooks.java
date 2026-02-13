@@ -1,6 +1,8 @@
 package com.vivern.arpg.hooks;
 
+import com.google.common.collect.Multimap;
 import com.google.common.collect.Ordering;
+import com.vivern.arpg.ARPGConfig;
 import com.vivern.arpg.blocks.AshBlock;
 import com.vivern.arpg.elements.IWeapon;
 import com.vivern.arpg.events.Debugger;
@@ -14,10 +16,7 @@ import com.vivern.arpg.potions.Freezing;
 import com.vivern.arpg.potions.PotionEffects;
 import com.vivern.arpg.potions.Stun;
 import com.vivern.arpg.renders.*;
-import gloomyfolken.hooklib.api.Hook;
-import gloomyfolken.hooklib.api.HookContainer;
-import gloomyfolken.hooklib.api.OnReturn;
-import gloomyfolken.hooklib.api.ReturnSolve;
+import gloomyfolken.hooklib.api.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
 import net.minecraft.block.BlockLiquid;
@@ -26,6 +25,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.ISound;
+import net.minecraft.client.audio.ITickableSound;
 import net.minecraft.client.audio.SoundHandler;
 import net.minecraft.client.audio.SoundManager;
 import net.minecraft.client.entity.AbstractClientPlayer;
@@ -47,6 +47,7 @@ import net.minecraft.client.renderer.entity.RenderLivingBase;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.texture.TextureUtil;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.client.settings.GameSettings;
 import net.minecraft.command.*;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;
@@ -85,6 +86,9 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraftforge.client.model.pipeline.LightUtil;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Marker;
+import paulscode.sound.SoundSystem;
 
 import javax.annotation.Nullable;
 import java.lang.reflect.Field;
@@ -108,6 +112,22 @@ public class ARPGHooks {
    private static int moveSlot = 0;
 
    @SideOnly(Side.CLIENT)
+   @PrivateClass("net.minecraft.client.audio.SoundManager$SoundSystemStarterThread")
+   public static class SoundSystemStarterThread extends SoundSystem {}
+
+   @FieldLens public static FieldAccessor<SoundManager, GameSettings> options;
+   @FieldLens public static FieldAccessor<SoundManager, Integer> playTime;
+   @FieldLens public static FieldAccessor<SoundManager, SoundSystemStarterThread> sndSystem;
+   @FieldLens public static FieldAccessor<SoundManager, List<ITickableSound>> tickableSounds;
+   @FieldLens public static FieldAccessor<SoundManager, Map<ISound, String>> invPlayingSounds;
+   @FieldLens public static FieldAccessor<SoundManager, Map<String, ISound>> playingSounds;
+   @FieldLens public static FieldAccessor<SoundManager, Map<String, Integer>> playingSoundsStopTime;
+   @FieldLens public static FieldAccessor<SoundManager, Map<ISound, Integer>> delayedSounds;
+   @FieldLens public static FieldAccessor<SoundManager, Multimap<SoundCategory, String>> categorySounds;
+   @FieldLens public static FieldAccessor<SoundManager, Logger> LOGGER;
+   @FieldLens public static FieldAccessor<SoundManager, Marker> LOG_MARKER;
+
+   @SideOnly(Side.CLIENT)
    @Hook
    public static void renderToolTip(GuiScreen gui, ItemStack stack, int x, int y) {
       ItemsElements.ElementsPack pack = ItemsElements.getAllElements(stack);
@@ -119,13 +139,13 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT)
    @Hook
    public static ReturnSolve<Void> switchToRealms(RealmsBridge bridge, GuiScreen p_switchToRealms_1_) {
-      return ReturnSolve.no();
+      return ARPGConfig.general.disableRealms ? ReturnSolve.no() : ReturnSolve.yes(null);
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
    public static ReturnSolve<Object> getNotificationScreen(RealmsBridge bridge, GuiScreen p_getNotificationScreen_1_) {
-      return ReturnSolve.no();
+      return ARPGConfig.general.disableRealms ? ReturnSolve.no() : ReturnSolve.yes(null);
    }
 
    @SideOnly(Side.CLIENT)
@@ -179,8 +199,8 @@ public class ARPGHooks {
             worldIn.setBlockState(pos, blockfire.getDefaultState().withProperty(BlockFire.AGE, j), 3);
          } else {
             IBlockState has = worldIn.getBlockState(pos);
-            if ((!(random.nextFloat() < 0.75F) || has.getMaterial() != Material.WOOD)
-                  && (!(random.nextFloat() < 0.35F) || has.getMaterial() != Material.LEAVES)) {
+            if ((random.nextFloat() >= 0.75F || has.getMaterial() != Material.WOOD)
+                  && (random.nextFloat() >= 0.35F || has.getMaterial() != Material.LEAVES)) {
                worldIn.setBlockToAir(pos);
             } else {
                worldIn.setBlockState(pos, BlocksRegister.ASHBLOCK.getDefaultState().withProperty(AshBlock.LAYERS, 1)
@@ -212,10 +232,7 @@ public class ARPGHooks {
    }
 
    private static float getVolume(SoundManager soundManager, SoundCategory category) {
-      /* FIXME: Hardcoded value (TEMPORARY FIX)
-         return category != null && category != SoundCategory.MASTER ?
-         soundManager.options.getSoundLevel(category) : 1.0F; */
-      return 1.0F;
+     return category != null && category != SoundCategory.MASTER ? options.get(soundManager).getSoundLevel(category) : 1.0F;
    }
 
    @Hook
@@ -249,89 +266,86 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
-   // FIX: this method unused and problematic
-   // @Hook(
-   // returnCondition = ReturnCondition.ALWAYS
-   // )
-   // public static void updateAllSounds(SoundManager soundManager) {
-   // soundManagerUpdatingNow = true;
-   // soundManager.playTime++;
-   // SoundSystem soundsystem = soundManager.sndSystem;
-   // int tickableSoundsCount = soundManager.tickableSounds.size();
-   // ITickableSound[] tickableSoundsCopy = new
-   // ITickableSound[tickableSoundsCount];
-   //
-   // for (int i = 0; i < tickableSoundsCount; i++) {
-   // if (soundManager.tickableSounds.size() > 0 && i <
-   // soundManager.tickableSounds.size()) {
-   // tickableSoundsCopy[i] = (ITickableSound)soundManager.tickableSounds.get(i);
-   // }
-   // }
-   //
-   // for (ITickableSound itickablesound : tickableSoundsCopy) {
-   // itickablesound.update();
-   // if (itickablesound.isDonePlaying()) {
-   // soundManager.stopSound(itickablesound);
-   // } else {
-   // String s = (String)soundManager.invPlayingSounds.get(itickablesound);
-   // soundsystem.setVolume(s, getClampedVolume(soundManager, itickablesound));
-   // soundsystem.setPitch(s, getClampedPitch(soundManager, itickablesound));
-   // soundsystem.setPosition(s, itickablesound.getXPosF(),
-   // itickablesound.getYPosF(), itickablesound.getZPosF());
-   // }
-   // }
-   //
-   // Iterator<Entry<String, ISound>> iterator =
-   // soundManager.playingSounds.entrySet().iterator();
-   //
-   // while (iterator.hasNext()) {
-   // Entry<String, ISound> entry = iterator.next();
-   // String s1 = entry.getKey();
-   // ISound isound = entry.getValue();
-   // if (!soundsystem.playing(s1)) {
-   // int ix = (Integer)soundManager.playingSoundsStopTime.get(s1);
-   // if (ix <= soundManager.playTime) {
-   // int j = isound.getRepeatDelay();
-   // if (isound.canRepeat() && j > 0) {
-   // soundManager.delayedSounds.put(isound, soundManager.playTime + j);
-   // }
-   //
-   // iterator.remove();
-   // SoundManager.LOGGER.debug(SoundManager.LOG_MARKER, "Removed channel {}
-   // because it's not playing anymore", s1);
-   // soundsystem.removeSource(s1);
-   // soundManager.playingSoundsStopTime.remove(s1);
-   //
-   // try {
-   // soundManager.categorySounds.remove(isound.getCategory(), s1);
-   // } catch (RuntimeException var11) {
-   // }
-   //
-   // if (isound instanceof ITickableSound) {
-   // soundManager.tickableSounds.remove(isound);
-   // }
-   // }
-   // }
-   // }
-   //
-   // Iterator<Entry<ISound, Integer>> iterator1 =
-   // soundManager.delayedSounds.entrySet().iterator();
-   //
-   // while (iterator1.hasNext()) {
-   // Entry<ISound, Integer> entry1 = iterator1.next();
-   // if (soundManager.playTime >= entry1.getValue()) {
-   // ISound isound1 = entry1.getKey();
-   // if (isound1 instanceof ITickableSound) {
-   // ((ITickableSound)isound1).update();
-   // }
-   //
-   // soundManager.playSound(isound1);
-   // iterator1.remove();
-   // }
-   // }
-   //
-   // soundManagerUpdatingNow = false;
-   // }
+   @Hook
+   @OnReturn
+   public static void updateAllSounds(SoundManager soundManager) {
+      soundManagerUpdatingNow = true;
+      playTime.set(soundManager, playTime.get(soundManager) + 1);
+      SoundSystem soundsystem = sndSystem.get(soundManager);
+      int tickableSoundsCount = tickableSounds.get(soundManager).size();
+      ITickableSound[] tickableSoundsCopy = new
+              ITickableSound[tickableSoundsCount];
+
+      for (int i = 0; i < tickableSoundsCount; i++) {
+         if (!tickableSounds.get(soundManager).isEmpty() && i <
+                 tickableSounds.get(soundManager).size()) {
+            tickableSoundsCopy[i] = tickableSounds.get(soundManager).get(i);
+         }
+      }
+
+      for (ITickableSound itickablesound : tickableSoundsCopy) {
+         itickablesound.update();
+         if (itickablesound.isDonePlaying()) {
+            soundManager.stopSound(itickablesound);
+         } else {
+            String s = invPlayingSounds.get(soundManager).get(itickablesound);
+            soundsystem.setVolume(s, getClampedVolume(soundManager, itickablesound));
+            soundsystem.setPitch(s, getClampedPitch(soundManager, itickablesound));
+            soundsystem.setPosition(s, itickablesound.getXPosF(),
+                    itickablesound.getYPosF(), itickablesound.getZPosF());
+         }
+      }
+
+      Iterator<Map.Entry<String, ISound>> iterator =
+              playingSounds.get(soundManager).entrySet().iterator();
+
+      while (iterator.hasNext()) {
+         Map.Entry<String, ISound> entry = iterator.next();
+         String s1 = entry.getKey();
+         ISound isound = entry.getValue();
+         if (!soundsystem.playing(s1)) {
+            int ix = playingSoundsStopTime.get(soundManager).get(s1);
+            if (ix <= playTime.get(soundManager)) {
+               int j = isound.getRepeatDelay();
+               if (isound.canRepeat() && j > 0) {
+                  delayedSounds.get(soundManager).put(isound, playTime.get(soundManager) + j);
+               }
+
+               iterator.remove();
+               LOGGER.get(soundManager).debug(LOG_MARKER.get(soundManager), "Removed channel {} because it 's not playing anymore", s1);
+               soundsystem.removeSource(s1);
+               playingSoundsStopTime.get(soundManager).remove(s1);
+
+               try {
+                  categorySounds.get(soundManager).remove(isound.getCategory(), s1);
+               } catch (RuntimeException var11) {
+               }
+
+               if (isound instanceof ITickableSound) {
+                  tickableSounds.get(soundManager).remove(isound);
+               }
+            }
+         }
+      }
+
+      Iterator<Map.Entry<ISound, Integer>> iterator1 =
+              delayedSounds.get(soundManager).entrySet().iterator();
+
+      while (iterator1.hasNext()) {
+         Map.Entry<ISound, Integer> entry1 = iterator1.next();
+         if (playTime.get(soundManager) >= entry1.getValue()) {
+            ISound isound1 = entry1.getKey();
+            if (isound1 instanceof ITickableSound) {
+               ((ITickableSound) isound1).update();
+            }
+
+            soundManager.playSound(isound1);
+            iterator1.remove();
+         }
+      }
+
+      soundManagerUpdatingNow = false;
+   }
 
    public static void update(SoundHandler soundhandler) {
       try {
@@ -427,21 +441,19 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
-   public static void doRenderShadowAndFire(Render render, Entity entityIn, double x, double y, double z, float yaw,
-         float partialTicks) {
-      if (!dontRecurse) {
-         if (entityIn instanceof EntityLivingBase) {
-            EntityLivingBase entitylb = (EntityLivingBase) entityIn;
-            Collection<PotionEffect> list = entitylb.getActivePotionEffects();
-            if (!list.isEmpty()) {
-               for (PotionEffect effect : list) {
-                  if (effect.getPotion() instanceof AdvancedPotion) {
-                     AdvancedPotion potion = (AdvancedPotion) effect.getPotion();
-                     if (potion.shouldRender) {
-                        dontRecurse = true;
-                        potion.render(entitylb, x, y, z, yaw, partialTicks, effect, render);
-                        dontRecurse = false;
-                     }
+   public static void doRenderShadowAndFire(Render render, Entity entityIn, double x, double y, double z,
+                                            float yaw, float partialTicks) {
+      if (!dontRecurse && entityIn instanceof EntityLivingBase) {
+         EntityLivingBase entityLiving = (EntityLivingBase) entityIn;
+         Collection<PotionEffect> potionsList = entityLiving.getActivePotionEffects();
+         if (!potionsList.isEmpty()) {
+            for (PotionEffect effect : potionsList) {
+               if (effect.getPotion() instanceof AdvancedPotion) {
+                  AdvancedPotion potion = (AdvancedPotion) effect.getPotion();
+                  if (potion.shouldRender) {
+                     dontRecurse = true;
+                     potion.render(entityLiving, x, y, z, yaw, partialTicks, effect, render);
+                     dontRecurse = false;
                   }
                }
             }
