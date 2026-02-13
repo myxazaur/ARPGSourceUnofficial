@@ -804,7 +804,7 @@ public class ItemsRegister {
    public static Item GRENADEHELL = new ItemGrenade.HellGrenade(
       "hell_grenade", 20, (byte)4, 30, 11.0F, 0.8F, new ResourceLocation("arpg:textures/grenade_hell.png")
    );
-   public static Item GRENADEMOLOTOV = new ItemGrenade.MolotovпїЅocktail(
+   public static Item GRENADEMOLOTOV = new ItemGrenade.MolotovCocktail(
       "molotov_cocktail", 32, (byte)5, 100, 0.0F, 0.0F, new ResourceLocation("arpg:textures/grenade_molotov.png")
    );
    public static Item GRENADEOIL = new ItemGrenade.OilBottle("oil_bottle", 48, (byte)6, 100, 0.0F, 0.0F, new ResourceLocation("arpg:textures/grenade_oil.png"));

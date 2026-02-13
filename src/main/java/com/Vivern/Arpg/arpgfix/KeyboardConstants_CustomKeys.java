@@ -1,4 +1,4 @@
-package com.Vivern.Arpg.arpgfix;
+package com.vivern.arpg.arpgfix;
 
 /**
  * Copy-paste from client-side class

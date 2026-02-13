@@ -1,4 +1,4 @@
-package com.Vivern.Arpg.arpgfix;
+package com.vivern.arpg.arpgfix;
 
 /**
  * Нечистый приёмчик, чтобы хранить клиентские классы в static-полях и не ловить краш мода
@@ -6,7 +6,7 @@ package com.Vivern.Arpg.arpgfix;
  * By PurplePrint
  */
 public abstract class AbstractClientFieldsContainer implements IFieldInit {
-    public AbstractClientFieldsContainer() {
+    protected AbstractClientFieldsContainer() {
         this.initFields();
     }
 }

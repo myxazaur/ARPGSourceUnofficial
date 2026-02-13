@@ -1,6 +1,7 @@
-package com.Vivern.Arpg.arpgfix;
+package com.vivern.arpg.arpgfix;
 
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Map;
 
 public interface ItemDataSync_Client {
@@ -12,5 +13,5 @@ public interface ItemDataSync_Client {
 
     <T> T getData(String dataName, Class<T> type, T defaultValue);
 
-    <T> void setData(String dataName, Class<T> type, @Nonnull Object value);
+    <T> void setData(String dataName, Class<T> type, @NotNull Object value);
 }

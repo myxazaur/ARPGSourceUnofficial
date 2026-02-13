@@ -1,4 +1,4 @@
-package com.Vivern.Arpg.arpgfix;
+package com.vivern.arpg.arpgfix;
 
 import net.minecraft.entity.player.EntityPlayer;
 

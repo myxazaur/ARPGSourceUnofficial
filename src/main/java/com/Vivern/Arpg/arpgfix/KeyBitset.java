@@ -1,4 +1,4 @@
-package com.Vivern.Arpg.arpgfix;
+package com.vivern.arpg.arpgfix;
 
 public final class KeyBitset {
     public static final int LONG_COUNT = (KeyboardConstants.KEY_COUNT + 63) / 64; // 4

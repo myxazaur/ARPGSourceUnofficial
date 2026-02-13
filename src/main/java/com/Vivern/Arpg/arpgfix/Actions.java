@@ -1,4 +1,4 @@
-package com.Vivern.Arpg.arpgfix;
+package com.vivern.arpg.arpgfix;
 
 import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
 
