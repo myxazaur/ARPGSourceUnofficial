@@ -86,7 +86,8 @@ dependencies {
     annotationProcessor "org.jetbrains:annotations:26.0.2"
 
     implementation 'mezz:jei:4.29.15'
-    implementation rfg.deobf("curse.maven:baubles-227083:2518667")
+    compileOnly rfg.deobf("curse.maven:baubles-227083:2518667")
+    runtimeOnly rfg.deobf("curse.maven:baubles-ex-1096600:7609484")
 //    implementation 'com.github.hohserg1:HookLib:3.28'
 //    implementation('com.enderio:endercore:0.5.78') {transitive = false}
 //    implementation('crazypants:enderio:5.3.72') {transitive = false}
