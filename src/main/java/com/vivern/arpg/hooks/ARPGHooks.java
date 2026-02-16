@@ -249,14 +249,14 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT)
    @Hook
    @OnReturn
-   private static float getClampedPitch(SoundManager soundManager, ISound soundIn) {
+   public static float getClampedPitch(SoundManager soundManager, ISound soundIn) {
       return MathHelper.clamp(soundIn.getPitch(), 0.5F, 2.0F);
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
    @OnReturn
-   private static float getClampedVolume(SoundManager soundManager, ISound soundIn) {
+   public static float getClampedVolume(SoundManager soundManager, ISound soundIn) {
       return MathHelper.clamp(soundIn.getVolume() * getVolume(soundManager, soundIn.getCategory()), 0.0F, 1.0F);
    }
 
@@ -718,14 +718,14 @@ public class ARPGHooks {
 
    @Hook
    @OnBegin
-   public static ReturnSolve<Boolean> processHeldItemChange(NetHandlerPlayServer serverHandler,
+   public static ReturnSolve<Void> processHeldItemChange(NetHandlerPlayServer serverHandler,
                                                             CPacketHeldItemChange packetIn) {
       if (packetIn.getSlotId() >= 0 && packetIn.getSlotId() < InventoryPlayer.getHotbarSize()) {
          InventoryPlayer inventory = serverHandler.player.inventory;
          ItemStack stack = inventory.getCurrentItem();
          Item item = stack.getItem();
          if (item instanceof IWeapon && !((IWeapon) item).canChangeItem(stack, serverHandler.player)) {
-            return ReturnSolve.yes(true);
+            return ReturnSolve.yes(null);
          }
       }
 
@@ -735,7 +735,7 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT)
    @Hook
    @OnBegin
-   public static ReturnSolve<Boolean> changeCurrentItem(InventoryPlayer inv, int direction) {
+   public static ReturnSolve<Void> changeCurrentItem(InventoryPlayer inv, int direction) {
       if (direction > 0) {
          direction = 1;
       }
@@ -758,7 +758,7 @@ public class ARPGHooks {
       Item item = stack.getItem();
       boolean condition = item instanceof IWeapon && !((IWeapon) item).canChangeItem(stack, inv.player);
       if (condition)
-         return ReturnSolve.yes(true);
+         return ReturnSolve.yes(null);
       return ReturnSolve.no();
    }
 
@@ -907,7 +907,7 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT)
    @Hook
    @OnBegin
-   public static ReturnSolve<Boolean> renderItemInFirstPerson(
+   public static ReturnSolve<Void> renderItemInFirstPerson(
            ItemRenderer renderer,
            AbstractClientPlayer player,
            float p_187457_2_,
@@ -928,7 +928,7 @@ public class ARPGHooks {
                PlayerAnimations.instance.renderNone(player, hand, an, stack, p_187457_7_);
             }
 
-            return ReturnSolve.yes(true);
+            return ReturnSolve.yes(null);
          }
       }
 
@@ -968,7 +968,7 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT)
    @Hook
    @OnBegin
-   public static ReturnSolve<Boolean> renderItemSide(
+   public static void renderItemSide(
            ItemRenderer renderer, EntityLivingBase entitylivingbaseIn, ItemStack heldStack, TransformType transform,
            boolean leftHanded) {
       if (entitylivingbaseIn instanceof EntityPlayer) {
@@ -985,11 +985,10 @@ public class ARPGHooks {
             }
          }
       }
-
-      return ReturnSolve.no();
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Integer> getPortalCooldown(EntityPlayer player) {
       if (player.dimension == 0)
          return ReturnSolve.yes(100);
@@ -997,6 +996,7 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> isElytraFlying(EntityLivingBase entity) {
       if (entity instanceof EntityPlayer
               && entity.getDataManager().get(PropertiesRegistry.FLYING))
@@ -1007,10 +1007,10 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT)
    @Hook
    @OnBegin
-   public static ReturnSolve<Integer> getBrightness(Entity entity, float f) {
+   public static ReturnSolve<Float> getBrightness(Entity entity) {
       ResourceLocation location = EntityList.getKey(entity);
       if (location != null && location.getNamespace().equals(Tags.MOD_ID)) {
-         return ReturnSolve.yes(0);
+         return ReturnSolve.yes(0.0F);
       } return ReturnSolve.no();
    }
 
