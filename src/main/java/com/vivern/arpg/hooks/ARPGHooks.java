@@ -3,6 +3,7 @@ package com.vivern.arpg.hooks;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Ordering;
 import com.vivern.arpg.ARPGConfig;
+import com.vivern.arpg.Tags;
 import com.vivern.arpg.blocks.AshBlock;
 import com.vivern.arpg.elements.IWeapon;
 import com.vivern.arpg.events.Debugger;
@@ -16,6 +17,9 @@ import com.vivern.arpg.potions.Freezing;
 import com.vivern.arpg.potions.PotionEffects;
 import com.vivern.arpg.potions.Stun;
 import com.vivern.arpg.renders.*;
+import crazypants.enderio.base.init.ModObject;
+import crazypants.enderio.base.init.ModObjectRegistry;
+import crazypants.enderio.base.item.soulvial.ItemSoulVial;
 import gloomyfolken.hooklib.api.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
@@ -53,10 +57,7 @@ import net.minecraft.command.*;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.EntityTracker;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.EntityLookHelper;
 import net.minecraft.entity.ai.attributes.RangedAttribute;
 import net.minecraft.entity.item.EntityItem;
@@ -93,10 +94,7 @@ import org.apache.logging.log4j.Marker;
 import paulscode.sound.SoundSystem;
 
 import javax.annotation.Nullable;
-import java.lang.reflect.Field;
-import java.lang.reflect.GenericSignatureFormatError;
-import java.lang.reflect.MalformedParameterizedTypeException;
-import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.*;
 import java.util.*;
 
 @SuppressWarnings({"deprecation", "unused"})
@@ -132,6 +130,8 @@ public class ARPGHooks {
    @SideOnly(Side.CLIENT) @FieldLens(targetField = "LOGGER") public static FieldAccessor<SoundManager, Logger> SoundManager$LOGGER;
    @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Marker> LOG_MARKER;
 
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundHandler, SoundManager> sndManager;
+
    @SideOnly(Side.CLIENT)
    @Hook
    @OnBegin
@@ -158,7 +158,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
-   @OnReturn
+   @OnBegin
    public static ReturnSolve<ItemTransformVec3f> getTransform(ItemCameraTransforms transforms, TransformType type) {
       if (Debugger.itemTransformHookEnabled) {
          return ReturnSolve.yes(getTransformsVec3f(transforms, type));
@@ -183,6 +183,7 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> track(EntityTracker tracker, Entity entityIn, int trackingRange, int updateFrequency,
                                          boolean sendVelocityUpdates) {
       if (entityIn instanceof IFixedTrackerEntity && ((IFixedTrackerEntity) entityIn).canFix()) {
@@ -194,6 +195,7 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> tryCatchFire(BlockFire blockfire, World worldIn, BlockPos pos, int chance,
                                                 Random random, int age, EnumFacing face) {
       int i = worldIn.getBlockState(pos).getBlock().getFlammability(worldIn, pos, face);
@@ -224,7 +226,9 @@ public class ARPGHooks {
       return ReturnSolve.yes(null);
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> addBlockHitEffects(ParticleManager particleManager, BlockPos pos,
                                                       RayTraceResult target) {
       EntityPlayer player = Minecraft.getMinecraft().player;
@@ -233,11 +237,27 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
+   // B: Я, честно говоря, без малейшего понятия, зачем это нужно
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> onUpdateLook(EntityLookHelper entityLookHelper) {
       if (entityLookHelper.getLookPosX() == Double.MAX_VALUE)
          return ReturnSolve.yes(null);
       return ReturnSolve.no();
+   }
+
+   @SideOnly(Side.CLIENT)
+   @Hook
+   @OnReturn
+   private static float getClampedPitch(SoundManager soundManager, ISound soundIn) {
+      return MathHelper.clamp(soundIn.getPitch(), 0.5F, 2.0F);
+   }
+
+   @SideOnly(Side.CLIENT)
+   @Hook
+   @OnReturn
+   private static float getClampedVolume(SoundManager soundManager, ISound soundIn) {
+      return MathHelper.clamp(soundIn.getVolume() * getVolume(soundManager, soundIn.getCategory()), 0.0F, 1.0F);
    }
 
    private static float getVolume(SoundManager soundManager, SoundCategory category) {
@@ -246,18 +266,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
-   private static float getClampedPitch(SoundManager soundManager, ISound soundIn) {
-      return MathHelper.clamp(soundIn.getPitch(), 0.5F, 2.0F);
-   }
-
-   @SideOnly(Side.CLIENT)
-   @Hook
-   private static float getClampedVolume(SoundManager soundManager, ISound soundIn) {
-      return MathHelper.clamp(soundIn.getVolume() * getVolume(soundManager, soundIn.getCategory()), 0.0F, 1.0F);
-   }
-
-   @SideOnly(Side.CLIENT)
-   @Hook
+   @OnBegin
    public static ReturnSolve<Void> stopAllSounds(SoundManager soundManager) {
       if (soundManagerUpdatingNow)
          return ReturnSolve.yes(null);
@@ -266,6 +275,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> playSound(SoundManager soundManager, ISound p_sound) {
       if (soundManagerUpdatingNow)
          return ReturnSolve.yes(null);
@@ -274,6 +284,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> playDelayedSound(SoundManager soundManager, ISound sound, int delay) {
       if (soundManagerUpdatingNow)
          return ReturnSolve.yes(null);
@@ -282,8 +293,8 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
-   @OnReturn
-   public static void updateAllSounds(SoundManager soundManager) {
+   @OnBegin
+   public static ReturnSolve<Void> updateAllSounds(SoundManager soundManager) {
       soundManagerUpdatingNow = true;
       playTime.set(soundManager, playTime.get(soundManager) + 1);
       SoundSystem soundsystem = sndSystem.get(soundManager);
@@ -331,10 +342,7 @@ public class ARPGHooks {
                soundsystem.removeSource(s1);
                playingSoundsStopTime.get(soundManager).remove(s1);
 
-               try {
-                  categorySounds.get(soundManager).remove(isound.getCategory(), s1);
-               } catch (RuntimeException var11) {
-               }
+               categorySounds.get(soundManager).remove(isound.getCategory(), s1);
 
                if (isound instanceof ITickableSound) {
                   tickableSounds.get(soundManager).remove(isound);
@@ -349,43 +357,32 @@ public class ARPGHooks {
       while (iterator1.hasNext()) {
          Map.Entry<ISound, Integer> entry1 = iterator1.next();
          if (playTime.get(soundManager) >= entry1.getValue()) {
-            ISound isound1 = entry1.getKey();
-            if (isound1 instanceof ITickableSound) {
-               ((ITickableSound) isound1).update();
+            ISound isound = entry1.getKey();
+            if (isound instanceof ITickableSound) {
+               ((ITickableSound) isound).update();
             }
 
-            soundManager.playSound(isound1);
+            soundManager.playSound(isound);
             iterator1.remove();
          }
       }
 
       soundManagerUpdatingNow = false;
-   }
-
-   //TODO FieldLens
-   @SideOnly(Side.CLIENT)
-   @Hook
-   public static void update(SoundHandler soundhandler) {
-      try {
-         Field field = soundhandler.getClass().getDeclaredField("sndManager");
-         field.setAccessible(true);
-         Object obj = field.get(soundhandler);
-         if (obj instanceof SoundManager) {
-            try {
-               ((SoundManager) obj).updateAllSounds();
-            } catch (ConcurrentModificationException var4) {
-               var4.printStackTrace();
-            }
-         }
-      } catch (SecurityException | NoSuchFieldException | IllegalArgumentException var5) {
-         var5.printStackTrace();
-      } catch (IllegalAccessException e) {
-         e.printStackTrace();
-      }
+      return ReturnSolve.yes(null);
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
+   public static ReturnSolve<Void> update(SoundHandler soundhandler) {
+      sndManager.get(soundhandler).updateAllSounds();
+      return ReturnSolve.yes(null);
+   }
+
+   // Большие вопросы к тому, зачем это вообще надо
+   @SideOnly(Side.CLIENT)
+   @Hook
+   @OnBegin
    public static ReturnSolve<Void> addPotionTooltip(PotionUtils utils, ItemStack itemIn, List<String> lores,
                                                     float durationFactor) {
       PotionEffects.addPotionTooltip(itemIn, lores, durationFactor);
@@ -394,10 +391,10 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> drawActivePotionEffects(InventoryEffectRenderer renderer) {
       int i = renderer.getGuiLeft() - 124;
       int j = renderer.getGuiTop();
-      int k = 166;
       Collection<PotionEffect> collection = renderer.mc.player.getActivePotionEffects();
       if (!collection.isEmpty()) {
          GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
@@ -415,7 +412,7 @@ public class ARPGHooks {
                renderer.drawTexturedModalRect(i, j, 0, 166, 140, 32);
                if (potion.hasStatusIcon()) {
                   int i1 = potion.getStatusIconIndex();
-                  renderer.drawTexturedModalRect(i + 6, j + 7, 0 + i1 % 8 * 18, 198 + i1 / 8 * 18, 18, 18);
+                  renderer.drawTexturedModalRect(i + 6, j + 7, i1 % 8 * 18, 198 + i1 / 8 * 18, 18, 18);
                }
 
                potion.renderInventoryEffect(potioneffect, renderer, i, j, 0.0F);
@@ -436,18 +433,19 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> interactWithEntity(ItemStack stack, EntityPlayer playerIn,
                                                          EntityLivingBase entityIn, EnumHand hand) {
-      boolean condition = "enderio:item_soul_vial".equals(stack.getItem().getRegistryName().toString())
+      if (stack.getItem() instanceof ItemSoulVial
               && entityIn instanceof AbstractMob
-              && !((AbstractMob) entityIn).canBeCaptured(playerIn);
-      if (condition)
+              && !((AbstractMob) entityIn).canBeCaptured(playerIn))
          return ReturnSolve.yes(false);
       return ReturnSolve.no();
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> bindTexture(Render render, ResourceLocation location) {
       if (bindEnotherTexture != null) {
          Minecraft.getMinecraft().renderEngine.bindTexture(bindEnotherTexture);
@@ -459,6 +457,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static void doRenderShadowAndFire(Render render, Entity entityIn, double x, double y, double z,
                                             float yaw, float partialTicks) {
       if (!dontRecurse && entityIn instanceof EntityLivingBase) {
@@ -480,34 +479,39 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> isMovementBlocked(EntityLivingBase entity) {
-      PotionEffect eff = entity.getActivePotionEffect(PotionEffects.FREEZING);
-      boolean condition = Freezing.canImmobilizeEntity(entity, eff)
-              || Stun.canImmobilizeEntity(entity, entity.getActivePotionEffect(PotionEffects.STUN));
-      if (condition)
+      if (arpg$isMovementBlocked(entity)) {
          return ReturnSolve.yes(true);
-      return ReturnSolve.no();
+      } else {
+         return ReturnSolve.no();
+      }
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> isMovementBlocked(EntityPlayer entity) {
-      PotionEffect eff = entity.getActivePotionEffect(PotionEffects.FREEZING);
-      boolean condition = Freezing.canImmobilizeEntity(entity, eff)
-              || Stun.canImmobilizeEntity(entity, entity.getActivePotionEffect(PotionEffects.STUN));
-      if (condition)
+      if (arpg$isMovementBlocked(entity)) {
          return ReturnSolve.yes(true);
-      return ReturnSolve.no();
+      } else {
+         return ReturnSolve.no();
+      }
+   }
+
+   private static boolean arpg$isMovementBlocked(EntityLivingBase entity) {
+      return Freezing.canImmobilizeEntity(entity, entity.getActivePotionEffect(PotionEffects.FREEZING))
+              || Stun.canImmobilizeEntity(entity, entity.getActivePotionEffect(PotionEffects.STUN));
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
-   public static ReturnSolve<Vec3d> getFogColor(
-           BlockLiquid blockliquid, World world, BlockPos pos, IBlockState state, Entity entity, Vec3d originalColor,
-           float partialTicks) {
+   @OnBegin
+   public static ReturnSolve<Vec3d> getFogColor(BlockLiquid blockliquid, World world, BlockPos pos,
+                                                IBlockState state, Entity entity, Vec3d originalColor,
+                                                float partialTicks) {
       if (world.provider.getDimension() == 103) {
          return ReturnSolve.yes(getFogColorVector(blockliquid, world, pos, state, entity, originalColor, partialTicks));
-      }
-      return ReturnSolve.no();
+      } else return ReturnSolve.no();
    }
 
    public static Vec3d getFogColorVector(
@@ -537,27 +541,29 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> processClientStatus(NetHandlerPlayServer nethandler, CPacketClientStatus packetIn) {
-      boolean condition = packetIn.getStatus() == State.PERFORM_RESPAWN
+      if (packetIn.getStatus() == State.PERFORM_RESPAWN
               && !nethandler.player.queuedEndExit
-              && nethandler.player.isPotionActive(PotionEffects.RESPAWN_PENALTY);
-      if (condition)
+              && nethandler.player.isPotionActive(PotionEffects.RESPAWN_PENALTY))
          return ReturnSolve.yes(null);
       return ReturnSolve.no();
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Double> clampValue(RangedAttribute rang, double value) {
       if (rang == SharedMonsterAttributes.MAX_HEALTH)
-         return ReturnSolve.yes(clampv(rang, value));
+         return ReturnSolve.yes(clampValue(value));
       return ReturnSolve.no();
    }
 
-   public static double clampv(RangedAttribute rang, double value) {
+   public static double clampValue(double value) {
       return MathHelper.clamp(value, Float.MIN_VALUE, 8000.0);
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> attackEntityFrom(EntityItem item, DamageSource source, float amount) {
       if (!item.world.isRemote && !item.isDead) {
          Item itemitem = item.getItem().getItem();
@@ -577,11 +583,11 @@ public class ARPGHooks {
                   Block block = item.world.getBlockState(item.getPosition()).getBlock();
                   if (block == Blocks.LAVA || block == Blocks.FLOWING_LAVA) {
                      checkGemsparkIngridients(item.world, itemitem, item.getPosition());
-                     return ReturnSolve.yes(false);
+                     return ReturnSolve.no();
                   }
                }
 
-               return ReturnSolve.yes(false);
+               return ReturnSolve.no();
             } else {
                Block block = item.world.getBlockState(item.getPosition()).getBlock();
                if (block == Blocks.FIRE) {
@@ -599,17 +605,17 @@ public class ARPGHooks {
 
             item.world
                     .playSound(
-                            (EntityPlayer) null, item.getPosition(), Sounds.burn, SoundCategory.BLOCKS, 0.8F,
+                            null, item.getPosition(), Sounds.burn, SoundCategory.BLOCKS, 0.8F,
                             0.9F + item.world.rand.nextFloat() / 5.0F);
             item.setDead();
             EntityItem dust = new EntityItem(
                     item.world, item.posX, item.posY, item.posZ, new ItemStack(ItemsRegister.MAGIC_POWDER));
             dust.setFire(4);
             item.world.spawnEntity(dust);
-            return ReturnSolve.yes(false);
+            return ReturnSolve.no();
          }
       } else {
-         return ReturnSolve.yes(false);
+         return ReturnSolve.no();
       }
    }
 
@@ -681,7 +687,7 @@ public class ARPGHooks {
          }
 
          world.setBlockState(pos, BlocksRegister.GEMSPARKBLOCK.getDefaultState());
-         world.playSound((EntityPlayer) null, pos, SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.BLOCKS, 0.8F,
+         world.playSound(null, pos, SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.BLOCKS, 0.8F,
                  0.9F + world.rand.nextFloat() / 5.0F);
       }
    }
@@ -702,6 +708,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static void sendPacket(NetHandlerPlayClient playClient, Packet<?> packetIn) {
       if (packetIn instanceof CPacketHeldItemChange) {
          CPacketHeldItemChange packet = (CPacketHeldItemChange) packetIn;
@@ -710,6 +717,7 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> processHeldItemChange(NetHandlerPlayServer serverHandler,
                                                             CPacketHeldItemChange packetIn) {
       if (packetIn.getSlotId() >= 0 && packetIn.getSlotId() < InventoryPlayer.getHotbarSize()) {
@@ -726,6 +734,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> changeCurrentItem(InventoryPlayer inv, int direction) {
       if (direction > 0) {
          direction = 1;
@@ -753,27 +762,26 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
-   public static Class getGenericParameterClass(Class actualClass, int parameterIndex) {
-      try {
-         return (Class) ((ParameterizedType) actualClass.getGenericSuperclass())
-                 .getActualTypeArguments()[parameterIndex];
-      } catch (TypeNotPresentException var3) {
-      } catch (MalformedParameterizedTypeException var4) {
-      } catch (GenericSignatureFormatError var5) {
-      } catch (ClassCastException var6) {
-      }
+   public static Class<?> getGenericParameterClass(Class<?> clazz, int index) {
+      Type type = clazz.getGenericSuperclass();
 
+      if (type instanceof ParameterizedType) {
+         Type[] args = ((ParameterizedType) type).getActualTypeArguments();
+         if (index >= 0 && index < args.length && args[index] instanceof Class) {
+            return (Class<?>) args[index];
+         }
+      }
       return null;
    }
 
    @SideOnly(Side.CLIENT)
    @Hook(targetMethod = "<init>")
    @OnReturn(ordinal = -1)
-   public static void mobModelReg(RenderLivingBase randerlb, RenderManager renderManagerIn, ModelBase modelBaseIn,
-                                  float shadowSizeIn) {
-      Class clazz = getGenericParameterClass(randerlb.getClass(), 0);
-      if (clazz != null && modelBaseIn != null) {
-         DeathEffects.tryAddtoMainModels(clazz, modelBaseIn);
+   public static void mobModelReg(RenderLivingBase<?> render, RenderManager manager, ModelBase model, float shadowSizeIn) {
+      Class<?> entityClass = getGenericParameterClass(render.getClass(), 0);
+
+      if (entityClass != null && model != null) {
+         DeathEffects.tryAddtoMainModels(entityClass, model);
       }
    }
 
@@ -791,13 +799,14 @@ public class ARPGHooks {
    }
 
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> execute(CommandEnchant command, MinecraftServer server, ICommandSender sender,
                                            String[] args)
            throws CommandException {
       if (args.length < 2) {
-         throw new WrongUsageException("commands.enchant.usage", new Object[0]);
+         throw new WrongUsageException("commands.enchant.usage");
       } else {
-         EntityLivingBase entitylivingbase = (EntityLivingBase) CommandEnchant.getEntity(server, sender, args[0],
+         EntityLivingBase entitylivingbase = CommandEnchant.getEntity(server, sender, args[0],
                  EntityLivingBase.class);
 
          Enchantment enchantment;
@@ -848,6 +857,7 @@ public class ARPGHooks {
       return ReturnSolve.yes(null);
    }
 
+   //FIXME unused
    public static void armsToDefaults(ModelBiped biped, float ageInTicks, float limbSwing, float limbSwingAmount) {
       biped.bipedRightArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float) Math.PI) * 2.0F * limbSwingAmount
               * 0.5F;
@@ -896,6 +906,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> renderItemInFirstPerson(
            ItemRenderer renderer,
            AbstractClientPlayer player,
@@ -905,7 +916,6 @@ public class ARPGHooks {
            float p_187457_5_,
            ItemStack stack,
            float p_187457_7_) {
-      p_187457_7_ = 0.0F;
       int id = Weapons.getPlayerAnimationId(player, hand);
       PlayerAnimation animation = Weapons.animationsRegister.getOrDefault((byte) id, PlayerAnimations.DEFAULT);
       if (id != 0) {
@@ -913,7 +923,7 @@ public class ARPGHooks {
                  - Weapons.getPlayerAnimationValue(player, hand, Minecraft.getMinecraft().getRenderPartialTicks());
          if (an > 0.0F && an < 1.0F) {
             if (animation.transformItemFirstperson()) {
-               animation.render(player, hand, an, stack, p_187457_7_);
+               animation.render(player, hand, an, stack, 0.0F);
             } else {
                PlayerAnimations.instance.renderNone(player, hand, an, stack, p_187457_7_);
             }
@@ -957,6 +967,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Boolean> renderItemSide(
            ItemRenderer renderer, EntityLivingBase entitylivingbaseIn, ItemStack heldStack, TransformType transform,
            boolean leftHanded) {
@@ -987,22 +998,24 @@ public class ARPGHooks {
 
    @Hook
    public static ReturnSolve<Boolean> isElytraFlying(EntityLivingBase entity) {
-      boolean condition = entity instanceof EntityPlayer
-              ? (Boolean) entity.getDataManager().get(PropertiesRegistry.FLYING)
-              : false;
-      if (condition)
+      if (entity instanceof EntityPlayer
+              && entity.getDataManager().get(PropertiesRegistry.FLYING))
          return ReturnSolve.yes(true);
       return ReturnSolve.no();
    }
 
-   public static int getBrightness(Entity entity, float f) {
-      int oldValue = 0;
-      int j = (oldValue >> 20 & 15) / 2;
-      int k = (oldValue >> 4 & 15) / 2;
-      return j << 20 | k << 4;
+   @SideOnly(Side.CLIENT)
+   @Hook
+   @OnBegin
+   public static ReturnSolve<Integer> getBrightness(Entity entity, float f) {
+      ResourceLocation location = EntityList.getKey(entity);
+      if (location != null && location.getNamespace().equals(Tags.MOD_ID)) {
+         return ReturnSolve.yes(0);
+      } return ReturnSolve.no();
    }
 
    @Hook
+   @OnBegin
    public static void markAndNotifyBlock(World world, BlockPos pos, @Nullable Chunk chunk, IBlockState oldState,
                                          IBlockState newState, int flags) {
       if ((newState.getLightOpacity(world, pos) != oldState.getLightOpacity(world, pos)
@@ -1013,7 +1026,7 @@ public class ARPGHooks {
    }
 
    @Hook
-   @OnReturn
+   @OnBegin
    public static void setBlockState(World world, BlockPos pos, IBlockState newState, int flags) {
       if (newState.getLightValue(world, pos) > 0 || newState.getLightOpacity(world, pos) > 0
               || newState.getBlock() == Blocks.AIR) {
@@ -1029,6 +1042,7 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static boolean renderModel(
            BlockModelRenderer renderer,
            IBlockAccess worldIn,
@@ -1050,9 +1064,9 @@ public class ARPGHooks {
                     ? renderModelSmooth(worldIn, modelIn, stateIn, posIn, buffer, checkSides, rand)
                     : renderModelFlat(worldIn, modelIn, stateIn, posIn, buffer, checkSides, rand);
          }
-      } catch (Throwable var14) {
-         CrashReport crashreport = CrashReport.makeCrashReport(var14, "Tesselating block model");
-         CrashReportCategory crashreportcategory = crashreport.makeCategory("Block model being tesselated");
+      } catch (Exception e) {
+         CrashReport crashreport = CrashReport.makeCrashReport(e, "Tessellating block model");
+         CrashReportCategory crashreportcategory = crashreport.makeCategory("Block model being tessellated");
          CrashReportCategory.addBlockInfo(crashreportcategory, posIn, stateIn);
          crashreportcategory.addCrashSection("Using AO", flag);
          throw new ReportedException(crashreport);
@@ -1585,11 +1599,11 @@ public class ARPGHooks {
                int brightnessX = ColorConverters.UnpackLightmapCoordsX(aoFace.vertexBrightness[cfn]);
                float minimalbrightness = 0.3F;
                if (dayNightLight >= 0L && dayNightLight < 1500L) {
-                  dayadd = ((float) dayNightLight / 2142.0F + minimalbrightness) * brightnessX / 240.0F;
+                  dayadd = (dayNightLight / 2142.0F + minimalbrightness) * brightnessX / 240.0F;
                } else if (dayNightLight >= 1500L && dayNightLight < 12000L) {
                   dayadd = 1.0F * brightnessX / 240.0F;
                } else if (dayNightLight >= 12000L && dayNightLight < 13500L) {
-                  dayadd = (minimalbrightness + (float) (1500L - (dayNightLight - 12000L)) / 2142.0F) * brightnessX
+                  dayadd = (minimalbrightness + (1500L - (dayNightLight - 12000L)) / 2142.0F) * brightnessX
                           / 240.0F;
                } else {
                   dayadd = minimalbrightness * brightnessX / 240.0F;
@@ -1613,7 +1627,7 @@ public class ARPGHooks {
    }
 
    public static Vec3d fixedNoDark(Vec3d check, Vec3d[] nbColors, EnumFacing facing) {
-      return check.x == 0.0 && check.y == 0.0 && check.z == 0.0 ? nbColors[facing.getIndex() + 12] : check;
+      return isVec3dNull(check) ? nbColors[facing.getIndex() + 12] : check;
    }
 
    public static Vec3d getNbColor(BakedQuad bakedquad, int buffervertex, Vec3d[] nbColors) {
