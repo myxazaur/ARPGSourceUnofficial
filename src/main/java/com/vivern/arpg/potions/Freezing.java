@@ -213,9 +213,9 @@ public class Freezing extends AdvancedPotion {
          }
       }
 
-      LayerIce layer1 = new LayerIce((RenderLivingBase<?>)Minecraft.getMinecraft().getRenderManager().getSkinMap().get("default"));
-      LayerIce layer2 = new LayerIce((RenderLivingBase<?>)Minecraft.getMinecraft().getRenderManager().getSkinMap().get("slim"));
-      ((RenderPlayer)Minecraft.getMinecraft().getRenderManager().getSkinMap().get("default")).addLayer(layer1);
-      ((RenderPlayer)Minecraft.getMinecraft().getRenderManager().getSkinMap().get("slim")).addLayer(layer2);
+      LayerIce layer1 = new LayerIce(Minecraft.getMinecraft().getRenderManager().getSkinMap().get("default"));
+      LayerIce layer2 = new LayerIce(Minecraft.getMinecraft().getRenderManager().getSkinMap().get("slim"));
+      Minecraft.getMinecraft().getRenderManager().getSkinMap().get("default").addLayer(layer1);
+      Minecraft.getMinecraft().getRenderManager().getSkinMap().get("slim").addLayer(layer2);
    }
 }

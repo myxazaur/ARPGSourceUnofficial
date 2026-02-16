@@ -30,6 +30,7 @@ import net.minecraft.client.audio.SoundHandler;
 import net.minecraft.client.audio.SoundManager;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiScreenRealmsProxy;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.model.ModelRenderer;
@@ -86,6 +87,7 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraftforge.client.model.pipeline.LightUtil;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
 import paulscode.sound.SoundSystem;
@@ -100,35 +102,39 @@ import java.util.*;
 @SuppressWarnings({"deprecation", "unused"})
 @HookContainer
 public class ARPGHooks {
+
    private static final List<BlockPos> listMarkRelightPoses = new ArrayList<>();
    public static BlockColors blockColors = new BlockColors();
    private static final float BLOCK_COLOR_INTENSITY = 0.75F;
    public static ResourceLocation bindEnotherTexture = null;
-   //   private static boolean useTeleportHook = false;
+//   private static boolean useTeleportHook = false;
 //   private static Random hooksRand = new Random();
    static ItemCameraTransforms cameraTransforms;
    private static boolean soundManagerUpdatingNow = false;
    static boolean dontRecurse;
    public static int moveSlot = 0;
+   private static final Logger LOGGER = LogManager.getLogger(ARPGHooks.class.getSimpleName());
 
-   @SideOnly(Side.CLIENT)
-   @PrivateClass("net.minecraft.client.audio.SoundManager$SoundSystemStarterThread")
-   public static class SoundSystemStarterThread extends SoundSystem {}
+   //FIXME ждать фикс в HookLib, ибо сейчас (16.02.26) PrivateClass не может использоваться в FieldLens
+//   @SideOnly(Side.CLIENT)
+//   @PrivateClass("net.minecraft.client.audio.SoundManager$SoundSystemStarterThread")
+//   public static class SoundSystemStarterThread extends SoundSystem {}
 
-   @FieldLens public static FieldAccessor<SoundManager, GameSettings> options;
-   @FieldLens public static FieldAccessor<SoundManager, Integer> playTime;
-   @FieldLens public static FieldAccessor<SoundManager, SoundSystemStarterThread> sndSystem;
-   @FieldLens public static FieldAccessor<SoundManager, List<ITickableSound>> tickableSounds;
-   @FieldLens public static FieldAccessor<SoundManager, Map<ISound, String>> invPlayingSounds;
-   @FieldLens public static FieldAccessor<SoundManager, Map<String, ISound>> playingSounds;
-   @FieldLens public static FieldAccessor<SoundManager, Map<String, Integer>> playingSoundsStopTime;
-   @FieldLens public static FieldAccessor<SoundManager, Map<ISound, Integer>> delayedSounds;
-   @FieldLens public static FieldAccessor<SoundManager, Multimap<SoundCategory, String>> categorySounds;
-   @FieldLens public static FieldAccessor<SoundManager, Logger> LOGGER;
-   @FieldLens public static FieldAccessor<SoundManager, Marker> LOG_MARKER;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, GameSettings> options;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Integer> playTime;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, SoundManager.SoundSystemStarterThread> sndSystem;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, List<ITickableSound>> tickableSounds;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Map<ISound, String>> invPlayingSounds;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Map<String, ISound>> playingSounds;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Map<String, Integer>> playingSoundsStopTime;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Map<ISound, Integer>> delayedSounds;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Multimap<SoundCategory, String>> categorySounds;
+   @SideOnly(Side.CLIENT) @FieldLens(targetField = "LOGGER") public static FieldAccessor<SoundManager, Logger> SoundManager$LOGGER;
+   @SideOnly(Side.CLIENT) @FieldLens public static FieldAccessor<SoundManager, Marker> LOG_MARKER;
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static void renderToolTip(GuiScreen gui, ItemStack stack, int x, int y) {
       ItemsElements.ElementsPack pack = ItemsElements.getAllElements(stack);
       GlStateManager.disableDepth();
@@ -138,18 +144,21 @@ public class ARPGHooks {
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnBegin
    public static ReturnSolve<Void> switchToRealms(RealmsBridge bridge, GuiScreen p_switchToRealms_1_) {
-      return ARPGConfig.general.disableRealms ? ReturnSolve.no() : ReturnSolve.yes(null);
+      return ARPGConfig.general.disableRealms ? ReturnSolve.yes(null) : ReturnSolve.no();
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
-   public static ReturnSolve<Object> getNotificationScreen(RealmsBridge bridge, GuiScreen p_getNotificationScreen_1_) {
-      return ARPGConfig.general.disableRealms ? ReturnSolve.no() : ReturnSolve.yes(null);
+   @OnBegin
+   public static ReturnSolve<GuiScreenRealmsProxy> getNotificationScreen(RealmsBridge bridge, GuiScreen p_getNotificationScreen_1_) {
+      return ARPGConfig.general.disableRealms ? ReturnSolve.yes(null) : ReturnSolve.no();
    }
 
    @SideOnly(Side.CLIENT)
    @Hook
+   @OnReturn
    public static ReturnSolve<ItemTransformVec3f> getTransform(ItemCameraTransforms transforms, TransformType type) {
       if (Debugger.itemTransformHookEnabled) {
          return ReturnSolve.yes(getTransformsVec3f(transforms, type));
@@ -157,7 +166,7 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
-   public static ItemTransformVec3f getTransformsVec3f(ItemCameraTransforms transforms, TransformType type) {
+   private static ItemTransformVec3f getTransformsVec3f(ItemCameraTransforms transforms, TransformType type) {
       if (cameraTransforms == null || AnimationTimer.normaltick % 10 == 0) {
          EntityPlayer player = Minecraft.getMinecraft().player;
          Item item = player.getHeldItemMainhand().isEmpty() ? player.getHeldItemOffhand().getItem()
@@ -235,16 +244,19 @@ public class ARPGHooks {
       return category != null && category != SoundCategory.MASTER ? options.get(soundManager).getSoundLevel(category) : 1.0F;
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
    private static float getClampedPitch(SoundManager soundManager, ISound soundIn) {
       return MathHelper.clamp(soundIn.getPitch(), 0.5F, 2.0F);
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
    private static float getClampedVolume(SoundManager soundManager, ISound soundIn) {
       return MathHelper.clamp(soundIn.getVolume() * getVolume(soundManager, soundIn.getCategory()), 0.0F, 1.0F);
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
    public static ReturnSolve<Void> stopAllSounds(SoundManager soundManager) {
       if (soundManagerUpdatingNow)
@@ -252,6 +264,7 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
    public static ReturnSolve<Void> playSound(SoundManager soundManager, ISound p_sound) {
       if (soundManagerUpdatingNow)
@@ -259,6 +272,7 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
    public static ReturnSolve<Void> playDelayedSound(SoundManager soundManager, ISound sound, int delay) {
       if (soundManagerUpdatingNow)
@@ -266,6 +280,7 @@ public class ARPGHooks {
       return ReturnSolve.no();
    }
 
+   @SideOnly(Side.CLIENT)
    @Hook
    @OnReturn
    public static void updateAllSounds(SoundManager soundManager) {
@@ -312,7 +327,7 @@ public class ARPGHooks {
                }
 
                iterator.remove();
-               LOGGER.get(soundManager).debug(LOG_MARKER.get(soundManager), "Removed channel {} because it 's not playing anymore", s1);
+               SoundManager$LOGGER.get(soundManager).debug(LOG_MARKER.get(soundManager), "Removed channel {} because it 's not playing anymore", s1);
                soundsystem.removeSource(s1);
                playingSoundsStopTime.get(soundManager).remove(s1);
 
@@ -347,6 +362,9 @@ public class ARPGHooks {
       soundManagerUpdatingNow = false;
    }
 
+   //TODO FieldLens
+   @SideOnly(Side.CLIENT)
+   @Hook
    public static void update(SoundHandler soundhandler) {
       try {
          Field field = soundhandler.getClass().getDeclaredField("sndManager");
